@@ -6,7 +6,7 @@
 **Áudio:** exportar SEM som; a música licenciada é adicionada no app do Instagram (acústico/lo-fi)
 **Cliente:** ANÔNIMO — nunca mostrar "Bill", "Cornelius", endereço ou preços
 **Skills usadas:** `social-media-skills:reels-script` (roteiro); próximos: `caption-writer`, `instagram-reels-publishing`
-**Status:** roteiro aprovado pelo usuário; falta gerar prévia (6 quadros-chave) → aprovar → MP4
+**Status:** prévia aprovada; MP4 gerado (`marketing/reel-made-it-with-ai.mp4`, 60 s, sem áudio) + capa (`marketing/reel-capa.jpg`). Próximo: `caption-writer` → `instagram-reels-publishing`. Ajuste aprovado: "We engineered it" → "We detailed it".
 
 ## Regras de honestidade
 - A cerca AINDA NÃO foi construída (cliente analisando). Terminar em "build-ready project", nunca "we built it".

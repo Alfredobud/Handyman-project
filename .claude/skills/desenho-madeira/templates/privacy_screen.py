@@ -30,20 +30,20 @@ from cad import Vista, Prancha, exportar, pes_pol  # noqa: E402
 PADRAO = {
     "comprimento_total_in": 265, "n_postes": 11,
     "poste": {"tipo": "composto", "nucleo": 3.5, "face_esp": 1.5, "face_larg": 5.5,
-              "serrilhado_esp": 1.0, "lateral_ponta_esp": 1.5, "macico": 5.5},
+              "serrilhado_esp": 1.0, "lateral_ponta_esp": 1.0, "macico": 5.5},
     "embutimento_in": 36, "brita_in": 6, "sapata_diam_in": 12,
     "colar_concreto": {"altura": 2.0, "largura": 8.0},
     "altura_topo_in": 96,
     "y_primeira_ripa": 4.0,
     "ripa": {"larg": 3.5, "esp": 1.5, "espaco_min": 1.5, "folga_ponta": 0.125, "folga_encaixe": 0.0625},
     "cleat": {"esp": 1.5, "larg": 1.5},
-    "viga": {"esp": 1.5, "alt": 7.25, "balanco": 6.0},
+    "viga": {"esp": 1.5, "alt": 7.25, "balanco": 6.0, "peca_max": 96},
     "caibro": {"esp": 1.5, "alt": 5.5, "comprimento": 36, "posicao": "postes", "qtd": 11, "perfil": "nuvem"},
     "paisagismo": {"canteiro_in": 24, "pedra_in": 14, "lado": "vizinho", "trepadeiras": True},
     "materiais": {"nucleo": "pt", "revest": "cedro", "serrilhado": "cedro", "cleat": "cedro",
                   "ripa": "cedro", "viga": "cedro", "caibro": "cedro"},
     "rotulos": {"nucleo": "PT 4x4 ground contact (UC4B)", "revest": "Cedro 2x6",
-                "serrilhado": "Cedro 5/4 (1\") serrilhado", "lateral_ponta": "Cedro 2x6 lisa",
+                "serrilhado": "Cedro 5/4 (1\") serrilhado", "lateral_ponta": "Cedro 5/4 (1\") lisa",
                 "cleat": "Cedro 2x2", "ripa": "Cedro 2x4 (deitado)", "viga": "Cedro 2x8", "caibro": "Cedro 2x6"},
 }
 
@@ -117,7 +117,19 @@ class Geo:
             self.xc = [self.x_viga0 + 2.0 + i * passo for i in range(nc)]
         self.zc0 = self.D / 2 - c["comprimento"] / 2
         self.zc1 = self.zc0 + c["comprimento"]
-        self.i_emenda = (n - 1) // 2
+        # emendas das vigas sobre postes: menor nº de peças <= peca_max, divisões o mais iguais possível
+        Lv = self.x_viga1 - self.x_viga0
+        k = 1
+        while True:
+            alvo = [self.x_viga0 + Lv * j / k for j in range(1, k)]
+            em = sorted({min(range(n), key=lambda i: abs(self.cx[i] - t)) for t in alvo})
+            pts = [self.x_viga0] + [self.cx[i] for i in em] + [self.x_viga1]
+            pecas = [b - a for a, b in zip(pts, pts[1:])]
+            if max(pecas) <= v["peca_max"] + 1e-6 or k > n:
+                break
+            k += 1
+        self.emendas, self.pecas_viga = em, pecas
+        self.i_emenda = em[0] if em else n // 2
         self.comp_nucleo = self.y_poste - self.y_base
         self.comp_rev = self.y_poste - self.y_rev0
         self.entre_eixos = self.cx[2] - self.cx[1] if n > 2 else self.cx[1] - self.cx[0]
@@ -210,8 +222,9 @@ def vista_elevacao(G, esc=32):
     vg, cb = g["viga"], g["caibro"]
     v.poligono([(G.x_viga0, G.y_poste), (G.x_viga1, G.y_poste), (G.x_viga1, G.y_viga0 + 3.0),
                 (G.x_viga1 - 3, G.y_viga0), (G.x_viga0 + 3, G.y_viga0), (G.x_viga0, G.y_viga0 + 3.0)], M["viga"])
+    for ie in G.emendas:
+        v.linha([(G.cx[ie], G.y_viga0), (G.cx[ie], G.y_poste)], espessura=0.8)
     xe = G.cx[G.i_emenda]
-    v.linha([(xe, G.y_viga0), (xe, G.y_poste)], espessura=0.8)
     for xc in G.xc:
         v.peca(xc, G.y_poste, cb["esp"], cb["alt"], M["caibro"])
     for i in range(G.n):
@@ -228,7 +241,8 @@ def vista_elevacao(G, esc=32):
               f"{len(G.xc)} caibros {g['rotulos']['caibro']} (1 por poste), ponta recortada", 6)
     v.chamada((G.bay_centro(2), G.ripas_y[-4] + 1.7), (G.bay_centro(2) + 2, G.y_topo + 30),
               f"{G.fiadas} ripas {g['rotulos']['ripa']} por vão, espaço {pes_pol(G.espaco)}", 6)
-    v.chamada((xe, G.y_viga0 + 3), (xe + 30, G.y_topo + 20), "emenda da viga sobre o poste", 6)
+    v.chamada((xe, G.y_viga0 + 3), (xe + 30, G.y_topo + 20),
+              f"emendas da viga sobre os postes {', '.join(str(i + 1) for i in G.emendas)}", 6)
     if G.composto:
         v.chamada((G.cx[-3], 50), (G.cx[-3] + 26, -24), "poste composto (A-3)", 5.5)
     v.marca_corte((G.bay_centro(0), G.y_topo + 8), (G.bay_centro(0), G.y_base - 2), "A")
@@ -466,10 +480,10 @@ def lista_pecas(G):
     else:
         linhas = [["P", "Poste", R["nucleo"], G.n, pes_pol(G.comp_nucleo), f"embutir {pes_pol(g['embutimento_in'])}"],
                   ["S", "Sarrafo", R["cleat"], 4 * nb, pes_pol(G.y_r1 - G.y_r0), "2 faces, junto aos postes"]]
-    xe = G.cx[G.i_emenda]
     linhas += [
         ["R", "Ripa", R["ripa"], G.fiadas * nb, pes_pol(G.comp_ripa), f"{G.fiadas}/vão, espaço {pes_pol(G.espaco)}"],
-        ["V", "Viga (2 linhas x 2)", R["viga"], 4, f"{pes_pol(xe - G.x_viga0)} + {pes_pol(G.x_viga1 - xe)}", "emenda sobre poste"],
+        ["V", f"Viga (2 linhas x {len(G.pecas_viga)})", R["viga"], 2 * len(G.pecas_viga),
+         " + ".join(pes_pol(c) for c in G.pecas_viga), "emendas sobre postes " + ", ".join(str(i + 1) for i in G.emendas)],
         ["K", "Caibro decorativo", R["caibro"], len(G.xc), pes_pol(g["caibro"]["comprimento"]), "pontas recortadas"],
     ]
     return ["Marca", "Peça", "Material", "Qtd", "Compr.", "Obs."], linhas
@@ -480,6 +494,7 @@ def main():
     ap.add_argument("spec")
     ap.add_argument("--saida", default=None)
     ap.add_argument("--png", action="store_true")
+    ap.add_argument("--previa", action="store_true", help="só PNG (sem PDF/DXF), para revisão antes de emitir")
     a = ap.parse_args()
     spec = json.load(open(a.spec, encoding="utf-8"))
     g = mescla(PADRAO, spec.get("geometria", {}))
@@ -496,7 +511,7 @@ def main():
         "Fixadores: inox no cedro; galvanizado a fogo/inox no PT.",
         f"Ripas: {G.fiadas} por vão, espaço {pes_pol(G.espaco)} dado pelo serrilhado." if G.composto
         else f"Ripas: {G.fiadas} por vão, espaço {pes_pol(G.espaco)}; usar espaçador.",
-        (f"Postes intermediários {pes_pol(G.W[1])} (alinhados com a face 2x6); postes de ponta {pes_pol(G.W[0])}."
+        (f"Todos os postes com {pes_pol(G.W[1])}, faces 2x6 alinhadas. Vão/poste = {G.vao / G.W[1]:.2f} (≈ φ³ = 55/13)."
          if G.composto else ""),
     ]
     p1 = Prancha(proj, "Elevação e planta", "A-1", notas=[n for n in notas if n], **meta)
@@ -517,7 +532,7 @@ def main():
     if G.composto:
         p3 = Prancha(proj, "Poste composto com serrilhado", "A-3", **meta)
         p3.add(vista_poste(G, 1, "DETALHE 2a — POSTE INTERMEDIÁRIO, CORTE B-B", esc=3), 1.4, 4.0)
-        p3.add(vista_poste(G, 0, "DETALHE 2b — POSTE DE PONTA (1 e 11)", esc=3), 9.4, 4.0)
+        p3.add(vista_poste(G, 0, f"DETALHE 2b — POSTE DE PONTA (1 e {G.n})", esc=3), 9.4, 4.0)
         r = g["ripa"]
         passos = [
             [1, f"Locar os {G.n} eixos a {pes_pol(G.entre_eixos)}; furos Ø{pes_pol(g['sapata_diam_in'])} x {pes_pol(g['embutimento_in'] + g['brita_in'])}; {pes_pol(g['brita_in'])} de brita no fundo."],
@@ -528,16 +543,16 @@ def main():
             [6, "Fixar os serrilhados nas laterais dos núcleos (encaixes para o lado da casa) e as laterais lisas 2x6 nos postes de ponta."],
             [7, "Encaixar as ripas pelo lado da casa, de baixo para cima; 1 parafuso inox por ponta no serrilhado."],
             [8, "Fechar com as faces 2x6 do LADO DA CASA: elas travam as ripas nos encaixes."],
-            [9, "Vigas duplas 2x8 com parafuso passante 1/2\" por poste (emenda sobre o poste do meio)."],
+            [9, f"Vigas duplas 2x8 com parafuso passante 1/2\" por poste; emendas sobre os postes {', '.join(str(i + 1) for i in G.emendas)}."],
             [10, "Caibros com ponta recortada sobre as vigas, 1 por poste; parafuso estrutural."],
         ]
         p3.tabela(1.0, 2.55, ["#", "SEQUÊNCIA DE MONTAGEM"], passos, [0.3, 10.4], None, 6.5)
         pranchas.append(p3)
 
-    res = exportar(pranchas, base, png=a.png)
+    res = exportar(pranchas, base, png=a.png or a.previa, pdf=not a.previa, dxf=not a.previa)
     print(f"W int {G.W[1]} / ponta {G.W[0]} | vão livre {G.vao:.3f} | entre eixos {G.entre_eixos:.3f} | {G.fiadas} fiadas, "
           f"espaço {G.espaco:.3f}, passo {G.passo:.3f} | ripa {G.comp_ripa:.3f} | núcleo {G.comp_nucleo:.1f} | "
-          f"revest {G.comp_rev:.2f} | vigas {G.cx[G.i_emenda] - G.x_viga0:.2f} + {G.x_viga1 - G.cx[G.i_emenda]:.2f}")
+          f"revest {G.comp_rev:.2f} | vigas {[round(c, 2) for c in G.pecas_viga]} emendas {[i + 1 for i in G.emendas]}")
     for k, v in res.items():
         if v:
             print(k, v)

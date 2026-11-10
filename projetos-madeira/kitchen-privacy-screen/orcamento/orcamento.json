@@ -16,22 +16,22 @@
     {
       "tipo": "sapata",
       "nome": "Sapatas Ø12\" (concreto em volta do núcleo)",
-      "qtd": 11,
+      "qtd": 10,
       "diametro_in": 12,
       "profundidade_in": 35,
       "desconto_poste_in2": 12.25,
       "material": "concreto_80lb",
       "tarefa": "poste_sapata",
       "_calc": {
-        "volume_cf": 24.72,
-        "sacos": 42
+        "volume_cf": 22.47,
+        "sacos": 38
       }
     },
     {
       "tipo": "item",
       "nome": "Brita 6\" no fundo dos furos",
       "material": "brita_saco",
-      "qtd": 9
+      "qtd": 8
     },
     {
       "tipo": "item",
@@ -43,47 +43,55 @@
       "tipo": "pecas",
       "nome": "Núcleo PT 4x4 ground contact (embutir 36\")",
       "material": "pt_4x4",
-      "comprimento_in": 128,
-      "qtd": 11,
+      "comprimento_in": 128.0,
+      "qtd": 10,
       "perda": 0
     },
     {
       "tipo": "pecas",
       "nome": "Faces do poste cedro 2x6 (casa + vizinho)",
       "material": "cedro_2x6",
-      "comprimento_in": 88,
-      "qtd": 22,
+      "comprimento_in": 88.0,
+      "qtd": 20,
       "tarefa": "revestimento_poste",
-      "tarefa_qtd": 11
+      "tarefa_qtd": 10
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais serrilhadas cedro 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "nome": "Laterais serrilhadas cedro 5/4x6 (1\", ripar p/ 3 1/2\")",
       "material": "cedro_5_4x6",
-      "comprimento_in": 88,
-      "qtd": 20,
+      "comprimento_in": 88.0,
+      "qtd": 18,
       "tarefa": "serrilhado"
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais lisas cedro 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
-      "material": "cedro_2x6",
-      "comprimento_in": 88,
+      "nome": "Laterais lisas cedro 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
+      "material": "cedro_5_4x6",
+      "comprimento_in": 88.0,
       "qtd": 2
     },
     {
       "tipo": "pecas",
-      "nome": "Ripas cedro 2x4 deitado (16/vão x 10 vãos)",
+      "nome": "Ripas cedro 2x4 deitado (16/vão x 9 vãos)",
       "material": "cedro_2x4",
-      "comprimento_in": 22.1,
-      "qtd": 160,
+      "comprimento_in": 25.083,
+      "qtd": 144,
       "tarefa": "ripa_encaixe"
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas duplas cedro 2x8 (emenda sobre o poste 6)",
+      "nome": "Vigas duplas cedro 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
       "material": "cedro_2x8",
-      "comprimento_in": 138.5,
+      "comprimento_in": 86.5,
+      "qtd": 2,
+      "tarefa": "viga"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas duplas cedro 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
+      "material": "cedro_2x8",
+      "comprimento_in": 95.25,
       "qtd": 4,
       "tarefa": "viga"
     },
@@ -92,14 +100,14 @@
       "nome": "Caibros cedro 2x6 com ponta tipo nuvem (1 por poste)",
       "material": "cedro_2x6",
       "comprimento_in": 36,
-      "qtd": 11,
+      "qtd": 10,
       "tarefa": "caibro_nuvem"
     },
     {
       "tipo": "item",
       "nome": "Parafusos passantes 1/2x10 viga/poste",
       "material": "parafuso_passante",
-      "qtd": 11
+      "qtd": 10
     },
     {
       "tipo": "item",
@@ -156,49 +164,56 @@
     [
       "Núcleo PT 4x4 ground contact (embutir 36\")",
       "pt_4x4",
-      11,
+      10,
       128.0,
       ""
     ],
     [
       "Faces do poste cedro 2x6 (casa + vizinho)",
       "cedro_2x6",
-      22,
-      88.0,
-      ""
-    ],
-    [
-      "Laterais serrilhadas cedro 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
-      "cedro_5_4x6",
       20,
       88.0,
       ""
     ],
     [
-      "Laterais lisas cedro 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
-      "cedro_2x6",
+      "Laterais serrilhadas cedro 5/4x6 (1\", ripar p/ 3 1/2\")",
+      "cedro_5_4x6",
+      18,
+      88.0,
+      ""
+    ],
+    [
+      "Laterais lisas cedro 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
+      "cedro_5_4x6",
       2,
       88.0,
       ""
     ],
     [
-      "Ripas cedro 2x4 deitado (16/vão x 10 vãos)",
+      "Ripas cedro 2x4 deitado (16/vão x 9 vãos)",
       "cedro_2x4",
-      160,
-      22.1,
+      144,
+      25.083,
       ""
     ],
     [
-      "Vigas duplas cedro 2x8 (emenda sobre o poste 6)",
+      "Vigas duplas cedro 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
+      "cedro_2x8",
+      2,
+      86.5,
+      ""
+    ],
+    [
+      "Vigas duplas cedro 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
       "cedro_2x8",
       4,
-      138.5,
+      95.25,
       ""
     ],
     [
       "Caibros cedro 2x6 com ponta tipo nuvem (1 por poste)",
       "cedro_2x6",
-      11,
+      10,
       36.0,
       ""
     ]
@@ -208,9 +223,9 @@
       "material": "pt_4x4",
       "descricao": "PT 4x4 #2 ground contact",
       "comprimento_ft": 12.0,
-      "qtd": 11,
+      "qtd": 10,
       "preco_unit": 24.0,
-      "subtotal": 264.0,
+      "subtotal": 240.0,
       "fonte": "estimativa (sem preço online local; conferir)",
       "obs": ""
     },
@@ -218,21 +233,11 @@
       "material": "cedro_2x6",
       "descricao": "Cedro 2x6 S4S",
       "comprimento_ft": 8.0,
-      "qtd": 15,
+      "qtd": 27,
       "preco_unit": 33.0,
-      "subtotal": 495.0,
+      "subtotal": 891.0,
       "fonte": "estimativa proporcional ao 2x8x12 da Lowe's (conferir)",
       "obs": "inclui 2 de sobra (5%)"
-    },
-    {
-      "material": "cedro_2x6",
-      "descricao": "Cedro 2x6 S4S",
-      "comprimento_ft": 12.0,
-      "qtd": 11,
-      "preco_unit": 50.0,
-      "subtotal": 550.0,
-      "fonte": "estimativa proporcional ao 2x8x12 da Lowe's (conferir)",
-      "obs": ""
     },
     {
       "material": "cedro_5_4x6",
@@ -248,29 +253,29 @@
       "material": "cedro_2x4",
       "descricao": "Cedro 2x4 S4S",
       "comprimento_ft": 8.0,
-      "qtd": 42,
+      "qtd": 51,
       "preco_unit": 13.18,
-      "subtotal": 553.56,
+      "subtotal": 672.18,
       "fonte": "homedepot.com online (nao confirmado loja Cornelius)",
-      "obs": "inclui 2 de sobra (5%)"
+      "obs": "inclui 3 de sobra (5%)"
     },
     {
       "material": "cedro_2x8",
       "descricao": "Cedro 2x8 green (rough)",
-      "comprimento_ft": 12.0,
-      "qtd": 5,
-      "preco_unit": 70.98,
-      "subtotal": 354.90000000000003,
-      "fonte": "lowes.com online - preco incerto no resultado de busca",
+      "comprimento_ft": 8.0,
+      "qtd": 7,
+      "preco_unit": 47.0,
+      "subtotal": 329.0,
+      "fonte": "estimativa proporcional ao 12' da Lowe's (conferir)",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
       "material": "concreto_80lb",
       "descricao": "Concreto ensacado 80 lb (~0.60 cf)",
       "comprimento_ft": "",
-      "qtd": 42,
+      "qtd": 38,
       "preco_unit": 6.5,
-      "subtotal": 273.0,
+      "subtotal": 247.0,
       "fonte": "referencia-media-big-box",
       "obs": "saco — Sapatas Ø12\" (concreto em volta do núcleo)"
     },
@@ -278,9 +283,9 @@
       "material": "brita_saco",
       "descricao": "Brita/cascalho ensacado 0.5 cf",
       "comprimento_ft": "",
-      "qtd": 9,
+      "qtd": 8,
       "preco_unit": 5.5,
-      "subtotal": 49.5,
+      "subtotal": 44.0,
       "fonte": "referencia-media-big-box",
       "obs": "saco — Brita 6\" no fundo dos furos"
     },
@@ -298,9 +303,9 @@
       "material": "parafuso_passante",
       "descricao": "Parafuso passante galv. 1/2x8 + porca + arruelas",
       "comprimento_ft": "",
-      "qtd": 11,
+      "qtd": 10,
       "preco_unit": 4.5,
-      "subtotal": 49.5,
+      "subtotal": 45.0,
       "fonte": "referencia-media-big-box",
       "obs": "jogo — Parafusos passantes 1/2x10 viga/poste"
     },
@@ -388,102 +393,109 @@
   "plano_cortes": [
     {
       "material": "pt_4x4",
-      "qtd_tabuas": 11,
+      "qtd_tabuas": 10,
       "comprimento_ft": 12.0,
       "cortes": "1x 128\" Núcleo PT 4x4 ground contact (embutir 36\")",
       "sobra_in": 16.0
     },
     {
       "material": "cedro_2x6",
-      "qtd_tabuas": 11,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 88\" Faces do poste cedro 2x6 (casa + vizinho) + 1x 36\" Caibros cedro 2x6 com ponta tipo nuvem (1 por poste)",
-      "sobra_in": 19.88
-    },
-    {
-      "material": "cedro_2x6",
-      "qtd_tabuas": 11,
+      "qtd_tabuas": 20,
       "comprimento_ft": 8.0,
       "cortes": "1x 88\" Faces do poste cedro 2x6 (casa + vizinho)",
       "sobra_in": 8.0
     },
     {
       "material": "cedro_2x6",
-      "qtd_tabuas": 2,
+      "qtd_tabuas": 5,
       "comprimento_ft": 8.0,
-      "cortes": "1x 88\" Laterais lisas cedro 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
-      "sobra_in": 8.0
+      "cortes": "2x 36\" Caibros cedro 2x6 com ponta tipo nuvem (1 por poste)",
+      "sobra_in": 23.88
     },
     {
       "material": "cedro_5_4x6",
-      "qtd_tabuas": 20,
+      "qtd_tabuas": 18,
       "comprimento_ft": 12.0,
-      "cortes": "1x 88\" Laterais serrilhadas cedro 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "cortes": "1x 88\" Laterais serrilhadas cedro 5/4x6 (1\", ripar p/ 3 1/2\")",
+      "sobra_in": 56.0
+    },
+    {
+      "material": "cedro_5_4x6",
+      "qtd_tabuas": 2,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 88\" Laterais lisas cedro 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
       "sobra_in": 56.0
     },
     {
       "material": "cedro_2x4",
-      "qtd_tabuas": 40,
+      "qtd_tabuas": 48,
       "comprimento_ft": 8.0,
-      "cortes": "4x 22.1\" Ripas cedro 2x4 deitado (16/vão x 10 vãos)",
-      "sobra_in": 7.22
+      "cortes": "3x 25.083\" Ripas cedro 2x4 deitado (16/vão x 9 vãos)",
+      "sobra_in": 20.5
     },
     {
       "material": "cedro_2x8",
       "qtd_tabuas": 4,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 138.5\" Vigas duplas cedro 2x8 (emenda sobre o poste 6)",
-      "sobra_in": 5.5
+      "comprimento_ft": 8.0,
+      "cortes": "1x 95.25\" Vigas duplas cedro 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
+      "sobra_in": 0.75
+    },
+    {
+      "material": "cedro_2x8",
+      "qtd_tabuas": 2,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 86.5\" Vigas duplas cedro 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
+      "sobra_in": 9.5
     }
   ],
   "mao_de_obra": [
     {
       "tarefa": "poste_sapata",
       "descricao": "Escavação manual ou com auger + concreto + prumo/alinhamento do poste",
-      "qtd": 11.0,
+      "qtd": 10.0,
       "unidade": "poste",
       "h_unit": 2.0,
-      "horas": 22.0
+      "horas": 20.0
     },
     {
       "tarefa": "revestimento_poste",
       "descricao": "Poste composto: fixar faces e laterais (2x6) no núcleo 4x4 (cola PU + parafusos)",
-      "qtd": 11.0,
+      "qtd": 10.0,
       "unidade": "poste",
       "h_unit": 1.5,
-      "horas": 16.5
+      "horas": 15.0
     },
     {
       "tarefa": "serrilhado",
       "descricao": "Lateral serrilhada: marcar com gabarito e cortar os encaixes (serra circular + formão ou tupia)",
-      "qtd": 20.0,
+      "qtd": 18.0,
       "unidade": "peca",
       "h_unit": 0.75,
-      "horas": 15.0
+      "horas": 13.5
     },
     {
       "tarefa": "ripa_encaixe",
       "descricao": "Ripa encaixada em serrilhado (corte no comprimento + encaixe + 1 parafuso por ponta)",
-      "qtd": 160.0,
+      "qtd": 144.0,
       "unidade": "peca",
       "h_unit": 0.12,
-      "horas": 19.2
+      "horas": 17.28
     },
     {
       "tarefa": "viga",
       "descricao": "Viga de pergolado: corte das pontas + içamento + fixação passante",
-      "qtd": 4.0,
+      "qtd": 6.0,
       "unidade": "peca",
       "h_unit": 1.0,
-      "horas": 4.0
+      "horas": 6.0
     },
     {
       "tarefa": "caibro_nuvem",
       "descricao": "Caibro com recorte decorativo tipo nuvem nas duas pontas (gabarito + tico-tico + lixa)",
-      "qtd": 11.0,
+      "qtd": 10.0,
       "unidade": "peca",
       "h_unit": 0.75,
-      "horas": 8.25
+      "horas": 7.5
     },
     {
       "tarefa": "paisagismo_base",
@@ -526,33 +538,32 @@
     }
   ],
   "totais": {
-    "material_subtotal": 3927.54,
-    "material_imposto": 324.02,
+    "material_subtotal": 3806.26,
+    "material_imposto": 314.02,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 4251.56,
-    "horas": 97.2,
-    "mao_de_obra_subtotal": 5835.0,
+    "material_total": 4120.28,
+    "horas": 91.6,
+    "mao_de_obra_subtotal": 5494.8,
     "mao_de_obra_contingencia": 0.0,
-    "mao_de_obra_total": 5835.0,
+    "mao_de_obra_total": 5494.8,
     "taxa_fixa": 150.0,
-    "total_geral": 10236.56
+    "total_geral": 9765.08
   },
   "premissas": [
     "Material: núcleo dos postes em PT (enterrado); tudo o que é visível em cedro natural (sem stain).",
-    "Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
-    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 do lado da casa e do vizinho; nas laterais voltadas para o vão, tábua SERRILHADA de 1\" (5/4x6 ripado para 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Nos postes intermediários: 1\" + 3 1/2\" + 1\" = 5 1/2\", alinhado com as faces 2x6. Postes de ponta: lateral externa em 2x6 liso (1 1/2\"), largura total 6\".",
-    "Postes intermediários 5 1/2\" x 6 1/2\" (profundidade); postes de ponta 6\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 20 3/8\".",
-    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 7/8\" em cada encaixe, folga de 1/8\" no núcleo).",
+    "Desenho rev. 5 (A-1, A-2, A-3) seguindo a imagem de referência: 10 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
+    "Poste composto (croqui do cliente): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 nas faces da casa e do vizinho e laterais de 1\" (5/4x6 ripado para 3 1/2\"): serrilhadas, com 16 encaixes de 3 9/16\" x 1 1/2\", nos lados voltados para o vão; lisas no lado externo dos postes 1 e 10. Todos os postes ficam com 5 1/2\", com as faces 2x6 alinhadas.",
+    "Espaçamento pela proporção áurea (Fibonacci): 10 postes a 2'-4 13/16\" entre eixos; vão livre 23 5/16\"; vão/poste = 4.242 ≈ φ³ = 4.236 (55/13 de Fibonacci). O vão fica bem abaixo do limite de empeno adotado para ripa de madeira (≤ 36\" conservador; 48\" máx.).",
+    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 2'-1 1/16\" (entra 7/8\" em cada encaixe).",
     "Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.",
-    "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 2 x 138 1/2\" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36\".",
-    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.",
+    "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 3 peças por linha (7'-11 1/4\" + 7'-2 1/2\" + 7'-11 1/4\"), com emendas sobre os postes 4, 7; cabe em 2x8 de 8'. 10 caibros 2x6 de 36\".",
+    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8 de 8'); confirmar na loja de Cornelius.",
     "Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.",
     "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas."
   ],
   "perguntas": [
     "Serrilhado de 1\": usei cedro 5/4x6 ripado para 3 1/2\". Se a loja tiver 5/4x4 (1\" x 3 1/2\"), dá para usar direto, sem ripar.",
-    "Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26\" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).",
     "Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.",
     "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",
     "Trepadeiras e canteiro: o cliente fornece ou incluímos?"
@@ -561,10 +572,10 @@
   "fontes_preco": [
     "estimativa (sem preço online local; conferir) (2026-11)",
     "estimativa proporcional ao 10' da Lowe's (sem preço online) (2026-11)",
+    "estimativa proporcional ao 12' da Lowe's (conferir) (2026-11)",
     "estimativa proporcional ao 2x8x12 da Lowe's (conferir) (2026-11)",
     "homedepot.com online (nao confirmado loja Cornelius) (2026-11)",
     "lowes.com online (nao confirmado loja Cornelius) (2026-11)",
-    "lowes.com online - preco incerto no resultado de busca (2026-11)",
     "referencia-media-big-box (2026-11)",
     "referencia-media-big-box (sem preço online local) (2026-11)"
   ]

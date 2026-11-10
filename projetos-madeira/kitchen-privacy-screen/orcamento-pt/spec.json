@@ -15,7 +15,7 @@
     {
       "tipo": "sapata",
       "nome": "Sapatas Ø12\" (concreto em volta do núcleo)",
-      "qtd": 11,
+      "qtd": 10,
       "diametro_in": 12,
       "profundidade_in": 35,
       "desconto_poste_in2": 12.25,
@@ -26,7 +26,7 @@
       "tipo": "item",
       "nome": "Brita 6\" no fundo dos furos",
       "material": "brita_saco",
-      "qtd": 9
+      "qtd": 8
     },
     {
       "tipo": "item",
@@ -38,47 +38,55 @@
       "tipo": "pecas",
       "nome": "Núcleo PT 4x4 ground contact (embutir 36\")",
       "material": "pt_4x4",
-      "comprimento_in": 128,
-      "qtd": 11,
+      "comprimento_in": 128.0,
+      "qtd": 10,
       "perda": 0
     },
     {
       "tipo": "pecas",
       "nome": "Faces do poste PT 2x6 (casa + vizinho)",
       "material": "pt_2x6",
-      "comprimento_in": 88,
-      "qtd": 22,
+      "comprimento_in": 88.0,
+      "qtd": 20,
       "tarefa": "revestimento_poste",
-      "tarefa_qtd": 11
+      "tarefa_qtd": 10
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais serrilhadas PT 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "nome": "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\")",
       "material": "pt_5_4x6",
-      "comprimento_in": 88,
-      "qtd": 20,
+      "comprimento_in": 88.0,
+      "qtd": 18,
       "tarefa": "serrilhado"
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais lisas PT 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
-      "material": "pt_2x6",
-      "comprimento_in": 88,
+      "nome": "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
+      "material": "pt_5_4x6",
+      "comprimento_in": 88.0,
       "qtd": 2
     },
     {
       "tipo": "pecas",
-      "nome": "Ripas PT 2x4 deitado (16/vão x 10 vãos)",
+      "nome": "Ripas PT 2x4 deitado (16/vão x 9 vãos)",
       "material": "pt_2x4",
-      "comprimento_in": 22.1,
-      "qtd": 160,
+      "comprimento_in": 25.083,
+      "qtd": 144,
       "tarefa": "ripa_encaixe"
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas duplas PT 2x8 (emenda sobre o poste 6)",
+      "nome": "Vigas duplas PT 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
       "material": "pt_2x8",
-      "comprimento_in": 138.5,
+      "comprimento_in": 86.5,
+      "qtd": 2,
+      "tarefa": "viga"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas duplas PT 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
+      "material": "pt_2x8",
+      "comprimento_in": 95.25,
       "qtd": 4,
       "tarefa": "viga"
     },
@@ -87,14 +95,14 @@
       "nome": "Caibros PT 2x6 com ponta tipo nuvem (1 por poste)",
       "material": "pt_2x6",
       "comprimento_in": 36,
-      "qtd": 11,
+      "qtd": 10,
       "tarefa": "caibro_nuvem"
     },
     {
       "tipo": "item",
       "nome": "Parafusos passantes 1/2x10 viga/poste",
       "material": "parafuso_passante",
-      "qtd": 11
+      "qtd": 10
     },
     {
       "tipo": "item",
@@ -179,19 +187,18 @@
   ],
   "premissas": [
     "Material: 100% PT (pinus autoclavado SYP). Stain em uma 2ª visita após a secagem (ou comprar KDAT).",
-    "Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
-    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 do lado da casa e do vizinho; nas laterais voltadas para o vão, tábua SERRILHADA de 1\" (5/4x6 ripado para 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Nos postes intermediários: 1\" + 3 1/2\" + 1\" = 5 1/2\", alinhado com as faces 2x6. Postes de ponta: lateral externa em 2x6 liso (1 1/2\"), largura total 6\", com as faces alinhadas ao lado externo (canto limpo) e friso de 1/2\" do lado do vão.",
-    "Postes intermediários 5 1/2\" x 6 1/2\" (profundidade); postes de ponta 6\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 20 3/8\".",
-    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 7/8\" em cada encaixe, folga de 1/8\" no núcleo).",
+    "Desenho rev. 5 (A-1, A-2, A-3) seguindo a imagem de referência: 10 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
+    "Poste composto (croqui do cliente): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 nas faces da casa e do vizinho e laterais de 1\" (5/4x6 ripado para 3 1/2\"): serrilhadas, com 16 encaixes de 3 9/16\" x 1 1/2\", nos lados voltados para o vão; lisas no lado externo dos postes 1 e 10. Todos os postes ficam com 5 1/2\", com as faces 2x6 alinhadas.",
+    "Espaçamento pela proporção áurea (Fibonacci): 10 postes a 2'-4 13/16\" entre eixos; vão livre 23 5/16\"; vão/poste = 4.242 ≈ φ³ = 4.236 (55/13 de Fibonacci). O vão fica bem abaixo do limite de empeno adotado para ripa de madeira (≤ 36\" conservador; 48\" máx.).",
+    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 2'-1 1/16\" (entra 7/8\" em cada encaixe).",
     "Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.",
-    "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 2 x 138 1/2\" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36\".",
-    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.",
+    "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 3 peças por linha (7'-11 1/4\" + 7'-2 1/2\" + 7'-11 1/4\"), com emendas sobre os postes 4, 7; cabe em 2x8 de 8'. 10 caibros 2x6 de 36\".",
+    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8 de 8'); confirmar na loja de Cornelius.",
     "Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.",
     "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas."
   ],
   "perguntas": [
     "Serrilhado de 1\": usei cedro 5/4x6 ripado para 3 1/2\". Se a loja tiver 5/4x4 (1\" x 3 1/2\"), dá para usar direto, sem ripar.",
-    "Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26\" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).",
     "Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.",
     "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",
     "Trepadeiras e canteiro: o cliente fornece ou incluímos?"
@@ -199,7 +206,7 @@
   "precos": "../orcamento/precos.csv",
   "geometria": {
     "comprimento_total_in": 265,
-    "n_postes": 11,
+    "n_postes": 10,
     "embutimento_in": 36,
     "brita_in": 6,
     "altura_topo_in": 96,
@@ -216,9 +223,9 @@
       "ripa": "PT 2x4 (deitado)",
       "viga": "PT 2x8",
       "caibro": "PT 2x6",
-      "lateral_ponta": "PT 2x6 lisa"
+      "lateral_ponta": "PT 5/4 (1\") lisa"
     }
   },
-  "revisao": "4",
+  "revisao": "5",
   "data": "2026-11-10"
 }

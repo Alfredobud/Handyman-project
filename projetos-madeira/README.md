@@ -16,13 +16,17 @@ projetos-madeira/
 
 | Projeto | Status | Descrição |
 |---|---|---|
-| [kitchen-privacy-screen](kitchen-privacy-screen/) | Orçamento preliminar | Privacy screen horizontal 265" x ~8 ft com topo estilo pergolado — [orçamento](kitchen-privacy-screen/orcamento/orcamento.md) |
+| [kitchen-privacy-screen](kitchen-privacy-screen/) | Orçamento preliminar | Privacy screen horizontal 265" x ~8 ft com topo estilo pergolado — [orçamento](kitchen-privacy-screen/orcamento/orcamento.md) · [desenhos](kitchen-privacy-screen/desenhos/privacy-screen.pdf) |
 
 ## Planos de referência
 
 Em [`planos-referencia/`](planos-referencia/): planos de cadeira Adirondack (YellaWood e Rogue Engineer), usados também como casos de teste da skill.
 
-## Skill de orçamento
+## Skills
+
+- [`desenho-madeira`](../.claude/skills/desenho-madeira/SKILL.md): pranchas técnicas 2D (PDF/SVG/DXF) a partir do mesmo `spec.json`.
+
+### Orçamento
 
 A skill [`orcamento-madeira`](../.claude/skills/orcamento-madeira/SKILL.md) monta orçamentos a partir de fotos, imagens ou PDFs. Fluxo: ler a referência → escrever `spec.json` → rodar o script:
 

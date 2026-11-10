@@ -25,6 +25,12 @@ Comprimentos comerciais: PT e dimensional 8', 10', 12', 14', 16' (20' em alguns 
 - **Expansão** (composite): folga nas pontas conforme fabricante e temperatura de instalação (tipicamente 1/8"–1/4").
 - **Acabado dos dois lados**: dobra fascia/wrap e pode exigir ripas dos dois lados ou estrutura escondida no meio do painel.
 
+## Pinus autoclavado (PT) × cedro nas partes visíveis
+
+- O PT (SYP) chega úmido: encolhe, empena e trinca ao secar. Prefira KDAT ou deck board premium e escolha as tábuas na loja.
+- O stain em PT só pode ser aplicado depois da secagem (1–3 meses): orce uma **segunda visita** + stain de tudo. Com isso, a economia do PT sobre o cedro costuma cair para poucos %.
+- Poste enterrado: sempre PT ground contact (UC4B), com preservativo no corte; cedro em contato com o solo dura menos.
+
 ## Pergolados / topo estilo pergolado
 
 - **Vigas**: normalmente duplas (uma de cada lado dos postes), aparafusadas com parafuso passante ou estrutural.

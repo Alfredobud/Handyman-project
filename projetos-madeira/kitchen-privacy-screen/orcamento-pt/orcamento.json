@@ -1,0 +1,585 @@
+{
+  "projeto": "Kitchen Privacy Screen — 265 in x ~8 ft, 100% pinus autoclavado (PT) + topo pergolado (Cornelius, NC)",
+  "cliente": "",
+  "parametros": {
+    "taxa_hora_usd": 60,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.0,
+    "imposto_material": 0.0825,
+    "contingencia": 0.0,
+    "comprimento_max_ft": null,
+    "taxa_fixa_usd": 150,
+    "taxa_fixa_descricao": "Taxa"
+  },
+  "componentes": [
+    {
+      "tipo": "sapata",
+      "nome": "Sapatas Ø16\" (concreto em volta do poste embutido)",
+      "qtd": 6,
+      "diametro_in": 16,
+      "profundidade_in": 35,
+      "material": "concreto_80lb",
+      "tarefa": "poste_sapata",
+      "desconto_poste_in2": 30.25,
+      "_calc": {
+        "volume_cf": 22.83,
+        "sacos": 39
+      }
+    },
+    {
+      "tipo": "item",
+      "nome": "Brita 6\" no fundo dos furos",
+      "material": "brita_saco",
+      "qtd": 9
+    },
+    {
+      "tipo": "item",
+      "nome": "Preservativo nos cortes dos postes",
+      "material": "preservativo_corte",
+      "qtd": 1
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Postes PT 6x6 ground contact, embutidos 36\" (corte final ~128 1/2\")",
+      "material": "pt_6x6",
+      "comprimento_in": 130,
+      "qtd": 6,
+      "perda": 0
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Travessas PT 2x6 sup/inf",
+      "material": "pt_2x6",
+      "comprimento_in": 46.4,
+      "qtd": 10,
+      "tarefa": "travessa"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Montante central PT 2x4 (apoio no meio das ripas)",
+      "material": "pt_2x4",
+      "comprimento_in": 83,
+      "qtd": 5,
+      "tarefa": "travessa"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Cleats PT 2x4 nos postes",
+      "material": "pt_2x4",
+      "comprimento_in": 83,
+      "qtd": 10,
+      "tarefa": "travessa"
+    },
+    {
+      "tipo": "ripado",
+      "nome": "Ripas PT 5/4x6 premium",
+      "material": "pt_5_4x6",
+      "vao_in": 46.4,
+      "n_vaos": 5,
+      "altura_in": 83,
+      "largura_peca_in": 5.5,
+      "espaco_min_in": 1.5,
+      "espaco_max_in": 2.0,
+      "lados": 1,
+      "tarefa": "ripa_madeira",
+      "_calc": {
+        "fiadas": 12,
+        "espaco_real_in": 1.55,
+        "altura_coberta_in": 83.0,
+        "pecas": 60
+      }
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas duplas PT 2x8 (emenda sobre poste)",
+      "material": "pt_2x8",
+      "comprimento_in": 144,
+      "qtd": 4,
+      "tarefa": "viga"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Caibros decorativos PT 2x4",
+      "material": "pt_2x4",
+      "comprimento_in": 30,
+      "qtd": 14,
+      "tarefa": "caibro_decorativo"
+    },
+    {
+      "tipo": "item",
+      "nome": "Stain semi-transparente (tudo, 1 demão após secagem)",
+      "material": "stain_galao",
+      "qtd": 3,
+      "tarefa": "acabamento_stain",
+      "tarefa_qtd": 450
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos passantes viga/poste",
+      "material": "parafuso_passante",
+      "qtd": 12
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos estruturais",
+      "material": "parafuso_estrutural",
+      "qtd": 2
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos inox para cedro (ripas e acabamento)",
+      "material": "parafuso_inox_deck",
+      "qtd": 2
+    },
+    {
+      "tipo": "item",
+      "nome": "Aluguel auger",
+      "material": "aluguel_auger",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Descarte",
+      "material": "descarte",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "(opcional) Manta paisagismo",
+      "material": "manta_paisagismo",
+      "qtd": 1,
+      "tarefa": "paisagismo_base",
+      "tarefa_qtd": 22
+    },
+    {
+      "tipo": "item",
+      "nome": "(opcional) Borda",
+      "material": "borda_paisagismo",
+      "qtd": 2
+    },
+    {
+      "tipo": "item",
+      "nome": "(opcional) Pedra de rio 22 ft x 2 ft x 2 in",
+      "material": "pedra_rio",
+      "qtd": 15
+    }
+  ],
+  "detalhes_cortes": [
+    [
+      "Postes PT 6x6 ground contact, embutidos 36\" (corte final ~128 1/2\")",
+      "pt_6x6",
+      6,
+      130.0,
+      ""
+    ],
+    [
+      "Travessas PT 2x6 sup/inf",
+      "pt_2x6",
+      10,
+      46.4,
+      ""
+    ],
+    [
+      "Montante central PT 2x4 (apoio no meio das ripas)",
+      "pt_2x4",
+      5,
+      83.0,
+      ""
+    ],
+    [
+      "Cleats PT 2x4 nos postes",
+      "pt_2x4",
+      10,
+      83.0,
+      ""
+    ],
+    [
+      "Ripas PT 5/4x6 premium",
+      "pt_5_4x6",
+      60,
+      46.4,
+      "5 vão(s) x 12 fiadas x 1 lado(s)"
+    ],
+    [
+      "Vigas duplas PT 2x8 (emenda sobre poste)",
+      "pt_2x8",
+      4,
+      144.0,
+      ""
+    ],
+    [
+      "Caibros decorativos PT 2x4",
+      "pt_2x4",
+      14,
+      30.0,
+      ""
+    ]
+  ],
+  "compra": [
+    {
+      "material": "pt_6x6",
+      "descricao": "PT 6x6 #2 SYP ground contact (Severe Weather)",
+      "comprimento_ft": 12.0,
+      "qtd": 6,
+      "preco_unit": 58.0,
+      "subtotal": 348.0,
+      "fonte": "estimativa proporcional ao 10' da Lowe's (sem preço online)",
+      "obs": ""
+    },
+    {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 8.0,
+      "qtd": 6,
+      "preco_unit": 9.5,
+      "subtotal": 57.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x4",
+      "descricao": "PT 2x4 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 8.0,
+      "qtd": 9,
+      "preco_unit": 6.0,
+      "subtotal": 54.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x4",
+      "descricao": "PT 2x4 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 12.0,
+      "qtd": 7,
+      "preco_unit": 10.0,
+      "subtotal": 70.0,
+      "fonte": "referencia-media-big-box",
+      "obs": ""
+    },
+    {
+      "material": "pt_5_4x6",
+      "descricao": "PT 5/4x6 premium SYP deck board",
+      "comprimento_ft": 16.0,
+      "qtd": 16,
+      "preco_unit": 19.0,
+      "subtotal": 304.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x8",
+      "descricao": "PT 2x8 #2 Prime ground contact",
+      "comprimento_ft": 12.0,
+      "qtd": 5,
+      "preco_unit": 19.5,
+      "subtotal": 97.5,
+      "fonte": "referencia-media-big-box (sem preço online local)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "concreto_80lb",
+      "descricao": "Concreto ensacado 80 lb (~0.60 cf)",
+      "comprimento_ft": "",
+      "qtd": 39,
+      "preco_unit": 6.5,
+      "subtotal": 253.5,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — Sapatas Ø16\" (concreto em volta do poste embutido)"
+    },
+    {
+      "material": "brita_saco",
+      "descricao": "Brita/cascalho ensacado 0.5 cf",
+      "comprimento_ft": "",
+      "qtd": 9,
+      "preco_unit": 5.5,
+      "subtotal": 49.5,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — Brita 6\" no fundo dos furos"
+    },
+    {
+      "material": "preservativo_corte",
+      "descricao": "Preservativo para corte de PT (copper naphthenate) 1 qt",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 22.0,
+      "subtotal": 22.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "un — Preservativo nos cortes dos postes"
+    },
+    {
+      "material": "stain_galao",
+      "descricao": "Stain/selador externo 1 gal (~250 sqft/demão)",
+      "comprimento_ft": "",
+      "qtd": 3,
+      "preco_unit": 45.0,
+      "subtotal": 135.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "galao — Stain semi-transparente (tudo, 1 demão após secagem)"
+    },
+    {
+      "material": "parafuso_passante",
+      "descricao": "Parafuso passante galv. 1/2x8 + porca + arruelas",
+      "comprimento_ft": "",
+      "qtd": 12,
+      "preco_unit": 4.5,
+      "subtotal": 54.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "jogo — Parafusos passantes viga/poste"
+    },
+    {
+      "material": "parafuso_estrutural",
+      "descricao": "Parafuso estrutural 6 in (caixa 50)",
+      "comprimento_ft": "",
+      "qtd": 2,
+      "preco_unit": 48.0,
+      "subtotal": 96.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "caixa — Parafusos estruturais"
+    },
+    {
+      "material": "parafuso_inox_deck",
+      "descricao": "Parafuso inox deck 2.5-3 in (caixa 5 lb)",
+      "comprimento_ft": "",
+      "qtd": 2,
+      "preco_unit": 58.0,
+      "subtotal": 116.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "caixa — Parafusos inox para cedro (ripas e acabamento)"
+    },
+    {
+      "material": "aluguel_auger",
+      "descricao": "Aluguel de perfuratriz (auger) 1 dia",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 95.0,
+      "subtotal": 95.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "dia — Aluguel auger"
+    },
+    {
+      "material": "descarte",
+      "descricao": "Descarte de entulho / caçamba pequena",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 75.0,
+      "subtotal": 75.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "verba — Descarte"
+    },
+    {
+      "material": "manta_paisagismo",
+      "descricao": "Manta para paisagismo 3x50 ft",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 22.0,
+      "subtotal": 22.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "rolo — (opcional) Manta paisagismo"
+    },
+    {
+      "material": "borda_paisagismo",
+      "descricao": "Borda/edging 20 ft",
+      "comprimento_ft": "",
+      "qtd": 2,
+      "preco_unit": 26.0,
+      "subtotal": 52.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "un — (opcional) Borda"
+    },
+    {
+      "material": "pedra_rio",
+      "descricao": "Pedra de rio 0.5 cf",
+      "comprimento_ft": "",
+      "qtd": 15,
+      "preco_unit": 7.5,
+      "subtotal": 112.5,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — (opcional) Pedra de rio 22 ft x 2 ft x 2 in"
+    }
+  ],
+  "plano_cortes": [
+    {
+      "material": "pt_6x6",
+      "qtd_tabuas": 6,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 130\" Postes PT 6x6 ground contact, embutidos 36\" (corte final ~128 1/2\")",
+      "sobra_in": 14.0
+    },
+    {
+      "material": "pt_2x6",
+      "qtd_tabuas": 5,
+      "comprimento_ft": 8.0,
+      "cortes": "2x 46.4\" Travessas PT 2x6 sup/inf",
+      "sobra_in": 3.08
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 5,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 83\" Montante central PT 2x4 (apoio no meio das ripas) + 2x 30\" Caibros decorativos PT 2x4",
+      "sobra_in": 0.75
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 2,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 83\" Cleats PT 2x4 nos postes + 2x 30\" Caibros decorativos PT 2x4",
+      "sobra_in": 0.75
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 8,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 83\" Cleats PT 2x4 nos postes",
+      "sobra_in": 13.0
+    },
+    {
+      "material": "pt_5_4x6",
+      "qtd_tabuas": 15,
+      "comprimento_ft": 16.0,
+      "cortes": "4x 46.4\" Ripas PT 5/4x6 premium",
+      "sobra_in": 6.03
+    },
+    {
+      "material": "pt_2x8",
+      "qtd_tabuas": 4,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 144\" Vigas duplas PT 2x8 (emenda sobre poste)",
+      "sobra_in": 0.0
+    }
+  ],
+  "mao_de_obra": [
+    {
+      "tarefa": "poste_sapata",
+      "descricao": "Escavação manual ou com auger + concreto + prumo/alinhamento do poste",
+      "qtd": 6.0,
+      "unidade": "poste",
+      "h_unit": 2.0,
+      "horas": 12.0
+    },
+    {
+      "tarefa": "travessa",
+      "descricao": "Corte e fixação de travessa/montante/cleat em estrutura existente",
+      "qtd": 25.0,
+      "unidade": "peca",
+      "h_unit": 0.35,
+      "horas": 8.75
+    },
+    {
+      "tarefa": "ripa_madeira",
+      "descricao": "Corte e fixação de ripa de madeira (1x) com espaçador",
+      "qtd": 60.0,
+      "unidade": "peca",
+      "h_unit": 0.15,
+      "horas": 9.0
+    },
+    {
+      "tarefa": "viga",
+      "descricao": "Viga de pergolado: corte das pontas + içamento + fixação passante",
+      "qtd": 4.0,
+      "unidade": "peca",
+      "h_unit": 1.0,
+      "horas": 4.0
+    },
+    {
+      "tarefa": "caibro_decorativo",
+      "descricao": "Caibro com corte decorativo nas pontas + fixação",
+      "qtd": 14.0,
+      "unidade": "peca",
+      "h_unit": 0.5,
+      "horas": 7.0
+    },
+    {
+      "tarefa": "acabamento_stain",
+      "descricao": "Aplicação de stain/selador por pé quadrado (uma demão)",
+      "qtd": 450.0,
+      "unidade": "sqft",
+      "h_unit": 0.02,
+      "horas": 9.0
+    },
+    {
+      "tarefa": "paisagismo_base",
+      "descricao": "Manta + borda + pedra ao longo da base (por pé linear)",
+      "qtd": 22.0,
+      "unidade": "ft",
+      "h_unit": 0.15,
+      "horas": 3.3
+    },
+    {
+      "tarefa": "locacao",
+      "descricao": "Locação/marcação da linha e conferência de divisa e utilidades",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "compras_transporte",
+      "descricao": "Compra e transporte de material (sem frete de loja)",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 3.0,
+      "horas": 3.0
+    },
+    {
+      "tarefa": "limpeza",
+      "descricao": "Limpeza da obra e descarte de entulho",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "Visita de retorno para stain após secagem da madeira",
+      "qtd": 2.0,
+      "unidade": "h",
+      "h_unit": 1.0,
+      "horas": 2.0
+    }
+  ],
+  "totais": {
+    "material_subtotal": 2013.0,
+    "material_imposto": 166.07,
+    "material_markup": 0.0,
+    "material_contingencia": 0.0,
+    "material_total": 2179.07,
+    "horas": 62.0,
+    "mao_de_obra_subtotal": 3723.0,
+    "mao_de_obra_contingencia": 0.0,
+    "mao_de_obra_total": 3723.0,
+    "taxa_fixa": 150.0,
+    "total_geral": 6052.07
+  },
+  "premissas": [
+    "Material: 100% pinus autoclavado (PT, Southern Yellow Pine). Postes ground contact (UC4B); ripas 5/4x6 premium (above ground); vigas e caibros PT.",
+    "PT chega úmido da loja: o stain fica para uma 2ª visita, 1 a 3 meses depois (ou compre KDAT, seco em estufa após o tratamento).",
+    "Postes 6x6 PT ground contact (UC4B) de 12', embutidos 36\" (o mínimo pedido é 2 ft; 36\" segue a regra de ~1/3 da altura para um screen de 8 ft com pergolado, exposto a vento). Furo Ø16\", 6\" de brita no fundo e concreto em volta do poste até o nível do terreno, com coroa.",
+    "Comprimento total 265\". 6 postes => 5 vãos livres de 46.4\" (3'-10 3/8\").",
+    "Altura: topo dos caibros a 96\"; topo do poste e base dos caibros a 92.5\"; vigas 2x8 de 85.25\" a 92.5\".",
+    "Zona das ripas: de 4\" a 87\" (83\"), com 12 ripas 5/4x6 por vão e espaço de ~1 9/16\".",
+    "Contra deformação: ripa 5/4 (1\") apoiada a cada ~22\": cleats 2x4 nas faces dos postes + montante 2x4 no meio do vão; 2 parafusos inox por apoio.",
+    "Travessas 2x6 PT deitadas: a inferior a 2.5\" do chão e a superior escondida atrás das vigas.",
+    "Topo: vigas duplas 2x8, 2 x 12' por linha (balanço de 11.5\"), com emenda sobre o poste 3 e parafusos passantes de 1/2\"; 14 caibros 2x4 de 30\" a cada ~21 3/4\", com ponta recortada.",
+    "Desenhos: projetos-madeira/kitchen-privacy-screen/desenhos/privacy-screen.pdf (A-1 elevação e planta; A-2 cortes e detalhes).",
+    "Preços: Lowe's/Home Depot online (nov/2026), não confirmados na loja de Cornelius; o 6x6x12 é estimado. Itens sem preço local usam o catálogo de referência.",
+    "Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.",
+    "Paisagismo (manta, borda e pedra) incluído e marcado como opcional."
+  ],
+  "perguntas": [
+    "Cedro nas partes visíveis ou tudo em PT? Comparação em orcamento-pt/ e no README do projeto.",
+    "Confirmar na loja os preços do cedro 2x8x12 e do PT 6x6x12.",
+    "Lado do vizinho: ele vê os cleats e o montante central em PT com stain. Aceita, ou quer ripa dos dois lados?",
+    "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",
+    "Quer selador no cedro (protege mais, mas exige manutenção)?"
+  ],
+  "avisos": [],
+  "fontes_preco": [
+    "estimativa proporcional ao 10' da Lowe's (sem preço online) (2026-11)",
+    "homedepot.com online (nao confirmado loja Cornelius) (2026-11)",
+    "lowes.com online (nao confirmado loja Cornelius) (2026-11)",
+    "lowes.com online - preco incerto no resultado de busca (2026-11)",
+    "referencia-media-big-box (2026-11)",
+    "referencia-media-big-box (sem preço online local) (2026-11)"
+  ]
+}

@@ -1,0 +1,3 @@
+*.png
+!projetos-madeira/**/referencias/*.png
+__pycache__/

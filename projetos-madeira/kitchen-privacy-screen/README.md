@@ -1,6 +1,15 @@
 # Kitchen Privacy Screen
 
-**Status:** orçamento preliminar em madeira (cedro aparente + estrutura PT), preços online da região de Cornelius, NC — [`orcamento/orcamento.md`](orcamento/orcamento.md): ~$3.35k material (com 8.25% de imposto) + ~$4.07k mão de obra ($60/h) + taxa de $150 = **~$7.56k**
+**Status:** orçamento e desenhos preliminares (rev. 0)
+
+| Entregável | Arquivo |
+|---|---|
+| Desenhos (A-1 elevação/planta, A-2 cortes/detalhes) | [`desenhos/privacy-screen.pdf`](desenhos/privacy-screen.pdf) · DXF: [`desenhos/privacy-screen.dxf`](desenhos/privacy-screen.dxf) |
+| Orçamento A — cedro aparente + estrutura PT | [`orcamento/orcamento.md`](orcamento/orcamento.md): **~$6,252** |
+| Orçamento B — 100% pinus autoclavado (PT) | [`orcamento-pt/orcamento.md`](orcamento-pt/orcamento.md): **~$6,052** · desenhos em [`desenhos/pt/`](desenhos/pt/) |
+| Análise do pinus autoclavado | [`analise-pinus-autoclavado.md`](analise-pinus-autoclavado.md) |
+
+Decisões: madeira (sem composite, por receio de deformação); postes PT embutidos 36" (mínimo de 2 ft); $60/h, sem markup, taxa de $150; imposto de Mecklenburg de 8.25%.
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)
 
 ## Resumo do escopo

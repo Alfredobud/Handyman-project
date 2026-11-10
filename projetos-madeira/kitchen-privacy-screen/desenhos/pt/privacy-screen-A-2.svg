@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.0in" height="11.0in" viewBox="0 0 1700 1100" font-family="DejaVu Sans, Arial, sans-serif">
+<defs>
+<pattern id="h-solo" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+  <line x1="0" y1="0" x2="0" y2="14" stroke="#8a6d4b" stroke-width="1"/>
+  <line x1="5" y1="0" x2="5" y2="14" stroke="#8a6d4b" stroke-width="0.5"/></pattern>
+<pattern id="h-concreto" width="18" height="18" patternUnits="userSpaceOnUse">
+  <rect width="18" height="18" fill="#e4e4e4"/>
+  <circle cx="4" cy="5" r="1" fill="#777"/><circle cx="12" cy="12" r="1.3" fill="#777"/>
+  <path d="M13 3 l3 4 h-5z" fill="none" stroke="#777" stroke-width="0.6"/>
+  <path d="M3 13 l2.5 3.5 h-4z" fill="none" stroke="#777" stroke-width="0.6"/></pattern>
+<pattern id="h-brita" width="16" height="12" patternUnits="userSpaceOnUse">
+  <rect width="16" height="12" fill="#ececec"/>
+  <ellipse cx="4" cy="4" rx="3" ry="2" fill="none" stroke="#666" stroke-width="0.6"/>
+  <ellipse cx="12" cy="9" rx="3" ry="2" fill="none" stroke="#666" stroke-width="0.6"/></pattern>
+<marker id="seta" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<rect width="1700" height="1100" fill="#fff"/>
+<rect x="35.0" y="35.0" width="1630.0" height="1030.0" fill="none" stroke="#222" stroke-width="2"/>
+<polygon points="158.75,990.00 396.25,990.00 396.25,927.50 158.75,927.50" fill="url(#h-solo)" stroke="none" stroke-width="1.28"/>
+<polyline points="158.75,927.50 396.25,927.50" fill="none" stroke="#222" stroke-width="1.92"/>
+<polygon points="260.31,927.50 294.69,927.50 294.69,349.38 260.31,349.38" fill="#c9cfa3" stroke="#666" stroke-width="1.28"/>
+<polygon points="272.81,902.50 294.69,902.50 294.69,383.75 272.81,383.75" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polygon points="260.31,911.88 294.69,911.88 294.69,902.50 260.31,902.50" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="260.31,911.88 294.69,902.50" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="294.69,911.88 260.31,902.50" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="260.31,383.75 294.69,383.75 294.69,374.38 260.31,374.38" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="260.31,383.75 294.69,374.38" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="294.69,383.75 260.31,374.38" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,902.50 272.81,902.50 272.81,868.12 266.56,868.12" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,902.50 272.81,868.12" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,902.50 266.56,868.12" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,858.47 272.81,858.47 272.81,824.09 266.56,824.09" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,858.47 272.81,824.09" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,858.47 266.56,824.09" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,814.43 272.81,814.43 272.81,780.06 266.56,780.06" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,814.43 272.81,780.06" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,814.43 266.56,780.06" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,770.40 272.81,770.40 272.81,736.02 266.56,736.02" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,770.40 272.81,736.02" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,770.40 266.56,736.02" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,726.36 272.81,726.36 272.81,691.99 266.56,691.99" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,726.36 272.81,691.99" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,726.36 266.56,691.99" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,682.33 272.81,682.33 272.81,647.95 266.56,647.95" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,682.33 272.81,647.95" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,682.33 266.56,647.95" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,638.30 272.81,638.30 272.81,603.92 266.56,603.92" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,638.30 272.81,603.92" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,638.30 266.56,603.92" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,594.26 272.81,594.26 272.81,559.89 266.56,559.89" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,594.26 272.81,559.89" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,594.26 266.56,559.89" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,550.23 272.81,550.23 272.81,515.85 266.56,515.85" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,550.23 272.81,515.85" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,550.23 266.56,515.85" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,506.19 272.81,506.19 272.81,471.82 266.56,471.82" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,506.19 272.81,471.82" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,506.19 266.56,471.82" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,462.16 272.81,462.16 272.81,427.78 266.56,427.78" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,462.16 272.81,427.78" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,462.16 266.56,427.78" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="266.56,418.12 272.81,418.12 272.81,383.75 266.56,383.75" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="266.56,418.12 272.81,383.75" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="272.81,418.12 266.56,383.75" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="250.94,394.69 260.31,394.69 260.31,349.38 250.94,349.38" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="250.94,394.69 260.31,349.38" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="260.31,394.69 250.94,349.38" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="294.69,394.69 304.06,394.69 304.06,349.38 294.69,349.38" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="294.69,394.69 304.06,349.38" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="304.06,394.69 294.69,349.38" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="183.75,327.50 371.25,327.50 371.25,338.44 370.65,340.57 368.87,342.62 365.98,344.51 362.10,346.17 357.36,347.53 351.96,348.54 346.10,349.16 340.00,349.38 215.00,349.38 215.00,349.38 208.90,349.16 203.04,348.54 197.64,347.53 192.90,346.17 189.02,344.51 186.13,342.62 184.35,340.57 183.75,338.44 183.75,338.44" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="245.94,372.03 309.06,372.03" fill="none" stroke="#333" stroke-width="1.92"/>
+<line x1="146.2" y1="927.5" x2="146.2" y2="927.5" stroke="#555" stroke-width="0.5"/>
+<line x1="146.2" y1="902.5" x2="146.2" y2="902.5" stroke="#555" stroke-width="0.5"/>
+<line x1="146.2" y1="927.5" x2="146.2" y2="902.5" stroke="#222" stroke-width="0.6"/>
+<line x1="142.2" y1="931.5" x2="150.2" y2="923.5" stroke="#222" stroke-width="1.1"/>
+<line x1="142.2" y1="906.5" x2="150.2" y2="898.5" stroke="#222" stroke-width="1.1"/>
+<text x="143.2" y="915.0" font-size="7.6" text-anchor="middle" transform="rotate(-90 143.2 915.0)">4&quot;</text>
+<line x1="146.2" y1="902.5" x2="146.2" y2="902.5" stroke="#555" stroke-width="0.5"/>
+<line x1="146.2" y1="383.8" x2="146.2" y2="383.8" stroke="#555" stroke-width="0.5"/>
+<line x1="146.2" y1="902.5" x2="146.2" y2="383.8" stroke="#222" stroke-width="0.6"/>
+<line x1="142.2" y1="906.5" x2="150.2" y2="898.5" stroke="#222" stroke-width="1.1"/>
+<line x1="142.2" y1="387.8" x2="150.2" y2="379.8" stroke="#222" stroke-width="1.1"/>
+<text x="143.2" y="643.1" font-size="7.6" text-anchor="middle" transform="rotate(-90 143.2 643.1)">6&#x27;-11&quot;</text>
+<line x1="146.2" y1="383.8" x2="146.2" y2="383.8" stroke="#555" stroke-width="0.5"/>
+<line x1="146.2" y1="327.5" x2="146.2" y2="327.5" stroke="#555" stroke-width="0.5"/>
+<line x1="146.2" y1="383.8" x2="146.2" y2="327.5" stroke="#222" stroke-width="0.6"/>
+<line x1="142.2" y1="387.8" x2="150.2" y2="379.8" stroke="#222" stroke-width="1.1"/>
+<line x1="142.2" y1="331.5" x2="150.2" y2="323.5" stroke="#222" stroke-width="1.1"/>
+<text x="143.2" y="355.6" font-size="7.6" text-anchor="middle" transform="rotate(-90 143.2 355.6)">9&quot;</text>
+<line x1="143.2" y1="927.5" x2="86.0" y2="927.5" stroke="#555" stroke-width="0.5"/>
+<line x1="143.2" y1="327.5" x2="86.0" y2="327.5" stroke="#555" stroke-width="0.5"/>
+<line x1="90.0" y1="927.5" x2="90.0" y2="327.5" stroke="#222" stroke-width="0.6"/>
+<line x1="86.0" y1="931.5" x2="94.0" y2="923.5" stroke="#222" stroke-width="1.1"/>
+<line x1="86.0" y1="331.5" x2="94.0" y2="323.5" stroke="#222" stroke-width="1.1"/>
+<text x="87.0" y="627.5" font-size="8.3" text-anchor="middle" transform="rotate(-90 87.0 627.5)">8&#x27;-0&quot;</text>
+<line x1="263.6" y1="814.4" x2="231.3" y2="814.4" stroke="#555" stroke-width="0.5"/>
+<line x1="263.6" y1="780.1" x2="231.3" y2="780.1" stroke="#555" stroke-width="0.5"/>
+<line x1="235.3" y1="814.4" x2="235.3" y2="780.1" stroke="#222" stroke-width="0.6"/>
+<line x1="231.3" y1="818.4" x2="239.3" y2="810.4" stroke="#222" stroke-width="1.1"/>
+<line x1="231.3" y1="784.1" x2="239.3" y2="776.1" stroke="#222" stroke-width="1.1"/>
+<text x="232.3" y="797.2" font-size="6.9" text-anchor="middle" transform="rotate(-90 232.3 797.2)">5 1/2&quot;</text>
+<line x1="263.6" y1="780.1" x2="206.3" y2="780.1" stroke="#555" stroke-width="0.5"/>
+<line x1="263.6" y1="770.4" x2="206.3" y2="770.4" stroke="#555" stroke-width="0.5"/>
+<line x1="210.3" y1="780.1" x2="210.3" y2="770.4" stroke="#222" stroke-width="0.6"/>
+<line x1="206.3" y1="784.1" x2="214.3" y2="776.1" stroke="#222" stroke-width="1.1"/>
+<line x1="206.3" y1="774.4" x2="214.3" y2="766.4" stroke="#222" stroke-width="1.1"/>
+<text x="207.3" y="775.2" font-size="6.9" text-anchor="middle" transform="rotate(-90 207.3 775.2)">1 9/16&quot;</text>
+<line x1="250.9" y1="312.0" x2="250.9" y2="286.0" stroke="#555" stroke-width="0.5"/>
+<line x1="304.1" y1="312.0" x2="304.1" y2="286.0" stroke="#555" stroke-width="0.5"/>
+<line x1="250.9" y1="290.0" x2="304.1" y2="290.0" stroke="#222" stroke-width="0.6"/>
+<line x1="246.9" y1="294.0" x2="254.9" y2="286.0" stroke="#222" stroke-width="1.1"/>
+<line x1="300.1" y1="294.0" x2="308.1" y2="286.0" stroke="#222" stroke-width="1.1"/>
+<text x="277.5" y="287.0" font-size="7.6" text-anchor="middle">8 1/2&quot;</text>
+<line x1="183.8" y1="312.0" x2="183.8" y2="248.5" stroke="#555" stroke-width="0.5"/>
+<line x1="371.2" y1="312.0" x2="371.2" y2="248.5" stroke="#555" stroke-width="0.5"/>
+<line x1="183.8" y1="252.5" x2="371.2" y2="252.5" stroke="#222" stroke-width="0.6"/>
+<line x1="179.8" y1="256.5" x2="187.8" y2="248.5" stroke="#222" stroke-width="1.1"/>
+<line x1="367.2" y1="256.5" x2="375.2" y2="248.5" stroke="#222" stroke-width="1.1"/>
+<text x="277.5" y="249.5" font-size="7.6" text-anchor="middle">2&#x27;-6&quot;</text>
+<line x1="260.3" y1="943.0" x2="260.3" y2="969.0" stroke="#555" stroke-width="0.5"/>
+<line x1="294.7" y1="943.0" x2="294.7" y2="969.0" stroke="#555" stroke-width="0.5"/>
+<line x1="260.3" y1="965.0" x2="294.7" y2="965.0" stroke="#222" stroke-width="0.6"/>
+<line x1="256.3" y1="969.0" x2="264.3" y2="961.0" stroke="#222" stroke-width="1.1"/>
+<line x1="290.7" y1="969.0" x2="298.7" y2="961.0" stroke="#222" stroke-width="1.1"/>
+<text x="277.5" y="962.0" font-size="7.6" text-anchor="middle">5 1/2&quot;</text>
+<polyline points="408.8,290.0 358.8,333.8" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="411.8" y="293.0" font-size="7.6" text-anchor="start">caibro PT 2x4</text>
+<polyline points="408.8,357.2 304.1,363.4" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="411.8" y="360.2" font-size="7.6" text-anchor="start">viga dupla PT 2x8</text>
+<text x="411.8" y="369.0" font-size="7.6" text-anchor="start">parafuso passante 1/2&quot;</text>
+<polyline points="408.8,421.2 291.6,379.4" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="411.8" y="424.2" font-size="7.6" text-anchor="start">travessa sup. PT 2x6 (deitada)</text>
+<polyline points="408.8,577.5 294.7,590.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="411.8" y="580.5" font-size="7.6" text-anchor="start">cleat PT 2x4</text>
+<text x="411.8" y="589.3" font-size="7.6" text-anchor="start">parafusado no poste</text>
+<polyline points="408.8,682.3 272.8,666.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="411.8" y="685.3" font-size="7.6" text-anchor="start">ripa PT 5/4x6 premium</text>
+<text x="411.8" y="694.1" font-size="7.6" text-anchor="start">2 parafusos inox por apoio</text>
+<polyline points="408.8,849.4 291.6,907.5" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="411.8" y="852.4" font-size="7.6" text-anchor="start">travessa inf. PT 2x6</text>
+<text x="411.8" y="861.2" font-size="7.6" text-anchor="start">folga do chão 2 1/2&quot;</text>
+<text x="244.7" y="227.5" font-size="8.3" text-anchor="end" font-weight="bold">CASA</text>
+<text x="310.3" y="227.5" font-size="8.3" text-anchor="start" font-weight="bold">VIZINHO</text>
+<text x="249.4" y="1022.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">CORTE A-A (no vão, olhando para o poste 1)</text>
+<text x="249.4" y="1038.0" font-size="9.7" text-anchor="middle">ESCALA 1:16  (3/4&quot; = 1&#x27;-0&quot;)</text>
+<polygon points="508.33,990.00 775.00,990.00 775.00,590.00 708.33,590.00 708.33,940.00 575.00,940.00 575.00,590.00 508.33,590.00" fill="url(#h-solo)" stroke="none" stroke-width="1.28"/>
+<polyline points="508.33,590.00 775.00,590.00" fill="none" stroke="#222" stroke-width="1.92"/>
+<polygon points="575.00,940.00 708.33,940.00 708.33,890.00 575.00,890.00" fill="url(#h-brita)" stroke="#222" stroke-width="1.28"/>
+<polygon points="575.00,890.00 618.75,890.00 618.75,581.67 575.00,598.33" fill="url(#h-concreto)" stroke="#222" stroke-width="1.28"/>
+<polygon points="664.58,890.00 708.33,890.00 708.33,598.33 664.58,581.67" fill="url(#h-concreto)" stroke="#222" stroke-width="1.28"/>
+<polygon points="618.75,890.00 664.58,890.00 664.58,473.33 618.75,473.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="610.42,473.33 672.92,473.33" fill="none" stroke="#222" stroke-width="0.96" stroke-dasharray="6,4"/>
+<line x1="575.0" y1="968.0" x2="575.0" y2="994.0" stroke="#555" stroke-width="0.5"/>
+<line x1="708.3" y1="968.0" x2="708.3" y2="994.0" stroke="#555" stroke-width="0.5"/>
+<line x1="575.0" y1="990.0" x2="708.3" y2="990.0" stroke="#222" stroke-width="0.6"/>
+<line x1="571.0" y1="994.0" x2="579.0" y2="986.0" stroke="#222" stroke-width="1.1"/>
+<line x1="704.3" y1="994.0" x2="712.3" y2="986.0" stroke="#222" stroke-width="1.1"/>
+<text x="641.7" y="987.0" font-size="7.6" text-anchor="middle">16&quot;</text>
+<line x1="500.0" y1="940.0" x2="500.0" y2="940.0" stroke="#555" stroke-width="0.5"/>
+<line x1="500.0" y1="890.0" x2="500.0" y2="890.0" stroke="#555" stroke-width="0.5"/>
+<line x1="500.0" y1="940.0" x2="500.0" y2="890.0" stroke="#222" stroke-width="0.6"/>
+<line x1="496.0" y1="944.0" x2="504.0" y2="936.0" stroke="#222" stroke-width="1.1"/>
+<line x1="496.0" y1="894.0" x2="504.0" y2="886.0" stroke="#222" stroke-width="1.1"/>
+<text x="497.0" y="915.0" font-size="7.6" text-anchor="middle" transform="rotate(-90 497.0 915.0)">6&quot;</text>
+<line x1="500.0" y1="890.0" x2="500.0" y2="890.0" stroke="#555" stroke-width="0.5"/>
+<line x1="500.0" y1="590.0" x2="500.0" y2="590.0" stroke="#555" stroke-width="0.5"/>
+<line x1="500.0" y1="890.0" x2="500.0" y2="590.0" stroke="#222" stroke-width="0.6"/>
+<line x1="496.0" y1="894.0" x2="504.0" y2="886.0" stroke="#222" stroke-width="1.1"/>
+<line x1="496.0" y1="594.0" x2="504.0" y2="586.0" stroke="#222" stroke-width="1.1"/>
+<text x="497.0" y="740.0" font-size="7.6" text-anchor="middle" transform="rotate(-90 497.0 740.0)">3&#x27;-0&quot;</text>
+<line x1="618.8" y1="520.3" x2="618.8" y2="494.3" stroke="#555" stroke-width="0.5"/>
+<line x1="664.6" y1="520.3" x2="664.6" y2="494.3" stroke="#555" stroke-width="0.5"/>
+<line x1="618.8" y1="498.3" x2="664.6" y2="498.3" stroke="#222" stroke-width="0.6"/>
+<line x1="614.8" y1="502.3" x2="622.8" y2="494.3" stroke="#222" stroke-width="1.1"/>
+<line x1="660.6" y1="502.3" x2="668.6" y2="494.3" stroke="#222" stroke-width="1.1"/>
+<text x="641.7" y="495.3" font-size="7.6" text-anchor="middle">5 1/2&quot;</text>
+<polyline points="800.0,640.0 668.8,673.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="803.0" y="643.0" font-size="7.6" text-anchor="start">poste PT 6x6 ground contact (UC4B)</text>
+<text x="803.0" y="651.8" font-size="7.6" text-anchor="start">embutido 3&#x27;-0&quot; (mín. 2 ft)</text>
+<polyline points="800.0,773.3 691.7,756.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="803.0" y="776.3" font-size="7.6" text-anchor="start">concreto em volta do poste</text>
+<text x="803.0" y="785.1" font-size="7.6" text-anchor="start">furo Ø16&quot;</text>
+<polyline points="800.0,931.7 691.7,915.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="803.0" y="934.7" font-size="7.6" text-anchor="start">brita 6&quot; (drenagem)</text>
+<text x="803.0" y="943.5" font-size="7.6" text-anchor="start">pé do poste sobre a brita</text>
+<polyline points="800.0,523.3 672.9,586.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="803.0" y="526.3" font-size="7.6" text-anchor="start">coroa de concreto</text>
+<text x="803.0" y="535.1" font-size="7.6" text-anchor="start">com caimento p/ fora</text>
+<text x="650.0" y="1022.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 1 — FUNDAÇÃO DO POSTE</text>
+<text x="650.0" y="1038.0" font-size="9.7" text-anchor="middle">ESCALA 1:12  (1&quot; = 1&#x27;-0&quot;)</text>
+<polygon points="1277.50,410.00 1602.50,410.00 1602.50,497.50 1402.50,497.50 1402.50,497.50 1382.95,496.96 1363.87,495.36 1345.75,492.73 1329.03,489.14 1314.11,484.69 1301.37,479.47 1291.12,473.61 1283.62,467.27 1279.04,460.59 1277.50,453.75 1277.50,453.75" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="1592.50,512.50 1612.50,395.00" fill="none" stroke="#222" stroke-width="0.96"/>
+<line x1="1277.5" y1="407.0" x2="1277.5" y2="368.5" stroke="#555" stroke-width="0.5"/>
+<line x1="1402.5" y1="407.0" x2="1402.5" y2="368.5" stroke="#555" stroke-width="0.5"/>
+<line x1="1277.5" y1="372.5" x2="1402.5" y2="372.5" stroke="#222" stroke-width="0.6"/>
+<line x1="1273.5" y1="376.5" x2="1281.5" y2="368.5" stroke="#222" stroke-width="1.1"/>
+<line x1="1398.5" y1="376.5" x2="1406.5" y2="368.5" stroke="#222" stroke-width="1.1"/>
+<text x="1340.0" y="369.5" font-size="6.9" text-anchor="middle">5&quot;</text>
+<line x1="1249.5" y1="497.5" x2="1211.0" y2="497.5" stroke="#555" stroke-width="0.5"/>
+<line x1="1249.5" y1="410.0" x2="1211.0" y2="410.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1215.0" y1="497.5" x2="1215.0" y2="410.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1211.0" y1="501.5" x2="1219.0" y2="493.5" stroke="#222" stroke-width="1.1"/>
+<line x1="1211.0" y1="414.0" x2="1219.0" y2="406.0" stroke="#222" stroke-width="1.1"/>
+<text x="1212.0" y="453.8" font-size="6.9" text-anchor="middle" transform="rotate(-90 1212.0 453.8)">3 1/2&quot;</text>
+<line x1="1249.5" y1="453.8" x2="1136.0" y2="453.8" stroke="#555" stroke-width="0.5"/>
+<line x1="1249.5" y1="410.0" x2="1136.0" y2="410.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1140.0" y1="453.8" x2="1140.0" y2="410.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1136.0" y1="457.8" x2="1144.0" y2="449.8" stroke="#222" stroke-width="1.1"/>
+<line x1="1136.0" y1="414.0" x2="1144.0" y2="406.0" stroke="#222" stroke-width="1.1"/>
+<text x="1137.0" y="431.9" font-size="6.9" text-anchor="middle" transform="rotate(-90 1137.0 431.9)">1 3/4&quot;</text>
+<polyline points="1477.5,560.0 1352.5,475.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="1480.5" y="563.0" font-size="7.6" text-anchor="start">curva côncava: traçar com gabarito,</text>
+<text x="1480.5" y="571.8" font-size="7.6" text-anchor="start">cortar com tico-tico, lixar</text>
+<text x="1376.2" y="592.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 3 — PONTA DO CAIBRO / VIGA</text>
+<text x="1376.2" y="608.0" font-size="9.7" text-anchor="middle">ESCALA 1:4  (3&quot; = 1&#x27;-0&quot;)</text>
+<polygon points="500.00,225.00 641.67,225.00 641.67,133.33 500.00,133.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="500.00,225.00 641.67,133.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="641.67,225.00 500.00,133.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="500.00,238.33 500.00,120.00" fill="none" stroke="#222" stroke-width="0.80" stroke-dasharray="6,4"/>
+<polygon points="641.67,191.67 666.67,191.67 666.67,133.33 641.67,133.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="641.67,191.67 666.67,133.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="666.67,191.67 641.67,133.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1015.83,191.67 1040.83,191.67 1040.83,133.33 1015.83,133.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="1015.83,191.67 1040.83,133.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1040.83,191.67 1015.83,133.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="641.67,208.33 1145.00,208.33 1145.00,191.67 641.67,191.67" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="654.17,211.67 654.17,155.00" fill="none" stroke="#555" stroke-width="1.60"/>
+<polyline points="1028.33,211.67 1028.33,155.00" fill="none" stroke="#555" stroke-width="1.60"/>
+<line x1="641.7" y1="244.7" x2="641.7" y2="287.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1028.3" y1="244.7" x2="1028.3" y2="287.3" stroke="#555" stroke-width="0.5"/>
+<line x1="641.7" y1="283.3" x2="1028.3" y2="283.3" stroke="#222" stroke-width="0.6"/>
+<line x1="637.7" y1="287.3" x2="645.7" y2="279.3" stroke="#222" stroke-width="1.1"/>
+<line x1="1024.3" y1="287.3" x2="1032.3" y2="279.3" stroke="#222" stroke-width="1.1"/>
+<text x="835.0" y="280.3" font-size="7.6" text-anchor="middle">23 3/16&quot; (vão livre / 2)</text>
+<line x1="641.7" y1="130.3" x2="641.7" y2="87.7" stroke="#555" stroke-width="0.5"/>
+<line x1="666.7" y1="130.3" x2="666.7" y2="87.7" stroke="#555" stroke-width="0.5"/>
+<line x1="641.7" y1="91.7" x2="666.7" y2="91.7" stroke="#222" stroke-width="0.6"/>
+<line x1="637.7" y1="95.7" x2="645.7" y2="87.7" stroke="#222" stroke-width="1.1"/>
+<line x1="662.7" y1="95.7" x2="670.7" y2="87.7" stroke="#222" stroke-width="1.1"/>
+<text x="654.2" y="88.7" font-size="6.9" text-anchor="middle">1 1/2&quot;</text>
+<line x1="1164.7" y1="208.3" x2="1199.0" y2="208.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1164.7" y1="191.7" x2="1199.0" y2="191.7" stroke="#555" stroke-width="0.5"/>
+<line x1="1195.0" y1="208.3" x2="1195.0" y2="191.7" stroke="#222" stroke-width="0.6"/>
+<line x1="1191.0" y1="212.3" x2="1199.0" y2="204.3" stroke="#222" stroke-width="1.1"/>
+<line x1="1191.0" y1="195.7" x2="1199.0" y2="187.7" stroke="#222" stroke-width="1.1"/>
+<text x="1192.0" y="200.0" font-size="6.9" text-anchor="middle" transform="rotate(-90 1192.0 200.0)">1&quot;</text>
+<line x1="1164.7" y1="191.7" x2="1199.0" y2="191.7" stroke="#555" stroke-width="0.5"/>
+<line x1="1164.7" y1="133.3" x2="1199.0" y2="133.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1195.0" y1="191.7" x2="1195.0" y2="133.3" stroke="#222" stroke-width="0.6"/>
+<line x1="1191.0" y1="195.7" x2="1199.0" y2="187.7" stroke="#222" stroke-width="1.1"/>
+<line x1="1191.0" y1="137.3" x2="1199.0" y2="129.3" stroke="#222" stroke-width="1.1"/>
+<text x="1192.0" y="162.5" font-size="6.9" text-anchor="middle" transform="rotate(-90 1192.0 162.5)">3 1/2&quot;</text>
+<polyline points="808.3,325.0 775.0,200.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="811.3" y="328.0" font-size="7.6" text-anchor="start">ripa PT 5/4x6 premium</text>
+<polyline points="625.0,58.3 653.3,158.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="622.0" y="61.3" font-size="7.6" text-anchor="end">cleat PT 2x4</text>
+<polyline points="1065.8,58.3 1027.5,150.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="1068.8" y="61.3" font-size="7.6" text-anchor="start">montante central (apoio a cada ~2 ft)</text>
+<polyline points="1082.5,325.0 1028.3,210.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="1085.5" y="328.0" font-size="7.6" text-anchor="start">parafuso inox</text>
+<text x="1245.0" y="233.3" font-size="8.3" text-anchor="start" font-weight="bold">CASA</text>
+<text x="1245.0" y="141.7" font-size="8.3" text-anchor="start" font-weight="bold">VIZINHO</text>
+<text x="872.5" y="357.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 2 — CORTE HORIZONTAL B-B (pela ripa)</text>
+<text x="872.5" y="373.0" font-size="9.7" text-anchor="middle">ESCALA 1:6</text>
+<text x="995.0" y="666.0" font-size="11.1" text-anchor="start" font-weight="bold">LISTA DE PEÇAS</text>
+<rect x="995.0" y="670.0" width="662.0" height="12.9" fill="#eee" stroke="#222" stroke-width="0.6"/>
+<text x="998.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Marca</text>
+<text x="1040.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Peça</text>
+<text x="1175.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Material</text>
+<text x="1350.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Qtd</text>
+<text x="1385.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Compr.</text>
+<text x="1455.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Obs.</text>
+<rect x="995.0" y="682.9" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="692.0" font-size="8.3" text-anchor="start">P</text>
+<text x="1040.0" y="692.0" font-size="8.3" text-anchor="start">Poste</text>
+<text x="1175.0" y="692.0" font-size="8.3" text-anchor="start">PT 6x6 ground contact (UC4B)</text>
+<text x="1350.0" y="692.0" font-size="8.3" text-anchor="start">6</text>
+<text x="1385.0" y="692.0" font-size="8.3" text-anchor="start">10&#x27;-8 1/2&quot;</text>
+<text x="1455.0" y="692.0" font-size="8.3" text-anchor="start">embutir 3&#x27;-0&quot;</text>
+<rect x="995.0" y="695.8" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="704.9" font-size="8.3" text-anchor="start">TI</text>
+<text x="1040.0" y="704.9" font-size="8.3" text-anchor="start">Travessa inferior</text>
+<text x="1175.0" y="704.9" font-size="8.3" text-anchor="start">PT 2x6</text>
+<text x="1350.0" y="704.9" font-size="8.3" text-anchor="start">5</text>
+<text x="1385.0" y="704.9" font-size="8.3" text-anchor="start">3&#x27;-10 3/8&quot;</text>
+<text x="1455.0" y="704.9" font-size="8.3" text-anchor="start">deitada</text>
+<rect x="995.0" y="708.8" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="717.8" font-size="8.3" text-anchor="start">TS</text>
+<text x="1040.0" y="717.8" font-size="8.3" text-anchor="start">Travessa superior</text>
+<text x="1175.0" y="717.8" font-size="8.3" text-anchor="start">PT 2x6</text>
+<text x="1350.0" y="717.8" font-size="8.3" text-anchor="start">5</text>
+<text x="1385.0" y="717.8" font-size="8.3" text-anchor="start">3&#x27;-10 3/8&quot;</text>
+<text x="1455.0" y="717.8" font-size="8.3" text-anchor="start">deitada, atrás das vigas</text>
+<rect x="995.0" y="721.7" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="730.7" font-size="8.3" text-anchor="start">C</text>
+<text x="1040.0" y="730.7" font-size="8.3" text-anchor="start">Cleat</text>
+<text x="1175.0" y="730.7" font-size="8.3" text-anchor="start">PT 2x4</text>
+<text x="1350.0" y="730.7" font-size="8.3" text-anchor="start">10</text>
+<text x="1385.0" y="730.7" font-size="8.3" text-anchor="start">6&#x27;-11&quot;</text>
+<text x="1455.0" y="730.7" font-size="8.3" text-anchor="start">nas faces dos postes</text>
+<rect x="995.0" y="734.6" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="743.6" font-size="8.3" text-anchor="start">M</text>
+<text x="1040.0" y="743.6" font-size="8.3" text-anchor="start">Montante central</text>
+<text x="1175.0" y="743.6" font-size="8.3" text-anchor="start">PT 2x4</text>
+<text x="1350.0" y="743.6" font-size="8.3" text-anchor="start">5</text>
+<text x="1385.0" y="743.6" font-size="8.3" text-anchor="start">6&#x27;-11&quot;</text>
+<text x="1455.0" y="743.6" font-size="8.3" text-anchor="start">meio do vão</text>
+<rect x="995.0" y="747.5" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="756.5" font-size="8.3" text-anchor="start">R</text>
+<text x="1040.0" y="756.5" font-size="8.3" text-anchor="start">Ripa</text>
+<text x="1175.0" y="756.5" font-size="8.3" text-anchor="start">PT 5/4x6 premium</text>
+<text x="1350.0" y="756.5" font-size="8.3" text-anchor="start">60</text>
+<text x="1385.0" y="756.5" font-size="8.3" text-anchor="start">3&#x27;-10 3/8&quot;</text>
+<text x="1455.0" y="756.5" font-size="8.3" text-anchor="start">12/vão, espaço 1 9/16&quot;</text>
+<rect x="995.0" y="760.4" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="769.5" font-size="8.3" text-anchor="start">V</text>
+<text x="1040.0" y="769.5" font-size="8.3" text-anchor="start">Viga (2 linhas x 2 peças)</text>
+<text x="1175.0" y="769.5" font-size="8.3" text-anchor="start">PT 2x8</text>
+<text x="1350.0" y="769.5" font-size="8.3" text-anchor="start">4</text>
+<text x="1385.0" y="769.5" font-size="8.3" text-anchor="start">12&#x27;-0&quot;</text>
+<text x="1455.0" y="769.5" font-size="8.3" text-anchor="start">emenda sobre poste</text>
+<rect x="995.0" y="773.3" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
+<text x="998.0" y="782.4" font-size="8.3" text-anchor="start">K</text>
+<text x="1040.0" y="782.4" font-size="8.3" text-anchor="start">Caibro decorativo</text>
+<text x="1175.0" y="782.4" font-size="8.3" text-anchor="start">PT 2x4</text>
+<text x="1350.0" y="782.4" font-size="8.3" text-anchor="start">14</text>
+<text x="1385.0" y="782.4" font-size="8.3" text-anchor="start">2&#x27;-6&quot;</text>
+<text x="1455.0" y="782.4" font-size="8.3" text-anchor="start">pontas recortadas</text>
+<rect x="1205.0" y="920.0" width="460.0" height="145.0" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<line x1="1205.0" y1="962.0" x2="1665.0" y2="962.0" stroke="#222" stroke-width="0.8"/>
+<line x1="1575.0" y1="962.0" x2="1575.0" y2="1065.0" stroke="#222" stroke-width="0.8"/>
+<text x="1211.0" y="934.0" font-size="10.4" text-anchor="start" font-weight="bold">Kitchen Privacy Screen — 265 in x ~8 ft, 100% pinus autoclavado</text>
+<text x="1211.0" y="947.0" font-size="10.4" text-anchor="start" font-weight="bold">(PT) + topo pergolado (Cornelius, NC)</text>
+<text x="1211.0" y="982.0" font-size="13.9" text-anchor="start" font-weight="bold">Cortes e detalhes</text>
+<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 0   Por: </text>
+<text x="1211.0" y="1025.0" font-size="8.3" text-anchor="start">Medidas em polegadas/pés. Madeira: medidas reais (6x6 = 5 1/2&quot;).</text>
+<text x="1211.0" y="1042.0" font-size="8.3" text-anchor="start">Conferir no campo antes de cortar. Não é projeto estrutural.</text>
+<text x="1620.0" y="1015.0" font-size="27.8" text-anchor="middle" font-weight="bold">A-2</text>
+</svg>

@@ -235,9 +235,9 @@ def vista_elevacao(G, esc=32):
               f"{G.fiadas} slats {g['rotulos']['ripa']} per bay, {pes_pol(G.espaco)} gap", 6)
     xe = G.cx[G.emendas[0]] if G.emendas else G.cx[G.n // 2]
     v.chamada((xe, G.y_viga0 + 3), (xe + 30, G.y_topo + 20),
-              "top-board splices over posts " + ", ".join(str(i + 1) for i in G.emendas), 6)
+              ("top-board splice over post " if len(G.emendas) == 1 else "top-board splices over posts ") + ", ".join(str(i + 1) for i in G.emendas), 6)
     v.chamada((G.x_viga1 + 0.7, G.y_viga0 + 5), (G.x_viga1 + 4, G.y_topo + 8), "end cap", 5.5)
-    v.chamada((G.cx[-3], 50), (G.cx[-3] + 26, -16), f"composite post ({G.g.get('_pref', 'A')}-3)", 5.5)
+    v.chamada((G.cx[-3], 50), (G.cx[-3] + 26, -16), f"clad post: PT core + cladding ({G.g.get('_pref', 'A')}-3)", 5.5)
     v.marca_corte((G.bay_centro(0), G.y_topo + 8), (G.bay_centro(0), G.y_base - 2), "A")
     v.marca_corte((G.x_viga0 - 6, 40), (G.bay_ini(1) + 6, 40), "B")
     return v
@@ -564,7 +564,7 @@ def main():
     cols, linhas = lista_pecas(G)
     p2.tabela(9.95, 4.3, cols, linhas, [0.4, 1.45, 1.6, 0.33, 1.3, 1.6], "PARTS LIST", 5.8)
 
-    p3 = Prancha(proj, "Composite post and installation", f"{g['_pref']}-3", **meta)
+    p3 = Prancha(proj, "Clad post (PT core + cladding) and installation", f"{g['_pref']}-3", **meta)
     p3.add(vista_poste(G, 1, "DETAIL 2a — INTERMEDIATE POST, SECTION B-B", esc=3), 1.4, 4.2)
     p3.add(vista_poste(G, 0, f"DETAIL 2b — END POST (1 and {G.n})", esc=3), 9.4, 4.2)
     side = "neighbor" if G.viz else "house"

@@ -109,7 +109,7 @@ def bloco_opcao(letra, nome, d):
 <section class="opt">
 <h2>Option {letra} — {nome}</h2>
 <ul>
-<li><b>{G.n} composite posts</b> at {ps.pes_pol(G.entre_eixos)} on center, clear bay {ps.pes_pol(G.vao)}
+<li><b>{G.n} clad posts</b> (treated-pine core + wood cladding) at {ps.pes_pol(G.entre_eixos)} on center, clear bay {ps.pes_pol(G.vao)}
     (bay-to-post ratio {G.vao / G.W[1]:.2f} ≈ {phi}). {html.escape(warp)}</li>
 <li><b>Material: {"Western Red Cedar (kiln-dried, S4S) on all visible parts; treated pine core in the ground. Left natural, no stain needed." if letra == "A" else "100% pressure-treated Southern Yellow Pine, planed on 4 sides (S4S), including all visible parts. Semi-transparent stain applied in a second visit once the wood has dried (included)."}</b></li>
 <li><b>{G.fiadas * (G.n - 1)} {madeira} slats</b> ({G.fiadas} per bay, {ps.pes_pol(G.espaco)} gaps), {ps.pes_pol(G.comp_ripa)} long, held in notched side boards.</li>

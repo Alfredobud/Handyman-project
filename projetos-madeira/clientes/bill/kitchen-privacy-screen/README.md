@@ -18,7 +18,7 @@ Para regerar tudo (a partir desta pasta): `python3 gerar_propostas.py` → `orca
 Decisões: madeira (sem composite, por receio de deformação); postes PT embutidos 36" (mínimo de 2 ft); $60/h, sem markup, taxa de $150; imposto de Mecklenburg de 8.25%.
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)
 
-## Resumo do escopo
+## Resumo do escopo (packet original do cliente — histórico; o projeto atual não usa composite)
 
 - Comprimento: **265 in (22 ft 1 in)**, linha reta
 - Altura acabada: **~8 ft**

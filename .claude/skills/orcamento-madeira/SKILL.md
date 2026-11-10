@@ -7,6 +7,10 @@ description: Monta orçamentos (materiais + mão de obra) de produtos e estrutur
 
 Objetivo: transformar uma referência visual (foto, imagem conceito, PDF) em um orçamento defensável — com quantidades que um carpinteiro reconheceria como corretas, preços rastreáveis e premissas explícitas. O valor do orçamento está menos no número final e mais em mostrar **de onde ele vem**, para que o handyman possa ajustar no campo e o cliente confie na proposta.
 
+## Onde salvar
+
+Cada orçamento vai em `projetos-madeira/clientes/<cliente>/<projeto>/` (minúsculas, com hífens), com `referencias/` para o material recebido e uma pasta `orcamento/` por opção (`spec.json` + saídas). Se o nome do cliente não foi informado, pergunte. Registre o projeto na tabela de `projetos-madeira/README.md`.
+
 ## Fluxo
 
 ### 1. Entender a referência

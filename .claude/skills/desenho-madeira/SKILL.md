@@ -7,6 +7,10 @@ description: Gera desenhos técnicos 2D estilo CAD (pranchas com elevação, pla
 
 Objetivo: pranchas que um carpinteiro consiga usar na obra e que o cliente entenda: vistas em escala, cotas em pés e polegadas, materiais diferenciados, cortes mostrando como as peças se encaixam e uma lista de peças coerente com o orçamento.
 
+## Onde salvar
+
+Pranchas em `projetos-madeira/clientes/<cliente>/<projeto>/desenhos/<opção>/`, ao lado do `orcamento*/spec.json` do mesmo projeto.
+
 ## Fluxo
 
 1. **Partir do spec.** Se o projeto já tem `spec.json` (skill `orcamento-madeira`), use-o. As dimensões de desenho ficam no bloco `"geometria"` do spec, para que orçamento e desenho mudem juntos. Se não houver spec, crie um com pelo menos `projeto` e `geometria`.

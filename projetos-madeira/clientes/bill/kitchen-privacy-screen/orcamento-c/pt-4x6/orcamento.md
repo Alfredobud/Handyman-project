@@ -1,4 +1,4 @@
-# Orçamento — Kitchen Privacy Screen — opção C, 7 postes, 100% pinus, núcleo 4x6
+# Orçamento — Kitchen Privacy Screen — 7 postes, 100% pinus tratado, núcleo 4x6
 
 **Cliente:** Bill
 

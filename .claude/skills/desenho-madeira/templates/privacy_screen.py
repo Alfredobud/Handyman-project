@@ -66,8 +66,9 @@ class Geo:
         n, L = g["n_postes"], g["comprimento_total_in"]
         self.n, self.L = n, L
         self.nuc, self.fe, self.fl = po["nucleo"], po["face_esp"], po["face_larg"]
+        self.nucz = po.get("nucleo_prof", self.nuc)          # núcleo retangular: x = nucleo, z = nucleo_prof
         self.s, self.lp = po["serrilhado_esp"], po["lateral_ponta_esp"]
-        self.D = self.nuc + 2 * self.fe
+        self.D = self.nucz + 2 * self.fe
         self.tl = [self.lp if i == 0 else self.s for i in range(n)]
         self.tr = [self.lp if i == n - 1 else self.s for i in range(n)]
         self.W = [self.tl[i] + self.nuc + self.tr[i] for i in range(n)]
@@ -99,7 +100,7 @@ class Geo:
         self.passo = r["larg"] + self.espaco
         self.ripas_y = [self.y_r0 + i * self.passo for i in range(self.fiadas)]
         self.viz = g["lado_ripas"] == "vizinho"
-        self.z_r0 = (self.fe + self.nuc - r["esp"]) if self.viz else self.fe
+        self.z_r0 = (self.fe + self.nucz - r["esp"]) if self.viz else self.fe
         self.z_r1 = self.z_r0 + r["esp"]
         self.comp_ripa = self.vao + 2 * (self.s - r["folga_ponta"])
         self.y_base = -g["embutimento_in"]
@@ -128,7 +129,7 @@ class Geo:
         self.com_cap = bool(v.get("fechamento", True))
         self.comp_face = (self.y_viga0 if self.faceada else self.y_poste) - self.y_rev0
         if self.faceada:      # vigas no plano das faces, encostadas no núcleo
-            self.zv = [(self.fe - v["esp"], self.fe), (self.fe + self.nuc, self.fe + self.nuc + v["esp"])]
+            self.zv = [(self.fe - v["esp"], self.fe), (self.fe + self.nucz, self.fe + self.nucz + v["esp"])]
         else:
             self.zv = [(-v["esp"], 0.0), (self.D, self.D + v["esp"])]
         self.fech_larg = (self.zv[1][1] - self.zv[0][0])
@@ -179,21 +180,21 @@ def _colar(v, cx, col):
 
 def _serr_z(G):
     """Faixa z do serrilhado que sobra atrás da ripa (corte na altura de uma ripa)."""
-    return (G.fe, G.z_r0) if G.viz else (G.z_r1, G.fe + G.nuc)
+    return (G.fe, G.z_r0) if G.viz else (G.z_r1, G.fe + G.nucz)
 
 
 def _poste_planta(v, G, i, M, x0=None):
     dx = (x0 - G.xp[i]) if x0 is not None else 0.0
-    xp, xn, fe, nuc = G.xp[i] + dx, G.xn[i] + dx, G.fe, G.nuc
-    v.peca(xn, fe, nuc, nuc, M["nucleo"], x_corte=True)
+    xp, xn, fe, nuc, nz = G.xp[i] + dx, G.xn[i] + dx, G.fe, G.nuc, G.nucz
+    v.peca(xn, fe, nuc, nz, M["nucleo"], x_corte=True)
     v.peca(xp + G.mf[i], 0, G.fl, fe, M["revest"], x_corte=True)
-    v.peca(xp + G.mf[i], fe + nuc, G.fl, fe, M["revest"], x_corte=True)
+    v.peca(xp + G.mf[i], fe + nz, G.fl, fe, M["revest"], x_corte=True)
     za, zb = _serr_z(G)
     for xs, t, externo in ((xp, G.tl[i], i == 0), (xn + nuc, G.tr[i], i == G.n - 1)):
         if externo:
-            v.peca(xs, fe, t, nuc, M["revest"], x_corte=True)
+            v.peca(xs, fe, t, nz, M["revest"], x_corte=True)
         else:
-            v.peca(xs, fe, t, nuc, "vazio", tracejado=True)
+            v.peca(xs, fe, t, nz, "vazio", tracejado=True)
             v.peca(xs, za, t, zb - za, M["serrilhado"], x_corte=True)
 
 
@@ -312,8 +313,8 @@ def vista_lateral(G, esc=24):
     v = Vista("SIDE ELEVATION (end view)", esc)
     _terreno(v, G.zc0 - 4, G.zc1 + 4, prof=6)
     v.peca(0, G.y_rev0, G.fe, G.comp_face, M["revest"])
-    v.peca(G.fe, G.y_rev0, G.nuc, G.comp_rev, M["revest"])
-    v.peca(G.fe + G.nuc, G.y_rev0, G.fe, G.comp_face, M["revest"])
+    v.peca(G.fe, G.y_rev0, G.nucz, G.comp_rev, M["revest"])
+    v.peca(G.fe + G.nucz, G.y_rev0, G.fe, G.comp_face, M["revest"])
     _colar(v, D / 2, g["colar_concreto"])
     if G.com_cap:
         v.peca(G.zv[0][0], G.y_viga0, G.fech_larg, vg["alt"], M["viga"])          # fechamento da ponta
@@ -336,8 +337,8 @@ def vista_corte_A(G, esc=16):
     zmin, zmax = G.zc0 - 3, G.zc1 + 3
     _terreno(v, zmin, zmax)
     v.peca(0, G.y_rev0, G.fe, G.comp_face, M["revest"], traco="#555")
-    v.peca(G.fe + G.nuc, G.y_rev0, G.fe, G.comp_face, M["revest"], traco="#555")
-    v.peca(G.fe, G.y_rev0, G.nuc, G.comp_rev, M["serrilhado"], traco="#555")
+    v.peca(G.fe + G.nucz, G.y_rev0, G.fe, G.comp_face, M["revest"], traco="#555")
+    v.peca(G.fe, G.y_rev0, G.nucz, G.comp_rev, M["serrilhado"], traco="#555")
     _colar(v, D / 2, g["colar_concreto"])
     for yr in G.ripas_y:
         v.peca(G.z_r0, yr, r["esp"], r["larg"], M["ripa"], x_corte=True)
@@ -376,7 +377,7 @@ def vista_fundacao(G, esc=12):
     d, E, B, col = g["sapata_diam_in"], g["embutimento_in"], g["brita_in"], g["colar_concreto"]
     v = Vista("DETAIL 1 — POST FOOTING", esc)
     c = D / 2
-    a0, a1 = c - G.nuc / 2, c + G.nuc / 2
+    a0, a1 = c - G.nucz / 2, c + G.nucz / 2
     z0, z1 = c - d / 2 - 8, c + d / 2 + 8
     v.poligono([(z0, -E - B - 6), (z1, -E - B - 6), (z1, 0), (c + d / 2, 0), (c + d / 2, -E - B),
                 (c - d / 2, -E - B), (c - d / 2, 0), (z0, 0)], "solo")
@@ -386,7 +387,7 @@ def vista_fundacao(G, esc=12):
     v.poligono([(c - d / 2, -E), (a0, -E), (a0, col["altura"]), (c - w + 1, col["altura"]), (c - w, 0), (c - d / 2, 0)], "concreto")
     v.poligono([(a1, -E), (c + d / 2, -E), (c + d / 2, 0), (c + w, 0), (c + w - 1, col["altura"]), (a1, col["altura"])], "concreto")
     topo = G.y_rev0 + 12
-    v.peca(a0, -E, G.nuc, E + topo, M["nucleo"])
+    v.peca(a0, -E, G.nucz, E + topo, M["nucleo"])
     v.peca(0, G.y_rev0, G.fe, topo - G.y_rev0, M["revest"])
     v.peca(D - G.fe, G.y_rev0, G.fe, topo - G.y_rev0, M["revest"])
     v.linha([(-1, topo), (D + 1, topo)], espessura=0.6, tracejado=True)
@@ -423,7 +424,7 @@ def vista_poste(G, i, titulo, esc=3, ext=5.0):
     v.cota((xr, 0), (xr, D), 2.4, tam=5.5)
     v.cota((xr, G.z_r0), (xr, G.z_r1), 1.0, tam=5)
     v.chamada((tl + 1.0, G.fe + 1.0), (-1.0, D + 3.6), f"core {g['rotulos']['nucleo']}", 5.5)
-    v.chamada((m + 0.8, G.fe + G.nuc + 0.7), (-2.5, D + 2.4), f"face {g['rotulos']['revest']} (neighbor)", 5.5)
+    v.chamada((m + 0.8, G.fe + G.nucz + 0.7), (-2.5, D + 2.4), f"face {g['rotulos']['revest']} (neighbor)", 5.5)
     v.chamada((m + 0.8, 0.5), (-2.5, -2.4), f"face {g['rotulos']['revest']} (house)", 5.5)
     if i == 0:
         v.chamada((tl / 2, G.fe + 0.6), (-2.5, D + 1.2), f"side {g['rotulos']['lateral_ponta']}", 5.5)
@@ -440,7 +441,7 @@ def vista_serrilhado(G, esc=4, n=3):
     g, M = G.g, G.g["materiais"]
     r = g["ripa"]
     v = Vista("DETAIL 3 — NOTCHED SIDE BOARD (from bay)", esc)
-    z0, z1 = G.fe, G.fe + G.nuc
+    z0, z1 = G.fe, G.fe + G.nucz
     y0 = G.ripas_y[0] - 2.5
     y1 = G.ripas_y[n - 1] + r["larg"] + G.espaco
     fe = r["folga_encaixe"]
@@ -500,7 +501,7 @@ def vista_topo(G, esc=8):
     """Detalhe 5: ponta das tábuas de topo/viga (entalhe do caibro; end cap ou viga parafusada no núcleo)."""
     g, M = G.g, G.g["materiais"]
     vg, cb = g["viga"], g["caibro"]
-    tit = "DETAIL 5 — TOP BOARD END: NOTCH + END CAP" if G.com_cap else "DETAIL 5 — BEAM AT END POST (bolted to 4x4 core)"
+    tit = "DETAIL 5 — TOP BOARD END: NOTCH + END CAP" if G.com_cap else "DETAIL 5 — BEAM AT END POST (bolted to the core)"
     v = Vista(tit, esc)
     tcap = vg["fechamento_esp"] if G.com_cap else 0.0
     x0, x1 = G.x_viga0 - tcap, G.cx[0] + 9
@@ -553,10 +554,10 @@ def lista_pecas(G):
     pv = ", ".join(pes_pol(c) for c in sorted(set(round(c, 3) for c in G.pecas_viga), reverse=True))
     return (["Mark", "Part", "Material", "Qty", "Length", "Shop pre-cut / notes"], [
         ["N", "Post core", R["nucleo"], G.n, pes_pol(G.comp_nucleo), f"embed {pes_pol(g['embutimento_in'])}; trim tops on site"],
-        ["S", "Notched side board", R["serrilhado"], 2 * nb, pes_pol(G.comp_rev), (f"YES: {G.fiadas} notches" if abs(G.nuc - 5.5) < 1e-6 else f"YES: rip to {pes_pol(G.nuc)}, {G.fiadas} notches")],
+        ["S", "Notched side board", R["serrilhado"], 2 * nb, pes_pol(G.comp_rev), (f"YES: {G.fiadas} notches" if abs(G.nucz - 5.5) < 1e-6 else f"YES: rip to {pes_pol(G.nucz)}, {G.fiadas} notches")],
         ["R", "Slat", R["ripa"], G.fiadas * nb, pes_pol(G.comp_ripa), "YES: cut to length (stop block)"],
         ["F", "Post face", R["revest"], 2 * G.n, pes_pol(G.comp_face), "YES: cut to length" + (" (stops under beam)" if G.faceada else "")],
-        ["L", "Plain side (end posts)", R["lateral_ponta"], 2, pes_pol(G.comp_rev), "YES: cut to length" if abs(G.nuc - 5.5) < 1e-6 else f"YES: rip to {pes_pol(G.nuc)}"],
+        ["L", "Plain side (end posts)", R["lateral_ponta"], 2, pes_pol(G.comp_rev), "YES: cut to length" if abs(G.nucz - 5.5) < 1e-6 else f"YES: rip to {pes_pol(G.nucz)}"],
         ["T", f"Top board ({len(G.pecas_viga)} per side)", R["viga"], 2 * len(G.pecas_viga), pv, "YES: notches for rafters"],
         *([["E", "Top board end cap", R["viga"], 2, pes_pol(G.fech_larg), "YES"]] if G.com_cap else []),
         ["K", "Pergola rafter", R["caibro"], len(G.xc), pes_pol(g["caibro"]["comprimento"]), "YES: cloud-lift ends"],
@@ -614,7 +615,7 @@ def main():
     p2.add(vista_corte_A(G), 0.9, 1.1)
     p2.add(vista_fundacao(G), 5.0, 1.1)
     p2.add(vista_caibro(G), 5.9, 8.1)
-    p2.add(vista_topo(G), 9.9, 6.6)
+    p2.add(vista_topo(G), 10.5, 6.6)
     p2.add(vista_serrilhado(G, esc=5), 13.7, 5.0)
     cols, linhas = lista_pecas(G)
     p2.tabela(9.95, 4.3, cols, linhas, [0.4, 1.45, 1.6, 0.33, 1.3, 1.6], "PARTS LIST", 5.8)

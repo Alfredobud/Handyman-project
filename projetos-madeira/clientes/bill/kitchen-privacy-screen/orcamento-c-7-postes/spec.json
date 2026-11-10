@@ -3,7 +3,7 @@
   "projeto_en": "Kitchen Privacy Screen — 7 posts, cedar, 8 ft, pergola top (Cornelius, NC)",
   "cliente": "Bill",
   "data": "2026-11-10",
-  "revisao": "8",
+  "revisao": "9",
   "idioma_desenho": "en",
   "prefixo_prancha": "C",
   "geometria": {
@@ -19,6 +19,7 @@
     },
     "poste": {
       "nucleo": 3.5,
+      "nucleo_prof": 5.5,
       "face_esp": 1.5,
       "face_larg": 5.5,
       "serrilhado_esp": 1.0,
@@ -48,10 +49,10 @@
       "parafusos_por_poste": 4
     },
     "rotulos": {
-      "nucleo": "PT pine 4x4 S4S, ground contact (UC4B)",
+      "nucleo": "PT pine 4x6 S4S, ground contact (UC4B), 5 1/2\" across the fence",
       "revest": "Cedar 2x6 S4S",
-      "serrilhado": "Cedar 5/4 S4S (1\") notched",
-      "lateral_ponta": "Cedar 5/4 S4S (1\") plain",
+      "serrilhado": "Cedar 5/4x6 S4S (1\") notched",
+      "lateral_ponta": "Cedar 5/4x6 S4S (1\") plain",
       "ripa": "Cedar 2x2 S4S",
       "viga": "Cedar 2x8 S4S",
       "caibro": "Cedar 2x6 S4S"

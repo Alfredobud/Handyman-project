@@ -1,19 +1,19 @@
 # Kitchen Privacy Screen — cliente Bill
 
 **Cliente:** Bill (Cornelius, NC)  
-**Status:** proposta enviada, o cliente está analisando. Plano de corte da opção B: [`plano-corte/plano-de-corte-7-postes.pdf`](plano-corte/plano-de-corte-7-postes.pdf)
+**Status:** **rev. 9**, proposta nova pronta: mesmo desenho (7 postes, 8 ft, núcleo 4x6, 24 ripas 2x2, viga parafusada no núcleo, sem end cap) em duas opções de material.
 
-**Documento para o cliente (EN):** [`propostas/Kitchen-Privacy-Screen-Proposals.pdf`](propostas/Kitchen-Privacy-Screen-Proposals.pdf): comparação, materiais e acabamento, opções A e B, sequência, condições + pranchas A-1…A-3 (10 postes) e B-1…B-3 (7 postes)
+**Documento para o cliente (EN):** [`propostas/Kitchen-Privacy-Screen-Proposal-rev9.pdf`](propostas/Kitchen-Privacy-Screen-Proposal-rev9.pdf): escopo, comparação, materiais e acabamento, preços, sequência e condições + pranchas A-1…A-3 (cedro) e B-1…B-3 (pinus)
 
 | Opção | Desenhos (PDF/DXF) | Orçamento interno | Total |
 |---|---|---|---:|
-| **A — 10 postes, cedro** (vão/poste = φ³, vão 23 5/16") | [`desenhos/10-postes/`](desenhos/10-postes/) | [`orcamento/`](orcamento/orcamento.md) | **$8,211** |
-| **B — 7 postes, 100% pinus tratado S4S** (vão/poste = φ⁴, vão 37 3/4") | [`desenhos/7-postes/`](desenhos/7-postes/) | [`orcamento-7-postes/`](orcamento-7-postes/orcamento.md) | **$5,881** |
-| 10 postes, 100% PT (referência interna) | — | [`orcamento-pt/`](orcamento-pt/orcamento.md) | $7,101 |
+| **A — cedro aparente** (núcleo PT 4x6) | [`desenhos/rev9-a-cedro/`](desenhos/rev9-a-cedro/) | [`orcamento-c/cedro-4x6/`](orcamento-c/cedro-4x6/orcamento.md) | **$7,580** |
+| **B — 100% pinus tratado** S4S (núcleo 4x6) | [`desenhos/rev9-b-pinus/`](desenhos/rev9-b-pinus/) | [`orcamento-c/pt-4x6/`](orcamento-c/pt-4x6/orcamento.md) | **$6,742** |
 
-Materiais: núcleos dos postes (enterrados 24") em **pinus tratado (PT SYP #2, ground contact)**; tudo o que é aparente em **cedro Western Red, seco em estufa, aplainado S4S**. Na Lowe's o cedro 2x6/2x8 costuma ser bruto/green: comprar S4S em madeireira.
-
-Para regerar tudo (a partir desta pasta): `python3 gerar_propostas.py` → `orcamento.py` em cada pasta → `privacy_screen.py` para `desenhos/10-postes` e `desenhos/7-postes` → `python3 gerar_documento_propostas.py` → `python3 gerar_tempo_etapas.py` → `python3 gerar_plano_corte.py orcamento-7-postes`.
+- Comparativo de núcleo (4x4 / 4x6 / 6x6): [`orcamento-c/comparativo-nucleo.md`](orcamento-c/comparativo-nucleo.md); o 4x6 foi escolhido (mesmo custo do 4x4, ~2.5x mais folga no nível do chão).
+- Postes enterrados **36"** (furo Ø16", 6" de brita) para os 8 ft de altura.
+- Para regerar: `python3 gerar_opcao_c.py` → `privacy_screen.py` em `orcamento-c/cedro-4x6` e `orcamento-c/pt-4x6` (saída `desenhos/rev9-*`) → `python3 gerar_documento_rev9.py`.
+- **Histórico:** a proposta rev. 7 (10 × 7 postes, 6'-1" de altura) e os desenhos dela estão em `propostas/arquivo-rev7/` e `desenhos/arquivo-rev7/`. O plano de corte em `plano-corte/` é da rev. 7 e precisa ser regerado para a rev. 9 quando o Bill escolher a opção.
 
 Decisões: madeira (sem composite, por receio de deformação); postes PT embutidos 36" (mínimo de 2 ft); $60/h, sem markup, taxa de $150; imposto de Mecklenburg de 8.25%.
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)

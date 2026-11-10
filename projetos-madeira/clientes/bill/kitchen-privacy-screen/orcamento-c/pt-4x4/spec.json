@@ -1,6 +1,11 @@
 {
-  "projeto": "Kitchen Privacy Screen — opção C, 7 postes, 100% pinus, núcleo 4x4",
+  "projeto": "Kitchen Privacy Screen — 7 postes, 100% pinus tratado, núcleo 4x4",
+  "projeto_en": "Kitchen Privacy Screen — 7 posts, pressure-treated pine, 8 ft, pergola top (Cornelius, NC)",
   "cliente": "Bill",
+  "data": "2026-11-10",
+  "revisao": "9",
+  "idioma_desenho": "en",
+  "prefixo_prancha": "B",
   "precos": "../../orcamento/precos.csv",
   "parametros": {
     "taxa_hora_usd": 60,
@@ -55,12 +60,20 @@
     },
     "rotulos": {
       "nucleo": "PT pine 4x4 S4S, ground contact (UC4B)",
-      "revest": "Cedar 2x6 S4S",
-      "serrilhado": "Cedar 5/4 S4S (1\") notched",
-      "lateral_ponta": "Cedar 5/4 S4S (1\") plain",
-      "ripa": "Cedar 2x2 S4S",
-      "viga": "Cedar 2x8 S4S",
-      "caibro": "Cedar 2x6 S4S"
+      "revest": "PT pine 2x6 S4S",
+      "serrilhado": "PT pine 5/4x6 S4S notched",
+      "lateral_ponta": "PT pine 5/4x6 S4S plain",
+      "ripa": "PT pine 2x2 S4S",
+      "viga": "PT pine 2x8 S4S",
+      "caibro": "PT pine 2x6 S4S",
+      "especie": "All lumber: Southern Yellow Pine #2, pressure-treated, S4S; cores ground contact (UC4B)."
+    },
+    "materiais": {
+      "revest": "pt",
+      "serrilhado": "pt",
+      "ripa": "pt",
+      "viga": "pt",
+      "caibro": "pt"
     }
   },
   "componentes": [

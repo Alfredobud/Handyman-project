@@ -1,4 +1,4 @@
-# Orçamento — Kitchen Privacy Screen — opção C, 7 postes, cedro, núcleo 6x6
+# Orçamento — Kitchen Privacy Screen — 7 postes, cedro, núcleo 6x6
 
 **Cliente:** Bill
 

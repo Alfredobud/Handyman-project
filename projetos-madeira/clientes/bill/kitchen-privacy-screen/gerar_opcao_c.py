@@ -34,7 +34,20 @@ def specs(mat, nuc):
     pg, mnuc, (lat, lat_rip), (face, face_rip), area_nuc = NUCLEOS[nuc]
     pre = "cedro" if mat == "cedro" else "pt"
     g = json.loads(json.dumps(BASE["geometria"]))
-    g["poste"] = {k: v for k, v in pg.items() if k != "nucleo_prof"}
+    g["poste"] = dict(pg)
+    nz = pg.get("nucleo_prof", pg["nucleo"])
+    PTL = "PT pine"
+    rot = {"nucleo": f"PT pine {nuc} S4S, ground contact (UC4B)"}
+    if pre == "pt":
+        rot.update({"revest": f"PT pine {face} S4S" + (" ripped to 7\"" if face_rip else ""), "serrilhado": f"PT pine {lat.replace('_', '/')} S4S notched",
+                    "lateral_ponta": f"PT pine {lat.replace('_', '/')} S4S plain", "ripa": "PT pine 2x2 S4S", "viga": "PT pine 2x8 S4S",
+                    "caibro": "PT pine 2x6 S4S", "especie": "All lumber: Southern Yellow Pine #2, pressure-treated, S4S; cores ground contact (UC4B)."})
+        g["materiais"] = {"revest": "pt", "serrilhado": "pt", "ripa": "pt", "viga": "pt", "caibro": "pt"}
+    else:
+        rot.update({"revest": "Cedar " + face + " S4S" + (" ripped to 7\"" if face_rip else ""), "serrilhado": f"Cedar {lat.replace('_', '/')} S4S notched",
+                    "lateral_ponta": f"Cedar {lat.replace('_', '/')} S4S plain", "ripa": "Cedar 2x2 S4S", "viga": "Cedar 2x8 S4S", "caibro": "Cedar 2x6 S4S"})
+        g["materiais"] = {"revest": "cedro", "serrilhado": "cedro", "ripa": "cedro", "viga": "cedro", "caibro": "cedro"}
+    g["rotulos"] = {**g.get("rotulos", {}), **rot}
     G = ps.Geo(ps.mescla(ps.PADRAO, g))
     n, nb = G.n, G.n - 1
     d = g["sapata_diam_in"]
@@ -87,8 +100,9 @@ def specs(mat, nuc):
         X.append({"tarefa": "oficina_ripar", "qtd": ripar})
     if pre == "pt":
         X.append({"descricao": "Retorno para stain após secagem", "horas": 2})
-    s = {"projeto": f"Kitchen Privacy Screen — opção C, {n} postes, {'cedro' if pre == 'cedro' else '100% pinus'}, núcleo {nuc}",
-         "cliente": "Bill", "precos": "../../orcamento/precos.csv", "parametros": PAR, "geometria": g,
+    s = {"projeto": f"Kitchen Privacy Screen — {n} postes, {'cedro' if pre == 'cedro' else '100% pinus tratado'}, núcleo {nuc}",
+         "projeto_en": f"Kitchen Privacy Screen — {n} posts, " + ("cedar" if pre == "cedro" else "pressure-treated pine") + ", 8 ft, pergola top (Cornelius, NC)",
+         "cliente": "Bill", "data": "2026-11-10", "revisao": "9", "idioma_desenho": "en", "prefixo_prancha": "A" if pre == "cedro" else "B", "precos": "../../orcamento/precos.csv", "parametros": PAR, "geometria": g,
          "componentes": C, "tarefas_extra": X, "premissas": [f"Comparativo de núcleo {nuc}; vão livre {ps.pes_pol(G.vao)}; poste {ps.pes_pol(G.W[1])}."]}
     return s, G
 

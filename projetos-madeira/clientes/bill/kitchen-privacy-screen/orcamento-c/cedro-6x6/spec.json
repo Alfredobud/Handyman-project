@@ -1,6 +1,11 @@
 {
-  "projeto": "Kitchen Privacy Screen — opção C, 7 postes, cedro, núcleo 6x6",
+  "projeto": "Kitchen Privacy Screen — 7 postes, cedro, núcleo 6x6",
+  "projeto_en": "Kitchen Privacy Screen — 7 posts, cedar, 8 ft, pergola top (Cornelius, NC)",
   "cliente": "Bill",
+  "data": "2026-11-10",
+  "revisao": "9",
+  "idioma_desenho": "en",
+  "prefixo_prancha": "A",
   "precos": "../../orcamento/precos.csv",
   "parametros": {
     "taxa_hora_usd": 60,
@@ -54,13 +59,20 @@
       "parafusos_por_poste": 4
     },
     "rotulos": {
-      "nucleo": "PT pine 4x4 S4S, ground contact (UC4B)",
-      "revest": "Cedar 2x6 S4S",
-      "serrilhado": "Cedar 5/4 S4S (1\") notched",
-      "lateral_ponta": "Cedar 5/4 S4S (1\") plain",
+      "nucleo": "PT pine 6x6 S4S, ground contact (UC4B)",
+      "revest": "Cedar 2x8 S4S ripped to 7\"",
+      "serrilhado": "Cedar 1x6 S4S notched",
+      "lateral_ponta": "Cedar 1x6 S4S plain",
       "ripa": "Cedar 2x2 S4S",
       "viga": "Cedar 2x8 S4S",
       "caibro": "Cedar 2x6 S4S"
+    },
+    "materiais": {
+      "revest": "cedro",
+      "serrilhado": "cedro",
+      "ripa": "cedro",
+      "viga": "cedro",
+      "caibro": "cedro"
     }
   },
   "componentes": [

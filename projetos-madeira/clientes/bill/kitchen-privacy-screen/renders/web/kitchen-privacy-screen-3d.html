@@ -136,6 +136,8 @@ addEventListener('resize', ()=>{ size(); });
 addEventListener('hashchange', ()=>view(location.hash.slice(1)));
 size(); paint('A'); view(location.hash.slice(1));
 document.getElementById('load').remove();
+window.__orbit = (a,b,c,x,y,z)=>{ th=a; ph=b; rad=c; if (x!==undefined) tgt.set(x,y,z); apply(); };
+window.__get = ()=>({th, ph, rad, tgt:[tgt.x,tgt.y,tgt.z]}); window.__view = view; window.__paint = paint;
 (function loop(){ requestAnimationFrame(loop); r.render(sc, cam); })();
 })();
 </script>

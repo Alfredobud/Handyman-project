@@ -42,7 +42,10 @@
     "viga": {
       "esp": 1.5,
       "alt": 7.25,
-      "peca_max": 144
+      "peca_max": 144,
+      "fechamento": false,
+      "faceada": true,
+      "parafusos_por_poste": 4
     },
     "rotulos": {
       "nucleo": "PT pine 4x4 S4S, ground contact (UC4B)",

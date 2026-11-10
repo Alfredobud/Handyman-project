@@ -15,7 +15,7 @@ Com o modelo da foto, a quantidade de madeira aparente cresceu (revestimento de 
 ## Onde o PT é a melhor escolha
 
 - **Postes embutidos:** PT *ground contact* (UC4B) é o material certo para ir enterrado. O cedro dura menos em contato com o solo e a umidade. **Nos dois cenários, os postes são PT.**
-- **Estrutura escondida** (travessas, cleats, montantes): é mais barata e o SYP é mais rígido que o cedro (módulo de elasticidade ~1.6 contra ~1.1 milhão psi).
+- **Núcleo dos postes** (escondido no revestimento): é mais barata e o SYP é mais rígido que o cedro (módulo de elasticidade ~1.6 contra ~1.1 milhão psi).
 - **Cupim:** a região de Charlotte tem pressão alta de cupim subterrâneo, e o PT é resistente.
 
 ## Riscos do PT nas partes visíveis (ripas, vigas, caibros)
@@ -29,7 +29,6 @@ Com o modelo da foto, a quantidade de madeira aparente cresceu (revestimento de 
 ## Como reduzir a deformação se escolher PT
 
 - Comprar **KDAT** (*kiln-dried after treatment*) ou deck board **premium**, e escolher as tábuas na loja: retas, com poucos nós e sem medula.
-- Manter o **apoio a cada ~22"** (cleat + montante central), que já está no desenho.
 - **2 parafusos por apoio**, instalados com a madeira ainda úmida, para ela secar presa.
 - No modelo atual a ripa é 2x4 deitado (1 1/2") em vão curto (19 3/8"), travada no serrilhado: é a configuração mais resistente a empeno. PT ripado (serrilhado de 2x6 ripado) tende a torcer mais: em PT, prefira 2x4 inteiro para o serrilhado.
 - Guardar o material empilhado, com espaçadores, na sombra, até a instalação.
@@ -40,4 +39,4 @@ Com o modelo da foto, a quantidade de madeira aparente cresceu (revestimento de 
 - **Ripas e pergolado: cedro**, se o cliente aceita ~$1,150 a mais. Fica mais estável (menos empeno), não precisa de stain, dispensa a segunda visita e combina com a imagem conceito ("100% Natural Cedar, No Stain Needed").
 - Se o orçamento do cliente for o fator decisivo, o PT funciona bem com os cuidados acima. Avise que pode haver algum empeno e que o stain é obrigatório.
 
-_Preços online da Lowe's e da Home Depot (nov/2026), ainda não confirmados na loja de Cornelius. O PT 6x6x12 e o PT 2x8x12 são estimados._
+_Preços online da Lowe's e da Home Depot (nov/2026), ainda não confirmados na loja de Cornelius. O PT 4x4x12, o PT 2x8x12 e o cedro 2x6 são estimados._

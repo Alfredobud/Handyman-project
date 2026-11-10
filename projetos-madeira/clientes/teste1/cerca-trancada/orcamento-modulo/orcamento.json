@@ -1,0 +1,408 @@
+{
+  "projeto": "Cerca trançada — estudo de 1 módulo (cliente teste1)",
+  "cliente": "teste1",
+  "parametros": {
+    "taxa_hora_usd": 60,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.0,
+    "imposto_material": 0.0825,
+    "contingencia": 0.0,
+    "comprimento_max_ft": null,
+    "taxa_fixa_usd": 150,
+    "taxa_fixa_descricao": "Taxa"
+  },
+  "componentes": [
+    {
+      "tipo": "sapata",
+      "nome": "Furos Ø12\" x 30\" — concreto",
+      "qtd": 1,
+      "diametro_in": 12,
+      "profundidade_in": 23,
+      "desconto_poste_in2": 30.25,
+      "material": "concreto_80lb",
+      "tarefa": "obra_assentar_poste",
+      "_calc": {
+        "volume_cf": 1.21,
+        "sacos": 3
+      }
+    },
+    {
+      "tipo": "item",
+      "nome": "Brita no fundo dos furos",
+      "material": "brita_saco",
+      "qtd": 1
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Postes pinus tratado 6x6 ground contact (embutir 24\")",
+      "material": "pt_6x6",
+      "comprimento_in": 96.0,
+      "qtd": 1,
+      "perda": 0,
+      "tarefa": "obra_nivelar_topo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Tábuas trançadas 1x6 (12/módulo)",
+      "material": "pt_1x6",
+      "comprimento_in": 115.75,
+      "qtd": 12,
+      "tarefa": "obra_tabua_trancada"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Sarrafos verticais do trançado 1x2 (3/módulo)",
+      "material": "pt_1x2",
+      "comprimento_in": 66.0,
+      "qtd": 3,
+      "tarefa": "obra_sarrafo_trama"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Batentes do canal nos postes 1x2 (4/módulo)",
+      "material": "pt_1x2",
+      "comprimento_in": 66.0,
+      "qtd": 4,
+      "tarefa": "obra_batente"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Travessas 2x4 (inferior + superior)",
+      "material": "pt_2x4",
+      "comprimento_in": 114.5,
+      "qtd": 2,
+      "tarefa": "obra_travessa_cerca"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Capeamento 2x6 (emenda sobre poste)",
+      "material": "pt_2x6",
+      "comprimento_in": 120,
+      "qtd": 1,
+      "tarefa": "obra_capa"
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos deck trim-head (ocultos)",
+      "material": "parafuso_deck_trim",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Stain semi-transparente (2 faces, 1 demão após secagem)",
+      "material": "stain_galao",
+      "qtd": 1,
+      "tarefa": "acabamento_stain",
+      "tarefa_qtd": 128
+    }
+  ],
+  "detalhes_cortes": [
+    [
+      "Postes pinus tratado 6x6 ground contact (embutir 24\")",
+      "pt_6x6",
+      1,
+      96.0,
+      ""
+    ],
+    [
+      "Tábuas trançadas 1x6 (12/módulo)",
+      "pt_1x6",
+      12,
+      115.75,
+      ""
+    ],
+    [
+      "Sarrafos verticais do trançado 1x2 (3/módulo)",
+      "pt_1x2",
+      3,
+      66.0,
+      ""
+    ],
+    [
+      "Batentes do canal nos postes 1x2 (4/módulo)",
+      "pt_1x2",
+      4,
+      66.0,
+      ""
+    ],
+    [
+      "Travessas 2x4 (inferior + superior)",
+      "pt_2x4",
+      2,
+      114.5,
+      ""
+    ],
+    [
+      "Capeamento 2x6 (emenda sobre poste)",
+      "pt_2x6",
+      1,
+      120.0,
+      ""
+    ]
+  ],
+  "compra": [
+    {
+      "material": "pt_6x6",
+      "descricao": "Pinus tratado 6x6 #2 ground contact UC4B S4S",
+      "comprimento_ft": 8.0,
+      "qtd": 1,
+      "preco_unit": 38.0,
+      "subtotal": 38.0,
+      "fonte": "referencia-media-big-box (conferir)",
+      "obs": ""
+    },
+    {
+      "material": "pt_1x6",
+      "descricao": "Pinus tratado 1x6 S4S (tábua de cerca/aparência)",
+      "comprimento_ft": 10.0,
+      "qtd": 13,
+      "preco_unit": 9.0,
+      "subtotal": 117.0,
+      "fonte": "estimativa (conferir loja)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_1x2",
+      "descricao": "Pinus tratado 1x2 S4S",
+      "comprimento_ft": 8.0,
+      "qtd": 8,
+      "preco_unit": 3.0,
+      "subtotal": 24.0,
+      "fonte": "estimativa (conferir loja)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x4",
+      "descricao": "PT 2x4 #2 Prime ground contact S4S",
+      "comprimento_ft": 10.0,
+      "qtd": 3,
+      "preco_unit": 8.88,
+      "subtotal": 26.64,
+      "fonte": "homedepot.com online (Cornelius nao confirmado)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6",
+      "comprimento_ft": 10.0,
+      "qtd": 2,
+      "preco_unit": 12.5,
+      "subtotal": 25.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "concreto_80lb",
+      "descricao": "Concreto ensacado 80 lb (~0.60 cf)",
+      "comprimento_ft": "",
+      "qtd": 3,
+      "preco_unit": 6.5,
+      "subtotal": 19.5,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — Furos Ø12\" x 30\" — concreto"
+    },
+    {
+      "material": "brita_saco",
+      "descricao": "Brita/cascalho ensacado 0.5 cf",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 5.5,
+      "subtotal": 5.5,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — Brita no fundo dos furos"
+    },
+    {
+      "material": "parafuso_deck_trim",
+      "descricao": "Parafuso deck trim-head revestido p/ PT/ACQ (caixa 5 lb)",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 42.0,
+      "subtotal": 42.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "caixa — Parafusos deck trim-head (ocultos)"
+    },
+    {
+      "material": "stain_galao",
+      "descricao": "Stain/selador externo 1 gal (~250 sqft/demão)",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 45.0,
+      "subtotal": 45.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "galao — Stain semi-transparente (2 faces, 1 demão após secagem)"
+    }
+  ],
+  "plano_cortes": [
+    {
+      "material": "pt_6x6",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 96\" Postes pinus tratado 6x6 ground contact (embutir 24\")",
+      "sobra_in": 0.0
+    },
+    {
+      "material": "pt_1x6",
+      "qtd_tabuas": 12,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 115.75\" Tábuas trançadas 1x6 (12/módulo)",
+      "sobra_in": 4.25
+    },
+    {
+      "material": "pt_1x2",
+      "qtd_tabuas": 3,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 66\" Sarrafos verticais do trançado 1x2 (3/módulo)",
+      "sobra_in": 30.0
+    },
+    {
+      "material": "pt_1x2",
+      "qtd_tabuas": 4,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 66\" Batentes do canal nos postes 1x2 (4/módulo)",
+      "sobra_in": 30.0
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 2,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 114.5\" Travessas 2x4 (inferior + superior)",
+      "sobra_in": 5.5
+    },
+    {
+      "material": "pt_2x6",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 120\" Capeamento 2x6 (emenda sobre poste)",
+      "sobra_in": 0.0
+    }
+  ],
+  "mao_de_obra": [
+    {
+      "tarefa": "obra_assentar_poste",
+      "descricao": "Obra: brita no fundo + prumo/escora + concreto + colar com caimento",
+      "qtd": 1.0,
+      "unidade": "poste",
+      "h_unit": 0.45,
+      "horas": 0.45
+    },
+    {
+      "tarefa": "obra_nivelar_topo",
+      "descricao": "Obra: marcar com laser e cortar o topo do núcleo",
+      "qtd": 1.0,
+      "unidade": "poste",
+      "h_unit": 0.15,
+      "horas": 0.15
+    },
+    {
+      "tarefa": "obra_tabua_trancada",
+      "descricao": "Obra: tábua trançada (descer no canal alternando frente/trás dos sarrafos) + fixação oculta",
+      "qtd": 12.0,
+      "unidade": "peca",
+      "h_unit": 0.12,
+      "horas": 1.44
+    },
+    {
+      "tarefa": "obra_sarrafo_trama",
+      "descricao": "Obra: sarrafo vertical do trançado fixado nas travessas",
+      "qtd": 3.0,
+      "unidade": "peca",
+      "h_unit": 0.1,
+      "horas": 0.30000000000000004
+    },
+    {
+      "tarefa": "obra_batente",
+      "descricao": "Obra: batente/sarrafo de canal fixado no poste (peça pré-cortada)",
+      "qtd": 4.0,
+      "unidade": "peca",
+      "h_unit": 0.08,
+      "horas": 0.32
+    },
+    {
+      "tarefa": "obra_travessa_cerca",
+      "descricao": "Obra: travessa 2x4 entre postes (pré-cortada) com parafuso estrutural",
+      "qtd": 2.0,
+      "unidade": "peca",
+      "h_unit": 0.25,
+      "horas": 0.5
+    },
+    {
+      "tarefa": "obra_capa",
+      "descricao": "Obra: capeamento 2x6 contínuo sobre postes e travessa (emenda sobre poste)",
+      "qtd": 1.0,
+      "unidade": "peca",
+      "h_unit": 0.3,
+      "horas": 0.3
+    },
+    {
+      "tarefa": "acabamento_stain",
+      "descricao": "Aplicação de stain/selador por pé quadrado (uma demão)",
+      "qtd": 128.0,
+      "unidade": "sqft",
+      "h_unit": 0.02,
+      "horas": 2.56
+    },
+    {
+      "tarefa": "obra_escavacao_mecanizada",
+      "descricao": "Obra: furo com mini skid steer/perfuratriz hidráulica alugada (posicionar + furar + limpar)",
+      "qtd": 1.0,
+      "unidade": "furo",
+      "h_unit": 0.15,
+      "horas": 0.15
+    },
+    {
+      "tarefa": "oficina_corte",
+      "descricao": "Oficina: corte no comprimento com batente (ripas;  faces)",
+      "qtd": 22.0,
+      "unidade": "peca",
+      "h_unit": 0.04,
+      "horas": 0.88
+    },
+    {
+      "tarefa": "oficina_acabamento_lixa",
+      "descricao": "Oficina: quebrar arestas/lixar peças visíveis antes de levar à obra",
+      "qtd": 22.0,
+      "unidade": "peca",
+      "h_unit": 0.03,
+      "horas": 0.6599999999999999
+    }
+  ],
+  "totais": {
+    "material_subtotal": 342.64,
+    "material_imposto": 28.27,
+    "material_markup": 0.0,
+    "material_contingencia": 0.0,
+    "material_total": 370.91,
+    "horas": 7.7,
+    "mao_de_obra_subtotal": 462.6,
+    "mao_de_obra_contingencia": 0.0,
+    "mao_de_obra_total": 462.6,
+    "taxa_fixa": 150.0,
+    "total_geral": 983.51
+  },
+  "premissas": [
+    "Módulo 120\" (10'-0\" = 3.05 m) entre eixos: trechos 40'/60'/40' = [4, 6, 4] módulos idênticos, 15 postes.",
+    "Altura total 6'-1 1/2\": módulo/altura = 1.633 (φ = 1.618). 12 tábuas 1x6 por módulo.",
+    "Folga de 3\" entre a travessa inferior e o terreno.",
+    "Tudo em pinus tratado aplainado S4S; postes 6x6 ground contact embutidos 24\" em concreto sobre 6\" de brita.",
+    "Trançado montado na obra: travessa inferior + sarrafos, tábuas descem pelo canal dos postes alternando frente/trás; peças pré-cortadas na oficina.",
+    "Stain semi-transparente nas 2 faces em visita após secagem (pinus tratado chega úmido).",
+    "PRELIMINAR: estudo de módulo; preços de 1x6, 1x2 e 6x6 estimados.",
+    "Orçamento de 1 módulo = módulo + 1 poste, sem locação/mobilização (essas entram só no completo)."
+  ],
+  "perguntas": [
+    "Altura: 6'-1 1/2\" (proporção áurea). HOA/código de Cornelius costuma limitar cerca lateral/fundo a 6'-0\"?",
+    "Iluminação LED atrás das tábuas (como na foto): incluir?",
+    "Portão(ões): quantos e onde?",
+    "Terreno plano ou com desnível (degraus nos módulos)?"
+  ],
+  "avisos": [],
+  "fontes_preco": [
+    "estimativa (conferir loja) (2026-11)",
+    "estimativa locadora local (conferir) (2026-11)",
+    "homedepot.com online (Cornelius nao confirmado) (2026-11)",
+    "referencia-lowes-online (2026-11)",
+    "referencia-media-big-box (2026-11)",
+    "referencia-media-big-box (conferir) (2026-11)"
+  ]
+}

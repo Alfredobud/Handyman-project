@@ -1,0 +1,131 @@
+{
+  "projeto": "Cerca trançada — estudo de 1 módulo (cliente teste1)",
+  "projeto_en": "Woven horizontal fence — module study",
+  "cliente": "teste1",
+  "data": "2026-11-10",
+  "revisao": "0",
+  "idioma_desenho": "en",
+  "geometria": {},
+  "parametros": {
+    "taxa_hora_usd": 60,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.0,
+    "imposto_material": 0.0825,
+    "contingencia": 0.0,
+    "taxa_fixa_usd": 150,
+    "taxa_fixa_descricao": "Taxa"
+  },
+  "precos": "precos.csv",
+  "componentes": [
+    {
+      "tipo": "sapata",
+      "nome": "Furos Ø12\" x 30\" — concreto",
+      "qtd": 1,
+      "diametro_in": 12,
+      "profundidade_in": 23,
+      "desconto_poste_in2": 30.25,
+      "material": "concreto_80lb",
+      "tarefa": "obra_assentar_poste"
+    },
+    {
+      "tipo": "item",
+      "nome": "Brita no fundo dos furos",
+      "material": "brita_saco",
+      "qtd": 1
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Postes pinus tratado 6x6 ground contact (embutir 24\")",
+      "material": "pt_6x6",
+      "comprimento_in": 96.0,
+      "qtd": 1,
+      "perda": 0,
+      "tarefa": "obra_nivelar_topo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Tábuas trançadas 1x6 (12/módulo)",
+      "material": "pt_1x6",
+      "comprimento_in": 115.75,
+      "qtd": 12,
+      "tarefa": "obra_tabua_trancada"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Sarrafos verticais do trançado 1x2 (3/módulo)",
+      "material": "pt_1x2",
+      "comprimento_in": 66.0,
+      "qtd": 3,
+      "tarefa": "obra_sarrafo_trama"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Batentes do canal nos postes 1x2 (4/módulo)",
+      "material": "pt_1x2",
+      "comprimento_in": 66.0,
+      "qtd": 4,
+      "tarefa": "obra_batente"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Travessas 2x4 (inferior + superior)",
+      "material": "pt_2x4",
+      "comprimento_in": 114.5,
+      "qtd": 2,
+      "tarefa": "obra_travessa_cerca"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Capeamento 2x6 (emenda sobre poste)",
+      "material": "pt_2x6",
+      "comprimento_in": 120,
+      "qtd": 1,
+      "tarefa": "obra_capa"
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos deck trim-head (ocultos)",
+      "material": "parafuso_deck_trim",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Stain semi-transparente (2 faces, 1 demão após secagem)",
+      "material": "stain_galao",
+      "qtd": 1,
+      "tarefa": "acabamento_stain",
+      "tarefa_qtd": 128
+    }
+  ],
+  "tarefas_extra": [
+    {
+      "tarefa": "obra_escavacao_mecanizada",
+      "qtd": 1
+    },
+    {
+      "tarefa": "oficina_corte",
+      "qtd": 22
+    },
+    {
+      "tarefa": "oficina_acabamento_lixa",
+      "qtd": 22
+    }
+  ],
+  "premissas": [
+    "Módulo 120\" (10'-0\" = 3.05 m) entre eixos: trechos 40'/60'/40' = [4, 6, 4] módulos idênticos, 15 postes.",
+    "Altura total 6'-1 1/2\": módulo/altura = 1.633 (φ = 1.618). 12 tábuas 1x6 por módulo.",
+    "Folga de 3\" entre a travessa inferior e o terreno.",
+    "Tudo em pinus tratado aplainado S4S; postes 6x6 ground contact embutidos 24\" em concreto sobre 6\" de brita.",
+    "Trançado montado na obra: travessa inferior + sarrafos, tábuas descem pelo canal dos postes alternando frente/trás; peças pré-cortadas na oficina.",
+    "Stain semi-transparente nas 2 faces em visita após secagem (pinus tratado chega úmido).",
+    "PRELIMINAR: estudo de módulo; preços de 1x6, 1x2 e 6x6 estimados.",
+    "Orçamento de 1 módulo = módulo + 1 poste, sem locação/mobilização (essas entram só no completo)."
+  ],
+  "perguntas": [
+    "Altura: 6'-1 1/2\" (proporção áurea). HOA/código de Cornelius costuma limitar cerca lateral/fundo a 6'-0\"?",
+    "Iluminação LED atrás das tábuas (como na foto): incluir?",
+    "Portão(ões): quantos e onde?",
+    "Terreno plano ou com desnível (degraus nos módulos)?"
+  ]
+}

@@ -23,6 +23,7 @@ projetos-madeira/
 
 | Cliente | Projeto | Status | Proposta |
 |---|---|---|---|
+| teste1 | [Cerca trançada](clientes/teste1/cerca-trancada/) | Estudo de 1 módulo (prévia); completo ~$11,830 (140 ft, 14 módulos) | — |
 | Bill | [Kitchen Privacy Screen](clientes/bill/kitchen-privacy-screen/) | Proposta enviada (A: 10 postes cedro $8,211 · B: 7 postes pinus tratado $5,881); plano de corte da opção B pronto | [PDF](clientes/bill/kitchen-privacy-screen/propostas/Kitchen-Privacy-Screen-Proposals.pdf) |
 
 ## Referências

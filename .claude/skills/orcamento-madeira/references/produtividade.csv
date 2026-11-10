@@ -41,3 +41,8 @@ oficina_fechamento,peca,0.25,Oficina: fechamento de ponta das tábuas de topo
 oficina_caibro_nuvem,peca,0.6,Oficina: caibro com ponta tipo nuvem (gabarito + tico-tico + lixa)
 oficina_gabaritos,verba,2.0,Oficina: gabaritos do serrilhado e do caibro
 oficina_acabamento_lixa,peca,0.03,Oficina: quebrar arestas/lixar peças visíveis antes de levar à obra
+obra_batente,peca,0.08,Obra: batente/sarrafo de canal fixado no poste (peça pré-cortada)
+obra_travessa_cerca,peca,0.25,Obra: travessa 2x4 entre postes (pré-cortada) com parafuso estrutural
+obra_sarrafo_trama,peca,0.1,Obra: sarrafo vertical do trançado fixado nas travessas
+obra_tabua_trancada,peca,0.12,Obra: tábua trançada (descer no canal alternando frente/trás dos sarrafos) + fixação oculta
+obra_capa,peca,0.3,Obra: capeamento 2x6 contínuo sobre postes e travessa (emenda sobre poste)

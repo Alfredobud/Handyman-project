@@ -1,3 +1,4 @@
 *.png
 !projetos-madeira/**/referencias/*.png
 __pycache__/
+projetos-madeira/**/marketing/build/

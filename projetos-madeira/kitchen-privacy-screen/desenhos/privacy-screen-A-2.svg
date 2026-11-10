@@ -231,6 +231,54 @@
 <text x="993.0" y="293.0" font-size="6.9" text-anchor="start">traçar com gabarito, tico-tico, lixar</text>
 <text x="838.8" y="322.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 4 — PONTA DO CAIBRO</text>
 <text x="838.8" y="338.0" font-size="9.7" text-anchor="middle">ESCALA 1:4  (3&quot; = 1&#x27;-0&quot;)</text>
+<polygon points="1402.50,552.50 1402.50,106.25 1315.00,106.25 1315.00,145.89 1352.50,145.89 1352.50,234.95 1315.00,234.95 1315.00,273.80 1352.50,273.80 1352.50,362.86 1315.00,362.86 1315.00,401.72 1352.50,401.72 1352.50,490.78 1315.00,490.78 1315.00,552.50" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1305.00,98.75 1412.50,113.75" fill="none" stroke="#222" stroke-width="0.96"/>
+<polygon points="1315.00,490.00 1352.50,490.00 1352.50,402.50 1315.00,402.50" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
+<polygon points="1315.00,362.08 1352.50,362.08 1352.50,274.58 1315.00,274.58" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
+<polygon points="1315.00,234.17 1352.50,234.17 1352.50,146.67 1315.00,146.67" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
+<line x1="1315.0" y1="555.5" x2="1315.0" y2="594.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1402.5" y1="555.5" x2="1402.5" y2="594.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1315.0" y1="590.0" x2="1402.5" y2="590.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1311.0" y1="594.0" x2="1319.0" y2="586.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1398.5" y1="594.0" x2="1406.5" y2="586.0" stroke="#222" stroke-width="1.1"/>
+<text x="1358.8" y="587.0" font-size="6.9" text-anchor="middle">3 1/2&quot;</text>
+<line x1="1315.0" y1="103.2" x2="1315.0" y2="67.2" stroke="#555" stroke-width="0.5"/>
+<line x1="1352.5" y1="103.2" x2="1352.5" y2="67.2" stroke="#555" stroke-width="0.5"/>
+<line x1="1315.0" y1="71.2" x2="1352.5" y2="71.2" stroke="#222" stroke-width="0.6"/>
+<line x1="1311.0" y1="75.2" x2="1319.0" y2="67.2" stroke="#222" stroke-width="1.1"/>
+<line x1="1348.5" y1="75.2" x2="1356.5" y2="67.2" stroke="#222" stroke-width="1.1"/>
+<text x="1333.8" y="68.2" font-size="6.9" text-anchor="middle">1 1/2&quot; prof.</text>
+<line x1="1405.5" y1="362.9" x2="1444.0" y2="362.9" stroke="#555" stroke-width="0.5"/>
+<line x1="1405.5" y1="273.8" x2="1444.0" y2="273.8" stroke="#555" stroke-width="0.5"/>
+<line x1="1440.0" y1="362.9" x2="1440.0" y2="273.8" stroke="#222" stroke-width="0.6"/>
+<line x1="1436.0" y1="366.9" x2="1444.0" y2="358.9" stroke="#222" stroke-width="1.1"/>
+<line x1="1436.0" y1="277.8" x2="1444.0" y2="269.8" stroke="#222" stroke-width="1.1"/>
+<text x="1437.0" y="318.3" font-size="6.9" text-anchor="middle" transform="rotate(-90 1437.0 318.3)">3 9/16&quot; encaixe</text>
+<line x1="1405.5" y1="273.8" x2="1444.0" y2="273.8" stroke="#555" stroke-width="0.5"/>
+<line x1="1405.5" y1="234.9" x2="1444.0" y2="234.9" stroke="#555" stroke-width="0.5"/>
+<line x1="1440.0" y1="273.8" x2="1440.0" y2="234.9" stroke="#222" stroke-width="0.6"/>
+<line x1="1436.0" y1="277.8" x2="1444.0" y2="269.8" stroke="#222" stroke-width="1.1"/>
+<line x1="1436.0" y1="238.9" x2="1444.0" y2="230.9" stroke="#222" stroke-width="1.1"/>
+<text x="1437.0" y="254.4" font-size="6.9" text-anchor="middle" transform="rotate(-90 1437.0 254.4)">1 9/16&quot; dente</text>
+<line x1="1405.5" y1="490.0" x2="1506.5" y2="490.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1405.5" y1="362.1" x2="1506.5" y2="362.1" stroke="#555" stroke-width="0.5"/>
+<line x1="1502.5" y1="490.0" x2="1502.5" y2="362.1" stroke="#222" stroke-width="0.6"/>
+<line x1="1498.5" y1="494.0" x2="1506.5" y2="486.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1498.5" y1="366.1" x2="1506.5" y2="358.1" stroke="#222" stroke-width="1.1"/>
+<text x="1499.5" y="426.0" font-size="6.9" text-anchor="middle" transform="rotate(-90 1499.5 426.0)">5 1/8&quot; passo</text>
+<line x1="1299.5" y1="590.0" x2="1261.0" y2="590.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1299.5" y1="490.0" x2="1261.0" y2="490.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1265.0" y1="590.0" x2="1265.0" y2="490.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1261.0" y1="594.0" x2="1269.0" y2="586.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1261.0" y1="494.0" x2="1269.0" y2="486.0" stroke="#222" stroke-width="1.1"/>
+<text x="1262.0" y="540.0" font-size="6.9" text-anchor="middle" transform="rotate(-90 1262.0 540.0)">4&quot; do chão</text>
+<polyline points="1252.50,590.00 1427.50,590.00" fill="none" stroke="#222" stroke-width="1.60"/>
+<polyline points="1240.0,340.0 1332.5,452.5" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="1237.0" y="343.0" font-size="6.9" text-anchor="end">ponta da ripa</text>
+<text x="1237.0" y="351.0" font-size="6.9" text-anchor="end">encaixada</text>
+<text x="1237.0" y="359.0" font-size="6.9" text-anchor="end">(tábua 1&quot; de esp.)</text>
+<text x="1371.2" y="622.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 3 — SERRILHADO (vista do vão)</text>
+<text x="1371.2" y="638.0" font-size="9.7" text-anchor="middle">ESCALA 1:4  (3&quot; = 1&#x27;-0&quot;)</text>
 <text x="995.0" y="666.0" font-size="11.1" text-anchor="start" font-weight="bold">LISTA DE PEÇAS</text>
 <rect x="995.0" y="670.0" width="662.0" height="12.9" fill="#eee" stroke="#222" stroke-width="0.6"/>
 <text x="998.0" y="679.0" font-size="8.3" text-anchor="start" font-weight="bold">Marca</text>
@@ -256,14 +304,14 @@
 <rect x="995.0" y="708.8" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
 <text x="998.0" y="717.8" font-size="8.3" text-anchor="start">S</text>
 <text x="1040.0" y="717.8" font-size="8.3" text-anchor="start">Lateral serrilhada</text>
-<text x="1170.0" y="717.8" font-size="8.3" text-anchor="start">Cedro 2x6 serrilhado</text>
+<text x="1170.0" y="717.8" font-size="8.3" text-anchor="start">Cedro 5/4 (1&quot;) serrilhado</text>
 <text x="1340.0" y="717.8" font-size="8.3" text-anchor="start">20</text>
 <text x="1375.0" y="717.8" font-size="8.3" text-anchor="start">7&#x27;-4&quot;</text>
 <text x="1500.0" y="717.8" font-size="8.3" text-anchor="start">16 encaixes; ripar p/ 3 1/2&quot;</text>
 <rect x="995.0" y="721.7" width="662.0" height="12.9" fill="none" stroke="#999" stroke-width="0.4"/>
 <text x="998.0" y="730.7" font-size="8.3" text-anchor="start">L</text>
 <text x="1040.0" y="730.7" font-size="8.3" text-anchor="start">Lateral lisa</text>
-<text x="1170.0" y="730.7" font-size="8.3" text-anchor="start">Cedro 2x6</text>
+<text x="1170.0" y="730.7" font-size="8.3" text-anchor="start">Cedro 2x6 lisa</text>
 <text x="1340.0" y="730.7" font-size="8.3" text-anchor="start">2</text>
 <text x="1375.0" y="730.7" font-size="8.3" text-anchor="start">7&#x27;-4&quot;</text>
 <text x="1500.0" y="730.7" font-size="8.3" text-anchor="start">postes 1 e 11, lado externo</text>
@@ -294,7 +342,7 @@
 <text x="1211.0" y="934.0" font-size="10.4" text-anchor="start" font-weight="bold">Kitchen Privacy Screen — 265 in x ~8 ft, ripado de cedro + topo</text>
 <text x="1211.0" y="947.0" font-size="10.4" text-anchor="start" font-weight="bold">pergolado (Cornelius, NC)</text>
 <text x="1211.0" y="982.0" font-size="13.9" text-anchor="start" font-weight="bold">Cortes e detalhes</text>
-<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 2   Por: </text>
+<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 3   Por: </text>
 <text x="1211.0" y="1025.0" font-size="8.3" text-anchor="start">Medidas em polegadas/pés. Madeira: medidas reais (6x6 = 5 1/2&quot;).</text>
 <text x="1211.0" y="1042.0" font-size="8.3" text-anchor="start">Conferir no campo antes de cortar. Não é projeto estrutural.</text>
 <text x="1620.0" y="1015.0" font-size="27.8" text-anchor="middle" font-weight="bold">A-2</text>

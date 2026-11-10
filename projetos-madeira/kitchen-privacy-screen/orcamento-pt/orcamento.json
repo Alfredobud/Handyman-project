@@ -58,15 +58,15 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais serrilhadas PT 2x6 (ripar p/ 3 1/2\")",
-      "material": "pt_2x6",
+      "nome": "Laterais serrilhadas PT 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "material": "pt_5_4x6",
       "comprimento_in": 88,
       "qtd": 20,
       "tarefa": "serrilhado"
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais lisas PT 2x6 (postes de ponta)",
+      "nome": "Laterais lisas PT 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
       "material": "pt_2x6",
       "comprimento_in": 88,
       "qtd": 2
@@ -75,7 +75,7 @@
       "tipo": "pecas",
       "nome": "Ripas PT 2x4 deitado (16/vão x 10 vãos)",
       "material": "pt_2x4",
-      "comprimento_in": 22.125,
+      "comprimento_in": 22.1,
       "qtd": 160,
       "tarefa": "ripa_encaixe"
     },
@@ -176,14 +176,14 @@
       ""
     ],
     [
-      "Laterais serrilhadas PT 2x6 (ripar p/ 3 1/2\")",
-      "pt_2x6",
+      "Laterais serrilhadas PT 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "pt_5_4x6",
       20,
       88.0,
       ""
     ],
     [
-      "Laterais lisas PT 2x6 (postes de ponta)",
+      "Laterais lisas PT 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
       "pt_2x6",
       2,
       88.0,
@@ -193,7 +193,7 @@
       "Ripas PT 2x4 deitado (16/vão x 10 vãos)",
       "pt_2x4",
       160,
-      22.125,
+      22.1,
       ""
     ],
     [
@@ -226,11 +226,11 @@
       "material": "pt_2x6",
       "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
       "comprimento_ft": 8.0,
-      "qtd": 48,
+      "qtd": 27,
       "preco_unit": 9.5,
-      "subtotal": 456.0,
+      "subtotal": 256.5,
       "fonte": "referencia-media-big-box",
-      "obs": "inclui 3 de sobra (5%)"
+      "obs": "inclui 2 de sobra (5%)"
     },
     {
       "material": "pt_2x6",
@@ -241,6 +241,16 @@
       "subtotal": 37.5,
       "fonte": "referencia-media-big-box",
       "obs": ""
+    },
+    {
+      "material": "pt_5_4x6",
+      "descricao": "PT 5/4x6 premium SYP deck board",
+      "comprimento_ft": 16.0,
+      "qtd": 11,
+      "preco_unit": 19.0,
+      "subtotal": 209.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
     },
     {
       "material": "pt_2x4",
@@ -410,16 +420,9 @@
     },
     {
       "material": "pt_2x6",
-      "qtd_tabuas": 20,
-      "comprimento_ft": 8.0,
-      "cortes": "1x 88\" Laterais serrilhadas PT 2x6 (ripar p/ 3 1/2\")",
-      "sobra_in": 8.0
-    },
-    {
-      "material": "pt_2x6",
       "qtd_tabuas": 2,
       "comprimento_ft": 8.0,
-      "cortes": "1x 88\" Laterais lisas PT 2x6 (postes de ponta)",
+      "cortes": "1x 88\" Laterais lisas PT 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
       "sobra_in": 8.0
     },
     {
@@ -437,11 +440,18 @@
       "sobra_in": 23.88
     },
     {
+      "material": "pt_5_4x6",
+      "qtd_tabuas": 10,
+      "comprimento_ft": 16.0,
+      "cortes": "2x 88\" Laterais serrilhadas PT 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "sobra_in": 15.88
+    },
+    {
       "material": "pt_2x4",
       "qtd_tabuas": 40,
       "comprimento_ft": 8.0,
-      "cortes": "4x 22.125\" Ripas PT 2x4 deitado (16/vão x 10 vãos)",
-      "sobra_in": 7.12
+      "cortes": "4x 22.1\" Ripas PT 2x4 deitado (16/vão x 10 vãos)",
+      "sobra_in": 7.22
     },
     {
       "material": "pt_2x8",
@@ -556,24 +566,24 @@
     }
   ],
   "totais": {
-    "material_subtotal": 2238.5,
-    "material_imposto": 184.68,
+    "material_subtotal": 2248.0,
+    "material_imposto": 185.46,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 2423.18,
+    "material_total": 2433.46,
     "horas": 108.2,
     "mao_de_obra_subtotal": 6495.0,
     "mao_de_obra_contingencia": 0.0,
     "mao_de_obra_total": 6495.0,
     "taxa_fixa": 150.0,
-    "total_geral": 9068.18
+    "total_geral": 9078.46
   },
   "premissas": [
     "Material: 100% PT (pinus autoclavado SYP). Stain em uma 2ª visita após a secagem (ou comprar KDAT).",
     "Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
-    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita); acima do colar, revestido com 2x6 nas faces da casa e do vizinho e, nas laterais voltadas para o vão, 2x6 SERRILHADO (ripado p/ 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Postes de ponta: lateral externa lisa.",
-    "Poste acabado 6 1/2\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 19 3/8\".",
-    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 1 3/8\" em cada encaixe). Vão curto + ripa de 1 1/2\" = praticamente sem flexão nem empeno.",
+    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 do lado da casa e do vizinho; nas laterais voltadas para o vão, tábua SERRILHADA de 1\" (5/4x6 ripado para 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Nos postes intermediários: 1\" + 3 1/2\" + 1\" = 5 1/2\", alinhado com as faces 2x6. Postes de ponta: lateral externa em 2x6 liso (1 1/2\"), largura total 6\".",
+    "Postes intermediários 5 1/2\" x 6 1/2\" (profundidade); postes de ponta 6\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 20 3/8\".",
+    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 7/8\" em cada encaixe, folga de 1/8\" no núcleo).",
     "Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.",
     "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 2 x 138 1/2\" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36\".",
     "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.",
@@ -581,7 +591,7 @@
     "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas."
   ],
   "perguntas": [
-    "Confirmar o croqui: o \"2x6 (5)\" do serrilhado é 2x6 ripado (usei 3 1/2\" de largura) ou outra medida/quantidade?",
+    "Serrilhado de 1\": usei cedro 5/4x6 ripado para 3 1/2\". Se a loja tiver 5/4x4 (1\" x 3 1/2\"), dá para usar direto, sem ripar.",
     "Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26\" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).",
     "Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.",
     "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",

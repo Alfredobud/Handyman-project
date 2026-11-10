@@ -2,13 +2,13 @@
 
 **Pinus autoclavado** nos EUA é o *pressure-treated Southern Yellow Pine* (SYP), tratado hoje com cobre (ACQ, CA ou MCA). O CCA não é mais vendido para uso residencial.
 
-## Comparação de custo (Cornelius, NC — rev. 2: 11 postes compostos, ripas 2x4 encaixadas)
+## Comparação de custo (Cornelius, NC — rev. 3: 11 postes compostos, ripas 2x4 encaixadas)
 
 | Cenário | Materiais (c/ 8.25%) | Mão de obra ($60/h) | Taxa | **Total** |
 |---|---:|---:|---:|---:|
-| **A — núcleo PT + tudo visível em cedro** ([orçamento](orcamento/orcamento.md)) | $4,229 | $5,835 (97 h) | $150 | **$10,214** |
-| **B — 100% PT** ([orçamento](orcamento-pt/orcamento.md)) | $2,423 | $6,495 (108 h) | $150 | **$9,068** |
-| Diferença | −$1,806 | +$660 (+11 h) | — | **−$1,146** |
+| **A — núcleo PT + tudo visível em cedro** ([orçamento](orcamento/orcamento.md)) | $4,252 | $5,835 (97 h) | $150 | **$10,237** |
+| **B — 100% PT** ([orçamento](orcamento-pt/orcamento.md)) | $2,433 | $6,495 (108 h) | $150 | **$9,078** |
+| Diferença | −$1,819 | +$660 (+11 h) | — | **−$1,159** |
 
 Com o modelo da foto, a quantidade de madeira aparente cresceu (revestimento de 11 postes, 160 ripas 2x4). Por isso a economia do PT passa a ser real, **~$1,150 (11%)**, mesmo contando o stain e a segunda visita.
 

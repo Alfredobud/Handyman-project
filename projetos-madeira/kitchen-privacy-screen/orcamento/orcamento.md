@@ -4,21 +4,22 @@
 
 | | Valor |
 |---|---:|
-| Materiais (subtotal loja) | $3,906.96 |
-| Imposto sobre material (8.25%) | $322.32 |
-| **Total materiais** | **$4,229.28** |
+| Materiais (subtotal loja) | $3,927.54 |
+| Imposto sobre material (8.25%) | $324.02 |
+| **Total materiais** | **$4,251.56** |
 | Mão de obra (97.2 h × $60.00/h) | $5,835.00 |
 | **Total mão de obra** | **$5,835.00** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$10,214.28** |
+| **TOTAL** | **$10,236.56** |
 
 ## Lista de compra
 
 | Material | Compr. | Qtd | Unit. | Subtotal | Obs. | Fonte do preço |
 |---|---:|---:|---:|---:|---|---|
 | PT 4x4 #2 ground contact | 12' | 11 | $24.00 | $264.00 |  | estimativa (sem preço online local; conferir) |
-| Cedro 2x6 S4S | 8' | 36 | $33.00 | $1,188.00 | inclui 3 de sobra (5%) | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
+| Cedro 2x6 S4S | 8' | 15 | $33.00 | $495.00 | inclui 2 de sobra (5%) | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
 | Cedro 2x6 S4S | 12' | 11 | $50.00 | $550.00 |  | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
+| Cedro 5/4x6 #1 kiln-dried deck board (1x5.5 real) | 12' | 21 | $33.98 | $713.58 | inclui 1 de sobra (5%) | lowes.com online (nao confirmado loja Cornelius) |
 | Cedro 2x4 S4S | 8' | 42 | $13.18 | $553.56 | inclui 2 de sobra (5%) | homedepot.com online (nao confirmado loja Cornelius) |
 | Cedro 2x8 green (rough) | 12' | 5 | $70.98 | $354.90 | inclui 1 de sobra (5%) | lowes.com online - preco incerto no resultado de busca |
 | Concreto ensacado 80 lb (~0.60 cf) |  | 42 | $6.50 | $273.00 | saco — Sapatas Ø12" (concreto em volta do núcleo) | referencia-media-big-box |
@@ -44,9 +45,9 @@
 |---|---|---:|---:|---|
 | Núcleo PT 4x4 ground contact (embutir 36") | pt_4x4 | 11 | 128 |  |
 | Faces do poste cedro 2x6 (casa + vizinho) | cedro_2x6 | 22 | 88 |  |
-| Laterais serrilhadas cedro 2x6 (ripar p/ 3 1/2") | cedro_2x6 | 20 | 88 |  |
-| Laterais lisas cedro 2x6 (postes de ponta) | cedro_2x6 | 2 | 88 |  |
-| Ripas cedro 2x4 deitado (16/vão x 10 vãos) | cedro_2x4 | 160 | 22.125 |  |
+| Laterais serrilhadas cedro 5/4x6 (1" esp., ripar p/ 3 1/2") — postes intermediários | cedro_5_4x6 | 20 | 88 |  |
+| Laterais lisas cedro 2x6 (1 1/2") — lado externo dos postes 1 e 11 | cedro_2x6 | 2 | 88 |  |
+| Ripas cedro 2x4 deitado (16/vão x 10 vãos) | cedro_2x4 | 160 | 22.1 |  |
 | Vigas duplas cedro 2x8 (emenda sobre o poste 6) | cedro_2x8 | 4 | 138.5 |  |
 | Caibros cedro 2x6 com ponta tipo nuvem (1 por poste) | cedro_2x6 | 11 | 36 |  |
 
@@ -57,9 +58,9 @@
 | pt_4x4 | 11 | 12' | 1x 128" Núcleo PT 4x4 ground contact (embutir 36") | 16 |
 | cedro_2x6 | 11 | 12' | 1x 88" Faces do poste cedro 2x6 (casa + vizinho) + 1x 36" Caibros cedro 2x6 com ponta tipo nuvem (1 por poste) | 19.88 |
 | cedro_2x6 | 11 | 8' | 1x 88" Faces do poste cedro 2x6 (casa + vizinho) | 8 |
-| cedro_2x6 | 20 | 8' | 1x 88" Laterais serrilhadas cedro 2x6 (ripar p/ 3 1/2") | 8 |
-| cedro_2x6 | 2 | 8' | 1x 88" Laterais lisas cedro 2x6 (postes de ponta) | 8 |
-| cedro_2x4 | 40 | 8' | 4x 22.125" Ripas cedro 2x4 deitado (16/vão x 10 vãos) | 7.12 |
+| cedro_2x6 | 2 | 8' | 1x 88" Laterais lisas cedro 2x6 (1 1/2") — lado externo dos postes 1 e 11 | 8 |
+| cedro_5_4x6 | 20 | 12' | 1x 88" Laterais serrilhadas cedro 5/4x6 (1" esp., ripar p/ 3 1/2") — postes intermediários | 56 |
+| cedro_2x4 | 40 | 8' | 4x 22.1" Ripas cedro 2x4 deitado (16/vão x 10 vãos) | 7.22 |
 | cedro_2x8 | 4 | 12' | 1x 138.5" Vigas duplas cedro 2x8 (emenda sobre o poste 6) | 5.5 |
 
 ## Mão de obra
@@ -83,9 +84,9 @@
 
 - Material: núcleo dos postes em PT (enterrado); tudo o que é visível em cedro natural (sem stain).
 - Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.
-- Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36" em concreto (furo Ø12", 6" de brita); acima do colar, revestido com 2x6 nas faces da casa e do vizinho e, nas laterais voltadas para o vão, 2x6 SERRILHADO (ripado p/ 3 1/2") com 16 encaixes de 3 9/16" x 1 1/2". Postes de ponta: lateral externa lisa.
-- Poste acabado 6 1/2" x 6 1/2"; 11 postes a 2'-1 7/8" entre eixos; vão livre 19 3/8".
-- Ripas 2x4 deitadas (1 1/2" x 3 1/2"), 16 por vão, espaço ~1 5/8" dado pelos dentes do serrilhado; ripa de 22 1/8" (entra 1 3/8" em cada encaixe). Vão curto + ripa de 1 1/2" = praticamente sem flexão nem empeno.
+- Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36" em concreto (furo Ø12", 6" de brita). Acima do colar: faces 2x6 do lado da casa e do vizinho; nas laterais voltadas para o vão, tábua SERRILHADA de 1" (5/4x6 ripado para 3 1/2") com 16 encaixes de 3 9/16" x 1 1/2". Nos postes intermediários: 1" + 3 1/2" + 1" = 5 1/2", alinhado com as faces 2x6. Postes de ponta: lateral externa em 2x6 liso (1 1/2"), largura total 6".
+- Postes intermediários 5 1/2" x 6 1/2" (profundidade); postes de ponta 6" x 6 1/2"; 11 postes a 2'-1 7/8" entre eixos; vão livre 20 3/8".
+- Ripas 2x4 deitadas (1 1/2" x 3 1/2"), 16 por vão, espaço ~1 5/8" dado pelos dentes do serrilhado; ripa de 22 1/8" (entra 7/8" em cada encaixe, folga de 1/8" no núcleo).
 - Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.
 - Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2"x10" por poste), 2 x 138 1/2" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36".
 - Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.
@@ -94,7 +95,7 @@
 
 ## Perguntas / verificações de campo
 
-- [ ] Confirmar o croqui: o "2x6 (5)" do serrilhado é 2x6 ripado (usei 3 1/2" de largura) ou outra medida/quantidade?
+- [ ] Serrilhado de 1": usei cedro 5/4x6 ripado para 3 1/2". Se a loja tiver 5/4x4 (1" x 3 1/2"), dá para usar direto, sem ripar.
 - [ ] Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).
 - [ ] Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.
 - [ ] NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.

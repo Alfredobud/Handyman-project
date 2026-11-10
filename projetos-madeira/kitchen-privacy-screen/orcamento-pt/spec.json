@@ -53,15 +53,15 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais serrilhadas PT 2x6 (ripar p/ 3 1/2\")",
-      "material": "pt_2x6",
+      "nome": "Laterais serrilhadas PT 5/4x6 (1\" esp., ripar p/ 3 1/2\") — postes intermediários",
+      "material": "pt_5_4x6",
       "comprimento_in": 88,
       "qtd": 20,
       "tarefa": "serrilhado"
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais lisas PT 2x6 (postes de ponta)",
+      "nome": "Laterais lisas PT 2x6 (1 1/2\") — lado externo dos postes 1 e 11",
       "material": "pt_2x6",
       "comprimento_in": 88,
       "qtd": 2
@@ -70,7 +70,7 @@
       "tipo": "pecas",
       "nome": "Ripas PT 2x4 deitado (16/vão x 10 vãos)",
       "material": "pt_2x4",
-      "comprimento_in": 22.125,
+      "comprimento_in": 22.1,
       "qtd": 160,
       "tarefa": "ripa_encaixe"
     },
@@ -180,9 +180,9 @@
   "premissas": [
     "Material: 100% PT (pinus autoclavado SYP). Stain em uma 2ª visita após a secagem (ou comprar KDAT).",
     "Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
-    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita); acima do colar, revestido com 2x6 nas faces da casa e do vizinho e, nas laterais voltadas para o vão, 2x6 SERRILHADO (ripado p/ 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Postes de ponta: lateral externa lisa.",
-    "Poste acabado 6 1/2\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 19 3/8\".",
-    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 1 3/8\" em cada encaixe). Vão curto + ripa de 1 1/2\" = praticamente sem flexão nem empeno.",
+    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 do lado da casa e do vizinho; nas laterais voltadas para o vão, tábua SERRILHADA de 1\" (5/4x6 ripado para 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Nos postes intermediários: 1\" + 3 1/2\" + 1\" = 5 1/2\", alinhado com as faces 2x6. Postes de ponta: lateral externa em 2x6 liso (1 1/2\"), largura total 6\".",
+    "Postes intermediários 5 1/2\" x 6 1/2\" (profundidade); postes de ponta 6\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 20 3/8\".",
+    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 7/8\" em cada encaixe, folga de 1/8\" no núcleo).",
     "Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.",
     "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 2 x 138 1/2\" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36\".",
     "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.",
@@ -190,7 +190,7 @@
     "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas."
   ],
   "perguntas": [
-    "Confirmar o croqui: o \"2x6 (5)\" do serrilhado é 2x6 ripado (usei 3 1/2\" de largura) ou outra medida/quantidade?",
+    "Serrilhado de 1\": usei cedro 5/4x6 ripado para 3 1/2\". Se a loja tiver 5/4x4 (1\" x 3 1/2\"), dá para usar direto, sem ripar.",
     "Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26\" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).",
     "Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.",
     "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",
@@ -212,12 +212,13 @@
     },
     "rotulos": {
       "revest": "PT 2x6",
-      "serrilhado": "PT 2x6 serrilhado",
+      "serrilhado": "PT 5/4 (1\") serrilhado",
       "ripa": "PT 2x4 (deitado)",
       "viga": "PT 2x8",
-      "caibro": "PT 2x6"
+      "caibro": "PT 2x6",
+      "lateral_ponta": "PT 2x6 lisa"
     }
   },
-  "revisao": "2",
+  "revisao": "3",
   "data": "2026-11-10"
 }

@@ -17,123 +17,156 @@
 </defs>
 <rect width="1700" height="1100" fill="#fff"/>
 <rect x="35.0" y="35.0" width="1630.0" height="1030.0" fill="none" stroke="#222" stroke-width="2"/>
-<polygon points="160.00,550.00 478.75,550.00 478.75,475.00 160.00,475.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polygon points="666.25,550.00 985.00,550.00 985.00,475.00 666.25,475.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polygon points="410.00,550.00 485.00,550.00 485.00,375.00 410.00,375.00" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
-<polygon points="660.00,550.00 735.00,550.00 735.00,375.00 660.00,375.00" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
-<polygon points="485.00,550.00 660.00,550.00 660.00,375.00 485.00,375.00" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polyline points="485.00,550.00 660.00,375.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="660.00,550.00 485.00,375.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="435.00,625.00 710.00,625.00 710.00,550.00 435.00,550.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="435.00,625.00 710.00,550.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="710.00,625.00 435.00,550.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="435.00,375.00 710.00,375.00 710.00,300.00 435.00,300.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="435.00,375.00 710.00,300.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="710.00,375.00 435.00,300.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="410.00,475.00 485.00,475.00 485.00,375.00 410.00,375.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="410.00,475.00 485.00,375.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="485.00,475.00 410.00,375.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="660.00,475.00 735.00,475.00 735.00,375.00 660.00,375.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="660.00,475.00 735.00,375.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="735.00,475.00 660.00,375.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<line x1="410.0" y1="297.0" x2="410.0" y2="186.0" stroke="#555" stroke-width="0.5"/>
-<line x1="735.0" y1="297.0" x2="735.0" y2="186.0" stroke="#555" stroke-width="0.5"/>
-<line x1="410.0" y1="190.0" x2="735.0" y2="190.0" stroke="#222" stroke-width="0.6"/>
-<line x1="406.0" y1="194.0" x2="414.0" y2="186.0" stroke="#222" stroke-width="1.1"/>
-<line x1="731.0" y1="194.0" x2="739.0" y2="186.0" stroke="#222" stroke-width="1.1"/>
-<text x="572.5" y="187.0" font-size="7.6" text-anchor="middle">6 1/2&quot;</text>
-<line x1="410.0" y1="297.0" x2="410.0" y2="246.0" stroke="#555" stroke-width="0.5"/>
-<line x1="485.0" y1="297.0" x2="485.0" y2="246.0" stroke="#555" stroke-width="0.5"/>
-<line x1="410.0" y1="250.0" x2="485.0" y2="250.0" stroke="#222" stroke-width="0.6"/>
-<line x1="406.0" y1="254.0" x2="414.0" y2="246.0" stroke="#222" stroke-width="1.1"/>
-<line x1="481.0" y1="254.0" x2="489.0" y2="246.0" stroke="#222" stroke-width="1.1"/>
-<text x="447.5" y="247.0" font-size="6.9" text-anchor="middle">1 1/2&quot;</text>
-<line x1="485.0" y1="297.0" x2="485.0" y2="246.0" stroke="#555" stroke-width="0.5"/>
-<line x1="660.0" y1="297.0" x2="660.0" y2="246.0" stroke="#555" stroke-width="0.5"/>
-<line x1="485.0" y1="250.0" x2="660.0" y2="250.0" stroke="#222" stroke-width="0.6"/>
-<line x1="481.0" y1="254.0" x2="489.0" y2="246.0" stroke="#222" stroke-width="1.1"/>
-<line x1="656.0" y1="254.0" x2="664.0" y2="246.0" stroke="#222" stroke-width="1.1"/>
-<text x="572.5" y="247.0" font-size="6.9" text-anchor="middle">3 1/2&quot;</text>
-<line x1="988.0" y1="625.0" x2="1109.0" y2="625.0" stroke="#555" stroke-width="0.5"/>
-<line x1="988.0" y1="300.0" x2="1109.0" y2="300.0" stroke="#555" stroke-width="0.5"/>
-<line x1="1105.0" y1="625.0" x2="1105.0" y2="300.0" stroke="#222" stroke-width="0.6"/>
-<line x1="1101.0" y1="629.0" x2="1109.0" y2="621.0" stroke="#222" stroke-width="1.1"/>
-<line x1="1101.0" y1="304.0" x2="1109.0" y2="296.0" stroke="#222" stroke-width="1.1"/>
-<text x="1102.0" y="462.5" font-size="7.6" text-anchor="middle" transform="rotate(-90 1102.0 462.5)">6 1/2&quot;</text>
-<line x1="988.0" y1="550.0" x2="1039.0" y2="550.0" stroke="#555" stroke-width="0.5"/>
-<line x1="988.0" y1="475.0" x2="1039.0" y2="475.0" stroke="#555" stroke-width="0.5"/>
-<line x1="1035.0" y1="550.0" x2="1035.0" y2="475.0" stroke="#222" stroke-width="0.6"/>
-<line x1="1031.0" y1="554.0" x2="1039.0" y2="546.0" stroke="#222" stroke-width="1.1"/>
-<line x1="1031.0" y1="479.0" x2="1039.0" y2="471.0" stroke="#222" stroke-width="1.1"/>
-<text x="1032.0" y="512.5" font-size="6.9" text-anchor="middle" transform="rotate(-90 1032.0 512.5)">1 1/2&quot;</text>
-<line x1="435.0" y1="628.0" x2="435.0" y2="679.0" stroke="#555" stroke-width="0.5"/>
-<line x1="710.0" y1="628.0" x2="710.0" y2="679.0" stroke="#555" stroke-width="0.5"/>
-<line x1="435.0" y1="675.0" x2="710.0" y2="675.0" stroke="#222" stroke-width="0.6"/>
-<line x1="431.0" y1="679.0" x2="439.0" y2="671.0" stroke="#222" stroke-width="1.1"/>
-<line x1="706.0" y1="679.0" x2="714.0" y2="671.0" stroke="#222" stroke-width="1.1"/>
-<text x="572.5" y="672.0" font-size="6.9" text-anchor="middle">5 1/2&quot;</text>
-<polyline points="335.0,130.0 535.0,500.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
-<text x="332.0" y="133.0" font-size="7.6" text-anchor="end">núcleo PT 4x4 ground contact (UC4B)</text>
-<polyline points="260.0,190.0 475.0,340.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
-<text x="257.0" y="193.0" font-size="7.6" text-anchor="end">face Cedro 2x6 (vizinho)</text>
-<polyline points="260.0,755.0 475.0,600.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
-<text x="257.0" y="758.0" font-size="7.6" text-anchor="end">face Cedro 2x6 (casa)</text>
-<polyline points="810.0,130.0 695.0,405.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
-<text x="813.0" y="133.0" font-size="7.6" text-anchor="start">lateral serrilhada (det. 3)</text>
-<polyline points="860.0,755.0 910.0,515.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
-<text x="857.0" y="758.0" font-size="7.6" text-anchor="end">ripa entra no encaixe</text>
-<text x="857.0" y="766.8" font-size="7.6" text-anchor="end">folga 1/8&quot; na ponta</text>
-<text x="160.0" y="660.0" font-size="8.3" text-anchor="start" font-weight="bold">CASA</text>
-<text x="160.0" y="330.0" font-size="8.3" text-anchor="start" font-weight="bold">VIZINHO</text>
-<text x="632.5" y="787.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 2 — POSTE COMPOSTO, CORTE B-B</text>
-<text x="632.5" y="803.0" font-size="9.7" text-anchor="middle">ESCALA 1:2  (6&quot; = 1&#x27;-0&quot;)</text>
-<polygon points="1446.67,800.00 1446.67,205.00 1330.00,205.00 1330.00,257.85 1380.00,257.85 1380.00,376.60 1330.00,376.60 1330.00,428.40 1380.00,428.40 1380.00,547.15 1330.00,547.15 1330.00,598.96 1380.00,598.96 1380.00,717.71 1330.00,717.71 1330.00,800.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="1316.67,195.00 1460.00,215.00" fill="none" stroke="#222" stroke-width="0.96"/>
-<polygon points="1330.00,716.67 1380.00,716.67 1380.00,600.00 1330.00,600.00" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
-<polygon points="1330.00,546.11 1380.00,546.11 1380.00,429.44 1330.00,429.44" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
-<polygon points="1330.00,375.56 1380.00,375.56 1380.00,258.89 1330.00,258.89" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
-<line x1="1330.0" y1="803.0" x2="1330.0" y2="854.0" stroke="#555" stroke-width="0.5"/>
-<line x1="1446.7" y1="803.0" x2="1446.7" y2="854.0" stroke="#555" stroke-width="0.5"/>
-<line x1="1330.0" y1="850.0" x2="1446.7" y2="850.0" stroke="#222" stroke-width="0.6"/>
-<line x1="1326.0" y1="854.0" x2="1334.0" y2="846.0" stroke="#222" stroke-width="1.1"/>
-<line x1="1442.7" y1="854.0" x2="1450.7" y2="846.0" stroke="#222" stroke-width="1.1"/>
-<text x="1388.3" y="847.0" font-size="6.9" text-anchor="middle">3 1/2&quot;</text>
-<line x1="1330.0" y1="202.0" x2="1330.0" y2="154.3" stroke="#555" stroke-width="0.5"/>
-<line x1="1380.0" y1="202.0" x2="1380.0" y2="154.3" stroke="#555" stroke-width="0.5"/>
-<line x1="1330.0" y1="158.3" x2="1380.0" y2="158.3" stroke="#222" stroke-width="0.6"/>
-<line x1="1326.0" y1="162.3" x2="1334.0" y2="154.3" stroke="#222" stroke-width="1.1"/>
-<line x1="1376.0" y1="162.3" x2="1384.0" y2="154.3" stroke="#222" stroke-width="1.1"/>
-<text x="1355.0" y="155.3" font-size="6.9" text-anchor="middle">1 1/2&quot; prof.</text>
-<line x1="1449.7" y1="547.2" x2="1500.7" y2="547.2" stroke="#555" stroke-width="0.5"/>
-<line x1="1449.7" y1="428.4" x2="1500.7" y2="428.4" stroke="#555" stroke-width="0.5"/>
-<line x1="1496.7" y1="547.2" x2="1496.7" y2="428.4" stroke="#222" stroke-width="0.6"/>
-<line x1="1492.7" y1="551.2" x2="1500.7" y2="543.2" stroke="#222" stroke-width="1.1"/>
-<line x1="1492.7" y1="432.4" x2="1500.7" y2="424.4" stroke="#222" stroke-width="1.1"/>
-<text x="1493.7" y="487.8" font-size="6.9" text-anchor="middle" transform="rotate(-90 1493.7 487.8)">3 9/16&quot; encaixe</text>
-<line x1="1449.7" y1="428.4" x2="1500.7" y2="428.4" stroke="#555" stroke-width="0.5"/>
-<line x1="1449.7" y1="376.6" x2="1500.7" y2="376.6" stroke="#555" stroke-width="0.5"/>
-<line x1="1496.7" y1="428.4" x2="1496.7" y2="376.6" stroke="#222" stroke-width="0.6"/>
-<line x1="1492.7" y1="432.4" x2="1500.7" y2="424.4" stroke="#222" stroke-width="1.1"/>
-<line x1="1492.7" y1="380.6" x2="1500.7" y2="372.6" stroke="#222" stroke-width="1.1"/>
-<text x="1493.7" y="402.5" font-size="6.9" text-anchor="middle" transform="rotate(-90 1493.7 402.5)">1 9/16&quot; dente</text>
-<line x1="1449.7" y1="716.7" x2="1667.3" y2="716.7" stroke="#555" stroke-width="0.5"/>
-<line x1="1449.7" y1="546.1" x2="1667.3" y2="546.1" stroke="#555" stroke-width="0.5"/>
-<line x1="1663.3" y1="716.7" x2="1663.3" y2="546.1" stroke="#222" stroke-width="0.6"/>
-<line x1="1659.3" y1="720.7" x2="1667.3" y2="712.7" stroke="#222" stroke-width="1.1"/>
-<line x1="1659.3" y1="550.1" x2="1667.3" y2="542.1" stroke="#222" stroke-width="1.1"/>
-<text x="1660.3" y="631.4" font-size="6.9" text-anchor="middle" transform="rotate(-90 1660.3 631.4)">5 1/8&quot; passo</text>
-<line x1="1310.3" y1="850.0" x2="1259.3" y2="850.0" stroke="#555" stroke-width="0.5"/>
-<line x1="1310.3" y1="716.7" x2="1259.3" y2="716.7" stroke="#555" stroke-width="0.5"/>
-<line x1="1263.3" y1="850.0" x2="1263.3" y2="716.7" stroke="#222" stroke-width="0.6"/>
-<line x1="1259.3" y1="854.0" x2="1267.3" y2="846.0" stroke="#222" stroke-width="1.1"/>
-<line x1="1259.3" y1="720.7" x2="1267.3" y2="712.7" stroke="#222" stroke-width="1.1"/>
-<text x="1260.3" y="783.3" font-size="6.9" text-anchor="middle" transform="rotate(-90 1260.3 783.3)">4&quot; do chão</text>
-<polyline points="1246.67,850.00 1480.00,850.00" fill="none" stroke="#222" stroke-width="1.60"/>
-<polyline points="1230.0,516.7 1353.3,666.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
-<text x="1227.0" y="519.7" font-size="6.9" text-anchor="end">ponta da ripa</text>
-<text x="1227.0" y="527.7" font-size="6.9" text-anchor="end">encaixada</text>
-<text x="1446.7" y="882.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 3 — SERRILHADO (vista do vão)</text>
-<text x="1446.7" y="898.0" font-size="9.7" text-anchor="middle">ESCALA 1:3</text>
+<polygon points="140.00,570.00 335.83,570.00 335.83,520.00 140.00,520.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polygon points="460.83,570.00 656.67,570.00 656.67,520.00 460.83,520.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polygon points="340.00,570.00 456.67,570.00 456.67,453.33 340.00,453.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="340.00,570.00 456.67,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="456.67,570.00 340.00,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="306.67,620.00 490.00,620.00 490.00,570.00 306.67,570.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="306.67,620.00 490.00,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="490.00,620.00 306.67,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="306.67,453.33 490.00,453.33 490.00,403.33 306.67,403.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="306.67,453.33 490.00,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="490.00,453.33 306.67,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="306.67,570.00 340.00,570.00 340.00,453.33 306.67,453.33" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
+<polygon points="306.67,520.00 340.00,520.00 340.00,453.33 306.67,453.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="306.67,520.00 340.00,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="340.00,520.00 306.67,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="456.67,570.00 490.00,570.00 490.00,453.33 456.67,453.33" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
+<polygon points="456.67,520.00 490.00,520.00 490.00,453.33 456.67,453.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="456.67,520.00 490.00,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="490.00,520.00 456.67,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<line x1="306.7" y1="400.3" x2="306.7" y2="326.0" stroke="#555" stroke-width="0.5"/>
+<line x1="490.0" y1="400.3" x2="490.0" y2="326.0" stroke="#555" stroke-width="0.5"/>
+<line x1="306.7" y1="330.0" x2="490.0" y2="330.0" stroke="#222" stroke-width="0.6"/>
+<line x1="302.7" y1="334.0" x2="310.7" y2="326.0" stroke="#222" stroke-width="1.1"/>
+<line x1="486.0" y1="334.0" x2="494.0" y2="326.0" stroke="#222" stroke-width="1.1"/>
+<text x="398.3" y="327.0" font-size="7.6" text-anchor="middle">5 1/2&quot;</text>
+<line x1="306.7" y1="400.3" x2="306.7" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="340.0" y1="400.3" x2="340.0" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="306.7" y1="370.0" x2="340.0" y2="370.0" stroke="#222" stroke-width="0.6"/>
+<line x1="302.7" y1="374.0" x2="310.7" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<line x1="336.0" y1="374.0" x2="344.0" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<text x="323.3" y="367.0" font-size="6.9" text-anchor="middle">1&quot;</text>
+<line x1="340.0" y1="400.3" x2="340.0" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="456.7" y1="400.3" x2="456.7" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="340.0" y1="370.0" x2="456.7" y2="370.0" stroke="#222" stroke-width="0.6"/>
+<line x1="336.0" y1="374.0" x2="344.0" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<line x1="452.7" y1="374.0" x2="460.7" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<text x="398.3" y="367.0" font-size="6.9" text-anchor="middle">3 1/2&quot;</text>
+<line x1="456.7" y1="400.3" x2="456.7" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="490.0" y1="400.3" x2="490.0" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="456.7" y1="370.0" x2="490.0" y2="370.0" stroke="#222" stroke-width="0.6"/>
+<line x1="452.7" y1="374.0" x2="460.7" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<line x1="486.0" y1="374.0" x2="494.0" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<text x="473.3" y="367.0" font-size="6.9" text-anchor="middle">1&quot;</text>
+<line x1="306.7" y1="623.0" x2="306.7" y2="657.3" stroke="#555" stroke-width="0.5"/>
+<line x1="490.0" y1="623.0" x2="490.0" y2="657.3" stroke="#555" stroke-width="0.5"/>
+<line x1="306.7" y1="653.3" x2="490.0" y2="653.3" stroke="#222" stroke-width="0.6"/>
+<line x1="302.7" y1="657.3" x2="310.7" y2="649.3" stroke="#222" stroke-width="1.1"/>
+<line x1="486.0" y1="657.3" x2="494.0" y2="649.3" stroke="#222" stroke-width="1.1"/>
+<text x="398.3" y="650.3" font-size="6.9" text-anchor="middle">5 1/2&quot;</text>
+<line x1="659.7" y1="620.0" x2="740.7" y2="620.0" stroke="#555" stroke-width="0.5"/>
+<line x1="659.7" y1="403.3" x2="740.7" y2="403.3" stroke="#555" stroke-width="0.5"/>
+<line x1="736.7" y1="620.0" x2="736.7" y2="403.3" stroke="#222" stroke-width="0.6"/>
+<line x1="732.7" y1="624.0" x2="740.7" y2="616.0" stroke="#222" stroke-width="1.1"/>
+<line x1="732.7" y1="407.3" x2="740.7" y2="399.3" stroke="#222" stroke-width="1.1"/>
+<text x="733.7" y="511.7" font-size="7.6" text-anchor="middle" transform="rotate(-90 733.7 511.7)">6 1/2&quot;</text>
+<line x1="659.7" y1="570.0" x2="694.0" y2="570.0" stroke="#555" stroke-width="0.5"/>
+<line x1="659.7" y1="520.0" x2="694.0" y2="520.0" stroke="#555" stroke-width="0.5"/>
+<line x1="690.0" y1="570.0" x2="690.0" y2="520.0" stroke="#222" stroke-width="0.6"/>
+<line x1="686.0" y1="574.0" x2="694.0" y2="566.0" stroke="#222" stroke-width="1.1"/>
+<line x1="686.0" y1="524.0" x2="694.0" y2="516.0" stroke="#222" stroke-width="1.1"/>
+<text x="687.0" y="545.0" font-size="6.9" text-anchor="middle" transform="rotate(-90 687.0 545.0)">1 1/2&quot;</text>
+<polyline points="273.3,283.3 373.3,536.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="270.3" y="286.3" font-size="7.6" text-anchor="end">núcleo PT 4x4 ground contact (UC4B)</text>
+<polyline points="223.3,323.3 333.3,430.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="220.3" y="326.3" font-size="7.6" text-anchor="end">face Cedro 2x6 (vizinho)</text>
+<polyline points="223.3,700.0 333.3,603.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="220.3" y="703.0" font-size="7.6" text-anchor="end">face Cedro 2x6 (casa)</text>
+<polyline points="540.0,283.3 473.3,473.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="543.0" y="286.3" font-size="7.6" text-anchor="start">Cedro 5/4 (1&quot;) serrilhado (1&quot;)</text>
+<polyline points="556.7,700.0 590.0,546.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="553.7" y="703.0" font-size="7.6" text-anchor="end">ripa entra 7/8&quot; no encaixe</text>
+<text x="140.0" y="643.3" font-size="8.3" text-anchor="start" font-weight="bold">CASA</text>
+<text x="140.0" y="423.3" font-size="8.3" text-anchor="start" font-weight="bold">VIZINHO</text>
+<text x="438.3" y="732.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 2a — POSTE INTERMEDIÁRIO, CORTE B-B</text>
+<text x="438.3" y="748.0" font-size="9.7" text-anchor="middle">ESCALA 1:3</text>
+<polygon points="1194.17,570.00 1390.00,570.00 1390.00,520.00 1194.17,520.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polygon points="1073.33,570.00 1190.00,570.00 1190.00,453.33 1073.33,453.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="1073.33,570.00 1190.00,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1190.00,570.00 1073.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1040.00,620.00 1223.33,620.00 1223.33,570.00 1040.00,570.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1040.00,620.00 1223.33,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1223.33,620.00 1040.00,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1040.00,453.33 1223.33,453.33 1223.33,403.33 1040.00,403.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1040.00,453.33 1223.33,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1223.33,453.33 1040.00,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1023.33,570.00 1073.33,570.00 1073.33,453.33 1023.33,453.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1023.33,570.00 1073.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1073.33,570.00 1023.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1190.00,570.00 1223.33,570.00 1223.33,453.33 1190.00,453.33" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
+<polygon points="1190.00,520.00 1223.33,520.00 1223.33,453.33 1190.00,453.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1190.00,520.00 1223.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1223.33,520.00 1190.00,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<line x1="1023.3" y1="400.3" x2="1023.3" y2="326.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1223.3" y1="400.3" x2="1223.3" y2="326.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1023.3" y1="330.0" x2="1223.3" y2="330.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1019.3" y1="334.0" x2="1027.3" y2="326.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1219.3" y1="334.0" x2="1227.3" y2="326.0" stroke="#222" stroke-width="1.1"/>
+<text x="1123.3" y="327.0" font-size="7.6" text-anchor="middle">6&quot;</text>
+<line x1="1023.3" y1="400.3" x2="1023.3" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1073.3" y1="400.3" x2="1073.3" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1023.3" y1="370.0" x2="1073.3" y2="370.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1019.3" y1="374.0" x2="1027.3" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1069.3" y1="374.0" x2="1077.3" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<text x="1048.3" y="367.0" font-size="6.9" text-anchor="middle">1 1/2&quot;</text>
+<line x1="1073.3" y1="400.3" x2="1073.3" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1190.0" y1="400.3" x2="1190.0" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1073.3" y1="370.0" x2="1190.0" y2="370.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1069.3" y1="374.0" x2="1077.3" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1186.0" y1="374.0" x2="1194.0" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<text x="1131.7" y="367.0" font-size="6.9" text-anchor="middle">3 1/2&quot;</text>
+<line x1="1190.0" y1="400.3" x2="1190.0" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1223.3" y1="400.3" x2="1223.3" y2="366.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1190.0" y1="370.0" x2="1223.3" y2="370.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1186.0" y1="374.0" x2="1194.0" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1219.3" y1="374.0" x2="1227.3" y2="366.0" stroke="#222" stroke-width="1.1"/>
+<text x="1206.7" y="367.0" font-size="6.9" text-anchor="middle">1&quot;</text>
+<line x1="1040.0" y1="623.0" x2="1040.0" y2="657.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1223.3" y1="623.0" x2="1223.3" y2="657.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1040.0" y1="653.3" x2="1223.3" y2="653.3" stroke="#222" stroke-width="0.6"/>
+<line x1="1036.0" y1="657.3" x2="1044.0" y2="649.3" stroke="#222" stroke-width="1.1"/>
+<line x1="1219.3" y1="657.3" x2="1227.3" y2="649.3" stroke="#222" stroke-width="1.1"/>
+<text x="1131.7" y="650.3" font-size="6.9" text-anchor="middle">5 1/2&quot;</text>
+<line x1="1393.0" y1="620.0" x2="1474.0" y2="620.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1393.0" y1="403.3" x2="1474.0" y2="403.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1470.0" y1="620.0" x2="1470.0" y2="403.3" stroke="#222" stroke-width="0.6"/>
+<line x1="1466.0" y1="624.0" x2="1474.0" y2="616.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1466.0" y1="407.3" x2="1474.0" y2="399.3" stroke="#222" stroke-width="1.1"/>
+<text x="1467.0" y="511.7" font-size="7.6" text-anchor="middle" transform="rotate(-90 1467.0 511.7)">6 1/2&quot;</text>
+<line x1="1393.0" y1="570.0" x2="1427.3" y2="570.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1393.0" y1="520.0" x2="1427.3" y2="520.0" stroke="#555" stroke-width="0.5"/>
+<line x1="1423.3" y1="570.0" x2="1423.3" y2="520.0" stroke="#222" stroke-width="0.6"/>
+<line x1="1419.3" y1="574.0" x2="1427.3" y2="566.0" stroke="#222" stroke-width="1.1"/>
+<line x1="1419.3" y1="524.0" x2="1427.3" y2="516.0" stroke="#222" stroke-width="1.1"/>
+<text x="1420.3" y="545.0" font-size="6.9" text-anchor="middle" transform="rotate(-90 1420.3 545.0)">1 1/2&quot;</text>
+<polyline points="990.0,283.3 1106.7,536.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="987.0" y="286.3" font-size="7.6" text-anchor="end">núcleo PT 4x4 ground contact (UC4B)</text>
+<polyline points="940.0,323.3 1066.7,430.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="937.0" y="326.3" font-size="7.6" text-anchor="end">face Cedro 2x6 (vizinho)</text>
+<polyline points="940.0,700.0 1066.7,603.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="937.0" y="703.0" font-size="7.6" text-anchor="end">face Cedro 2x6 (casa)</text>
+<polyline points="940.0,363.3 1048.3,473.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="937.0" y="366.3" font-size="7.6" text-anchor="end">lateral Cedro 2x6 lisa (1 1/2&quot;)</text>
+<polyline points="1273.3,283.3 1206.7,473.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="1276.3" y="286.3" font-size="7.6" text-anchor="start">Cedro 5/4 (1&quot;) serrilhado (1&quot;)</text>
+<polyline points="1290.0,700.0 1323.3,546.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<text x="1287.0" y="703.0" font-size="7.6" text-anchor="end">ripa entra 7/8&quot; no encaixe</text>
+<text x="990.0" y="643.3" font-size="8.3" text-anchor="end" font-weight="bold">CASA</text>
+<text x="990.0" y="423.3" font-size="8.3" text-anchor="end" font-weight="bold">VIZINHO</text>
+<text x="1205.0" y="732.0" font-size="15.3" font-weight="bold" text-anchor="middle" text-decoration="underline">DETALHE 2b — POSTE DE PONTA (1 e 11)</text>
+<text x="1205.0" y="748.0" font-size="9.7" text-anchor="middle">ESCALA 1:3</text>
 <rect x="100.0" y="845.0" width="1070.0" height="14.0" fill="#eee" stroke="#222" stroke-width="0.6"/>
 <text x="103.0" y="854.8" font-size="9.0" text-anchor="start" font-weight="bold">#</text>
 <text x="133.0" y="854.8" font-size="9.0" text-anchor="start" font-weight="bold">SEQUÊNCIA DE MONTAGEM</text>
@@ -148,13 +181,13 @@
 <text x="133.0" y="896.8" font-size="9.0" text-anchor="start">Cortar todos os núcleos na mesma altura (7&#x27;-6 1/2&quot; acima do terreno), com nível laser ou mangueira.</text>
 <rect x="100.0" y="901.0" width="1070.0" height="14.0" fill="none" stroke="#999" stroke-width="0.4"/>
 <text x="103.0" y="910.8" font-size="9.0" text-anchor="start">4</text>
-<text x="133.0" y="910.8" font-size="9.0" text-anchor="start">Fabricar os 20 serrilhados juntos, com gabarito: 16 encaixes de 3 9/16&quot; x 1 1/2&quot;, passo 5 1/8&quot;.</text>
+<text x="133.0" y="910.8" font-size="9.0" text-anchor="start">Fabricar os 20 serrilhados (1&quot; x 3 1/2&quot;) juntos, com gabarito: 16 encaixes de 3 9/16&quot; x 1 1/2&quot;, passo 5 1/8&quot;.</text>
 <rect x="100.0" y="915.0" width="1070.0" height="14.0" fill="none" stroke="#999" stroke-width="0.4"/>
 <text x="103.0" y="924.8" font-size="9.0" text-anchor="start">5</text>
 <text x="133.0" y="924.8" font-size="9.0" text-anchor="start">Fixar as faces 2x6 do LADO DO VIZINHO nos núcleos (parafuso inox, cola PU).</text>
 <rect x="100.0" y="929.0" width="1070.0" height="14.0" fill="none" stroke="#999" stroke-width="0.4"/>
 <text x="103.0" y="938.8" font-size="9.0" text-anchor="start">6</text>
-<text x="133.0" y="938.8" font-size="9.0" text-anchor="start">Fixar os serrilhados nas laterais dos núcleos, com os encaixes voltados para o lado da casa.</text>
+<text x="133.0" y="938.8" font-size="9.0" text-anchor="start">Fixar os serrilhados nas laterais dos núcleos (encaixes para o lado da casa) e as laterais lisas 2x6 nos postes de ponta.</text>
 <rect x="100.0" y="943.0" width="1070.0" height="14.0" fill="none" stroke="#999" stroke-width="0.4"/>
 <text x="103.0" y="952.7" font-size="9.0" text-anchor="start">7</text>
 <text x="133.0" y="952.7" font-size="9.0" text-anchor="start">Encaixar as ripas pelo lado da casa, de baixo para cima; 1 parafuso inox por ponta no serrilhado.</text>
@@ -173,7 +206,7 @@
 <text x="1211.0" y="934.0" font-size="10.4" text-anchor="start" font-weight="bold">Kitchen Privacy Screen — 265 in x ~8 ft, ripado de cedro + topo</text>
 <text x="1211.0" y="947.0" font-size="10.4" text-anchor="start" font-weight="bold">pergolado (Cornelius, NC)</text>
 <text x="1211.0" y="982.0" font-size="13.9" text-anchor="start" font-weight="bold">Poste composto com serrilhado</text>
-<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 2   Por: </text>
+<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 3   Por: </text>
 <text x="1211.0" y="1025.0" font-size="8.3" text-anchor="start">Medidas em polegadas/pés. Madeira: medidas reais (6x6 = 5 1/2&quot;).</text>
 <text x="1211.0" y="1042.0" font-size="8.3" text-anchor="start">Conferir no campo antes de cortar. Não é projeto estrutural.</text>
 <text x="1620.0" y="1015.0" font-size="27.8" text-anchor="middle" font-weight="bold">A-3</text>

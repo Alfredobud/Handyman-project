@@ -1,0 +1,253 @@
+{
+  "projeto": "Kitchen Privacy Screen — opção C, 7 postes, 100% pinus, núcleo 4x4",
+  "cliente": "Bill",
+  "precos": "../../orcamento/precos.csv",
+  "parametros": {
+    "taxa_hora_usd": 60,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.0,
+    "imposto_material": 0.0825,
+    "contingencia": 0.0,
+    "taxa_fixa_usd": 150,
+    "taxa_fixa_descricao": "Taxa"
+  },
+  "geometria": {
+    "comprimento_total_in": 265,
+    "n_postes": 7,
+    "altura_topo_in": 96,
+    "embutimento_in": 36,
+    "brita_in": 6,
+    "sapata_diam_in": 16,
+    "colar_concreto": {
+      "altura": 2.0,
+      "largura": 9.0
+    },
+    "poste": {
+      "nucleo": 3.5,
+      "face_esp": 1.5,
+      "face_larg": 5.5,
+      "serrilhado_esp": 1.0,
+      "lateral_ponta_esp": 1.0
+    },
+    "ripa": {
+      "larg": 1.5,
+      "esp": 1.5,
+      "espaco_min": 1.5,
+      "fiadas": 24,
+      "folga_ponta": 0.125
+    },
+    "lado_ripas": "vizinho",
+    "caibro": {
+      "esp": 1.5,
+      "alt": 5.5,
+      "comprimento": 36,
+      "posicao": "postes_e_meio",
+      "perfil": "nuvem"
+    },
+    "viga": {
+      "esp": 1.5,
+      "alt": 7.25,
+      "peca_max": 144,
+      "fechamento": false,
+      "faceada": true,
+      "parafusos_por_poste": 4
+    },
+    "rotulos": {
+      "nucleo": "PT pine 4x4 S4S, ground contact (UC4B)",
+      "revest": "Cedar 2x6 S4S",
+      "serrilhado": "Cedar 5/4 S4S (1\") notched",
+      "lateral_ponta": "Cedar 5/4 S4S (1\") plain",
+      "ripa": "Cedar 2x2 S4S",
+      "viga": "Cedar 2x8 S4S",
+      "caibro": "Cedar 2x6 S4S"
+    }
+  },
+  "componentes": [
+    {
+      "tipo": "sapata",
+      "nome": "Furos Ø16\" x 42\" — concreto",
+      "qtd": 7,
+      "diametro_in": 16,
+      "profundidade_in": 35,
+      "desconto_poste_in2": 12.25,
+      "material": "concreto_80lb",
+      "tarefa": "obra_assentar_poste"
+    },
+    {
+      "tipo": "item",
+      "nome": "Brita",
+      "material": "brita_saco",
+      "qtd": 10
+    },
+    {
+      "tipo": "item",
+      "nome": "Locação mini skid steer + auger (1 dia)",
+      "material": "aluguel_mini_skid_auger",
+      "qtd": 1,
+      "tarefa": "obra_transporte_equipamento",
+      "tarefa_qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Frete do equipamento",
+      "material": "frete_equipamento",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Preservativo nos cortes do PT",
+      "material": "preservativo_corte",
+      "qtd": 1
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Núcleo 4x4 PT ground contact (embutir 36\")",
+      "material": "pt_4x4",
+      "comprimento_in": 129.5,
+      "qtd": 7,
+      "perda": 0,
+      "tarefa": "obra_nivelar_topo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Laterais serrilhadas pt 5_4x6",
+      "material": "pt_5_4x6",
+      "comprimento_in": 89.5,
+      "qtd": 12,
+      "tarefa": "oficina_serrilhado"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Laterais lisas pt 5_4x6 (pontas)",
+      "material": "pt_5_4x6",
+      "comprimento_in": 89.5,
+      "qtd": 2
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Faces pt 2x6",
+      "material": "pt_2x6",
+      "comprimento_in": 82.25,
+      "qtd": 14,
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Ripas pt 2x2 (24/vão)",
+      "material": "pt_2x2",
+      "comprimento_in": 39.5,
+      "qtd": 144,
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "material": "pt_2x8",
+      "comprimento_in": 138.5,
+      "qtd": 4,
+      "tarefa": "oficina_tabua_topo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Caibros pt 2x6 ponta nuvem (13)",
+      "material": "pt_2x6",
+      "comprimento_in": 36,
+      "qtd": 13,
+      "tarefa": "oficina_caibro_nuvem"
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos passantes 1/2\" (4 por poste)",
+      "material": "parafuso_passante",
+      "qtd": 28
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos deck trim-head",
+      "material": "parafuso_deck_trim",
+      "qtd": 4
+    },
+    {
+      "tipo": "item",
+      "nome": "Cola PU/exterior",
+      "material": "cola_externa",
+      "qtd": 3
+    },
+    {
+      "tipo": "item",
+      "nome": "Descarte",
+      "material": "descarte",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Stain (tudo, 1 demão após secagem)",
+      "material": "stain_galao",
+      "qtd": 3,
+      "tarefa": "acabamento_stain",
+      "tarefa_qtd": 450
+    }
+  ],
+  "tarefas_extra": [
+    {
+      "tarefa": "locacao",
+      "qtd": 1
+    },
+    {
+      "tarefa": "obra_escavacao_mecanizada",
+      "qtd": 7
+    },
+    {
+      "tarefa": "compras_transporte",
+      "qtd": 1
+    },
+    {
+      "tarefa": "oficina_gabaritos",
+      "qtd": 1
+    },
+    {
+      "tarefa": "oficina_acabamento_lixa",
+      "qtd": 189
+    },
+    {
+      "tarefa": "obra_instalar_serrilhado",
+      "qtd": 12
+    },
+    {
+      "tarefa": "obra_instalar_ripa",
+      "qtd": 144
+    },
+    {
+      "tarefa": "obra_instalar_face",
+      "qtd": 14
+    },
+    {
+      "tarefa": "obra_instalar_lateral",
+      "qtd": 2
+    },
+    {
+      "tarefa": "obra_instalar_tabua_topo",
+      "qtd": 4
+    },
+    {
+      "tarefa": "obra_instalar_caibro",
+      "qtd": 13
+    },
+    {
+      "tarefa": "limpeza",
+      "qtd": 1
+    },
+    {
+      "tarefa": "oficina_ripar",
+      "qtd": 14
+    },
+    {
+      "descricao": "Retorno para stain após secagem",
+      "horas": 2
+    }
+  ],
+  "premissas": [
+    "Comparativo de núcleo 4x4; vão livre 3'-1 3/4\"; poste 5 1/2\"."
+  ]
+}

@@ -255,7 +255,7 @@ class Painel:
         self.z0 = (G.P - self.pr) / 2                      # moldura centrada no poste
         self.zr = (G.P / 2 - self.rl / 2, G.P / 2 + self.rl / 2)   # rasgo (= canal do trançado)
         tw = g["tabua"]["larg"]
-        self.peso_lb = round(G.fiadas * self.comp_tabua / 12 * 1.4 + 2 * (self.Hp + self.Win) / 12 * 1.6 + 3 * 1.0 * 5.5, 0)
+        self.peso_lb = round(G.fiadas * self.comp_tabua / 12 * g.get("peso_tabua_lbft", 1.4) + 2 * (self.Hp + self.Win) / 12 * 1.6 + 3 * 1.0 * 5.5, 0)
 
 
 def vista_painel(G, PN, esc=16):
@@ -287,7 +287,7 @@ def vista_painel(G, PN, esc=16):
     v.chamada((PN.xs[2], e + 6.5 * t["larg"]), (PN.W - 30, PN.Hp + 13), f"{len(PN.xs)} weavers {g['rotulos']['sarrafo']} x {pes_pol(PN.comp_sarrafo)}", 5.5)
     for (cx, cy) in ((0, 0), (PN.W, 0), (0, PN.Hp), (PN.W, PN.Hp)):
         v.circulo(cx, cy, 2.2, "vazio", tracejado=True)
-    v.texto(PN.W / 2, -16, f"approx. weight {PN.peso_lb:.0f} lb (wet PT) — 2-person lift", 5.5)
+    v.texto(PN.W / 2, -16, f"approx. weight {PN.peso_lb:.0f} lb — 2-person lift", 5.5)
     return v
 
 
@@ -438,7 +438,8 @@ def main():
         f"Groove {pes_pol(PN.rl)} x {pes_pol(PN.rp)} on all frame members = weave thickness; boards and weavers sit in it.",
         f"{G.fiadas} boards x {pes_pol(PN.comp_tabua)}; {len(PN.xs)} weavers x {pes_pol(PN.comp_sarrafo)}; stiles {pes_pol(PN.comp_montante)}, rails {pes_pol(PN.comp_travessa)}.",
         "Shop: groove members > U-frame > weavers > weave boards > top rail.",
-        f"Check diagonals before closing the 4th corner. Approx. {PN.peso_lb:.0f} lb (wet PT).",
+        f"Boards: {g['rotulos'].get('fix_tabua', 'nailed at weaver crossings')}. At posts: {g['rotulos'].get('fix_poste', 'screws')}.",
+        f"Check diagonals before closing the 4th corner. Approx. {PN.peso_lb:.0f} lb. Spray-finished in the shop.",
         "PRELIMINARY — solution study; quantities and costs to follow.",
     ], **meta)
     p1.add(vista_painel(G, PN), 1.9, 4.5)

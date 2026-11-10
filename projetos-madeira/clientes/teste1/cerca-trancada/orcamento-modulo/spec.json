@@ -3,9 +3,22 @@
   "projeto_en": "Woven horizontal fence — module study",
   "cliente": "teste1",
   "data": "2026-11-10",
-  "revisao": "0",
+  "revisao": "2",
   "idioma_desenho": "en",
-  "geometria": {},
+  "geometria": {
+    "tabua": {
+      "esp": 0.625
+    },
+    "painel": {
+      "rasgo_larg": 2.0
+    },
+    "peso_tabua_lbft": 0.55,
+    "rotulos": {
+      "tabua": "Cedar 5/8 x 6 S4S",
+      "fix_tabua": "pneumatic stainless ring-shank nails at each weaver crossing",
+      "fix_poste": "screws (stops, blocks, cap into posts)"
+    }
+  },
   "parametros": {
     "taxa_hora_usd": 60,
     "perda": 0.05,
@@ -45,39 +58,83 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Tábuas trançadas 1x6 (12/módulo)",
-      "material": "pt_1x6",
-      "comprimento_in": 115.75,
+      "nome": "Moldura: montantes 2x4 PT S4S com rasgo (2/painel)",
+      "material": "pt_2x4",
+      "comprimento_in": 69.0,
+      "qtd": 2,
+      "tarefa": "oficina_rasgo_moldura"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Moldura: travessas 2x4 PT S4S com rasgo (2/painel)",
+      "material": "pt_2x4",
+      "comprimento_in": 111.0,
+      "qtd": 2,
+      "tarefa": "oficina_rasgo_moldura"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Tábuas trançadas cedro 5/8 x 6 (12/painel)",
+      "material": "cedro_5_8x6",
+      "comprimento_in": 112.25,
       "qtd": 12,
-      "tarefa": "obra_tabua_trancada"
+      "tarefa": "oficina_corte"
     },
     {
       "tipo": "pecas",
-      "nome": "Sarrafos verticais do trançado 1x2 (3/módulo)",
+      "nome": "Sarrafos do trançado 1x2 PT (3/painel)",
       "material": "pt_1x2",
-      "comprimento_in": 66.0,
+      "comprimento_in": 67.25,
       "qtd": 3,
-      "tarefa": "obra_sarrafo_trama"
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "item",
+      "nome": "Montagem do painel (U + sarrafos + trançado com prego pneumático + 4º canto)",
+      "material": "prego_pneumatico_inox",
+      "qtd": 1,
+      "tarefa": "oficina_montar_painel",
+      "tarefa_qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos estruturais dos cantos da moldura (8/painel) + cola PU",
+      "material": "parafuso_estrutural_caixa",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Cola PU exterior",
+      "material": "cola_externa",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Pintura com pistola (painéis na oficina + postes/capa na obra)",
+      "material": "tinta_pistola",
+      "qtd": 1,
+      "tarefa": "oficina_pintura_pistola",
+      "tarefa_qtd": 137
     },
     {
       "tipo": "pecas",
-      "nome": "Batentes do canal nos postes 1x2 (4/módulo)",
+      "nome": "Blocos de apoio 2x4 (2 por painel)",
+      "material": "pt_2x4",
+      "comprimento_in": 3.0,
+      "qtd": 2,
+      "tarefa": "obra_bloco_apoio"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Batentes 1x2 PT nos postes (4 por painel)",
       "material": "pt_1x2",
-      "comprimento_in": 66.0,
+      "comprimento_in": 69.0,
       "qtd": 4,
       "tarefa": "obra_batente"
     },
     {
       "tipo": "pecas",
-      "nome": "Travessas 2x4 (inferior + superior)",
-      "material": "pt_2x4",
-      "comprimento_in": 114.5,
-      "qtd": 2,
-      "tarefa": "obra_travessa_cerca"
-    },
-    {
-      "tipo": "pecas",
-      "nome": "Capeamento 2x6 (emenda sobre poste)",
+      "nome": "Capeamento 2x6 PT contínuo (emenda sobre poste)",
       "material": "pt_2x6",
       "comprimento_in": 120,
       "qtd": 1,
@@ -85,17 +142,11 @@
     },
     {
       "tipo": "item",
-      "nome": "Parafusos deck trim-head (ocultos)",
+      "nome": "Parafusos trim-head nos postes (batentes, blocos, capa)",
       "material": "parafuso_deck_trim",
-      "qtd": 1
-    },
-    {
-      "tipo": "item",
-      "nome": "Stain semi-transparente (2 faces, 1 demão após secagem)",
-      "material": "stain_galao",
       "qtd": 1,
-      "tarefa": "acabamento_stain",
-      "tarefa_qtd": 128
+      "tarefa": "obra_instalar_painel",
+      "tarefa_qtd": 1
     }
   ],
   "tarefas_extra": [
@@ -105,27 +156,32 @@
     },
     {
       "tarefa": "oficina_corte",
-      "qtd": 22
+      "qtd": 7
     },
     {
       "tarefa": "oficina_acabamento_lixa",
-      "qtd": 22
+      "qtd": 19
+    },
+    {
+      "tarefa": "obra_pintura_pistola",
+      "qtd": 18
     }
   ],
   "premissas": [
-    "Módulo 120\" (10'-0\" = 3.05 m) entre eixos: trechos 40'/60'/40' = [4, 6, 4] módulos idênticos, 15 postes.",
-    "Altura total 6'-1 1/2\": módulo/altura = 1.633 (φ = 1.618). 12 tábuas 1x6 por módulo.",
-    "Folga de 3\" entre a travessa inferior e o terreno.",
-    "Tudo em pinus tratado aplainado S4S; postes 6x6 ground contact embutidos 24\" em concreto sobre 6\" de brita.",
-    "Trançado montado na obra: travessa inferior + sarrafos, tábuas descem pelo canal dos postes alternando frente/trás; peças pré-cortadas na oficina.",
-    "Stain semi-transparente nas 2 faces em visita após secagem (pinus tratado chega úmido).",
-    "PRELIMINAR: estudo de módulo; preços de 1x6, 1x2 e 6x6 estimados.",
-    "Orçamento de 1 módulo = módulo + 1 poste, sem locação/mobilização (essas entram só no completo)."
+    "Solução PAINEL PRÉ-FABRICADO: moldura fechada nos 4 cantos (9'-6\" x 5'-9\"), 2x4 PT S4S com rasgo de 2\" x 3/4\"; montada e pintada na oficina; ~126 lb por painel.",
+    "Trançado: 12 tábuas de CEDRO 5/8\" x 6 (9'-4 1/4\") e 3 sarrafos 1x2 PT; tábuas fixadas com prego pneumático inox anelado em cada cruzamento com os sarrafos.",
+    "Módulo de 10'-0\" entre eixos: 40'/60'/40' = [4, 6, 4] → 14 painéis iguais e 15 postes 6x6 PT ground contact de 8', embutidos 24\" em concreto sobre 6\" de brita (furos com mini skid steer + auger alugado).",
+    "Altura total 6'-1 1/2\" (módulo/altura = 1.633 ≈ φ); folga de 3\" do terreno, definida pelos blocos de apoio.",
+    "Instalação: blocos de apoio → batentes 1x2 do lado do vizinho → painel → batentes do lado da casa → capeamento 2x6. Nos postes, tudo com PARAFUSO (batentes, blocos e capa).",
+    "Pintura com PISTOLA: painéis na oficina (2 faces, +25% pelo relevo do trançado); postes e capa na obra, numa visita de retorno depois da secagem do PT. Rendimento adotado de ~200 sqft/gal na pistola.",
+    "Estrutura (moldura, sarrafos, batentes, capa, postes) em pinus tratado S4S; usar KDAT na moldura para poder pintar logo.",
+    "PRELIMINAR: preços de cedro 5/8 em 10', 1x2, 6x6, pregos e tinta são estimados.",
+    "Orçamento de 1 módulo = 1 painel + 1 poste, sem locação/mobilização."
   ],
   "perguntas": [
-    "Altura: 6'-1 1/2\" (proporção áurea). HOA/código de Cornelius costuma limitar cerca lateral/fundo a 6'-0\"?",
-    "Iluminação LED atrás das tábuas (como na foto): incluir?",
-    "Portão(ões): quantos e onde?",
-    "Terreno plano ou com desnível (degraus nos módulos)?"
+    "Cedro 5/8\" em 10': confirmar disponibilidade (madeireira) e preço.",
+    "Cor/produto da pintura (stain transparente, semi ou sólido)?",
+    "Altura 6'-1 1/2\": confirmar limite de HOA/código.",
+    "LED, portões, desnível do terreno."
   ]
 }

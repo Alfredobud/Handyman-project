@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Gera os specs do orçamento a partir da geometria do desenho (cerca_trancada.Geo).
-  orcamento-modulo/   1 módulo + 1 poste (unidade de repetição, sem locação/mobilização)
-  orcamento-completo/ cerca inteira (módulos x N, postes N+1, locação, mobilização, stain)"""
+"""Specs do orçamento da cerca trançada — solução PAINEL PRÉ-FABRICADO (rev. 2), a partir da
+geometria do desenho (cerca_trancada.Geo / Painel).
+  orcamento-modulo/   1 painel + 1 poste (unidade; sem locação/mobilização)
+  orcamento-completo/ cerca inteira (14 painéis, 15 postes, locação, mobilização)"""
 import json, math, os, sys
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
@@ -21,72 +22,98 @@ PAR = {"taxa_hora_usd": 60, "perda": 0.05, "kerf_in": 0.125, "markup_material": 
        "contingencia": 0.0, "taxa_fixa_usd": 150, "taxa_fixa_descricao": "Taxa"}
 
 
-def comps(G, nmod, npost, completo):
+def comps(G, PN, npain, npost, completo):
     g = G.g
     d = g["poste"]["furo_diam_in"]
     brita = math.ceil(npost * math.pi * (d / 2) ** 2 * g["poste"]["brita_in"] / 1728 / 0.5)
-    area = nmod * (G.vao * G.y_topo * 2 + 4 * G.P * G.y_poste) / 144          # 2 faces + postes, 1 demão
+    a_painel = npain * PN.W * PN.Hp * 2 / 144 * 1.25            # 2 faces; +25% pelo relevo do trançado
+    a_obra = (npost * 4 * G.P * G.y_poste + npain * G.oc * (g["capa"]["larg"] + 2 * g["capa"]["esp"])) / 144
+    galoes = math.ceil((a_painel + a_obra) / 200)
+    nb = npain
     C = [
+        # ---- fundação e postes (obra)
         {"tipo": "sapata", "nome": f"Furos Ø{d}\" x {g['poste']['embutimento_in'] + g['poste']['brita_in']}\" — concreto", "qtd": npost,
          "diametro_in": d, "profundidade_in": g["poste"]["embutimento_in"] - 1, "desconto_poste_in2": G.P ** 2,
          "material": "concreto_80lb", "tarefa": "obra_assentar_poste"},
         {"tipo": "item", "nome": "Brita no fundo dos furos", "material": "brita_saco", "qtd": brita},
-        {"tipo": "pecas", "nome": f"Postes pinus tratado 6x6 ground contact (embutir {g['poste']['embutimento_in']}\")", "material": "pt_6x6",
+        {"tipo": "pecas", "nome": "Postes pinus tratado 6x6 ground contact (embutir 24\")", "material": "pt_6x6",
          "comprimento_in": G.comp_poste, "qtd": npost, "perda": 0, "tarefa": "obra_nivelar_topo"},
-        {"tipo": "pecas", "nome": f"Tábuas trançadas 1x6 ({G.fiadas}/módulo)", "material": "pt_1x6", "comprimento_in": G.comp_tabua,
-         "qtd": G.fiadas * nmod, "tarefa": "obra_tabua_trancada"},
-        {"tipo": "pecas", "nome": f"Sarrafos verticais do trançado 1x2 ({len(G.xs)}/módulo)", "material": "pt_1x2",
-         "comprimento_in": G.comp_vertical, "qtd": len(G.xs) * nmod, "tarefa": "obra_sarrafo_trama"},
-        {"tipo": "pecas", "nome": "Batentes do canal nos postes 1x2 (4/módulo)", "material": "pt_1x2", "comprimento_in": G.comp_vertical,
-         "qtd": 4 * nmod, "tarefa": "obra_batente"},
-        {"tipo": "pecas", "nome": "Travessas 2x4 (inferior + superior)", "material": "pt_2x4", "comprimento_in": G.vao,
-         "qtd": 2 * nmod, "tarefa": "obra_travessa_cerca"},
-        {"tipo": "pecas", "nome": "Capeamento 2x6 (emenda sobre poste)", "material": "pt_2x6", "comprimento_in": G.oc,
-         "qtd": nmod, "tarefa": "obra_capa"},
-        {"tipo": "item", "nome": "Parafusos deck trim-head (ocultos)", "material": "parafuso_deck_trim", "qtd": max(1, math.ceil(nmod / 4))},
-        {"tipo": "item", "nome": "Stain semi-transparente (2 faces, 1 demão após secagem)", "material": "stain_galao",
-         "qtd": max(1, math.ceil(area / 250)), "tarefa": "acabamento_stain", "tarefa_qtd": round(area)},
+        # ---- painel (oficina)
+        {"tipo": "pecas", "nome": "Moldura: montantes 2x4 PT S4S com rasgo (2/painel)", "material": "pt_2x4",
+         "comprimento_in": PN.comp_montante, "qtd": 2 * nb, "tarefa": "oficina_rasgo_moldura"},
+        {"tipo": "pecas", "nome": "Moldura: travessas 2x4 PT S4S com rasgo (2/painel)", "material": "pt_2x4",
+         "comprimento_in": PN.comp_travessa, "qtd": 2 * nb, "tarefa": "oficina_rasgo_moldura"},
+        {"tipo": "pecas", "nome": f"Tábuas trançadas cedro 5/8 x 6 ({G.fiadas}/painel)", "material": "cedro_5_8x6",
+         "comprimento_in": PN.comp_tabua, "qtd": G.fiadas * nb, "tarefa": "oficina_corte"},
+        {"tipo": "pecas", "nome": f"Sarrafos do trançado 1x2 PT ({len(PN.xs)}/painel)", "material": "pt_1x2",
+         "comprimento_in": PN.comp_sarrafo, "qtd": len(PN.xs) * nb, "tarefa": "oficina_corte"},
+        {"tipo": "item", "nome": "Montagem do painel (U + sarrafos + trançado com prego pneumático + 4º canto)",
+         "material": "prego_pneumatico_inox", "qtd": max(1, math.ceil(nb * 70 / 1000)), "tarefa": "oficina_montar_painel", "tarefa_qtd": nb},
+        {"tipo": "item", "nome": "Parafusos estruturais dos cantos da moldura (8/painel) + cola PU", "material": "parafuso_estrutural_caixa",
+         "qtd": max(1, math.ceil(nb * 8 / 50))},
+        {"tipo": "item", "nome": "Cola PU exterior", "material": "cola_externa", "qtd": max(1, math.ceil(nb / 4))},
+        {"tipo": "item", "nome": "Pintura com pistola (painéis na oficina + postes/capa na obra)", "material": "tinta_pistola",
+         "qtd": galoes, "tarefa": "oficina_pintura_pistola", "tarefa_qtd": round(a_painel)},
+        # ---- instalação (obra)
+        {"tipo": "pecas", "nome": "Blocos de apoio 2x4 (2 por painel)", "material": "pt_2x4", "comprimento_in": 3.0,
+         "qtd": 2 * nb, "tarefa": "obra_bloco_apoio"},
+        {"tipo": "pecas", "nome": "Batentes 1x2 PT nos postes (4 por painel)", "material": "pt_1x2", "comprimento_in": PN.Hp,
+         "qtd": 4 * nb, "tarefa": "obra_batente"},
+        {"tipo": "pecas", "nome": "Capeamento 2x6 PT contínuo (emenda sobre poste)", "material": "pt_2x6", "comprimento_in": G.oc,
+         "qtd": nb, "tarefa": "obra_capa"},
+        {"tipo": "item", "nome": "Parafusos trim-head nos postes (batentes, blocos, capa)", "material": "parafuso_deck_trim",
+         "qtd": max(1, math.ceil(nb / 5)), "tarefa": "obra_instalar_painel", "tarefa_qtd": nb},
     ]
+    X = [{"tarefa": "obra_escavacao_mecanizada", "qtd": npost},
+         {"tarefa": "oficina_corte", "qtd": 4 * nb + nb + 2 * nb},       # batentes, capa, blocos pré-cortados
+         {"tarefa": "oficina_acabamento_lixa", "qtd": (4 + G.fiadas + len(PN.xs)) * nb},
+         {"tarefa": "obra_pintura_pistola", "qtd": round(a_obra)}]
     if completo:
         C += [{"tipo": "item", "nome": "Locação: mini skid steer com auger 12\" (1 dia)", "material": "aluguel_mini_skid_auger", "qtd": 1,
                "tarefa": "obra_transporte_equipamento", "tarefa_qtd": 1},
               {"tipo": "item", "nome": "Entrega/retirada do equipamento", "material": "frete_equipamento", "qtd": 1},
               {"tipo": "item", "nome": "Preservativo nos cortes do PT", "material": "preservativo_corte", "qtd": 1},
               {"tipo": "item", "nome": "Descarte", "material": "descarte", "qtd": 1}]
-    pecas = G.fiadas * nmod + len(G.xs) * nmod + 4 * nmod + 2 * nmod + nmod
-    X = [{"tarefa": "obra_escavacao_mecanizada", "qtd": npost}, {"tarefa": "oficina_corte", "qtd": pecas},
-         {"tarefa": "oficina_acabamento_lixa", "qtd": pecas}]
-    if completo:
         X += [{"tarefa": "locacao", "qtd": 1}, {"tarefa": "compras_transporte", "qtd": 1}, {"tarefa": "limpeza", "qtd": 1},
-              {"descricao": "Visita de retorno para stain após secagem", "horas": 2}]
+              {"tarefa": "oficina_gabaritos", "qtd": 1},
+              {"tarefa": "obra_transporte_paineis", "qtd": math.ceil(nb / 5)},
+              {"descricao": "Retorno: pintura dos postes/capa após secagem do PT", "horas": 2}]
     return C, X
 
 
 def main():
-    base = json.load(open(os.path.join(AQUI, "orcamento-modulo", "spec.json"), encoding="utf-8"))
+    p = os.path.join(AQUI, "orcamento-modulo", "spec.json")
+    base = json.load(open(p, encoding="utf-8"))
     G = ct.Geo(ct.mescla(ct.PADRAO, base.get("geometria", {})))
-    for pasta, nmod, npost, comp in [("orcamento-modulo", 1, 1, False), ("orcamento-completo", G.n_mod, G.n_postes, True)]:
-        C, X = comps(G, nmod, npost, comp)
+    PN = ct.Painel(G)
+    for pasta, npain, npost, comp in [("orcamento-modulo", 1, 1, False), ("orcamento-completo", G.n_mod, G.n_postes, True)]:
+        C, X = comps(G, PN, npain, npost, comp)
         s = dict(base)
-        s.update({"parametros": PAR, "precos": "../orcamento-modulo/precos.csv" if pasta != "orcamento-modulo" else "precos.csv",
+        s.update({"parametros": PAR, "precos": "precos.csv" if pasta == "orcamento-modulo" else "../orcamento-modulo/precos.csv",
                   "componentes": C, "tarefas_extra": X,
                   "premissas": [
-                      f"Módulo {G.oc}\" (10'-0\" = 3.05 m) entre eixos: trechos 40'/60'/40' = {G.modulos} módulos idênticos, {G.n_postes} postes.",
-                      f"Altura total {ct.pes_pol(G.y_topo)}: módulo/altura = {G.razao:.3f} (φ = 1.618). {G.fiadas} tábuas 1x6 por módulo.",
-                      f"Folga de {ct.pes_pol(G.gap)} entre a travessa inferior e o terreno.",
-                      "Tudo em pinus tratado aplainado S4S; postes 6x6 ground contact embutidos 24\" em concreto sobre 6\" de brita.",
-                      "Trançado montado na obra: travessa inferior + sarrafos, tábuas descem pelo canal dos postes alternando frente/trás; peças pré-cortadas na oficina.",
-                      "Stain semi-transparente nas 2 faces em visita após secagem (pinus tratado chega úmido).",
-                      "PRELIMINAR: estudo de módulo; preços de 1x6, 1x2 e 6x6 estimados.",
-                      "Orçamento de 1 módulo = módulo + 1 poste, sem locação/mobilização (essas entram só no completo)." if pasta == "orcamento-modulo" else
-                      "Inclui locação do equipamento, mobilização, compras, limpeza e visita do stain.",
+                      f"Solução PAINEL PRÉ-FABRICADO: moldura fechada nos 4 cantos ({ct.pes_pol(PN.W)} x {ct.pes_pol(PN.Hp)}), 2x4 PT S4S com rasgo de "
+                      f"{ct.pes_pol(PN.rl)} x {ct.pes_pol(PN.rp)}; montada e pintada na oficina; ~{PN.peso_lb:.0f} lb por painel.",
+                      f"Trançado: {G.fiadas} tábuas de CEDRO 5/8\" x 6 ({ct.pes_pol(PN.comp_tabua)}) e {len(PN.xs)} sarrafos 1x2 PT; tábuas fixadas com prego "
+                      "pneumático inox anelado em cada cruzamento com os sarrafos.",
+                      f"Módulo de 10'-0\" entre eixos: 40'/60'/40' = {G.modulos} → {G.n_mod} painéis iguais e {G.n_postes} postes 6x6 PT ground contact de 8', "
+                      "embutidos 24\" em concreto sobre 6\" de brita (furos com mini skid steer + auger alugado).",
+                      f"Altura total {ct.pes_pol(G.y_topo)} (módulo/altura = {G.razao:.3f} ≈ φ); folga de {ct.pes_pol(G.gap)} do terreno, definida pelos blocos de apoio.",
+                      "Instalação: blocos de apoio → batentes 1x2 do lado do vizinho → painel → batentes do lado da casa → capeamento 2x6. "
+                      "Nos postes, tudo com PARAFUSO (batentes, blocos e capa).",
+                      "Pintura com PISTOLA: painéis na oficina (2 faces, +25% pelo relevo do trançado); postes e capa na obra, numa visita de retorno "
+                      "depois da secagem do PT. Rendimento adotado de ~200 sqft/gal na pistola.",
+                      "Estrutura (moldura, sarrafos, batentes, capa, postes) em pinus tratado S4S; usar KDAT na moldura para poder pintar logo.",
+                      "PRELIMINAR: preços de cedro 5/8 em 10', 1x2, 6x6, pregos e tinta são estimados.",
+                      "Orçamento de 1 módulo = 1 painel + 1 poste, sem locação/mobilização." if pasta == "orcamento-modulo" else
+                      "Inclui locação do equipamento, transporte dos painéis (reboque), mobilização, compras, limpeza e retorno da pintura.",
                   ],
-                  "perguntas": ["Altura: 6'-1 1/2\" (proporção áurea). HOA/código de Cornelius costuma limitar cerca lateral/fundo a 6'-0\"?",
-                                "Iluminação LED atrás das tábuas (como na foto): incluir?", "Portão(ões): quantos e onde?",
-                                "Terreno plano ou com desnível (degraus nos módulos)?"]})
+                  "perguntas": ["Cedro 5/8\" em 10': confirmar disponibilidade (madeireira) e preço.",
+                                "Cor/produto da pintura (stain transparente, semi ou sólido)?",
+                                "Altura 6'-1 1/2\": confirmar limite de HOA/código.", "LED, portões, desnível do terreno."]})
         os.makedirs(os.path.join(AQUI, pasta), exist_ok=True)
         json.dump(s, open(os.path.join(AQUI, pasta, "spec.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-        print(pasta, "ok")
+        print(pasta, "ok", f"painel {PN.W}x{PN.Hp} {PN.peso_lb} lb")
 
 
 if __name__ == "__main__":

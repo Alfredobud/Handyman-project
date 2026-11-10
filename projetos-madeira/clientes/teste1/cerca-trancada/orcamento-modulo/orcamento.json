@@ -44,39 +44,83 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Tábuas trançadas 1x6 (12/módulo)",
-      "material": "pt_1x6",
-      "comprimento_in": 115.75,
+      "nome": "Moldura: montantes 2x4 PT S4S com rasgo (2/painel)",
+      "material": "pt_2x4",
+      "comprimento_in": 69.0,
+      "qtd": 2,
+      "tarefa": "oficina_rasgo_moldura"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Moldura: travessas 2x4 PT S4S com rasgo (2/painel)",
+      "material": "pt_2x4",
+      "comprimento_in": 111.0,
+      "qtd": 2,
+      "tarefa": "oficina_rasgo_moldura"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Tábuas trançadas cedro 5/8 x 6 (12/painel)",
+      "material": "cedro_5_8x6",
+      "comprimento_in": 112.25,
       "qtd": 12,
-      "tarefa": "obra_tabua_trancada"
+      "tarefa": "oficina_corte"
     },
     {
       "tipo": "pecas",
-      "nome": "Sarrafos verticais do trançado 1x2 (3/módulo)",
+      "nome": "Sarrafos do trançado 1x2 PT (3/painel)",
       "material": "pt_1x2",
-      "comprimento_in": 66.0,
+      "comprimento_in": 67.25,
       "qtd": 3,
-      "tarefa": "obra_sarrafo_trama"
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "item",
+      "nome": "Montagem do painel (U + sarrafos + trançado com prego pneumático + 4º canto)",
+      "material": "prego_pneumatico_inox",
+      "qtd": 1,
+      "tarefa": "oficina_montar_painel",
+      "tarefa_qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos estruturais dos cantos da moldura (8/painel) + cola PU",
+      "material": "parafuso_estrutural_caixa",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Cola PU exterior",
+      "material": "cola_externa",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Pintura com pistola (painéis na oficina + postes/capa na obra)",
+      "material": "tinta_pistola",
+      "qtd": 1,
+      "tarefa": "oficina_pintura_pistola",
+      "tarefa_qtd": 137
     },
     {
       "tipo": "pecas",
-      "nome": "Batentes do canal nos postes 1x2 (4/módulo)",
+      "nome": "Blocos de apoio 2x4 (2 por painel)",
+      "material": "pt_2x4",
+      "comprimento_in": 3.0,
+      "qtd": 2,
+      "tarefa": "obra_bloco_apoio"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Batentes 1x2 PT nos postes (4 por painel)",
       "material": "pt_1x2",
-      "comprimento_in": 66.0,
+      "comprimento_in": 69.0,
       "qtd": 4,
       "tarefa": "obra_batente"
     },
     {
       "tipo": "pecas",
-      "nome": "Travessas 2x4 (inferior + superior)",
-      "material": "pt_2x4",
-      "comprimento_in": 114.5,
-      "qtd": 2,
-      "tarefa": "obra_travessa_cerca"
-    },
-    {
-      "tipo": "pecas",
-      "nome": "Capeamento 2x6 (emenda sobre poste)",
+      "nome": "Capeamento 2x6 PT contínuo (emenda sobre poste)",
       "material": "pt_2x6",
       "comprimento_in": 120,
       "qtd": 1,
@@ -84,17 +128,11 @@
     },
     {
       "tipo": "item",
-      "nome": "Parafusos deck trim-head (ocultos)",
+      "nome": "Parafusos trim-head nos postes (batentes, blocos, capa)",
       "material": "parafuso_deck_trim",
-      "qtd": 1
-    },
-    {
-      "tipo": "item",
-      "nome": "Stain semi-transparente (2 faces, 1 demão após secagem)",
-      "material": "stain_galao",
       "qtd": 1,
-      "tarefa": "acabamento_stain",
-      "tarefa_qtd": 128
+      "tarefa": "obra_instalar_painel",
+      "tarefa_qtd": 1
     }
   ],
   "detalhes_cortes": [
@@ -106,35 +144,49 @@
       ""
     ],
     [
-      "Tábuas trançadas 1x6 (12/módulo)",
-      "pt_1x6",
-      12,
-      115.75,
-      ""
-    ],
-    [
-      "Sarrafos verticais do trançado 1x2 (3/módulo)",
-      "pt_1x2",
-      3,
-      66.0,
-      ""
-    ],
-    [
-      "Batentes do canal nos postes 1x2 (4/módulo)",
-      "pt_1x2",
-      4,
-      66.0,
-      ""
-    ],
-    [
-      "Travessas 2x4 (inferior + superior)",
+      "Moldura: montantes 2x4 PT S4S com rasgo (2/painel)",
       "pt_2x4",
       2,
-      114.5,
+      69.0,
       ""
     ],
     [
-      "Capeamento 2x6 (emenda sobre poste)",
+      "Moldura: travessas 2x4 PT S4S com rasgo (2/painel)",
+      "pt_2x4",
+      2,
+      111.0,
+      ""
+    ],
+    [
+      "Tábuas trançadas cedro 5/8 x 6 (12/painel)",
+      "cedro_5_8x6",
+      12,
+      112.25,
+      ""
+    ],
+    [
+      "Sarrafos do trançado 1x2 PT (3/painel)",
+      "pt_1x2",
+      3,
+      67.25,
+      ""
+    ],
+    [
+      "Blocos de apoio 2x4 (2 por painel)",
+      "pt_2x4",
+      2,
+      3.0,
+      ""
+    ],
+    [
+      "Batentes 1x2 PT nos postes (4 por painel)",
+      "pt_1x2",
+      4,
+      69.0,
+      ""
+    ],
+    [
+      "Capeamento 2x6 PT contínuo (emenda sobre poste)",
       "pt_2x6",
       1,
       120.0,
@@ -153,13 +205,33 @@
       "obs": ""
     },
     {
-      "material": "pt_1x6",
-      "descricao": "Pinus tratado 1x6 S4S (tábua de cerca/aparência)",
+      "material": "pt_2x4",
+      "descricao": "PT 2x4 #2 Prime ground contact S4S",
+      "comprimento_ft": 10.0,
+      "qtd": 3,
+      "preco_unit": 8.88,
+      "subtotal": 26.64,
+      "fonte": "homedepot.com online (Cornelius nao confirmado)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x4",
+      "descricao": "PT 2x4 #2 Prime ground contact S4S",
+      "comprimento_ft": 12.0,
+      "qtd": 1,
+      "preco_unit": 10.0,
+      "subtotal": 10.0,
+      "fonte": "referencia-media-big-box",
+      "obs": ""
+    },
+    {
+      "material": "cedro_5_8x6",
+      "descricao": "Cedro 5/8 x 6 S4S (tábua de cerca longa)",
       "comprimento_ft": 10.0,
       "qtd": 13,
-      "preco_unit": 9.0,
-      "subtotal": 117.0,
-      "fonte": "estimativa (conferir loja)",
+      "preco_unit": 15.0,
+      "subtotal": 195.0,
+      "fonte": "estimativa (10' em 5/8 pode exigir madeireira; conferir)",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
@@ -170,16 +242,6 @@
       "preco_unit": 3.0,
       "subtotal": 24.0,
       "fonte": "estimativa (conferir loja)",
-      "obs": "inclui 1 de sobra (5%)"
-    },
-    {
-      "material": "pt_2x4",
-      "descricao": "PT 2x4 #2 Prime ground contact S4S",
-      "comprimento_ft": 10.0,
-      "qtd": 3,
-      "preco_unit": 8.88,
-      "subtotal": 26.64,
-      "fonte": "homedepot.com online (Cornelius nao confirmado)",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
@@ -213,6 +275,46 @@
       "obs": "saco — Brita no fundo dos furos"
     },
     {
+      "material": "prego_pneumatico_inox",
+      "descricao": "Prego pneumático inox anelado 2in p/ cedro (caixa ~1000)",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 48.0,
+      "subtotal": 48.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "caixa — Montagem do painel (U + sarrafos + trançado com prego pneumático + 4º canto)"
+    },
+    {
+      "material": "parafuso_estrutural_caixa",
+      "descricao": "Parafuso estrutural 3-4in (caixa 50)",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 48.0,
+      "subtotal": 48.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "caixa — Parafusos estruturais dos cantos da moldura (8/painel) + cola PU"
+    },
+    {
+      "material": "cola_externa",
+      "descricao": "Cola PVA à prova d'água (Titebond III 8 oz)",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 7.0,
+      "subtotal": 7.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "un — Cola PU exterior"
+    },
+    {
+      "material": "tinta_pistola",
+      "descricao": "Stain/tinta sólida exterior p/ pistola 1 gal (~200 sqft/gal na pistola)",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 48.0,
+      "subtotal": 48.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "galao — Pintura com pistola (painéis na oficina + postes/capa na obra)"
+    },
+    {
       "material": "parafuso_deck_trim",
       "descricao": "Parafuso deck trim-head revestido p/ PT/ACQ (caixa 5 lb)",
       "comprimento_ft": "",
@@ -220,17 +322,7 @@
       "preco_unit": 42.0,
       "subtotal": 42.0,
       "fonte": "referencia-media-big-box",
-      "obs": "caixa — Parafusos deck trim-head (ocultos)"
-    },
-    {
-      "material": "stain_galao",
-      "descricao": "Stain/selador externo 1 gal (~250 sqft/demão)",
-      "comprimento_ft": "",
-      "qtd": 1,
-      "preco_unit": 45.0,
-      "subtotal": 45.0,
-      "fonte": "referencia-media-big-box",
-      "obs": "galao — Stain semi-transparente (2 faces, 1 demão após secagem)"
+      "obs": "caixa — Parafusos trim-head nos postes (batentes, blocos, capa)"
     }
   ],
   "plano_cortes": [
@@ -242,38 +334,52 @@
       "sobra_in": 0.0
     },
     {
-      "material": "pt_1x6",
-      "qtd_tabuas": 12,
+      "material": "pt_2x4",
+      "qtd_tabuas": 1,
       "comprimento_ft": 10.0,
-      "cortes": "1x 115.75\" Tábuas trançadas 1x6 (12/módulo)",
-      "sobra_in": 4.25
+      "cortes": "1x 111\" Moldura: travessas 2x4 PT S4S com rasgo (2/painel) + 1x 3\" Blocos de apoio 2x4 (2 por painel)",
+      "sobra_in": 5.88
     },
     {
-      "material": "pt_1x2",
-      "qtd_tabuas": 3,
-      "comprimento_ft": 8.0,
-      "cortes": "1x 66\" Sarrafos verticais do trançado 1x2 (3/módulo)",
-      "sobra_in": 30.0
+      "material": "pt_2x4",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 111\" Moldura: travessas 2x4 PT S4S com rasgo (2/painel)",
+      "sobra_in": 9.0
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 12.0,
+      "cortes": "2x 69\" Moldura: montantes 2x4 PT S4S com rasgo (2/painel) + 1x 3\" Blocos de apoio 2x4 (2 por painel)",
+      "sobra_in": 2.75
+    },
+    {
+      "material": "cedro_5_8x6",
+      "qtd_tabuas": 12,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 112.25\" Tábuas trançadas cedro 5/8 x 6 (12/painel)",
+      "sobra_in": 7.75
     },
     {
       "material": "pt_1x2",
       "qtd_tabuas": 4,
       "comprimento_ft": 8.0,
-      "cortes": "1x 66\" Batentes do canal nos postes 1x2 (4/módulo)",
-      "sobra_in": 30.0
+      "cortes": "1x 69\" Batentes 1x2 PT nos postes (4 por painel)",
+      "sobra_in": 27.0
     },
     {
-      "material": "pt_2x4",
-      "qtd_tabuas": 2,
-      "comprimento_ft": 10.0,
-      "cortes": "1x 114.5\" Travessas 2x4 (inferior + superior)",
-      "sobra_in": 5.5
+      "material": "pt_1x2",
+      "qtd_tabuas": 3,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 67.25\" Sarrafos do trançado 1x2 PT (3/painel)",
+      "sobra_in": 28.75
     },
     {
       "material": "pt_2x6",
       "qtd_tabuas": 1,
       "comprimento_ft": 10.0,
-      "cortes": "1x 120\" Capeamento 2x6 (emenda sobre poste)",
+      "cortes": "1x 120\" Capeamento 2x6 PT contínuo (emenda sobre poste)",
       "sobra_in": 0.0
     }
   ],
@@ -295,60 +401,12 @@
       "horas": 0.15
     },
     {
-      "tarefa": "obra_tabua_trancada",
-      "descricao": "Obra: tábua trançada (descer no canal alternando frente/trás dos sarrafos) + fixação oculta",
-      "qtd": 12.0,
-      "unidade": "peca",
-      "h_unit": 0.12,
-      "horas": 1.44
-    },
-    {
-      "tarefa": "obra_sarrafo_trama",
-      "descricao": "Obra: sarrafo vertical do trançado fixado nas travessas",
-      "qtd": 3.0,
-      "unidade": "peca",
-      "h_unit": 0.1,
-      "horas": 0.30000000000000004
-    },
-    {
-      "tarefa": "obra_batente",
-      "descricao": "Obra: batente/sarrafo de canal fixado no poste (peça pré-cortada)",
+      "tarefa": "oficina_rasgo_moldura",
+      "descricao": "Oficina: rasgo (canal) na peça da moldura com disco de rasgo/tupia",
       "qtd": 4.0,
       "unidade": "peca",
-      "h_unit": 0.08,
-      "horas": 0.32
-    },
-    {
-      "tarefa": "obra_travessa_cerca",
-      "descricao": "Obra: travessa 2x4 entre postes (pré-cortada) com parafuso estrutural",
-      "qtd": 2.0,
-      "unidade": "peca",
-      "h_unit": 0.25,
-      "horas": 0.5
-    },
-    {
-      "tarefa": "obra_capa",
-      "descricao": "Obra: capeamento 2x6 contínuo sobre postes e travessa (emenda sobre poste)",
-      "qtd": 1.0,
-      "unidade": "peca",
-      "h_unit": 0.3,
-      "horas": 0.3
-    },
-    {
-      "tarefa": "acabamento_stain",
-      "descricao": "Aplicação de stain/selador por pé quadrado (uma demão)",
-      "qtd": 128.0,
-      "unidade": "sqft",
-      "h_unit": 0.02,
-      "horas": 2.56
-    },
-    {
-      "tarefa": "obra_escavacao_mecanizada",
-      "descricao": "Obra: furo com mini skid steer/perfuratriz hidráulica alugada (posicionar + furar + limpar)",
-      "qtd": 1.0,
-      "unidade": "furo",
       "h_unit": 0.15,
-      "horas": 0.15
+      "horas": 0.6
     },
     {
       "tarefa": "oficina_corte",
@@ -359,46 +417,113 @@
       "horas": 0.88
     },
     {
+      "tarefa": "oficina_montar_painel",
+      "descricao": "Oficina: montar painel trançado (U + sarrafos + trançar 12 tábuas com prego pneumático + fechar 4º canto + esquadro)",
+      "qtd": 1.0,
+      "unidade": "painel",
+      "h_unit": 1.25,
+      "horas": 1.25
+    },
+    {
+      "tarefa": "oficina_pintura_pistola",
+      "descricao": "Oficina: pintura/stain com pistola (por pé quadrado de superfície)",
+      "qtd": 137.0,
+      "unidade": "sqft",
+      "h_unit": 0.006,
+      "horas": 0.8220000000000001
+    },
+    {
+      "tarefa": "obra_bloco_apoio",
+      "descricao": "Obra: bloco de apoio do painel parafusado no poste (nivelado)",
+      "qtd": 2.0,
+      "unidade": "peca",
+      "h_unit": 0.1,
+      "horas": 0.2
+    },
+    {
+      "tarefa": "obra_batente",
+      "descricao": "Obra: batente/sarrafo de canal fixado no poste (peça pré-cortada)",
+      "qtd": 4.0,
+      "unidade": "peca",
+      "h_unit": 0.08,
+      "horas": 0.32
+    },
+    {
+      "tarefa": "obra_capa",
+      "descricao": "Obra: capeamento 2x6 contínuo sobre postes e travessa (emenda sobre poste)",
+      "qtd": 1.0,
+      "unidade": "peca",
+      "h_unit": 0.3,
+      "horas": 0.3
+    },
+    {
+      "tarefa": "obra_instalar_painel",
+      "descricao": "Obra: carregar e posicionar painel pré-fabricado entre postes (2 pessoas)",
+      "qtd": 1.0,
+      "unidade": "painel",
+      "h_unit": 0.75,
+      "horas": 0.75
+    },
+    {
+      "tarefa": "obra_escavacao_mecanizada",
+      "descricao": "Obra: furo com mini skid steer/perfuratriz hidráulica alugada (posicionar + furar + limpar)",
+      "qtd": 1.0,
+      "unidade": "furo",
+      "h_unit": 0.15,
+      "horas": 0.15
+    },
+    {
       "tarefa": "oficina_acabamento_lixa",
       "descricao": "Oficina: quebrar arestas/lixar peças visíveis antes de levar à obra",
-      "qtd": 22.0,
+      "qtd": 19.0,
       "unidade": "peca",
       "h_unit": 0.03,
-      "horas": 0.6599999999999999
+      "horas": 0.57
+    },
+    {
+      "tarefa": "obra_pintura_pistola",
+      "descricao": "Obra: pintura/stain com pistola em postes e capeamento (inclui proteção)",
+      "qtd": 18.0,
+      "unidade": "sqft",
+      "h_unit": 0.01,
+      "horas": 0.18
     }
   ],
   "totais": {
-    "material_subtotal": 342.64,
-    "material_imposto": 28.27,
+    "material_subtotal": 536.64,
+    "material_imposto": 44.27,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 370.91,
-    "horas": 7.7,
-    "mao_de_obra_subtotal": 462.6,
+    "material_total": 580.91,
+    "horas": 6.6,
+    "mao_de_obra_subtotal": 397.32,
     "mao_de_obra_contingencia": 0.0,
-    "mao_de_obra_total": 462.6,
+    "mao_de_obra_total": 397.32,
     "taxa_fixa": 150.0,
-    "total_geral": 983.51
+    "total_geral": 1128.23
   },
   "premissas": [
-    "Módulo 120\" (10'-0\" = 3.05 m) entre eixos: trechos 40'/60'/40' = [4, 6, 4] módulos idênticos, 15 postes.",
-    "Altura total 6'-1 1/2\": módulo/altura = 1.633 (φ = 1.618). 12 tábuas 1x6 por módulo.",
-    "Folga de 3\" entre a travessa inferior e o terreno.",
-    "Tudo em pinus tratado aplainado S4S; postes 6x6 ground contact embutidos 24\" em concreto sobre 6\" de brita.",
-    "Trançado montado na obra: travessa inferior + sarrafos, tábuas descem pelo canal dos postes alternando frente/trás; peças pré-cortadas na oficina.",
-    "Stain semi-transparente nas 2 faces em visita após secagem (pinus tratado chega úmido).",
-    "PRELIMINAR: estudo de módulo; preços de 1x6, 1x2 e 6x6 estimados.",
-    "Orçamento de 1 módulo = módulo + 1 poste, sem locação/mobilização (essas entram só no completo)."
+    "Solução PAINEL PRÉ-FABRICADO: moldura fechada nos 4 cantos (9'-6\" x 5'-9\"), 2x4 PT S4S com rasgo de 2\" x 3/4\"; montada e pintada na oficina; ~126 lb por painel.",
+    "Trançado: 12 tábuas de CEDRO 5/8\" x 6 (9'-4 1/4\") e 3 sarrafos 1x2 PT; tábuas fixadas com prego pneumático inox anelado em cada cruzamento com os sarrafos.",
+    "Módulo de 10'-0\" entre eixos: 40'/60'/40' = [4, 6, 4] → 14 painéis iguais e 15 postes 6x6 PT ground contact de 8', embutidos 24\" em concreto sobre 6\" de brita (furos com mini skid steer + auger alugado).",
+    "Altura total 6'-1 1/2\" (módulo/altura = 1.633 ≈ φ); folga de 3\" do terreno, definida pelos blocos de apoio.",
+    "Instalação: blocos de apoio → batentes 1x2 do lado do vizinho → painel → batentes do lado da casa → capeamento 2x6. Nos postes, tudo com PARAFUSO (batentes, blocos e capa).",
+    "Pintura com PISTOLA: painéis na oficina (2 faces, +25% pelo relevo do trançado); postes e capa na obra, numa visita de retorno depois da secagem do PT. Rendimento adotado de ~200 sqft/gal na pistola.",
+    "Estrutura (moldura, sarrafos, batentes, capa, postes) em pinus tratado S4S; usar KDAT na moldura para poder pintar logo.",
+    "PRELIMINAR: preços de cedro 5/8 em 10', 1x2, 6x6, pregos e tinta são estimados.",
+    "Orçamento de 1 módulo = 1 painel + 1 poste, sem locação/mobilização."
   ],
   "perguntas": [
-    "Altura: 6'-1 1/2\" (proporção áurea). HOA/código de Cornelius costuma limitar cerca lateral/fundo a 6'-0\"?",
-    "Iluminação LED atrás das tábuas (como na foto): incluir?",
-    "Portão(ões): quantos e onde?",
-    "Terreno plano ou com desnível (degraus nos módulos)?"
+    "Cedro 5/8\" em 10': confirmar disponibilidade (madeireira) e preço.",
+    "Cor/produto da pintura (stain transparente, semi ou sólido)?",
+    "Altura 6'-1 1/2\": confirmar limite de HOA/código.",
+    "LED, portões, desnível do terreno."
   ],
   "avisos": [],
   "fontes_preco": [
+    "estimativa (10' em 5/8 pode exigir madeireira; conferir) (2026-11)",
     "estimativa (conferir loja) (2026-11)",
+    "estimativa (conferir) (2026-11)",
     "estimativa locadora local (conferir) (2026-11)",
     "homedepot.com online (Cornelius nao confirmado) (2026-11)",
     "referencia-lowes-online (2026-11)",

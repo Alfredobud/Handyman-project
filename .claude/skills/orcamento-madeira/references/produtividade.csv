@@ -46,3 +46,10 @@ obra_travessa_cerca,peca,0.25,Obra: travessa 2x4 entre postes (pré-cortada) com
 obra_sarrafo_trama,peca,0.1,Obra: sarrafo vertical do trançado fixado nas travessas
 obra_tabua_trancada,peca,0.12,Obra: tábua trançada (descer no canal alternando frente/trás dos sarrafos) + fixação oculta
 obra_capa,peca,0.3,Obra: capeamento 2x6 contínuo sobre postes e travessa (emenda sobre poste)
+oficina_rasgo_moldura,peca,0.15,Oficina: rasgo (canal) na peça da moldura com disco de rasgo/tupia
+oficina_montar_painel,painel,1.25,Oficina: montar painel trançado (U + sarrafos + trançar 12 tábuas com prego pneumático + fechar 4º canto + esquadro)
+oficina_pintura_pistola,sqft,0.006,Oficina: pintura/stain com pistola (por pé quadrado de superfície)
+obra_pintura_pistola,sqft,0.01,Obra: pintura/stain com pistola em postes e capeamento (inclui proteção)
+obra_bloco_apoio,peca,0.1,Obra: bloco de apoio do painel parafusado no poste (nivelado)
+obra_instalar_painel,painel,0.75,Obra: carregar e posicionar painel pré-fabricado entre postes (2 pessoas)
+obra_transporte_paineis,viagem,1.5,Obra: carregar/transportar/descarregar painéis (reboque)

@@ -95,24 +95,24 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas cedro 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "material": "cedro_2x8",
+      "nome": "Vigas cedro 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "material": "cedro_4x8",
       "comprimento_in": 138.5,
       "qtd": 4,
       "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros cedro 2x6 ponta nuvem (13)",
-      "material": "cedro_2x6",
+      "nome": "Caibros cedro 4x6 ponta nuvem (13)",
+      "material": "cedro_4x6",
       "comprimento_in": 36,
       "qtd": 13,
       "tarefa": "oficina_caibro_nuvem"
     },
     {
       "tipo": "item",
-      "nome": "Parafusos passantes 1/2\" (4 por poste)",
-      "material": "parafuso_passante",
+      "nome": "Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)",
+      "material": "parafuso_passante_14",
       "qtd": 28
     },
     {
@@ -171,15 +171,15 @@
       ""
     ],
     [
-      "Vigas cedro 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "cedro_2x8",
+      "Vigas cedro 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "cedro_4x8",
       4,
       138.5,
       ""
     ],
     [
-      "Caibros cedro 2x6 ponta nuvem (13)",
-      "cedro_2x6",
+      "Caibros cedro 4x6 ponta nuvem (13)",
+      "cedro_4x6",
       13,
       36.0,
       ""
@@ -210,19 +210,9 @@
       "material": "cedro_2x6",
       "descricao": "Cedro 2x6 S4S KD (aplainado)",
       "comprimento_ft": 8.0,
-      "qtd": 1,
+      "qtd": 15,
       "preco_unit": 33.0,
-      "subtotal": 33.0,
-      "fonte": "estimativa proporcional ao 2x8x12 da Lowe's (conferir)",
-      "obs": ""
-    },
-    {
-      "material": "cedro_2x6",
-      "descricao": "Cedro 2x6 S4S KD (aplainado)",
-      "comprimento_ft": 12.0,
-      "qtd": 14,
-      "preco_unit": 50.0,
-      "subtotal": 700.0,
+      "subtotal": 495.0,
       "fonte": "estimativa proporcional ao 2x8x12 da Lowe's (conferir)",
       "obs": "inclui 1 de sobra (5%)"
     },
@@ -237,13 +227,23 @@
       "obs": "inclui 4 de sobra (5%)"
     },
     {
-      "material": "cedro_2x8",
-      "descricao": "Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto)",
+      "material": "cedro_4x8",
+      "descricao": "Cedro 4x8 S4S KD (topo; 4x cedro costuma ser bruto: conferir madeireira)",
       "comprimento_ft": 12.0,
       "qtd": 5,
-      "preco_unit": 70.98,
-      "subtotal": 354.90000000000003,
-      "fonte": "lowes.com online - preco incerto no resultado de busca",
+      "preco_unit": 135.0,
+      "subtotal": 675.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "cedro_4x6",
+      "descricao": "Cedro 4x6 S4S KD (caibros; conferir madeireira)",
+      "comprimento_ft": 8.0,
+      "qtd": 8,
+      "preco_unit": 62.0,
+      "subtotal": 496.0,
+      "fonte": "estimativa (conferir)",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
@@ -297,14 +297,14 @@
       "obs": "un — Preservativo nos cortes do PT"
     },
     {
-      "material": "parafuso_passante",
-      "descricao": "Parafuso passante galv. 1/2x8 + porca + arruelas",
+      "material": "parafuso_passante_14",
+      "descricao": "Parafuso passante galv. 1/2 x 14in + porca + arruelas",
       "comprimento_ft": "",
       "qtd": 28,
-      "preco_unit": 4.5,
-      "subtotal": 126.0,
-      "fonte": "referencia-media-big-box",
-      "obs": "jogo — Parafusos passantes 1/2\" (4 por poste)"
+      "preco_unit": 7.5,
+      "subtotal": 210.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "jogo — Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)"
     },
     {
       "material": "parafuso_deck_trim",
@@ -361,14 +361,7 @@
     },
     {
       "material": "cedro_2x6",
-      "qtd_tabuas": 13,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 82.25\" Faces cedro 2x6 + 1x 36\" Caibros cedro 2x6 ponta nuvem (13)",
-      "sobra_in": 25.62
-    },
-    {
-      "material": "cedro_2x6",
-      "qtd_tabuas": 1,
+      "qtd_tabuas": 14,
       "comprimento_ft": 8.0,
       "cortes": "1x 82.25\" Faces cedro 2x6",
       "sobra_in": 13.75
@@ -381,11 +374,25 @@
       "sobra_in": 16.88
     },
     {
-      "material": "cedro_2x8",
+      "material": "cedro_4x8",
       "qtd_tabuas": 4,
       "comprimento_ft": 12.0,
-      "cortes": "1x 138.5\" Vigas cedro 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "cortes": "1x 138.5\" Vigas cedro 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
       "sobra_in": 5.5
+    },
+    {
+      "material": "cedro_4x6",
+      "qtd_tabuas": 6,
+      "comprimento_ft": 8.0,
+      "cortes": "2x 36\" Caibros cedro 4x6 ponta nuvem (13)",
+      "sobra_in": 23.88
+    },
+    {
+      "material": "cedro_4x6",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 36\" Caibros cedro 4x6 ponta nuvem (13)",
+      "sobra_in": 60.0
     }
   ],
   "mao_de_obra": [
@@ -543,17 +550,17 @@
     }
   ],
   "totais": {
-    "material_subtotal": 3800.28,
-    "material_imposto": 313.52,
+    "material_subtotal": 4462.38,
+    "material_imposto": 368.15,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 4113.8,
+    "material_total": 4830.53,
     "horas": 55.3,
     "mao_de_obra_subtotal": 3316.2,
     "mao_de_obra_contingencia": 0.0,
     "mao_de_obra_total": 3316.2,
     "taxa_fixa": 150.0,
-    "total_geral": 7580.0
+    "total_geral": 8296.73
   },
   "premissas": [
     "Comparativo de núcleo 4x6; vão livre 3'-1 3/4\"; poste 5 1/2\"."

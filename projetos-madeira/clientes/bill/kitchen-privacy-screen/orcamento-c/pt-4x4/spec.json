@@ -3,7 +3,7 @@
   "projeto_en": "Kitchen Privacy Screen — 7 posts, pressure-treated pine, 8 ft, pergola top (Cornelius, NC)",
   "cliente": "Bill",
   "data": "2026-11-10",
-  "revisao": "9",
+  "revisao": "10",
   "idioma_desenho": "en",
   "prefixo_prancha": "B",
   "precos": "../../orcamento/precos.csv",
@@ -44,14 +44,14 @@
     },
     "lado_ripas": "vizinho",
     "caibro": {
-      "esp": 1.5,
+      "esp": 3.5,
       "alt": 5.5,
       "comprimento": 36,
       "posicao": "postes_e_meio",
       "perfil": "nuvem"
     },
     "viga": {
-      "esp": 1.5,
+      "esp": 3.5,
       "alt": 7.25,
       "peca_max": 144,
       "fechamento": false,
@@ -64,8 +64,8 @@
       "serrilhado": "PT pine 5/4x6 S4S notched",
       "lateral_ponta": "PT pine 5/4x6 S4S plain",
       "ripa": "PT pine 2x2 S4S",
-      "viga": "PT pine 2x8 S4S",
-      "caibro": "PT pine 2x6 S4S",
+      "viga": "PT pine 4x8 S4S",
+      "caibro": "PT pine 4x6 S4S",
       "especie": "All lumber: Southern Yellow Pine #2, pressure-treated, S4S; cores ground contact (UC4B)."
     },
     "materiais": {
@@ -155,24 +155,24 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "material": "pt_2x8",
+      "nome": "Vigas pt 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "material": "pt_4x8",
       "comprimento_in": 138.5,
       "qtd": 4,
       "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros pt 2x6 ponta nuvem (13)",
-      "material": "pt_2x6",
+      "nome": "Caibros pt 4x6 ponta nuvem (13)",
+      "material": "pt_4x6",
       "comprimento_in": 36,
       "qtd": 13,
       "tarefa": "oficina_caibro_nuvem"
     },
     {
       "tipo": "item",
-      "nome": "Parafusos passantes 1/2\" (4 por poste)",
-      "material": "parafuso_passante",
+      "nome": "Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)",
+      "material": "parafuso_passante_14",
       "qtd": 28
     },
     {

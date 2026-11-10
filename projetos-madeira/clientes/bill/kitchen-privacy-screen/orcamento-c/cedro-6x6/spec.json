@@ -3,7 +3,7 @@
   "projeto_en": "Kitchen Privacy Screen — 7 posts, cedar, 8 ft, pergola top (Cornelius, NC)",
   "cliente": "Bill",
   "data": "2026-11-10",
-  "revisao": "9",
+  "revisao": "10",
   "idioma_desenho": "en",
   "prefixo_prancha": "A",
   "precos": "../../orcamento/precos.csv",
@@ -44,14 +44,14 @@
     },
     "lado_ripas": "vizinho",
     "caibro": {
-      "esp": 1.5,
+      "esp": 3.5,
       "alt": 5.5,
       "comprimento": 36,
       "posicao": "postes_e_meio",
       "perfil": "nuvem"
     },
     "viga": {
-      "esp": 1.5,
+      "esp": 3.5,
       "alt": 7.25,
       "peca_max": 144,
       "fechamento": false,
@@ -64,8 +64,8 @@
       "serrilhado": "Cedar 1x6 S4S notched",
       "lateral_ponta": "Cedar 1x6 S4S plain",
       "ripa": "Cedar 2x2 S4S",
-      "viga": "Cedar 2x8 S4S",
-      "caibro": "Cedar 2x6 S4S"
+      "viga": "Cedar 4x8 S4S",
+      "caibro": "Cedar 4x6 S4S"
     },
     "materiais": {
       "revest": "cedro",
@@ -154,24 +154,24 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas cedro 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "material": "cedro_2x8",
+      "nome": "Vigas cedro 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "material": "cedro_4x8",
       "comprimento_in": 138.5,
       "qtd": 4,
       "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros cedro 2x6 ponta nuvem (13)",
-      "material": "cedro_2x6",
+      "nome": "Caibros cedro 4x6 ponta nuvem (13)",
+      "material": "cedro_4x6",
       "comprimento_in": 36,
       "qtd": 13,
       "tarefa": "oficina_caibro_nuvem"
     },
     {
       "tipo": "item",
-      "nome": "Parafusos passantes 1/2\" (4 por poste)",
-      "material": "parafuso_passante",
+      "nome": "Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)",
+      "material": "parafuso_passante_14",
       "qtd": 28
     },
     {

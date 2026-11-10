@@ -95,24 +95,24 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "material": "pt_2x8",
+      "nome": "Vigas pt 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "material": "pt_4x8",
       "comprimento_in": 138.5,
       "qtd": 4,
       "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros pt 2x6 ponta nuvem (13)",
-      "material": "pt_2x6",
+      "nome": "Caibros pt 4x6 ponta nuvem (13)",
+      "material": "pt_4x6",
       "comprimento_in": 36,
       "qtd": 13,
       "tarefa": "oficina_caibro_nuvem"
     },
     {
       "tipo": "item",
-      "nome": "Parafusos passantes 1/2\" (4 por poste)",
-      "material": "parafuso_passante",
+      "nome": "Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)",
+      "material": "parafuso_passante_14",
       "qtd": 28
     },
     {
@@ -179,15 +179,15 @@
       ""
     ],
     [
-      "Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "pt_2x8",
+      "Vigas pt 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "pt_4x8",
       4,
       138.5,
       ""
     ],
     [
-      "Caibros pt 2x6 ponta nuvem (13)",
-      "pt_2x6",
+      "Caibros pt 4x6 ponta nuvem (13)",
+      "pt_4x6",
       13,
       36.0,
       ""
@@ -217,16 +217,6 @@
     {
       "material": "pt_2x8",
       "descricao": "PT 2x8 #2 Prime ground contact",
-      "comprimento_ft": 12.0,
-      "qtd": 4,
-      "preco_unit": 19.5,
-      "subtotal": 78.0,
-      "fonte": "referencia-media-big-box (sem preço online local)",
-      "obs": ""
-    },
-    {
-      "material": "pt_2x8",
-      "descricao": "PT 2x8 #2 Prime ground contact",
       "comprimento_ft": 14.0,
       "qtd": 8,
       "preco_unit": 23.0,
@@ -245,23 +235,33 @@
       "obs": "inclui 4 de sobra (5%)"
     },
     {
-      "material": "pt_2x6",
-      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
-      "comprimento_ft": 10.0,
+      "material": "pt_4x8",
+      "descricao": "Pinus tratado (PT SYP) 4x8 #2 S4S",
+      "comprimento_ft": 12.0,
+      "qtd": 5,
+      "preco_unit": 46.0,
+      "subtotal": 230.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_4x6",
+      "descricao": "Pinus tratado (PT SYP) 4x6 #2 ground contact UC4B",
+      "comprimento_ft": 8.0,
       "qtd": 1,
-      "preco_unit": 12.5,
-      "subtotal": 12.5,
-      "fonte": "referencia-media-big-box",
+      "preco_unit": 24.0,
+      "subtotal": 24.0,
+      "fonte": "estimativa (conferir)",
       "obs": ""
     },
     {
-      "material": "pt_2x6",
-      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
-      "comprimento_ft": 16.0,
-      "qtd": 3,
-      "preco_unit": 21.0,
-      "subtotal": 63.0,
-      "fonte": "referencia-media-big-box",
+      "material": "pt_4x6",
+      "descricao": "Pinus tratado (PT SYP) 4x6 #2 ground contact UC4B",
+      "comprimento_ft": 12.0,
+      "qtd": 5,
+      "preco_unit": 34.0,
+      "subtotal": 170.0,
+      "fonte": "estimativa (conferir)",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
@@ -315,14 +315,14 @@
       "obs": "un — Preservativo nos cortes do PT"
     },
     {
-      "material": "parafuso_passante",
-      "descricao": "Parafuso passante galv. 1/2x8 + porca + arruelas",
+      "material": "parafuso_passante_14",
+      "descricao": "Parafuso passante galv. 1/2 x 14in + porca + arruelas",
       "comprimento_ft": "",
       "qtd": 28,
-      "preco_unit": 4.5,
-      "subtotal": 126.0,
-      "fonte": "referencia-media-big-box",
-      "obs": "jogo — Parafusos passantes 1/2\" (4 por poste)"
+      "preco_unit": 7.5,
+      "subtotal": 210.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "jogo — Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)"
     },
     {
       "material": "parafuso_deck_trim",
@@ -389,13 +389,6 @@
     },
     {
       "material": "pt_2x8",
-      "qtd_tabuas": 4,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 138.5\" Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
-      "sobra_in": 5.5
-    },
-    {
-      "material": "pt_2x8",
       "qtd_tabuas": 7,
       "comprimento_ft": 14.0,
       "cortes": "2x 82.25\" Faces pt 2x8 ripado",
@@ -409,18 +402,25 @@
       "sobra_in": 21.38
     },
     {
-      "material": "pt_2x6",
-      "qtd_tabuas": 2,
-      "comprimento_ft": 16.0,
-      "cortes": "5x 36\" Caibros pt 2x6 ponta nuvem (13)",
-      "sobra_in": 11.5
+      "material": "pt_4x8",
+      "qtd_tabuas": 4,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 138.5\" Vigas pt 4x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "sobra_in": 5.5
     },
     {
-      "material": "pt_2x6",
+      "material": "pt_4x6",
+      "qtd_tabuas": 4,
+      "comprimento_ft": 12.0,
+      "cortes": "3x 36\" Caibros pt 4x6 ponta nuvem (13)",
+      "sobra_in": 35.75
+    },
+    {
+      "material": "pt_4x6",
       "qtd_tabuas": 1,
-      "comprimento_ft": 10.0,
-      "cortes": "3x 36\" Caibros pt 2x6 ponta nuvem (13)",
-      "sobra_in": 11.75
+      "comprimento_ft": 8.0,
+      "cortes": "1x 36\" Caibros pt 4x6 ponta nuvem (13)",
+      "sobra_in": 60.0
     }
   ],
   "mao_de_obra": [
@@ -601,17 +601,17 @@
     }
   ],
   "totais": {
-    "material_subtotal": 2573.0,
-    "material_imposto": 212.27,
+    "material_subtotal": 2927.5,
+    "material_imposto": 241.52,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 2785.27,
+    "material_total": 3169.02,
     "horas": 67.7,
     "mao_de_obra_subtotal": 4060.2,
     "mao_de_obra_contingencia": 0.0,
     "mao_de_obra_total": 4060.2,
     "taxa_fixa": 150.0,
-    "total_geral": 6995.47
+    "total_geral": 7379.22
   },
   "premissas": [
     "Comparativo de núcleo 6x6; vão livre 3'-0\"; poste 7\"."

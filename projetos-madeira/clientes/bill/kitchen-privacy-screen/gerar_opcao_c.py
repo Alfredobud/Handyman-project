@@ -40,12 +40,12 @@ def specs(mat, nuc):
     rot = {"nucleo": f"PT pine {nuc} S4S, ground contact (UC4B)"}
     if pre == "pt":
         rot.update({"revest": f"PT pine {face} S4S" + (" ripped to 7\"" if face_rip else ""), "serrilhado": f"PT pine {lat.replace('_', '/')} S4S notched",
-                    "lateral_ponta": f"PT pine {lat.replace('_', '/')} S4S plain", "ripa": "PT pine 2x2 S4S", "viga": "PT pine 2x8 S4S",
-                    "caibro": "PT pine 2x6 S4S", "especie": "All lumber: Southern Yellow Pine #2, pressure-treated, S4S; cores ground contact (UC4B)."})
+                    "lateral_ponta": f"PT pine {lat.replace('_', '/')} S4S plain", "ripa": "PT pine 2x2 S4S", "viga": "PT pine 4x8 S4S",
+                    "caibro": "PT pine 4x6 S4S", "especie": "All lumber: Southern Yellow Pine #2, pressure-treated, S4S; cores ground contact (UC4B)."})
         g["materiais"] = {"revest": "pt", "serrilhado": "pt", "ripa": "pt", "viga": "pt", "caibro": "pt"}
     else:
         rot.update({"revest": "Cedar " + face + " S4S" + (" ripped to 7\"" if face_rip else ""), "serrilhado": f"Cedar {lat.replace('_', '/')} S4S notched",
-                    "lateral_ponta": f"Cedar {lat.replace('_', '/')} S4S plain", "ripa": "Cedar 2x2 S4S", "viga": "Cedar 2x8 S4S", "caibro": "Cedar 2x6 S4S"})
+                    "lateral_ponta": f"Cedar {lat.replace('_', '/')} S4S plain", "ripa": "Cedar 2x2 S4S", "viga": "Cedar 4x8 S4S", "caibro": "Cedar 4x6 S4S"})
         g["materiais"] = {"revest": "cedro", "serrilhado": "cedro", "ripa": "cedro", "viga": "cedro", "caibro": "cedro"}
     g["rotulos"] = {**g.get("rotulos", {}), **rot}
     G = ps.Geo(ps.mescla(ps.PADRAO, g))
@@ -75,12 +75,12 @@ def specs(mat, nuc):
     for c in G.pecas_viga:
         pv[round(c, 3)] = pv.get(round(c, 3), 0) + 2
     for comp, q in pv.items():
-        C.append({"tipo": "pecas", "nome": f"Vigas {pre} 2x8 {ps.pes_pol(comp)} (entalhadas, parafusadas no núcleo)", "material": f"{pre}_2x8",
+        C.append({"tipo": "pecas", "nome": f"Vigas {pre} 4x8 {ps.pes_pol(comp)} (entalhadas, parafusadas no núcleo)", "material": f"{pre}_4x8",
                   "comprimento_in": comp, "qtd": q, "tarefa": "oficina_tabua_topo"})
     C += [
-        {"tipo": "pecas", "nome": f"Caibros {pre} 2x6 ponta nuvem ({len(G.xc)})", "material": f"{pre}_2x6", "comprimento_in": 36,
+        {"tipo": "pecas", "nome": f"Caibros {pre} 4x6 ponta nuvem ({len(G.xc)})", "material": f"{pre}_4x6", "comprimento_in": 36,
          "qtd": len(G.xc), "tarefa": "oficina_caibro_nuvem"},
-        {"tipo": "item", "nome": "Parafusos passantes 1/2\" (4 por poste)", "material": "parafuso_passante", "qtd": 4 * n},
+        {"tipo": "item", "nome": "Parafusos passantes 1/2\" x 14\" (4 por poste: viga 4x8 + núcleo + viga 4x8)", "material": "parafuso_passante_14", "qtd": 4 * n},
         {"tipo": "item", "nome": "Parafusos deck trim-head", "material": "parafuso_deck_trim", "qtd": 4},
         {"tipo": "item", "nome": "Cola PU/exterior", "material": "cola_externa", "qtd": 3},
         {"tipo": "item", "nome": "Descarte", "material": "descarte", "qtd": 1},
@@ -102,7 +102,7 @@ def specs(mat, nuc):
         X.append({"descricao": "Retorno para stain após secagem", "horas": 2})
     s = {"projeto": f"Kitchen Privacy Screen — {n} postes, {'cedro' if pre == 'cedro' else '100% pinus tratado'}, núcleo {nuc}",
          "projeto_en": f"Kitchen Privacy Screen — {n} posts, " + ("cedar" if pre == "cedro" else "pressure-treated pine") + ", 8 ft, pergola top (Cornelius, NC)",
-         "cliente": "Bill", "data": "2026-11-10", "revisao": "9", "idioma_desenho": "en", "prefixo_prancha": "A" if pre == "cedro" else "B", "precos": "../../orcamento/precos.csv", "parametros": PAR, "geometria": g,
+         "cliente": "Bill", "data": "2026-11-10", "revisao": "10", "idioma_desenho": "en", "prefixo_prancha": "A" if pre == "cedro" else "B", "precos": "../../orcamento/precos.csv", "parametros": PAR, "geometria": g,
          "componentes": C, "tarefas_extra": X, "premissas": [f"Comparativo de núcleo {nuc}; vão livre {ps.pes_pol(G.vao)}; poste {ps.pes_pol(G.W[1])}."]}
     return s, G
 

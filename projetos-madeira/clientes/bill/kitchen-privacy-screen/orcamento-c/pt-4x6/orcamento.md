@@ -6,30 +6,30 @@
 
 | | Valor |
 |---|---:|
-| Materiais (subtotal loja) | $2,416.00 |
-| Imposto sobre material (8.25%) | $199.32 |
-| **Total materiais** | **$2,615.32** |
+| Materiais (subtotal loja) | $2,784.50 |
+| Imposto sobre material (8.25%) | $229.72 |
+| **Total materiais** | **$3,014.22** |
 | Mão de obra (66.3 h × $60.00/h) | $3,976.20 |
 | **Total mão de obra** | **$3,976.20** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$6,741.52** |
+| **TOTAL** | **$7,140.42** |
 
 ## Lista de compra
 
 | Material | Compr. | Qtd | Unit. | Subtotal | Obs. | Fonte do preço |
 |---|---:|---:|---:|---:|---|---|
-| Pinus tratado (PT SYP) 4x6 #2 ground contact UC4B | 12' | 7 | $34.00 | $238.00 |  | estimativa (conferir) |
+| Pinus tratado (PT SYP) 4x6 #2 ground contact UC4B | 8' | 1 | $24.00 | $24.00 |  | estimativa (conferir) |
+| Pinus tratado (PT SYP) 4x6 #2 ground contact UC4B | 12' | 12 | $34.00 | $408.00 | inclui 1 de sobra (5%) | estimativa (conferir) |
 | PT 5/4x6 premium SYP deck board | 16' | 8 | $19.00 | $152.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
-| PT 2x6 #2 Prime ground contact (WeatherShield) | 8' | 1 | $9.50 | $9.50 |  | referencia-media-big-box |
-| PT 2x6 #2 Prime ground contact (WeatherShield) | 10' | 14 | $12.50 | $175.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
+| PT 2x6 #2 Prime ground contact (WeatherShield) | 8' | 15 | $9.50 | $142.50 | inclui 1 de sobra (5%) | referencia-media-big-box |
 | Pinus tratado 2x2 S4S | 8' | 76 | $5.00 | $380.00 | inclui 4 de sobra (5%) | estimativa (conferir) |
-| PT 2x8 #2 Prime ground contact | 12' | 5 | $19.50 | $97.50 | inclui 1 de sobra (5%) | referencia-media-big-box (sem preço online local) |
+| Pinus tratado (PT SYP) 4x8 #2 S4S | 12' | 5 | $46.00 | $230.00 | inclui 1 de sobra (5%) | estimativa (conferir) |
 | Concreto ensacado 80 lb (~0.60 cf) |  | 48 | $6.50 | $312.00 | saco — Furos Ø16" x 42" — concreto | referencia-media-big-box |
 | Brita/cascalho ensacado 0.5 cf |  | 10 | $5.50 | $55.00 | saco — Brita | referencia-media-big-box |
 | Aluguel mini skid steer (tipo Dingo) com auger 12in — 1 dia |  | 1 | $350.00 | $350.00 | dia — Locação mini skid steer + auger (1 dia) | estimativa locadora local (conferir) |
 | Entrega/retirada do equipamento alugado |  | 1 | $100.00 | $100.00 | verba — Frete do equipamento | estimativa locadora local (conferir) |
 | Preservativo para corte de PT (copper naphthenate) 1 qt |  | 1 | $22.00 | $22.00 | un — Preservativo nos cortes do PT | referencia-media-big-box |
-| Parafuso passante galv. 1/2x8 + porca + arruelas |  | 28 | $4.50 | $126.00 | jogo — Parafusos passantes 1/2" (4 por poste) | referencia-media-big-box |
+| Parafuso passante galv. 1/2 x 14in + porca + arruelas |  | 28 | $7.50 | $210.00 | jogo — Parafusos passantes 1/2" x 14" (4 por poste: viga 4x8 + núcleo + viga 4x8) | estimativa (conferir) |
 | Parafuso deck trim-head (cabeça pequena) revestido p/ PT/ACQ 2.5-3in (caixa 5 lb) |  | 4 | $42.00 | $168.00 | caixa — Parafusos deck trim-head | referencia-media-big-box |
 | Cola PVA à prova d'água (Titebond III 8 oz) |  | 3 | $7.00 | $21.00 | un — Cola PU/exterior | referencia-media-big-box |
 | Descarte de entulho / caçamba pequena |  | 1 | $75.00 | $75.00 | verba — Descarte | referencia-media-big-box |
@@ -48,20 +48,21 @@
 | Laterais lisas pt 5_4x6 (pontas) | pt_5_4x6 | 2 | 89.5 |  |
 | Faces pt 2x6 | pt_2x6 | 14 | 82.25 |  |
 | Ripas pt 2x2 (24/vão) | pt_2x2 | 144 | 39.5 |  |
-| Vigas pt 2x8 11'-6 1/2" (entalhadas, parafusadas no núcleo) | pt_2x8 | 4 | 138.5 |  |
-| Caibros pt 2x6 ponta nuvem (13) | pt_2x6 | 13 | 36 |  |
+| Vigas pt 4x8 11'-6 1/2" (entalhadas, parafusadas no núcleo) | pt_4x8 | 4 | 138.5 |  |
+| Caibros pt 4x6 ponta nuvem (13) | pt_4x6 | 13 | 36 |  |
 
 ## Plano de corte (sem a sobra de perda)
 
 | Material | Tábuas | Compr. | Cortes por tábua | Sobra/tábua (in) |
 |---|---:|---:|---|---:|
 | pt_4x6 | 7 | 12' | 1x 129.5" Núcleo 4x6 PT ground contact (embutir 36") | 14.5 |
+| pt_4x6 | 4 | 12' | 3x 36" Caibros pt 4x6 ponta nuvem (13) | 35.75 |
+| pt_4x6 | 1 | 8' | 1x 36" Caibros pt 4x6 ponta nuvem (13) | 60 |
 | pt_5_4x6 | 6 | 16' | 2x 89.5" Laterais serrilhadas pt 5_4x6 | 12.88 |
 | pt_5_4x6 | 1 | 16' | 2x 89.5" Laterais lisas pt 5_4x6 (pontas) | 12.88 |
-| pt_2x6 | 13 | 10' | 1x 82.25" Faces pt 2x6 + 1x 36" Caibros pt 2x6 ponta nuvem (13) | 1.62 |
-| pt_2x6 | 1 | 8' | 1x 82.25" Faces pt 2x6 | 13.75 |
+| pt_2x6 | 14 | 8' | 1x 82.25" Faces pt 2x6 | 13.75 |
 | pt_2x2 | 72 | 8' | 2x 39.5" Ripas pt 2x2 (24/vão) | 16.88 |
-| pt_2x8 | 4 | 12' | 1x 138.5" Vigas pt 2x8 11'-6 1/2" (entalhadas, parafusadas no núcleo) | 5.5 |
+| pt_4x8 | 4 | 12' | 1x 138.5" Vigas pt 4x8 11'-6 1/2" (entalhadas, parafusadas no núcleo) | 5.5 |
 
 ## Mão de obra
 

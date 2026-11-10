@@ -91,7 +91,7 @@ class Geo:
         self.y_r1 = self.y_viga0 + 1.0
         H = self.y_r1 - self.y_r0
         e = r["espaco_min"]
-        self.fiadas = int(math.floor((H + e) / (r["larg"] + e) + 1e-9))
+        self.fiadas = int(r["fiadas"]) if r.get("fiadas") else int(math.floor((H + e) / (r["larg"] + e) + 1e-9))
         self.espaco = (H - self.fiadas * r["larg"]) / (self.fiadas - 1)
         self.passo = r["larg"] + self.espaco
         self.ripas_y = [self.y_r0 + i * self.passo for i in range(self.fiadas)]
@@ -101,7 +101,11 @@ class Geo:
         self.comp_ripa = self.vao + 2 * (self.s - r["folga_ponta"])
         self.y_base = -g["embutimento_in"]
         self.x_viga0 = -v["balanco"]; self.x_viga1 = L + v["balanco"]
-        self.xc = [cx - c["esp"] / 2 for cx in self.cx]
+        if c.get("posicao") == "postes_e_meio":            # 1 caibro por poste + 1 no meio de cada vão
+            xs = sorted(self.cx + [self.bay_centro(i) for i in range(n - 1)])
+        else:
+            xs = list(self.cx)
+        self.xc = [x - c["esp"] / 2 for x in xs]
         self.zc0 = self.D / 2 - c["comprimento"] / 2
         self.zc1 = self.zc0 + c["comprimento"]
         Lv = self.x_viga1 - self.x_viga0
@@ -226,7 +230,7 @@ def vista_elevacao(G, esc=32):
     v.cota((xr, 0), (xr, G.y_topo), 18, tam=6.5)
     v.texto(G.x_viga0 - 8, 1.5, "GRADE", 5.5, "end")
     v.chamada((G.xc[1] + 0.75, G.y_topo - 1), (G.xc[1] + 3, G.y_topo + 40),
-              f"{len(G.xc)} rafters {g['rotulos']['caibro']} (1 per post), cloud-lift ends", 6)
+              f"{len(G.xc)} rafters {g['rotulos']['caibro']} ({'at posts + mid-bay' if len(G.xc) > G.n else '1 per post'}), cloud-lift ends", 6)
     v.chamada((G.bay_centro(2), G.ripas_y[-4] + 1.7), (G.bay_centro(2) + 2, G.y_topo + 30),
               f"{G.fiadas} slats {g['rotulos']['ripa']} per bay, {pes_pol(G.espaco)} gap", 6)
     xe = G.cx[G.emendas[0]] if G.emendas else G.cx[G.n // 2]
@@ -494,10 +498,10 @@ def lista_pecas(G):
     pv = ", ".join(pes_pol(c) for c in sorted(set(round(c, 3) for c in G.pecas_viga), reverse=True))
     return (["Mark", "Part", "Material", "Qty", "Length", "Shop pre-cut / notes"], [
         ["N", "Post core", R["nucleo"], G.n, pes_pol(G.comp_nucleo), f"embed {pes_pol(g['embutimento_in'])}; trim tops on site"],
-        ["S", "Notched side board", R["serrilhado"], 2 * nb, pes_pol(G.comp_rev), f"YES: rip to {pes_pol(G.nuc)}, {G.fiadas} notches"],
+        ["S", "Notched side board", R["serrilhado"], 2 * nb, pes_pol(G.comp_rev), (f"YES: {G.fiadas} notches" if abs(G.nuc - 5.5) < 1e-6 else f"YES: rip to {pes_pol(G.nuc)}, {G.fiadas} notches")],
         ["R", "Slat", R["ripa"], G.fiadas * nb, pes_pol(G.comp_ripa), "YES: cut to length (stop block)"],
         ["F", "Post face", R["revest"], 2 * G.n, pes_pol(G.comp_rev), "YES: cut to length"],
-        ["L", "Plain side (end posts)", R["lateral_ponta"], 2, pes_pol(G.comp_rev), f"YES: rip to {pes_pol(G.nuc)}"],
+        ["L", "Plain side (end posts)", R["lateral_ponta"], 2, pes_pol(G.comp_rev), "YES: cut to length" if abs(G.nuc - 5.5) < 1e-6 else f"YES: rip to {pes_pol(G.nuc)}"],
         ["T", f"Top board ({len(G.pecas_viga)} per side)", R["viga"], 2 * len(G.pecas_viga), pv, "YES: notches for rafters"],
         ["E", "Top board end cap", R["viga"], 2, pes_pol(G.fech_larg), "YES"],
         ["K", "Pergola rafter", R["caibro"], len(G.xc), pes_pol(g["caibro"]["comprimento"]), "YES: cloud-lift ends"],
@@ -566,16 +570,16 @@ def main():
     side = "neighbor" if G.viz else "house"
     passos = [
         [1, f"HOLES: lay out {G.n} post centers at {pes_pol(G.entre_eixos)} o.c.; dig Ø{pes_pol(g['sapata_diam_in'])} x {pes_pol(g['embutimento_in'] + g['brita_in'])} with rented machine auger; {pes_pol(g['brita_in'])} gravel."],
-        [2, f"POSTS: set PT 4x4 cores {pes_pol(g['embutimento_in'])} deep, plumb and brace, pour concrete with sloped collar. Cure 48 h."],
+        [2, f"POSTS: set {g['rotulos']['nucleo']} cores {pes_pol(g['embutimento_in'])} deep, plumb and brace, concrete with sloped collar. Cure 48 h."],
         [3, f"LEVEL TOPS: cut all cores to {pes_pol(G.y_poste)} above grade (laser level)."],
         [4, f"NOTCHED SIDE BOARDS (pre-cut): fasten to core sides from the {side} side, notches facing {side}."],
         [5, f"SLATS (pre-cut): drop into notches from the {side} side, bottom to top; 1 screw per end."],
-        [6, "FRONT CLOSURE: 2x6 face boards on both faces (closes the notches and locks the slats)."],
-        [7, f"SIDE CLOSURE: 1\" plain side board on the outer side of end posts 1 and {G.n}."],
+        [6, f"FRONT CLOSURE: {g['rotulos']['revest']} face boards on both faces (closes the notches and locks the slats)."],
+        [7, f"SIDE CLOSURE: {g['rotulos']['lateral_ponta']} on the outer side of end posts 1 and {G.n}."],
         [8, "TOP BOARDS (pre-notched): 2x8 each side of the posts, 1/2\" thru-bolt per post; splices over posts "
             + ", ".join(str(i + 1) for i in G.emendas) + "."],
         [9, "END CAPS (pre-cut): close the ends of the top boards for a solid-beam look."],
-        [10, "PERGOLA RAFTERS (pre-cut): drop into top-board notches, 1 per post; hidden trim-head screws."],
+        [10, f"PERGOLA RAFTERS (pre-cut): {len(G.xc)} into top-board notches ({'posts + mid-bay' if len(G.xc) > G.n else '1 per post'}); hidden trim-head screws."],
     ]
     p3.tabela(1.0, 2.75, ["#", "INSTALLATION SEQUENCE"], passos, [0.3, 10.4], None, 6.2)
     pranchas = [p1, p2, p3]

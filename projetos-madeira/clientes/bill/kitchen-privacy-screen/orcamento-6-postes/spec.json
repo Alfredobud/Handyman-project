@@ -1,0 +1,57 @@
+{
+  "projeto": "Kitchen Privacy Screen — 6 postes, cedro, 8 ft, topo pergolado (Cornelius, NC)",
+  "projeto_en": "Kitchen Privacy Screen — 6 posts, cedar, 8 ft, pergola top (Cornelius, NC)",
+  "cliente": "Bill",
+  "data": "2026-11-10",
+  "revisao": "8",
+  "idioma_desenho": "en",
+  "prefixo_prancha": "C",
+  "geometria": {
+    "comprimento_total_in": 265,
+    "n_postes": 6,
+    "altura_topo_in": 96,
+    "embutimento_in": 36,
+    "brita_in": 6,
+    "sapata_diam_in": 16,
+    "colar_concreto": {
+      "altura": 2.0,
+      "largura": 11.0
+    },
+    "poste": {
+      "nucleo": 5.5,
+      "face_esp": 1.5,
+      "face_larg": 7.0,
+      "serrilhado_esp": 0.75,
+      "lateral_ponta_esp": 0.75
+    },
+    "ripa": {
+      "larg": 1.5,
+      "esp": 1.5,
+      "espaco_min": 1.5,
+      "fiadas": 24,
+      "folga_ponta": 0.125
+    },
+    "lado_ripas": "vizinho",
+    "caibro": {
+      "esp": 1.5,
+      "alt": 5.5,
+      "comprimento": 36,
+      "posicao": "postes_e_meio",
+      "perfil": "nuvem"
+    },
+    "viga": {
+      "esp": 1.5,
+      "alt": 7.25,
+      "peca_max": 144
+    },
+    "rotulos": {
+      "nucleo": "PT pine 6x6 S4S, ground contact (UC4B)",
+      "revest": "Cedar 2x8 S4S ripped to 7\"",
+      "serrilhado": "Cedar 1x6 S4S (3/4\") notched",
+      "lateral_ponta": "Cedar 1x6 S4S (3/4\") plain",
+      "ripa": "Cedar 2x2 S4S",
+      "viga": "Cedar 2x8 S4S",
+      "caibro": "Cedar 2x6 S4S"
+    }
+  }
+}

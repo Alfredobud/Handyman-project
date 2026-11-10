@@ -14,13 +14,13 @@
   "componentes": [
     {
       "tipo": "sapata",
-      "nome": "Sapatas Ø16\" (concreto em volta do poste embutido)",
-      "qtd": 6,
-      "diametro_in": 16,
+      "nome": "Sapatas Ø12\" (concreto em volta do núcleo)",
+      "qtd": 11,
+      "diametro_in": 12,
       "profundidade_in": 35,
+      "desconto_poste_in2": 12.25,
       "material": "concreto_80lb",
-      "tarefa": "poste_sapata",
-      "desconto_poste_in2": 30.25
+      "tarefa": "poste_sapata"
     },
     {
       "tipo": "item",
@@ -30,84 +30,71 @@
     },
     {
       "tipo": "item",
-      "nome": "Preservativo nos cortes dos postes",
+      "nome": "Preservativo nos cortes do PT",
       "material": "preservativo_corte",
       "qtd": 1
     },
     {
       "tipo": "pecas",
-      "nome": "Postes PT 6x6 ground contact, embutidos 36\" (corte final ~128 1/2\")",
-      "material": "pt_6x6",
-      "comprimento_in": 130,
-      "qtd": 6,
+      "nome": "Núcleo PT 4x4 ground contact (embutir 36\")",
+      "material": "pt_4x4",
+      "comprimento_in": 128,
+      "qtd": 11,
       "perda": 0
     },
     {
       "tipo": "pecas",
-      "nome": "Travessas PT 2x6 sup/inf",
-      "material": "pt_2x6",
-      "comprimento_in": 46.4,
-      "qtd": 10,
-      "tarefa": "travessa"
+      "nome": "Faces do poste cedro 2x6 (casa + vizinho)",
+      "material": "cedro_2x6",
+      "comprimento_in": 88,
+      "qtd": 22,
+      "tarefa": "revestimento_poste",
+      "tarefa_qtd": 11
     },
     {
       "tipo": "pecas",
-      "nome": "Montante central PT 2x4 (apoio no meio das ripas)",
-      "material": "pt_2x4",
-      "comprimento_in": 83,
-      "qtd": 5,
-      "tarefa": "travessa"
+      "nome": "Laterais serrilhadas cedro 2x6 (ripar p/ 3 1/2\")",
+      "material": "cedro_2x6",
+      "comprimento_in": 88,
+      "qtd": 20,
+      "tarefa": "serrilhado"
     },
     {
       "tipo": "pecas",
-      "nome": "Cleats PT 2x4 nos postes",
-      "material": "pt_2x4",
-      "comprimento_in": 83,
-      "qtd": 10,
-      "tarefa": "travessa"
-    },
-    {
-      "tipo": "ripado",
-      "nome": "Ripas cedro 5/4x6",
-      "material": "cedro_5_4x6",
-      "vao_in": 46.4,
-      "n_vaos": 5,
-      "altura_in": 83,
-      "largura_peca_in": 5.5,
-      "espaco_min_in": 1.5,
-      "espaco_max_in": 2.0,
-      "lados": 1,
-      "tarefa": "ripa_madeira"
+      "nome": "Laterais lisas cedro 2x6 (postes de ponta)",
+      "material": "cedro_2x6",
+      "comprimento_in": 88,
+      "qtd": 2
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas duplas cedro 2x8 (emenda sobre poste)",
+      "nome": "Ripas cedro 2x4 deitado (16/vão x 10 vãos)",
+      "material": "cedro_2x4",
+      "comprimento_in": 22.125,
+      "qtd": 160,
+      "tarefa": "ripa_encaixe"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas duplas cedro 2x8 (emenda sobre o poste 6)",
       "material": "cedro_2x8",
-      "comprimento_in": 144,
+      "comprimento_in": 138.5,
       "qtd": 4,
       "tarefa": "viga"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros decorativos cedro 2x4",
-      "material": "cedro_2x4",
-      "comprimento_in": 30,
-      "qtd": 14,
-      "tarefa": "caibro_decorativo"
+      "nome": "Caibros cedro 2x6 com ponta tipo nuvem (1 por poste)",
+      "material": "cedro_2x6",
+      "comprimento_in": 36,
+      "qtd": 11,
+      "tarefa": "caibro_nuvem"
     },
     {
       "tipo": "item",
-      "nome": "Stain tom cedro nas partes PT (postes, cleats, travessas)",
-      "material": "stain_galao",
-      "qtd": 1,
-      "tarefa": "acabamento_stain",
-      "tarefa_qtd": 150
-    },
-    {
-      "tipo": "item",
-      "nome": "Parafusos passantes viga/poste",
+      "nome": "Parafusos passantes 1/2x10 viga/poste",
       "material": "parafuso_passante",
-      "qtd": 12
+      "qtd": 11
     },
     {
       "tipo": "item",
@@ -117,9 +104,15 @@
     },
     {
       "tipo": "item",
-      "nome": "Parafusos inox para cedro (ripas e acabamento)",
+      "nome": "Parafusos inox (revestimento e ripas)",
       "material": "parafuso_inox_deck",
-      "qtd": 2
+      "qtd": 3
+    },
+    {
+      "tipo": "item",
+      "nome": "Cola PU/exterior para o revestimento",
+      "material": "cola_externa",
+      "qtd": 3
     },
     {
       "tipo": "item",
@@ -149,9 +142,9 @@
     },
     {
       "tipo": "item",
-      "nome": "(opcional) Pedra de rio 22 ft x 2 ft x 2 in",
+      "nome": "(opcional) Pedra de rio 22 ft x 14 in x 2 in",
       "material": "pedra_rio",
-      "qtd": 15
+      "qtd": 9
     }
   ],
   "tarefas_extra": [
@@ -166,38 +159,39 @@
     {
       "tarefa": "limpeza",
       "qtd": 1
+    },
+    {
+      "descricao": "Gabarito do serrilhado (compensado + guias)",
+      "horas": 2
     }
   ],
   "premissas": [
-    "Material: madeira (sem composite). Postes e estrutura escondida em PT (pinus autoclavado); partes visíveis (ripas, vigas e caibros) em cedro. O cenário 100% PT está em orcamento-pt/.",
-    "Postes 6x6 PT ground contact (UC4B) de 12', embutidos 36\" (o mínimo pedido é 2 ft; 36\" segue a regra de ~1/3 da altura para um screen de 8 ft com pergolado, exposto a vento). Furo Ø16\", 6\" de brita no fundo e concreto em volta do poste até o nível do terreno, com coroa.",
-    "Comprimento total 265\". 6 postes => 5 vãos livres de 46.4\" (3'-10 3/8\").",
-    "Altura: topo dos caibros a 96\"; topo do poste e base dos caibros a 92.5\"; vigas 2x8 de 85.25\" a 92.5\".",
-    "Zona das ripas: de 4\" a 87\" (83\"), com 12 ripas 5/4x6 por vão e espaço de ~1 9/16\".",
-    "Contra deformação: ripa 5/4 (1\") apoiada a cada ~22\": cleats 2x4 nas faces dos postes + montante 2x4 no meio do vão; 2 parafusos inox por apoio.",
-    "Travessas 2x6 PT deitadas: a inferior a 2.5\" do chão e a superior escondida atrás das vigas.",
-    "Topo: vigas duplas 2x8, 2 x 12' por linha (balanço de 11.5\"), com emenda sobre o poste 3 e parafusos passantes de 1/2\"; 14 caibros 2x4 de 30\" a cada ~21 3/4\", com ponta recortada.",
-    "Desenhos: projetos-madeira/kitchen-privacy-screen/desenhos/privacy-screen.pdf (A-1 elevação e planta; A-2 cortes e detalhes).",
-    "Preços: Lowe's/Home Depot online (nov/2026), não confirmados na loja de Cornelius; o 6x6x12 é estimado. Itens sem preço local usam o catálogo de referência.",
+    "Material: núcleo dos postes em PT (enterrado); tudo o que é visível em cedro natural (sem stain).",
+    "Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
+    "Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita); acima do colar, revestido com 2x6 nas faces da casa e do vizinho e, nas laterais voltadas para o vão, 2x6 SERRILHADO (ripado p/ 3 1/2\") com 16 encaixes de 3 9/16\" x 1 1/2\". Postes de ponta: lateral externa lisa.",
+    "Poste acabado 6 1/2\" x 6 1/2\"; 11 postes a 2'-1 7/8\" entre eixos; vão livre 19 3/8\".",
+    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 22 1/8\" (entra 1 3/8\" em cada encaixe). Vão curto + ripa de 1 1/2\" = praticamente sem flexão nem empeno.",
+    "Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.",
+    "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 2 x 138 1/2\" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36\".",
+    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.",
     "Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.",
-    "Paisagismo (manta, borda e pedra) incluído e marcado como opcional."
+    "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas."
   ],
   "perguntas": [
-    "Cedro nas partes visíveis ou tudo em PT? Comparação em orcamento-pt/ e no README do projeto.",
-    "Confirmar na loja os preços do cedro 2x8x12 e do PT 6x6x12.",
-    "Lado do vizinho: ele vê os cleats e o montante central em PT com stain. Aceita, ou quer ripa dos dois lados?",
+    "Confirmar o croqui: o \"2x6 (5)\" do serrilhado é 2x6 ripado (usei 3 1/2\" de largura) ou outra medida/quantidade?",
+    "Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26\" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).",
+    "Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.",
     "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",
-    "Quer selador no cedro (protege mais, mas exige manutenção)?"
+    "Trepadeiras e canteiro: o cliente fornece ou incluímos?"
   ],
   "precos": "precos.csv",
   "geometria": {
     "comprimento_total_in": 265,
-    "n_postes": 6,
+    "n_postes": 11,
     "embutimento_in": 36,
     "brita_in": 6,
-    "sapata_diam_in": 16,
     "altura_topo_in": 96
   },
-  "revisao": "0",
+  "revisao": "2",
   "data": "2026-11-10"
 }

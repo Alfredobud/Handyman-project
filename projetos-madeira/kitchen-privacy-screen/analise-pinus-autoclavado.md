@@ -2,15 +2,15 @@
 
 **Pinus autoclavado** nos EUA é o *pressure-treated Southern Yellow Pine* (SYP), tratado hoje com cobre (ACQ, CA ou MCA). O CCA não é mais vendido para uso residencial.
 
-## Comparação de custo (Cornelius, NC — mesma estrutura, postes embutidos 36")
+## Comparação de custo (Cornelius, NC — rev. 2: 11 postes compostos, ripas 2x4 encaixadas)
 
 | Cenário | Materiais (c/ 8.25%) | Mão de obra ($60/h) | Taxa | **Total** |
 |---|---:|---:|---:|---:|
-| **A — Cedro aparente + estrutura PT** ([orçamento](orcamento/orcamento.md)) | $2,859 | $3,243 (54 h) | $150 | **$6,252** |
-| **B — 100% PT** ([orçamento](orcamento-pt/orcamento.md)) | $2,179 | $3,723 (62 h) | $150 | **$6,052** |
-| Diferença | −$680 | +$480 (+8 h) | — | **−$200** |
+| **A — núcleo PT + tudo visível em cedro** ([orçamento](orcamento/orcamento.md)) | $4,229 | $5,835 (97 h) | $150 | **$10,214** |
+| **B — 100% PT** ([orçamento](orcamento-pt/orcamento.md)) | $2,423 | $6,495 (108 h) | $150 | **$9,068** |
+| Diferença | −$1,806 | +$660 (+11 h) | — | **−$1,146** |
 
-O PT economiza ~$680 em material, mas precisa de stain em tudo, numa **segunda visita** depois que a madeira seca. Isso acrescenta ~8 h, e a economia final fica em **~$200 (3%)**.
+Com o modelo da foto, a quantidade de madeira aparente cresceu (revestimento de 11 postes, 160 ripas 2x4). Por isso a economia do PT passa a ser real, **~$1,150 (11%)**, mesmo contando o stain e a segunda visita.
 
 ## Onde o PT é a melhor escolha
 
@@ -31,13 +31,13 @@ O PT economiza ~$680 em material, mas precisa de stain em tudo, numa **segunda v
 - Comprar **KDAT** (*kiln-dried after treatment*) ou deck board **premium**, e escolher as tábuas na loja: retas, com poucos nós e sem medula.
 - Manter o **apoio a cada ~22"** (cleat + montante central), que já está no desenho.
 - **2 parafusos por apoio**, instalados com a madeira ainda úmida, para ela secar presa.
-- Ripa **5/4** (1"), nunca 1x6 (3/4").
+- No modelo atual a ripa é 2x4 deitado (1 1/2") em vão curto (19 3/8"), travada no serrilhado: é a configuração mais resistente a empeno. PT ripado (serrilhado de 2x6 ripado) tende a torcer mais: em PT, prefira 2x4 inteiro para o serrilhado.
 - Guardar o material empilhado, com espaçadores, na sombra, até a instalação.
 
 ## Recomendação
 
 - **Estrutura e postes: PT** (já é assim nos dois cenários).
-- **Ripas e pergolado: cedro**, se o cliente aceita ~$200 a mais. Fica mais estável (menos empeno), não precisa de stain, dispensa a segunda visita e combina com a imagem conceito ("100% Natural Cedar, No Stain Needed").
+- **Ripas e pergolado: cedro**, se o cliente aceita ~$1,150 a mais. Fica mais estável (menos empeno), não precisa de stain, dispensa a segunda visita e combina com a imagem conceito ("100% Natural Cedar, No Stain Needed").
 - Se o orçamento do cliente for o fator decisivo, o PT funciona bem com os cuidados acima. Avise que pode haver algum empeno e que o stain é obrigatório.
 
 _Preços online da Lowe's e da Home Depot (nov/2026), ainda não confirmados na loja de Cornelius. O PT 6x6x12 e o PT 2x8x12 são estimados._

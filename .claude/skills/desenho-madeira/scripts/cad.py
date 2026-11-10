@@ -47,7 +47,10 @@ def pes_pol(v, frac=16):
     inch = q - ft * 12
     inteiro = int(inch)
     resto = Fraction(inch - inteiro).limit_denominator(frac)
-    s_in = f"{inteiro}" + (f" {resto.numerator}/{resto.denominator}" if resto else "")
+    if inteiro == 0 and resto:
+        s_in = f"{resto.numerator}/{resto.denominator}"
+    else:
+        s_in = f"{inteiro}" + (f" {resto.numerator}/{resto.denominator}" if resto else "")
     s = f"{ft}'-{s_in}\"" if ft else f"{s_in}\""
     return ("-" if neg else "") + s
 

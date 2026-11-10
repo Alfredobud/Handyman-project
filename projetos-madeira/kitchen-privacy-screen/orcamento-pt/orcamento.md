@@ -4,110 +4,111 @@
 
 | | Valor |
 |---|---:|
-| Materiais (subtotal loja) | $2,013.00 |
-| Imposto sobre material (8.25%) | $166.07 |
-| **Total materiais** | **$2,179.07** |
-| Mão de obra (62 h × $60.00/h) | $3,723.00 |
-| **Total mão de obra** | **$3,723.00** |
+| Materiais (subtotal loja) | $2,238.50 |
+| Imposto sobre material (8.25%) | $184.68 |
+| **Total materiais** | **$2,423.18** |
+| Mão de obra (108.2 h × $60.00/h) | $6,495.00 |
+| **Total mão de obra** | **$6,495.00** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$6,052.07** |
+| **TOTAL** | **$9,068.18** |
 
 ## Lista de compra
 
 | Material | Compr. | Qtd | Unit. | Subtotal | Obs. | Fonte do preço |
 |---|---:|---:|---:|---:|---|---|
-| PT 6x6 #2 SYP ground contact (Severe Weather) | 12' | 6 | $58.00 | $348.00 |  | estimativa proporcional ao 10' da Lowe's (sem preço online) |
-| PT 2x6 #2 Prime ground contact (WeatherShield) | 8' | 6 | $9.50 | $57.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
-| PT 2x4 #2 Prime ground contact (WeatherShield) | 8' | 9 | $6.00 | $54.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
-| PT 2x4 #2 Prime ground contact (WeatherShield) | 12' | 7 | $10.00 | $70.00 |  | referencia-media-big-box |
-| PT 5/4x6 premium SYP deck board | 16' | 16 | $19.00 | $304.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
+| PT 4x4 #2 ground contact | 12' | 11 | $24.00 | $264.00 |  | estimativa (sem preço online local; conferir) |
+| PT 2x6 #2 Prime ground contact (WeatherShield) | 8' | 48 | $9.50 | $456.00 | inclui 3 de sobra (5%) | referencia-media-big-box |
+| PT 2x6 #2 Prime ground contact (WeatherShield) | 10' | 3 | $12.50 | $37.50 |  | referencia-media-big-box |
+| PT 2x4 #2 Prime ground contact (WeatherShield) | 8' | 42 | $6.00 | $252.00 | inclui 2 de sobra (5%) | referencia-media-big-box |
 | PT 2x8 #2 Prime ground contact | 12' | 5 | $19.50 | $97.50 | inclui 1 de sobra (5%) | referencia-media-big-box (sem preço online local) |
-| Concreto ensacado 80 lb (~0.60 cf) |  | 39 | $6.50 | $253.50 | saco — Sapatas Ø16" (concreto em volta do poste embutido) | referencia-media-big-box |
+| Concreto ensacado 80 lb (~0.60 cf) |  | 42 | $6.50 | $273.00 | saco — Sapatas Ø12" (concreto em volta do núcleo) | referencia-media-big-box |
 | Brita/cascalho ensacado 0.5 cf |  | 9 | $5.50 | $49.50 | saco — Brita 6" no fundo dos furos | referencia-media-big-box |
-| Preservativo para corte de PT (copper naphthenate) 1 qt |  | 1 | $22.00 | $22.00 | un — Preservativo nos cortes dos postes | referencia-media-big-box |
-| Stain/selador externo 1 gal (~250 sqft/demão) |  | 3 | $45.00 | $135.00 | galao — Stain semi-transparente (tudo, 1 demão após secagem) | referencia-media-big-box |
-| Parafuso passante galv. 1/2x8 + porca + arruelas |  | 12 | $4.50 | $54.00 | jogo — Parafusos passantes viga/poste | referencia-media-big-box |
+| Preservativo para corte de PT (copper naphthenate) 1 qt |  | 1 | $22.00 | $22.00 | un — Preservativo nos cortes do PT | referencia-media-big-box |
+| Parafuso passante galv. 1/2x8 + porca + arruelas |  | 11 | $4.50 | $49.50 | jogo — Parafusos passantes 1/2x10 viga/poste | referencia-media-big-box |
 | Parafuso estrutural 6 in (caixa 50) |  | 2 | $48.00 | $96.00 | caixa — Parafusos estruturais | referencia-media-big-box |
-| Parafuso inox deck 2.5-3 in (caixa 5 lb) |  | 2 | $58.00 | $116.00 | caixa — Parafusos inox para cedro (ripas e acabamento) | referencia-media-big-box |
+| Parafuso inox deck 2.5-3 in (caixa 5 lb) |  | 3 | $58.00 | $174.00 | caixa — Parafusos inox (revestimento e ripas) | referencia-media-big-box |
+| Cola PVA à prova d'água (Titebond III 8 oz) |  | 3 | $7.00 | $21.00 | un — Cola PU/exterior para o revestimento | referencia-media-big-box |
 | Aluguel de perfuratriz (auger) 1 dia |  | 1 | $95.00 | $95.00 | dia — Aluguel auger | referencia-media-big-box |
 | Descarte de entulho / caçamba pequena |  | 1 | $75.00 | $75.00 | verba — Descarte | referencia-media-big-box |
 | Manta para paisagismo 3x50 ft |  | 1 | $22.00 | $22.00 | rolo — (opcional) Manta paisagismo | referencia-media-big-box |
 | Borda/edging 20 ft |  | 2 | $26.00 | $52.00 | un — (opcional) Borda | referencia-media-big-box |
-| Pedra de rio 0.5 cf |  | 15 | $7.50 | $112.50 | saco — (opcional) Pedra de rio 22 ft x 2 ft x 2 in | referencia-media-big-box |
+| Pedra de rio 0.5 cf |  | 9 | $7.50 | $67.50 | saco — (opcional) Pedra de rio 22 ft x 14 in x 2 in | referencia-media-big-box |
+| Stain/selador externo 1 gal (~250 sqft/demão) |  | 3 | $45.00 | $135.00 | galao — Stain semi-transparente (tudo, 1 demão após secagem) | referencia-media-big-box |
 
 ## Cálculos derivados
 
-- **Sapatas Ø16" (concreto em volta do poste embutido)**: volume_cf = 22.83, sacos = 39
-- **Ripas PT 5/4x6 premium**: fiadas = 12, espaco_real_in = 1.55, altura_coberta_in = 83.0, pecas = 60
+- **Sapatas Ø12" (concreto em volta do núcleo)**: volume_cf = 24.72, sacos = 42
 
 ## Peças (lista de corte)
 
 | Peça | Material | Qtd | Compr. (in) | Obs. |
 |---|---|---:|---:|---|
-| Postes PT 6x6 ground contact, embutidos 36" (corte final ~128 1/2") | pt_6x6 | 6 | 130 |  |
-| Travessas PT 2x6 sup/inf | pt_2x6 | 10 | 46.4 |  |
-| Montante central PT 2x4 (apoio no meio das ripas) | pt_2x4 | 5 | 83 |  |
-| Cleats PT 2x4 nos postes | pt_2x4 | 10 | 83 |  |
-| Ripas PT 5/4x6 premium | pt_5_4x6 | 60 | 46.4 | 5 vão(s) x 12 fiadas x 1 lado(s) |
-| Vigas duplas PT 2x8 (emenda sobre poste) | pt_2x8 | 4 | 144 |  |
-| Caibros decorativos PT 2x4 | pt_2x4 | 14 | 30 |  |
+| Núcleo PT 4x4 ground contact (embutir 36") | pt_4x4 | 11 | 128 |  |
+| Faces do poste PT 2x6 (casa + vizinho) | pt_2x6 | 22 | 88 |  |
+| Laterais serrilhadas PT 2x6 (ripar p/ 3 1/2") | pt_2x6 | 20 | 88 |  |
+| Laterais lisas PT 2x6 (postes de ponta) | pt_2x6 | 2 | 88 |  |
+| Ripas PT 2x4 deitado (16/vão x 10 vãos) | pt_2x4 | 160 | 22.125 |  |
+| Vigas duplas PT 2x8 (emenda sobre o poste 6) | pt_2x8 | 4 | 138.5 |  |
+| Caibros PT 2x6 com ponta tipo nuvem (1 por poste) | pt_2x6 | 11 | 36 |  |
 
 ## Plano de corte (sem a sobra de perda)
 
 | Material | Tábuas | Compr. | Cortes por tábua | Sobra/tábua (in) |
 |---|---:|---:|---|---:|
-| pt_6x6 | 6 | 12' | 1x 130" Postes PT 6x6 ground contact, embutidos 36" (corte final ~128 1/2") | 14 |
-| pt_2x6 | 5 | 8' | 2x 46.4" Travessas PT 2x6 sup/inf | 3.08 |
-| pt_2x4 | 5 | 12' | 1x 83" Montante central PT 2x4 (apoio no meio das ripas) + 2x 30" Caibros decorativos PT 2x4 | 0.75 |
-| pt_2x4 | 2 | 12' | 1x 83" Cleats PT 2x4 nos postes + 2x 30" Caibros decorativos PT 2x4 | 0.75 |
-| pt_2x4 | 8 | 8' | 1x 83" Cleats PT 2x4 nos postes | 13 |
-| pt_5_4x6 | 15 | 16' | 4x 46.4" Ripas PT 5/4x6 premium | 6.03 |
-| pt_2x8 | 4 | 12' | 1x 144" Vigas duplas PT 2x8 (emenda sobre poste) | 0 |
+| pt_4x4 | 11 | 12' | 1x 128" Núcleo PT 4x4 ground contact (embutir 36") | 16 |
+| pt_2x6 | 22 | 8' | 1x 88" Faces do poste PT 2x6 (casa + vizinho) | 8 |
+| pt_2x6 | 20 | 8' | 1x 88" Laterais serrilhadas PT 2x6 (ripar p/ 3 1/2") | 8 |
+| pt_2x6 | 2 | 8' | 1x 88" Laterais lisas PT 2x6 (postes de ponta) | 8 |
+| pt_2x6 | 3 | 10' | 3x 36" Caibros PT 2x6 com ponta tipo nuvem (1 por poste) | 11.75 |
+| pt_2x6 | 1 | 8' | 2x 36" Caibros PT 2x6 com ponta tipo nuvem (1 por poste) | 23.88 |
+| pt_2x4 | 40 | 8' | 4x 22.125" Ripas PT 2x4 deitado (16/vão x 10 vãos) | 7.12 |
+| pt_2x8 | 4 | 12' | 1x 138.5" Vigas duplas PT 2x8 (emenda sobre o poste 6) | 5.5 |
 
 ## Mão de obra
 
 | Tarefa | Qtd | Unid. | h/unid. | Horas |
 |---|---:|---|---:|---:|
-| poste_sapata | 6 | poste | 2 | 12.0 |
-| travessa | 25 | peca | 0.35 | 8.8 |
-| ripa_madeira | 60 | peca | 0.15 | 9.0 |
+| poste_sapata | 11 | poste | 2 | 22.0 |
+| revestimento_poste | 11 | poste | 1.5 | 16.5 |
+| serrilhado | 20 | peca | 0.75 | 15.0 |
+| ripa_encaixe | 160 | peca | 0.12 | 19.2 |
 | viga | 4 | peca | 1 | 4.0 |
-| caibro_decorativo | 14 | peca | 0.5 | 7.0 |
-| acabamento_stain | 450 | sqft | 0.02 | 9.0 |
+| caibro_nuvem | 11 | peca | 0.75 | 8.2 |
 | paisagismo_base | 22 | ft | 0.15 | 3.3 |
+| acabamento_stain | 450 | sqft | 0.02 | 9.0 |
 | locacao | 1 | verba | 2 | 2.0 |
 | compras_transporte | 1 | verba | 3 | 3.0 |
 | limpeza | 1 | verba | 2 | 2.0 |
+| Gabarito do serrilhado (compensado + guias) | 2 | h | 1 | 2.0 |
 | Visita de retorno para stain após secagem da madeira | 2 | h | 1 | 2.0 |
-| **Total** | | | | **62.0** |
+| **Total** | | | | **108.2** |
 
 ## Premissas
 
-- Material: 100% pinus autoclavado (PT, Southern Yellow Pine). Postes ground contact (UC4B); ripas 5/4x6 premium (above ground); vigas e caibros PT.
-- PT chega úmido da loja: o stain fica para uma 2ª visita, 1 a 3 meses depois (ou compre KDAT, seco em estufa após o tratamento).
-- Postes 6x6 PT ground contact (UC4B) de 12', embutidos 36" (o mínimo pedido é 2 ft; 36" segue a regra de ~1/3 da altura para um screen de 8 ft com pergolado, exposto a vento). Furo Ø16", 6" de brita no fundo e concreto em volta do poste até o nível do terreno, com coroa.
-- Comprimento total 265". 6 postes => 5 vãos livres de 46.4" (3'-10 3/8").
-- Altura: topo dos caibros a 96"; topo do poste e base dos caibros a 92.5"; vigas 2x8 de 85.25" a 92.5".
-- Zona das ripas: de 4" a 87" (83"), com 12 ripas 5/4x6 por vão e espaço de ~1 9/16".
-- Contra deformação: ripa 5/4 (1") apoiada a cada ~22": cleats 2x4 nas faces dos postes + montante 2x4 no meio do vão; 2 parafusos inox por apoio.
-- Travessas 2x6 PT deitadas: a inferior a 2.5" do chão e a superior escondida atrás das vigas.
-- Topo: vigas duplas 2x8, 2 x 12' por linha (balanço de 11.5"), com emenda sobre o poste 3 e parafusos passantes de 1/2"; 14 caibros 2x4 de 30" a cada ~21 3/4", com ponta recortada.
-- Desenhos: projetos-madeira/kitchen-privacy-screen/desenhos/privacy-screen.pdf (A-1 elevação e planta; A-2 cortes e detalhes).
-- Preços: Lowe's/Home Depot online (nov/2026), não confirmados na loja de Cornelius; o 6x6x12 é estimado. Itens sem preço local usam o catálogo de referência.
+- Material: 100% PT (pinus autoclavado SYP). Stain em uma 2ª visita após a secagem (ou comprar KDAT).
+- Desenho rev. 2 (A-1, A-2, A-3) seguindo a imagem de referência: 11 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.
+- Poste composto (ideia do croqui): núcleo PT 4x4 ground contact embutido 36" em concreto (furo Ø12", 6" de brita); acima do colar, revestido com 2x6 nas faces da casa e do vizinho e, nas laterais voltadas para o vão, 2x6 SERRILHADO (ripado p/ 3 1/2") com 16 encaixes de 3 9/16" x 1 1/2". Postes de ponta: lateral externa lisa.
+- Poste acabado 6 1/2" x 6 1/2"; 11 postes a 2'-1 7/8" entre eixos; vão livre 19 3/8".
+- Ripas 2x4 deitadas (1 1/2" x 3 1/2"), 16 por vão, espaço ~1 5/8" dado pelos dentes do serrilhado; ripa de 22 1/8" (entra 1 3/8" em cada encaixe). Vão curto + ripa de 1 1/2" = praticamente sem flexão nem empeno.
+- Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.
+- Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2"x10" por poste), 2 x 138 1/2" por linha, emenda sobre o poste 6; 11 caibros 2x6 de 36".
+- Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8); confirmar na loja de Cornelius.
 - Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.
-- Paisagismo (manta, borda e pedra) incluído e marcado como opcional.
+- Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas.
 
 ## Perguntas / verificações de campo
 
-- [ ] Cedro nas partes visíveis ou tudo em PT? Comparação em orcamento-pt/ e no README do projeto.
-- [ ] Confirmar na loja os preços do cedro 2x8x12 e do PT 6x6x12.
-- [ ] Lado do vizinho: ele vê os cleats e o montante central em PT com stain. Aceita, ou quer ripa dos dois lados?
+- [ ] Confirmar o croqui: o "2x6 (5)" do serrilhado é 2x6 ripado (usei 3 1/2" de largura) ou outra medida/quantidade?
+- [ ] Núcleo 4x4 (como no croqui) é suficiente com 11 postes a ~26" entre eixos; se quiser margem extra para vento, troque por 4x6 ou 6x6 (+ ~$20 a ~$35 por poste).
+- [ ] Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.
 - [ ] NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.
-- [ ] Quer selador no cedro (protege mais, mas exige manutenção)?
+- [ ] Trepadeiras e canteiro: o cliente fornece ou incluímos?
 
 ## Fontes de preço
 
+- estimativa (sem preço online local; conferir) (2026-11)
 - estimativa proporcional ao 10' da Lowe's (sem preço online) (2026-11)
+- estimativa proporcional ao 2x8x12 da Lowe's (conferir) (2026-11)
 - homedepot.com online (nao confirmado loja Cornelius) (2026-11)
 - lowes.com online (nao confirmado loja Cornelius) (2026-11)
 - lowes.com online - preco incerto no resultado de busca (2026-11)

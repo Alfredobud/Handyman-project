@@ -18,3 +18,7 @@ deck_board,peca,0.25,Deck board fixada
 movel_peca_reta,peca,0.12,Móvel: peça com corte reto (marcar + cortar + pré-furo + fixar)
 movel_peca_angular,peca,0.2,Móvel: peça com corte em ângulo/curva/rasgo (jigsaw, gabarito)
 acabamento_movel,unidade,1.5,Móvel: lixamento de arestas + 1 demão de stain/selador por peça de mobiliário
+revestimento_poste,poste,1.5,Poste composto: fixar faces e laterais (2x6) no núcleo 4x4 (cola PU + parafusos)
+serrilhado,peca,0.75,Lateral serrilhada: marcar com gabarito e cortar os encaixes (serra circular + formão ou tupia)
+ripa_encaixe,peca,0.12,Ripa encaixada em serrilhado (corte no comprimento + encaixe + 1 parafuso por ponta)
+caibro_nuvem,peca,0.75,Caibro com recorte decorativo tipo nuvem nas duas pontas (gabarito + tico-tico + lixa)

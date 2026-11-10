@@ -1,12 +1,12 @@
 # Kitchen Privacy Screen
 
-**Status:** orçamento e desenhos preliminares (rev. 0)
+**Status:** rev. 2: desenhos seguindo a imagem de referência + poste composto com serrilhado (croqui do cliente)
 
 | Entregável | Arquivo |
 |---|---|
-| Desenhos (A-1 elevação/planta, A-2 cortes/detalhes) | [`desenhos/privacy-screen.pdf`](desenhos/privacy-screen.pdf) · DXF: [`desenhos/privacy-screen.dxf`](desenhos/privacy-screen.dxf) |
-| Orçamento A — cedro aparente + estrutura PT | [`orcamento/orcamento.md`](orcamento/orcamento.md): **~$6,252** |
-| Orçamento B — 100% pinus autoclavado (PT) | [`orcamento-pt/orcamento.md`](orcamento-pt/orcamento.md): **~$6,052** · desenhos em [`desenhos/pt/`](desenhos/pt/) |
+| Desenhos (A-1 elevação/planta/lateral, A-2 cortes/fundação, A-3 poste composto + montagem) | [`desenhos/privacy-screen.pdf`](desenhos/privacy-screen.pdf) · DXF: [`desenhos/privacy-screen.dxf`](desenhos/privacy-screen.dxf) |
+| Orçamento A: núcleo PT + tudo visível em cedro | [`orcamento/orcamento.md`](orcamento/orcamento.md): **~$10,214** |
+| Orçamento B: 100% pinus autoclavado (PT) | [`orcamento-pt/orcamento.md`](orcamento-pt/orcamento.md): **~$9,068** · desenhos em [`desenhos/pt/`](desenhos/pt/) |
 | Análise do pinus autoclavado | [`analise-pinus-autoclavado.md`](analise-pinus-autoclavado.md) |
 
 Decisões: madeira (sem composite, por receio de deformação); postes PT embutidos 36" (mínimo de 2 ft); $60/h, sem markup, taxa de $150; imposto de Mecklenburg de 8.25%.

@@ -16,7 +16,7 @@ limpeza,verba,2.0,Limpeza da obra e descarte de entulho
 deck_joist,peca,0.4,Joist de deck com hanger
 deck_board,peca,0.25,Deck board fixada
 movel_peca_reta,peca,0.12,Móvel: peça com corte reto (marcar + cortar + pré-furo + fixar)
-movel_peca_angular,peca,0.2,Móvel: peça com corte em ângulo/curva/rasgo (jigsaw, gabarito)
+movel_peca_angular,peca,0.2,Móvel: peça com corte em ângulo/curva/rasgo (jigsaw;  gabarito)
 acabamento_movel,unidade,1.5,Móvel: lixamento de arestas + 1 demão de stain/selador por peça de mobiliário
 revestimento_poste,poste,1.5,Poste composto: fixar faces e laterais (2x6) no núcleo 4x4 (cola PU + parafusos)
 serrilhado,peca,0.75,Lateral serrilhada: marcar com gabarito e cortar os encaixes (serra circular + formão ou tupia)
@@ -34,9 +34,9 @@ obra_instalar_tabua_topo,peca,0.5,Obra: içar tábua de topo entalhada + furar +
 obra_instalar_fechamento,peca,0.25,Obra: fixar fechamento da ponta das tábuas de topo
 obra_instalar_caibro,peca,0.15,Obra: assentar caibro no entalhe + parafuso trim-head oculto
 oficina_serrilhado,peca,0.6,Oficina: ripar 5/4 p/ 3 1/2 + marcar com gabarito + cortar os encaixes (dado/tupia ou serra + formão)
-oficina_corte,peca,0.04,Oficina: corte no comprimento com batente (ripas, faces)
+oficina_corte,peca,0.04,Oficina: corte no comprimento com batente (ripas;  faces)
 oficina_ripar,peca,0.1,Oficina: ripar tábua na largura (serra de bancada)
-oficina_tabua_topo,peca,0.6,Oficina: tábua de topo: corte, entalhes dos caibros e furos dos parafusos
+oficina_tabua_topo,peca,0.6,Oficina: tábua de topo: corte;  entalhes dos caibros e furos dos parafusos
 oficina_fechamento,peca,0.25,Oficina: fechamento de ponta das tábuas de topo
 oficina_caibro_nuvem,peca,0.6,Oficina: caibro com ponta tipo nuvem (gabarito + tico-tico + lixa)
 oficina_gabaritos,verba,2.0,Oficina: gabaritos do serrilhado e do caibro

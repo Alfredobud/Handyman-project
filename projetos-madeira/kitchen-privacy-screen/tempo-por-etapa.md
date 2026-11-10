@@ -26,9 +26,9 @@ Horas calculadas a partir do orçamento (rev. 7), com taxa de $60/h. Dia = 8 h d
 | Etapa | Tarefa | Base | Qtd A | Qtd B | h por unidade |
 |---|---|---|---:|---:|---:|
 | Oficina | Oficina: ripar 5/4 p/ 3 1/2 + marcar com gabarito + cortar os encaixes (dado/tupia ou serra + formão) | peca | 18 | 12 | 0.6 |
-| Oficina | Oficina: corte no comprimento com batente (ripas | peca | 164 | 110 | 0.04 |
+| Oficina | Oficina: corte no comprimento com batente (ripas; faces) | peca | 164 | 110 | 0.04 |
 | Oficina | Oficina: ripar tábua na largura (serra de bancada) | peca | 20 | 14 | 0.1 |
-| Oficina | Oficina: tábua de topo: corte | peca | 6 | 6 | 0.6 |
+| Oficina | Oficina: tábua de topo: corte; entalhes dos caibros e furos | peca | 6 | 6 | 0.6 |
 | Oficina | Oficina: fechamento de ponta das tábuas de topo | peca | 2 | 2 | 0.25 |
 | Oficina | Oficina: caibro com ponta tipo nuvem (gabarito + tico-tico + lixa) | peca | 10 | 7 | 0.6 |
 | Oficina | Oficina: gabaritos do serrilhado e do caibro | verba | 1 | 1 | 2 |

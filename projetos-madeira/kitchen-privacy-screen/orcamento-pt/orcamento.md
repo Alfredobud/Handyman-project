@@ -4,13 +4,13 @@
 
 | | Valor |
 |---|---:|
-| Materiais (subtotal loja) | $2,313.98 |
-| Imposto sobre material (8.25%) | $190.90 |
-| **Total materiais** | **$2,504.88** |
-| Mão de obra (90.1 h × $60.00/h) | $5,407.20 |
-| **Total mão de obra** | **$5,407.20** |
+| Materiais (subtotal loja) | $2,172.48 |
+| Imposto sobre material (8.25%) | $179.23 |
+| **Total materiais** | **$2,351.71** |
+| Mão de obra (75.1 h × $60.00/h) | $4,503.60 |
+| **Total mão de obra** | **$4,503.60** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$8,062.08** |
+| **TOTAL** | **$7,005.31** |
 
 ## Lista de compra
 
@@ -32,9 +32,6 @@
 | Parafuso deck trim-head (cabeça pequena) revestido p/ PT/ACQ 2.5-3in (caixa 5 lb) |  | 4 | $42.00 | $168.00 | caixa — Parafusos de deck trim-head (cabeça pequena, oculta), revestidos p/ PT | referencia-media-big-box |
 | Cola PVA à prova d'água (Titebond III 8 oz) |  | 3 | $7.00 | $21.00 | un — Cola PU/exterior | referencia-media-big-box |
 | Descarte de entulho / caçamba pequena |  | 1 | $75.00 | $75.00 | verba — Descarte | referencia-media-big-box |
-| Manta para paisagismo 3x50 ft |  | 1 | $22.00 | $22.00 | rolo — (opcional) Manta paisagismo | referencia-media-big-box |
-| Borda/edging 20 ft |  | 2 | $26.00 | $52.00 | un — (opcional) Borda | referencia-media-big-box |
-| Pedra de rio 0.5 cf |  | 9 | $7.50 | $67.50 | saco — (opcional) Pedra de rio 22 ft x 14 in x 2 in | referencia-media-big-box |
 | Stain/selador externo 1 gal (~250 sqft/demão) |  | 3 | $45.00 | $135.00 | galao — Stain semi-transparente (tudo, 1 demão após secagem) | referencia-media-big-box |
 
 ## Cálculos derivados
@@ -73,8 +70,8 @@
 
 | Tarefa | Qtd | Unid. | h/unid. | Horas |
 |---|---:|---|---:|---:|
-| obra_assentar_poste | 10 | poste | 0.75 | 7.5 |
-| obra_transporte_equipamento | 1 | verba | 1.5 | 1.5 |
+| obra_assentar_poste | 10 | poste | 0.45 | 4.5 |
+| obra_transporte_equipamento | 1 | verba | 1 | 1.0 |
 | obra_nivelar_topo | 10 | poste | 0.15 | 1.5 |
 | oficina_serrilhado | 18 | peca | 0.6 | 10.8 |
 | oficina_corte | 164 | peca | 0.04 | 6.6 |
@@ -82,23 +79,22 @@
 | oficina_tabua_topo | 6 | peca | 0.6 | 3.6 |
 | oficina_fechamento | 2 | peca | 0.25 | 0.5 |
 | oficina_caibro_nuvem | 10 | peca | 0.6 | 6.0 |
-| paisagismo_base | 22 | ft | 0.15 | 3.3 |
 | acabamento_stain | 450 | sqft | 0.02 | 9.0 |
-| locacao | 1 | verba | 2 | 2.0 |
-| obra_escavacao_mecanizada | 10 | furo | 0.25 | 2.5 |
+| locacao | 1 | verba | 1 | 1.0 |
+| obra_escavacao_mecanizada | 10 | furo | 0.15 | 1.5 |
 | compras_transporte | 1 | verba | 3 | 3.0 |
 | oficina_gabaritos | 1 | verba | 2 | 2.0 |
 | oficina_acabamento_lixa | 202 | peca | 0.03 | 6.1 |
-| obra_instalar_serrilhado | 18 | peca | 0.15 | 2.7 |
-| obra_instalar_ripa | 144 | peca | 0.05 | 7.2 |
-| obra_instalar_face | 20 | peca | 0.15 | 3.0 |
+| obra_instalar_serrilhado | 18 | peca | 0.08 | 1.4 |
+| obra_instalar_ripa | 144 | peca | 0.025 | 3.6 |
+| obra_instalar_face | 20 | peca | 0.08 | 1.6 |
 | obra_instalar_lateral | 2 | peca | 0.2 | 0.4 |
 | obra_instalar_tabua_topo | 6 | peca | 0.5 | 3.0 |
 | obra_instalar_fechamento | 2 | peca | 0.25 | 0.5 |
 | obra_instalar_caibro | 10 | peca | 0.15 | 1.5 |
 | limpeza | 1 | verba | 2 | 2.0 |
 | Visita de retorno para stain após secagem da madeira | 2 | h | 1 | 2.0 |
-| **Total** | | | | **90.1** |
+| **Total** | | | | **75.1** |
 
 ## Premissas
 
@@ -113,7 +109,8 @@
 - Sequência de instalação (A-3): 1 furos, 2 postes, 3 nivelar topos, 4 serrilhados pelo lado do vizinho, 5 ripas, 6 fechamento frontal, 7 fechamento lateral, 8 tábuas de topo, 9 fechamento das pontas, 10 caibros do pergolado.
 - Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6/2x8, locação do equipamento, parafuso trim-head); confirmar em Cornelius.
 - Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.
-- Paisagismo (manta, borda e pedra) incluído e marcado como opcional; trepadeiras não incluídas.
+- Paisagismo (manta, borda e pedra de rio) NÃO incluído: é extra opcional, cotado à parte na proposta; trepadeiras não incluídas.
+- Produtividade revisada com o ritmo real da equipe: furos + postes em 1 dia; serrilhados, ripas e faces chegam prontos e só encaixam.
 
 ## Perguntas / verificações de campo
 

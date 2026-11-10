@@ -178,26 +178,6 @@
     },
     {
       "tipo": "item",
-      "nome": "(opcional) Manta paisagismo",
-      "material": "manta_paisagismo",
-      "qtd": 1,
-      "tarefa": "paisagismo_base",
-      "tarefa_qtd": 22
-    },
-    {
-      "tipo": "item",
-      "nome": "(opcional) Borda",
-      "material": "borda_paisagismo",
-      "qtd": 2
-    },
-    {
-      "tipo": "item",
-      "nome": "(opcional) Pedra de rio 22 ft x 14 in x 2 in",
-      "material": "pedra_rio",
-      "qtd": 9
-    },
-    {
-      "tipo": "item",
       "nome": "Stain semi-transparente (tudo, 1 demão após secagem)",
       "material": "stain_galao",
       "qtd": 3,
@@ -279,7 +259,8 @@
     "Sequência de instalação (A-3): 1 furos, 2 postes, 3 nivelar topos, 4 serrilhados pelo lado do vizinho, 5 ripas, 6 fechamento frontal, 7 fechamento lateral, 8 tábuas de topo, 9 fechamento das pontas, 10 caibros do pergolado.",
     "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6/2x8, locação do equipamento, parafuso trim-head); confirmar em Cornelius.",
     "Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.",
-    "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; trepadeiras não incluídas."
+    "Paisagismo (manta, borda e pedra de rio) NÃO incluído: é extra opcional, cotado à parte na proposta; trepadeiras não incluídas.",
+    "Produtividade revisada com o ritmo real da equipe: furos + postes em 1 dia; serrilhados, ripas e faces chegam prontos e só encaixam."
   ],
   "perguntas": [
     "Confirmar preço e disponibilidade do mini skid steer com auger (Home Depot Rental / Sunbelt / United Rentals na região).",

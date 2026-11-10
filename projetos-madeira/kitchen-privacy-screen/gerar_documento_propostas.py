@@ -28,6 +28,16 @@ def usd(v):
     return f"${v:,.0f}"
 
 
+def extra_paisagismo(taxa_hora, imposto):
+    """Faixa de paisagismo (manta + borda + pedra de rio, 22 ft) cotada à parte."""
+    sys.path.insert(0, os.path.join(AQUI, "..", "..", ".claude", "skills", "orcamento-madeira", "scripts"))
+    import orcamento as orc
+    cat = orc.carregar_precos([os.path.join(orc.REF_DIR, "precos.csv"), os.path.join(AQUI, "orcamento", "precos.csv")])
+    prod = orc.carregar_produtividade(os.path.join(orc.REF_DIR, "produtividade.csv"))
+    mat = cat["manta_paisagismo"]["preco"] + 2 * cat["borda_paisagismo"]["preco"] + 9 * cat["pedra_rio"]["preco"]
+    return mat * (1 + imposto) + 22 * prod["paisagismo_base"]["horas"] * taxa_hora
+
+
 def carregar(pasta):
     s = json.load(open(os.path.join(AQUI, pasta, "spec.json"), encoding="utf-8"))
     r = json.load(open(os.path.join(AQUI, pasta, "orcamento.json"), encoding="utf-8"))
@@ -88,7 +98,7 @@ def bloco_opcao(letra, nome, d):
 <tr><td>Service fee</td><td>{usd(t['taxa_fixa'])}</td></tr>
 <tr class="tot"><td>Total Option {letra}</td><td>{usd(t['total_geral'])}</td></tr>
 </table>
-<p class="s">Included option: landscaping strip (landscape fabric, edging and river rock along the neighbor side), about {usd(d['opt'])} of the total; can be removed.</p>
+
 </section>"""
 
 
@@ -147,13 +157,16 @@ table.mat{font-size:8.5pt} .s{color:#555;font-size:8.5pt}
 {bloco_opcao("A", "10 posts", A)}
 {bloco_opcao("B", "7 posts", B)}
 
+<h2>Optional extra (not included)</h2>
+<p><b>Landscaping strip</b> along the neighbor side (22 ft): landscape fabric, edging and river rock border: <b>{usd(extra_paisagismo(A['p']['taxa_hora_usd'], A['p']['imposto_material']))}</b> (materials + labor), same for both options.</p>
+
 <h2>Installation sequence (both options)</h2>
 <ol style='columns:2'><li>Holes (machine auger)</li><li>Posts (treated pine cores in concrete)</li><li>Level post tops</li><li>Notched side boards (pre-cut), from the neighbor side</li><li>Slats (pre-cut)</li><li>Front closure (2x6 faces)</li><li>Side closure (end posts)</li><li>Top boards (pre-notched)</li><li>End caps (pre-cut)</li><li>Pergola rafters (pre-cut)</li></ol>
 
 <h2>Notes, exclusions and payment</h2>
 <ul>
 <li>Material prices are based on current Lowe's / Home Depot pricing and lumber-yard estimates; they will be confirmed at purchase. Changes above 5% may be adjusted.</li>
-<li>Not included: permits/HOA fees, surveys, rock or root removal beyond normal digging, plants/vines. We will call NC811 before digging.</li>
+<li>Not included: landscaping strip (optional extra above), permits/HOA fees, surveys, rock or root removal beyond normal digging, plants/vines. We will call NC811 before digging.</li>
 <li>Payment: 40% deposit to order materials and start shop work · 40% when posts and slats are installed · 20% on completion.</li>
 </ul>
 <p class="s">Drawings follow: Option A (10 posts) sheets A-1 to A-3, then Option B (7 posts) sheets B-1 to B-3.</p>

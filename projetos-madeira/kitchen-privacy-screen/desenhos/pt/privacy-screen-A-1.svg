@@ -53,12 +53,12 @@
 <polygon points="198.44,926.09 209.38,926.09 209.38,915.16 198.44,915.16" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polyline points="198.44,926.09 209.38,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
 <polyline points="209.38,926.09 198.44,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="195.31,930.78 212.50,930.78 212.50,926.09 195.31,926.09" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polyline points="195.31,930.78 212.50,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="212.50,930.78 195.31,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="195.31,915.16 212.50,915.16 212.50,910.47 195.31,910.47" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polyline points="195.31,915.16 212.50,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="212.50,915.16 195.31,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="193.75,930.78 210.94,930.78 210.94,926.09 193.75,926.09" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="193.75,930.78 210.94,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="210.94,930.78 193.75,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="193.75,915.16 210.94,915.16 210.94,910.47 193.75,910.47" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="193.75,915.16 210.94,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="210.94,915.16 193.75,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
 <polygon points="193.75,926.09 198.44,926.09 198.44,915.16 193.75,915.16" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polyline points="193.75,926.09 198.44,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
 <polyline points="198.44,926.09 193.75,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
@@ -222,12 +222,12 @@
 <polygon points="1006.25,926.09 1017.19,926.09 1017.19,915.16 1006.25,915.16" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polyline points="1006.25,926.09 1017.19,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
 <polyline points="1017.19,926.09 1006.25,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="1003.12,930.78 1020.31,930.78 1020.31,926.09 1003.12,926.09" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polyline points="1003.12,930.78 1020.31,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="1020.31,930.78 1003.12,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="1003.12,915.16 1020.31,915.16 1020.31,910.47 1003.12,910.47" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polyline points="1003.12,915.16 1020.31,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="1020.31,915.16 1003.12,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1004.69,930.78 1021.88,930.78 1021.88,926.09 1004.69,926.09" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="1004.69,930.78 1021.88,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1021.88,930.78 1004.69,926.09" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1004.69,915.16 1021.88,915.16 1021.88,910.47 1004.69,910.47" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polyline points="1004.69,915.16 1021.88,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1021.88,915.16 1004.69,910.47" fill="none" stroke="#222" stroke-width="0.48"/>
 <polygon points="1003.12,926.09 1006.25,926.09 1006.25,915.16 1003.12,915.16" fill="none" stroke="#222" stroke-width="1.28" stroke-dasharray="6,4"/>
 <polygon points="1003.12,921.41 1006.25,921.41 1006.25,915.16 1003.12,915.16" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polyline points="1003.12,921.41 1006.25,915.16" fill="none" stroke="#222" stroke-width="0.48"/>
@@ -467,7 +467,7 @@
 <polygon points="889.53,251.77 953.12,251.77 953.12,240.83 889.53,240.83" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polygon points="889.53,235.78 953.12,235.78 953.12,224.84 889.53,224.84" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polygon points="143.75,480.31 162.50,480.31 162.50,205.31 143.75,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polygon points="145.31,480.31 162.50,480.31 162.50,205.31 145.31,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polygon points="143.75,480.31 160.94,480.31 160.94,205.31 143.75,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polygon points="141.41,488.12 166.41,488.12 163.28,481.88 144.53,481.88" fill="url(#h-concreto)" stroke="#222" stroke-width="1.28"/>
 <polygon points="226.09,480.31 243.28,480.31 243.28,205.31 226.09,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polygon points="226.09,480.31 243.28,480.31 243.28,205.31 226.09,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
@@ -497,7 +497,7 @@
 <polygon points="872.34,480.31 889.53,480.31 889.53,205.31 872.34,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polygon points="868.44,488.12 893.44,488.12 890.31,481.88 871.56,481.88" fill="url(#h-concreto)" stroke="#222" stroke-width="1.28"/>
 <polygon points="953.12,480.31 971.88,480.31 971.88,205.31 953.12,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
-<polygon points="953.12,480.31 970.31,480.31 970.31,205.31 953.12,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
+<polygon points="954.69,480.31 971.88,480.31 971.88,205.31 954.69,205.31" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polygon points="949.22,488.12 974.22,488.12 971.09,481.88 952.34,481.88" fill="url(#h-concreto)" stroke="#222" stroke-width="1.28"/>
 <polygon points="125.00,205.31 990.62,205.31 990.62,218.59 981.25,227.97 134.38,227.97 125.00,218.59" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polyline points="557.81,227.97 557.81,205.31" fill="none" stroke="#222" stroke-width="1.28"/>
@@ -690,7 +690,7 @@
 <text x="1211.0" y="934.0" font-size="10.4" text-anchor="start" font-weight="bold">Kitchen Privacy Screen — 265 in x ~8 ft, 100% pinus autoclavado</text>
 <text x="1211.0" y="947.0" font-size="10.4" text-anchor="start" font-weight="bold">(PT) + topo pergolado (Cornelius, NC)</text>
 <text x="1211.0" y="982.0" font-size="13.9" text-anchor="start" font-weight="bold">Elevação e planta</text>
-<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 3   Por: </text>
+<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 4   Por: </text>
 <text x="1211.0" y="1025.0" font-size="8.3" text-anchor="start">Medidas em polegadas/pés. Madeira: medidas reais (6x6 = 5 1/2&quot;).</text>
 <text x="1211.0" y="1042.0" font-size="8.3" text-anchor="start">Conferir no campo antes de cortar. Não é projeto estrutural.</text>
 <text x="1620.0" y="1015.0" font-size="27.8" text-anchor="middle" font-weight="bold">A-1</text>

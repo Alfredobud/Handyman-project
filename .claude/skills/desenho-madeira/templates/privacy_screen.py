@@ -81,11 +81,12 @@ class Geo:
             self.xp.append(x)
             x += self.W[i] + self.vao
         self.xn = [self.xp[i] + self.tl[i] for i in range(n)]       # face esquerda do núcleo
-        # faces: alinhadas com o lado do vão
+        # faces: nos postes de ponta, alinhadas com o lado EXTERNO (canto limpo);
+        # a sobra (W - face) fica como friso do lado do vão. Intermediários: centradas.
         self.mf = []
         for i in range(n):
             folga = self.W[i] - self.fl
-            self.mf.append(folga if i == 0 else (0.0 if i == n - 1 else folga / 2))
+            self.mf.append(0.0 if i == 0 else (folga if i == n - 1 else folga / 2))
         self.y_topo = g["altura_topo_in"]
         self.y_poste = self.y_topo - c["alt"]
         self.y_viga0 = self.y_poste - v["alt"]

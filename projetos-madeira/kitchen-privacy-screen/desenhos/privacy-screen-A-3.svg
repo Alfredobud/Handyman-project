@@ -96,12 +96,12 @@
 <polygon points="1073.33,570.00 1190.00,570.00 1190.00,453.33 1073.33,453.33" fill="#c9cfa3" stroke="#222" stroke-width="1.28"/>
 <polyline points="1073.33,570.00 1190.00,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
 <polyline points="1190.00,570.00 1073.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="1040.00,620.00 1223.33,620.00 1223.33,570.00 1040.00,570.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="1040.00,620.00 1223.33,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="1223.33,620.00 1040.00,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
-<polygon points="1040.00,453.33 1223.33,453.33 1223.33,403.33 1040.00,403.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
-<polyline points="1040.00,453.33 1223.33,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
-<polyline points="1223.33,453.33 1040.00,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1023.33,620.00 1206.67,620.00 1206.67,570.00 1023.33,570.00" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1023.33,620.00 1206.67,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1206.67,620.00 1023.33,570.00" fill="none" stroke="#222" stroke-width="0.48"/>
+<polygon points="1023.33,453.33 1206.67,453.33 1206.67,403.33 1023.33,403.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
+<polyline points="1023.33,453.33 1206.67,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
+<polyline points="1206.67,453.33 1023.33,403.33" fill="none" stroke="#222" stroke-width="0.48"/>
 <polygon points="1023.33,570.00 1073.33,570.00 1073.33,453.33 1023.33,453.33" fill="#e2a86f" stroke="#222" stroke-width="1.28"/>
 <polyline points="1023.33,570.00 1073.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
 <polyline points="1073.33,570.00 1023.33,453.33" fill="none" stroke="#222" stroke-width="0.48"/>
@@ -133,12 +133,12 @@
 <line x1="1186.0" y1="374.0" x2="1194.0" y2="366.0" stroke="#222" stroke-width="1.1"/>
 <line x1="1219.3" y1="374.0" x2="1227.3" y2="366.0" stroke="#222" stroke-width="1.1"/>
 <text x="1206.7" y="367.0" font-size="6.9" text-anchor="middle">1&quot;</text>
-<line x1="1040.0" y1="623.0" x2="1040.0" y2="657.3" stroke="#555" stroke-width="0.5"/>
-<line x1="1223.3" y1="623.0" x2="1223.3" y2="657.3" stroke="#555" stroke-width="0.5"/>
-<line x1="1040.0" y1="653.3" x2="1223.3" y2="653.3" stroke="#222" stroke-width="0.6"/>
-<line x1="1036.0" y1="657.3" x2="1044.0" y2="649.3" stroke="#222" stroke-width="1.1"/>
-<line x1="1219.3" y1="657.3" x2="1227.3" y2="649.3" stroke="#222" stroke-width="1.1"/>
-<text x="1131.7" y="650.3" font-size="6.9" text-anchor="middle">5 1/2&quot;</text>
+<line x1="1023.3" y1="623.0" x2="1023.3" y2="657.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1206.7" y1="623.0" x2="1206.7" y2="657.3" stroke="#555" stroke-width="0.5"/>
+<line x1="1023.3" y1="653.3" x2="1206.7" y2="653.3" stroke="#222" stroke-width="0.6"/>
+<line x1="1019.3" y1="657.3" x2="1027.3" y2="649.3" stroke="#222" stroke-width="1.1"/>
+<line x1="1202.7" y1="657.3" x2="1210.7" y2="649.3" stroke="#222" stroke-width="1.1"/>
+<text x="1115.0" y="650.3" font-size="6.9" text-anchor="middle">5 1/2&quot;</text>
 <line x1="1393.0" y1="620.0" x2="1474.0" y2="620.0" stroke="#555" stroke-width="0.5"/>
 <line x1="1393.0" y1="403.3" x2="1474.0" y2="403.3" stroke="#555" stroke-width="0.5"/>
 <line x1="1470.0" y1="620.0" x2="1470.0" y2="403.3" stroke="#222" stroke-width="0.6"/>
@@ -153,9 +153,9 @@
 <text x="1420.3" y="545.0" font-size="6.9" text-anchor="middle" transform="rotate(-90 1420.3 545.0)">1 1/2&quot;</text>
 <polyline points="990.0,283.3 1106.7,536.7" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
 <text x="987.0" y="286.3" font-size="7.6" text-anchor="end">núcleo PT 4x4 ground contact (UC4B)</text>
-<polyline points="940.0,323.3 1066.7,430.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<polyline points="940.0,323.3 1050.0,430.0" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
 <text x="937.0" y="326.3" font-size="7.6" text-anchor="end">face Cedro 2x6 (vizinho)</text>
-<polyline points="940.0,700.0 1066.7,603.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
+<polyline points="940.0,700.0 1050.0,603.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
 <text x="937.0" y="703.0" font-size="7.6" text-anchor="end">face Cedro 2x6 (casa)</text>
 <polyline points="940.0,363.3 1048.3,473.3" fill="none" stroke="#222" stroke-width="0.7" marker-end="url(#seta)"/>
 <text x="937.0" y="366.3" font-size="7.6" text-anchor="end">lateral Cedro 2x6 lisa (1 1/2&quot;)</text>
@@ -206,7 +206,7 @@
 <text x="1211.0" y="934.0" font-size="10.4" text-anchor="start" font-weight="bold">Kitchen Privacy Screen — 265 in x ~8 ft, ripado de cedro + topo</text>
 <text x="1211.0" y="947.0" font-size="10.4" text-anchor="start" font-weight="bold">pergolado (Cornelius, NC)</text>
 <text x="1211.0" y="982.0" font-size="13.9" text-anchor="start" font-weight="bold">Poste composto com serrilhado</text>
-<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 3   Por: </text>
+<text x="1211.0" y="1005.0" font-size="9.0" text-anchor="start">Data: 2026-11-10   Rev.: 4   Por: </text>
 <text x="1211.0" y="1025.0" font-size="8.3" text-anchor="start">Medidas em polegadas/pés. Madeira: medidas reais (6x6 = 5 1/2&quot;).</text>
 <text x="1211.0" y="1042.0" font-size="8.3" text-anchor="start">Conferir no campo antes de cortar. Não é projeto estrutural.</text>
 <text x="1620.0" y="1015.0" font-size="27.8" text-anchor="middle" font-weight="bold">A-3</text>

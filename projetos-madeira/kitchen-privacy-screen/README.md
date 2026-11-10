@@ -1,6 +1,6 @@
 # Kitchen Privacy Screen
 
-**Status:** levantamento / orçamento
+**Status:** orçamento preliminar pronto — [`orcamento/orcamento.md`](orcamento/orcamento.md) (preços de referência, ~$3.7k material + ~$5.0k mão de obra)
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)
 
 ## Resumo do escopo

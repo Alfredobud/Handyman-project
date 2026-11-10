@@ -1,0 +1,20 @@
+tarefa,unidade,horas_por_unidade,descricao
+locacao,verba,2.0,Locação/marcação da linha e conferência de divisa e utilidades
+compras_transporte,verba,3.0,Compra e transporte de material (sem frete de loja)
+poste_sapata,poste,2.0,Escavação manual ou com auger + concreto + prumo/alinhamento do poste
+poste_base_metalica,poste,1.0,Instalação de post base em sapata pronta + fixação do poste
+travessa,peca,0.35,Corte e fixação de travessa/montante/cleat em estrutura existente
+ripa_madeira,peca,0.15,Corte e fixação de ripa de madeira (1x) com espaçador
+ripa_composite,peca,0.2,Corte e fixação de ripa composite com espaçador e folga de expansão
+viga,peca,1.0,Viga de pergolado: corte das pontas + içamento + fixação passante
+caibro_decorativo,peca,0.5,Caibro com corte decorativo nas pontas + fixação
+caibro_simples,peca,0.25,Caibro com corte reto + fixação
+fascia_wrap,ft,0.1,Revestimento/fascia composite sobre estrutura PT (por pé linear de peça)
+acabamento_stain,sqft,0.02,Aplicação de stain/selador por pé quadrado (uma demão)
+paisagismo_base,ft,0.15,Manta + borda + pedra ao longo da base (por pé linear)
+limpeza,verba,2.0,Limpeza da obra e descarte de entulho
+deck_joist,peca,0.4,Joist de deck com hanger
+deck_board,peca,0.25,Deck board fixada
+movel_peca_reta,peca,0.12,Móvel: peça com corte reto (marcar + cortar + pré-furo + fixar)
+movel_peca_angular,peca,0.2,Móvel: peça com corte em ângulo/curva/rasgo (jigsaw, gabarito)
+acabamento_movel,unidade,1.5,Móvel: lixamento de arestas + 1 demão de stain/selador por peça de mobiliário

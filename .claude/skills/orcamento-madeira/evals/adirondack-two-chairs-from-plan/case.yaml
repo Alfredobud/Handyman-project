@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: adirondack-two-chairs-from-plan
+expected_outcome: |
+  Orçamento para 2 cadeiras a partir da lista de corte do plano, com compra recalculada considerando kerf e encaixe entre as duas unidades, stain incluído, mão de obra realista (não 1h) e totais separados.
+context:
+  scaffold_script: place-files.sh

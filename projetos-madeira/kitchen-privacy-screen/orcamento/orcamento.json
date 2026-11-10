@@ -1,0 +1,566 @@
+{
+  "projeto": "Kitchen Privacy Screen — 265 in x ~8 ft, ripado composite + topo pergolado",
+  "cliente": "",
+  "parametros": {
+    "taxa_hora_usd": 65,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.15,
+    "imposto_material": 0.0,
+    "contingencia": 0.1,
+    "comprimento_max_ft": null
+  },
+  "componentes": [
+    {
+      "tipo": "sapata",
+      "nome": "Sapatas 16\" x 42\"",
+      "qtd": 6,
+      "diametro_in": 16,
+      "profundidade_in": 42,
+      "material": "concreto_80lb",
+      "tarefa": "poste_sapata",
+      "_calc": {
+        "volume_cf": 32.25,
+        "sacos": 54
+      }
+    },
+    {
+      "tipo": "item",
+      "nome": "Bases de poste 6x6",
+      "material": "post_base_6x6",
+      "qtd": 6,
+      "tarefa": "poste_base_metalica"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Postes 6x6 (cortar em ~96\")",
+      "material": "pt_6x6",
+      "comprimento_in": 100,
+      "qtd": 6,
+      "perda": 0
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Travessas 2x6 sup/meio/inf",
+      "material": "pt_2x6",
+      "comprimento_in": 46.4,
+      "qtd": 15,
+      "tarefa": "travessa"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Montante central 2x4 (apoio das ripas)",
+      "material": "pt_2x4",
+      "comprimento_in": 84,
+      "qtd": 5,
+      "tarefa": "travessa"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Cleats 2x4 nos postes",
+      "material": "pt_2x4",
+      "comprimento_in": 84,
+      "qtd": 10,
+      "tarefa": "travessa"
+    },
+    {
+      "tipo": "ripado",
+      "nome": "Ripas composite 1x6",
+      "material": "composite_1x6",
+      "vao_in": 46.4,
+      "n_vaos": 5,
+      "altura_in": 84,
+      "largura_peca_in": 5.5,
+      "espaco_min_in": 1.5,
+      "espaco_max_in": 2.0,
+      "lados": 1,
+      "tarefa": "ripa_composite",
+      "_calc": {
+        "fiadas": 12,
+        "espaco_real_in": 1.64,
+        "altura_coberta_in": 84.0,
+        "pecas": 60
+      }
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas duplas do topo 2x8 (emenda sobre poste)",
+      "material": "pt_2x8",
+      "comprimento_in": 144,
+      "qtd": 4,
+      "tarefa": "viga"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Caibros decorativos 2x4",
+      "material": "pt_2x4",
+      "comprimento_in": 30,
+      "qtd": 14,
+      "tarefa": "caibro_decorativo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Fascia composite sobre travessas sup/inf (2 faces)",
+      "material": "composite_fascia_1x8",
+      "comprimento_in": 46.4,
+      "qtd": 20,
+      "tarefa": "fascia_wrap",
+      "tarefa_qtd": 77
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos passantes viga/poste",
+      "material": "parafuso_passante",
+      "qtd": 12
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos estruturais",
+      "material": "parafuso_estrutural",
+      "qtd": 2
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos composite",
+      "material": "parafuso_composite",
+      "qtd": 2
+    },
+    {
+      "tipo": "item",
+      "nome": "Aluguel auger",
+      "material": "aluguel_auger",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Descarte",
+      "material": "descarte",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "(opcional) Manta paisagismo",
+      "material": "manta_paisagismo",
+      "qtd": 1,
+      "tarefa": "paisagismo_base",
+      "tarefa_qtd": 22
+    },
+    {
+      "tipo": "item",
+      "nome": "(opcional) Borda",
+      "material": "borda_paisagismo",
+      "qtd": 2
+    },
+    {
+      "tipo": "item",
+      "nome": "(opcional) Pedra de rio 22 ft x 2 ft x 2 in",
+      "material": "pedra_rio",
+      "qtd": 15
+    }
+  ],
+  "detalhes_cortes": [
+    [
+      "Postes 6x6 (cortar em ~96\")",
+      "pt_6x6",
+      6,
+      100.0,
+      ""
+    ],
+    [
+      "Travessas 2x6 sup/meio/inf",
+      "pt_2x6",
+      15,
+      46.4,
+      ""
+    ],
+    [
+      "Montante central 2x4 (apoio das ripas)",
+      "pt_2x4",
+      5,
+      84.0,
+      ""
+    ],
+    [
+      "Cleats 2x4 nos postes",
+      "pt_2x4",
+      10,
+      84.0,
+      ""
+    ],
+    [
+      "Ripas composite 1x6",
+      "composite_1x6",
+      60,
+      46.4,
+      "5 vão(s) x 12 fiadas x 1 lado(s)"
+    ],
+    [
+      "Vigas duplas do topo 2x8 (emenda sobre poste)",
+      "pt_2x8",
+      4,
+      144.0,
+      ""
+    ],
+    [
+      "Caibros decorativos 2x4",
+      "pt_2x4",
+      14,
+      30.0,
+      ""
+    ],
+    [
+      "Fascia composite sobre travessas sup/inf (2 faces)",
+      "composite_fascia_1x8",
+      20,
+      46.4,
+      ""
+    ]
+  ],
+  "compra": [
+    {
+      "material": "pt_6x6",
+      "descricao": "PT 6x6 ground contact",
+      "comprimento_ft": 10.0,
+      "qtd": 6,
+      "preco_unit": 52.0,
+      "subtotal": 312.0,
+      "obs": ""
+    },
+    {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6",
+      "comprimento_ft": 12.0,
+      "qtd": 6,
+      "preco_unit": 15.0,
+      "subtotal": 90.0,
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x4",
+      "descricao": "PT 2x4",
+      "comprimento_ft": 8.0,
+      "qtd": 1,
+      "preco_unit": 6.0,
+      "subtotal": 6.0,
+      "obs": ""
+    },
+    {
+      "material": "pt_2x4",
+      "descricao": "PT 2x4",
+      "comprimento_ft": 10.0,
+      "qtd": 15,
+      "preco_unit": 8.0,
+      "subtotal": 120.0,
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "composite_1x6",
+      "descricao": "Composite deck board 1x6 (linha básica tipo Trex Enhanced)",
+      "comprimento_ft": 20.0,
+      "qtd": 13,
+      "preco_unit": 60.0,
+      "subtotal": 780.0,
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x8",
+      "descricao": "PT 2x8",
+      "comprimento_ft": 12.0,
+      "qtd": 5,
+      "preco_unit": 19.5,
+      "subtotal": 97.5,
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "composite_fascia_1x8",
+      "descricao": "Composite fascia 1x8 (~0.56x7.25)",
+      "comprimento_ft": 12.0,
+      "qtd": 8,
+      "preco_unit": 42.0,
+      "subtotal": 336.0,
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "concreto_80lb",
+      "descricao": "Concreto ensacado 80 lb (~0.60 cf)",
+      "comprimento_ft": "",
+      "qtd": 54,
+      "preco_unit": 6.5,
+      "subtotal": 351.0,
+      "obs": "saco — Sapatas 16\" x 42\""
+    },
+    {
+      "material": "post_base_6x6",
+      "descricao": "Post base 6x6 galvanizada (tipo Simpson ABU66Z)",
+      "comprimento_ft": "",
+      "qtd": 6,
+      "preco_unit": 38.0,
+      "subtotal": 228.0,
+      "obs": "un — Bases de poste 6x6"
+    },
+    {
+      "material": "parafuso_passante",
+      "descricao": "Parafuso passante galv. 1/2x8 + porca + arruelas",
+      "comprimento_ft": "",
+      "qtd": 12,
+      "preco_unit": 4.5,
+      "subtotal": 54.0,
+      "obs": "jogo — Parafusos passantes viga/poste"
+    },
+    {
+      "material": "parafuso_estrutural",
+      "descricao": "Parafuso estrutural 6 in (caixa 50)",
+      "comprimento_ft": "",
+      "qtd": 2,
+      "preco_unit": 48.0,
+      "subtotal": 96.0,
+      "obs": "caixa — Parafusos estruturais"
+    },
+    {
+      "material": "parafuso_composite",
+      "descricao": "Parafuso para composite cor-compatível (caixa ~350)",
+      "comprimento_ft": "",
+      "qtd": 2,
+      "preco_unit": 46.0,
+      "subtotal": 92.0,
+      "obs": "caixa — Parafusos composite"
+    },
+    {
+      "material": "aluguel_auger",
+      "descricao": "Aluguel de perfuratriz (auger) 1 dia",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 95.0,
+      "subtotal": 95.0,
+      "obs": "dia — Aluguel auger"
+    },
+    {
+      "material": "descarte",
+      "descricao": "Descarte de entulho / caçamba pequena",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 75.0,
+      "subtotal": 75.0,
+      "obs": "verba — Descarte"
+    },
+    {
+      "material": "manta_paisagismo",
+      "descricao": "Manta para paisagismo 3x50 ft",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 22.0,
+      "subtotal": 22.0,
+      "obs": "rolo — (opcional) Manta paisagismo"
+    },
+    {
+      "material": "borda_paisagismo",
+      "descricao": "Borda/edging 20 ft",
+      "comprimento_ft": "",
+      "qtd": 2,
+      "preco_unit": 26.0,
+      "subtotal": 52.0,
+      "obs": "un — (opcional) Borda"
+    },
+    {
+      "material": "pedra_rio",
+      "descricao": "Pedra de rio 0.5 cf",
+      "comprimento_ft": "",
+      "qtd": 15,
+      "preco_unit": 7.5,
+      "subtotal": 112.5,
+      "obs": "saco — (opcional) Pedra de rio 22 ft x 2 ft x 2 in"
+    }
+  ],
+  "plano_cortes": [
+    {
+      "material": "pt_6x6",
+      "qtd_tabuas": 6,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 100\" Postes 6x6 (cortar em ~96\")",
+      "sobra_in": 20.0
+    },
+    {
+      "material": "pt_2x6",
+      "qtd_tabuas": 5,
+      "comprimento_ft": 12.0,
+      "cortes": "3x 46.4\" Travessas 2x6 sup/meio/inf",
+      "sobra_in": 4.55
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 5,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 84\" Montante central 2x4 (apoio das ripas) + 1x 30\" Caibros decorativos 2x4",
+      "sobra_in": 5.88
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 9,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 84\" Cleats 2x4 nos postes + 1x 30\" Caibros decorativos 2x4",
+      "sobra_in": 5.88
+    },
+    {
+      "material": "pt_2x4",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 84\" Cleats 2x4 nos postes",
+      "sobra_in": 12.0
+    },
+    {
+      "material": "composite_1x6",
+      "qtd_tabuas": 12,
+      "comprimento_ft": 20.0,
+      "cortes": "5x 46.4\" Ripas composite 1x6",
+      "sobra_in": 7.5
+    },
+    {
+      "material": "pt_2x8",
+      "qtd_tabuas": 4,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 144\" Vigas duplas do topo 2x8 (emenda sobre poste)",
+      "sobra_in": 0.0
+    },
+    {
+      "material": "composite_fascia_1x8",
+      "qtd_tabuas": 6,
+      "comprimento_ft": 12.0,
+      "cortes": "3x 46.4\" Fascia composite sobre travessas sup/inf (2 faces)",
+      "sobra_in": 4.55
+    },
+    {
+      "material": "composite_fascia_1x8",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 12.0,
+      "cortes": "2x 46.4\" Fascia composite sobre travessas sup/inf (2 faces)",
+      "sobra_in": 51.08
+    }
+  ],
+  "mao_de_obra": [
+    {
+      "tarefa": "poste_sapata",
+      "descricao": "Escavação manual ou com auger + concreto + prumo/alinhamento do poste",
+      "qtd": 6.0,
+      "unidade": "poste",
+      "h_unit": 2.0,
+      "horas": 12.0
+    },
+    {
+      "tarefa": "poste_base_metalica",
+      "descricao": "Instalação de post base em sapata pronta + fixação do poste",
+      "qtd": 6.0,
+      "unidade": "poste",
+      "h_unit": 1.0,
+      "horas": 6.0
+    },
+    {
+      "tarefa": "travessa",
+      "descricao": "Corte e fixação de travessa/montante/cleat em estrutura existente",
+      "qtd": 30.0,
+      "unidade": "peca",
+      "h_unit": 0.35,
+      "horas": 10.5
+    },
+    {
+      "tarefa": "ripa_composite",
+      "descricao": "Corte e fixação de ripa composite com espaçador e folga de expansão",
+      "qtd": 60.0,
+      "unidade": "peca",
+      "h_unit": 0.2,
+      "horas": 12.0
+    },
+    {
+      "tarefa": "viga",
+      "descricao": "Viga de pergolado: corte das pontas + içamento + fixação passante",
+      "qtd": 4.0,
+      "unidade": "peca",
+      "h_unit": 1.0,
+      "horas": 4.0
+    },
+    {
+      "tarefa": "caibro_decorativo",
+      "descricao": "Caibro com corte decorativo nas pontas + fixação",
+      "qtd": 14.0,
+      "unidade": "peca",
+      "h_unit": 0.5,
+      "horas": 7.0
+    },
+    {
+      "tarefa": "fascia_wrap",
+      "descricao": "Revestimento/fascia composite sobre estrutura PT (por pé linear de peça)",
+      "qtd": 77.0,
+      "unidade": "ft",
+      "h_unit": 0.1,
+      "horas": 7.7
+    },
+    {
+      "tarefa": "paisagismo_base",
+      "descricao": "Manta + borda + pedra ao longo da base (por pé linear)",
+      "qtd": 22.0,
+      "unidade": "ft",
+      "h_unit": 0.15,
+      "horas": 3.3
+    },
+    {
+      "tarefa": "locacao",
+      "descricao": "Locação/marcação da linha e conferência de divisa e utilidades",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "compras_transporte",
+      "descricao": "Compra e transporte de material (sem frete de loja)",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 3.0,
+      "horas": 3.0
+    },
+    {
+      "tarefa": "limpeza",
+      "descricao": "Limpeza da obra e descarte de entulho",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
+      "horas": 2.0
+    }
+  ],
+  "totais": {
+    "material_subtotal": 2919.0,
+    "material_imposto": 0.0,
+    "material_markup": 437.85,
+    "material_contingencia": 335.69,
+    "material_total": 3692.53,
+    "horas": 69.5,
+    "mao_de_obra_subtotal": 4517.5,
+    "mao_de_obra_contingencia": 451.75,
+    "mao_de_obra_total": 4969.25,
+    "total_geral": 8661.78
+  },
+  "premissas": [
+    "Comprimento total 265\" (declarado). 6 postes 6x6 (5.5\" reais) => 5 vãos livres de (265 - 6 x 5.5) / 5 = 46.4\".",
+    "Altura acabada ~96\" (declarada). Zona de ripas de 84\": de ~4\" acima do chão até ~88\".",
+    "Ripa composite 1x6 (5.5\" real) com espaço mínimo de 1.5\" (packet pede 1.5\"-2\") => 12 fiadas por vão, espaço real ~1.64\".",
+    "Composite não é estrutural: montante 2x4 no meio de cada vão deixa o apoio das ripas a cada ~23\".",
+    "Ripas fixadas em cleats 2x4 verticais presos nas faces internas dos postes.",
+    "Travessas 2x6 em cima, no meio e embaixo de cada vão (15 peças).",
+    "Topo: vigas duplas 2x8, uma de cada lado dos postes, 2 x 12' por linha (288\") = 265\" + balanço de ~11.5\" em cada ponta; emenda sobre o poste do meio.",
+    "Caibros decorativos 2x4 de 30\" (14 peças, ~20\" entre eixos) com corte decorativo nas pontas.",
+    "Fundação: sapata de 16\" x 42\" com base metálica de poste — confirmar se a base metálica é aceita para screen de 8 ft (vento).",
+    "Preços: catálogo de referência da skill (média de big box, 2026-11); confirmar na loja local.",
+    "Paisagismo (manta, borda, pedra) incluído e marcado como opcional."
+  ],
+  "perguntas": [
+    "Material final: a imagem conceito diz '100% Natural Cedar', mas o packet pede PT + Trex/composite. Qual vale?",
+    "Aparência '1x4': composite 1x4 é raro; aceita 1x6 (5.5\")? Com ripa de 3.5\" seriam 16 fiadas (~80 ripas) e custo maior de ripa e mão de obra.",
+    "Os dois lados precisam ficar acabados: aceita ripa de um lado só, com estrutura no plano do meio e fascia nos dois lados?",
+    "A imagem mostra ~10-11 postes; o packet diz 6. Pode ficar com 6 postes + montantes intermediários?",
+    "Linha de congelamento, licença/HOA e posição da divisa.",
+    "Cor/linha do composite (Trex Enhanced Basics, Enhanced Naturals, Select...)."
+  ],
+  "avisos": [],
+  "fontes_preco": [
+    "referencia-media-big-box (2026-11)"
+  ]
+}

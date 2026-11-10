@@ -1,0 +1,54 @@
+id,descricao,unidade,comprimento_ft,preco_usd,fonte,data
+pt_6x6,PT 6x6 ground contact,peca,8,38.00,referencia-media-big-box,2026-11
+pt_6x6,PT 6x6 ground contact,peca,10,52.00,referencia-media-big-box,2026-11
+pt_6x6,PT 6x6 ground contact,peca,12,64.00,referencia-media-big-box,2026-11
+pt_4x4,PT 4x4 ground contact,peca,8,14.00,referencia-media-big-box,2026-11
+pt_4x4,PT 4x4 ground contact,peca,10,19.00,referencia-media-big-box,2026-11
+pt_1x4,PT/pinho tratado 1x4,peca,8,5.50,referencia-media-big-box,2026-11
+pt_1x4,PT/pinho tratado 1x4,peca,10,7.00,referencia-media-big-box,2026-11
+pt_1x4,PT/pinho tratado 1x4,peca,12,8.50,referencia-media-big-box,2026-11
+pt_1x8,PT/pinho tratado 1x8,peca,8,13.00,referencia-media-big-box,2026-11
+pt_1x8,PT/pinho tratado 1x8,peca,10,17.00,referencia-media-big-box,2026-11
+pt_1x8,PT/pinho tratado 1x8,peca,12,20.00,referencia-media-big-box,2026-11
+pt_5_4x6,PT deck board 5/4x6,peca,8,9.50,referencia-media-big-box,2026-11
+pt_5_4x6,PT deck board 5/4x6,peca,12,14.00,referencia-media-big-box,2026-11
+pt_5_4x6,PT deck board 5/4x6,peca,16,19.00,referencia-media-big-box,2026-11
+pt_2x4,PT 2x4,peca,8,6.00,referencia-media-big-box,2026-11
+pt_2x4,PT 2x4,peca,10,8.00,referencia-media-big-box,2026-11
+pt_2x4,PT 2x4,peca,12,10.00,referencia-media-big-box,2026-11
+pt_2x4,PT 2x4,peca,16,14.00,referencia-media-big-box,2026-11
+pt_2x6,PT 2x6,peca,8,9.50,referencia-media-big-box,2026-11
+pt_2x6,PT 2x6,peca,10,12.50,referencia-media-big-box,2026-11
+pt_2x6,PT 2x6,peca,12,15.00,referencia-media-big-box,2026-11
+pt_2x6,PT 2x6,peca,16,21.00,referencia-media-big-box,2026-11
+pt_2x8,PT 2x8,peca,8,13.00,referencia-media-big-box,2026-11
+pt_2x8,PT 2x8,peca,10,16.00,referencia-media-big-box,2026-11
+pt_2x8,PT 2x8,peca,12,19.50,referencia-media-big-box,2026-11
+pt_2x8,PT 2x8,peca,14,23.00,referencia-media-big-box,2026-11
+pt_2x8,PT 2x8,peca,16,27.00,referencia-media-big-box,2026-11
+cedro_1x6,Cedro western red 1x6 (5/4 ou 1x),peca,8,22.00,referencia-media-big-box,2026-11
+cedro_1x6,Cedro western red 1x6 (5/4 ou 1x),peca,12,34.00,referencia-media-big-box,2026-11
+cedro_2x4,Cedro 2x4,peca,8,16.00,referencia-media-big-box,2026-11
+cedro_2x4,Cedro 2x4,peca,10,21.00,referencia-media-big-box,2026-11
+cedro_6x6,Cedro 6x6,peca,10,140.00,referencia-media-big-box,2026-11
+composite_1x6,Composite deck board 1x6 (linha básica tipo Trex Enhanced),peca,12,36.00,referencia-media-big-box,2026-11
+composite_1x6,Composite deck board 1x6 (linha básica tipo Trex Enhanced),peca,16,48.00,referencia-media-big-box,2026-11
+composite_1x6,Composite deck board 1x6 (linha básica tipo Trex Enhanced),peca,20,60.00,referencia-media-big-box,2026-11
+composite_fascia_1x8,Composite fascia 1x8 (~0.56x7.25),peca,12,42.00,referencia-media-big-box,2026-11
+composite_fascia_1x12,Composite fascia 1x12 (~0.56x11.25),peca,12,62.00,referencia-media-big-box,2026-11
+post_base_6x6,Post base 6x6 galvanizada (tipo Simpson ABU66Z),un,,38.00,referencia-media-big-box,2026-11
+concreto_80lb,Concreto ensacado 80 lb (~0.60 cf),saco,,6.50,referencia-media-big-box,2026-11
+parafuso_estrutural,Parafuso estrutural 6 in (caixa 50),caixa,,48.00,referencia-media-big-box,2026-11
+parafuso_composite,Parafuso para composite cor-compatível (caixa ~350),caixa,,46.00,referencia-media-big-box,2026-11
+parafuso_inox_deck,Parafuso inox deck 2.5-3 in (caixa 5 lb),caixa,,58.00,referencia-media-big-box,2026-11
+parafuso_passante,Parafuso passante galv. 1/2x8 + porca + arruelas,jogo,,4.50,referencia-media-big-box,2026-11
+manta_paisagismo,Manta para paisagismo 3x50 ft,rolo,,22.00,referencia-media-big-box,2026-11
+borda_paisagismo,Borda/edging 20 ft,un,,26.00,referencia-media-big-box,2026-11
+pedra_rio,Pedra de rio 0.5 cf,saco,,7.50,referencia-media-big-box,2026-11
+stain_galao,Stain/selador externo 1 gal (~250 sqft/demão),galao,,45.00,referencia-media-big-box,2026-11
+aluguel_auger,Aluguel de perfuratriz (auger) 1 dia,dia,,95.00,referencia-media-big-box,2026-11
+descarte,Descarte de entulho / caçamba pequena,verba,,75.00,referencia-media-big-box,2026-11
+parafuso_deck_caixa_1lb,Parafuso deck exterior (caixa 1 lb) — 1.25/2/2.5/3 in,caixa,,10.00,referencia-media-big-box,2026-11
+cola_externa,Cola PVA à prova d'água (Titebond III 8 oz),un,,7.00,referencia-media-big-box,2026-11
+stain_quart,Stain/selador externo 1 qt,un,,18.00,referencia-media-big-box,2026-11
+carriage_bolt_3_8,Carriage bolt 3/8x3.5 galv. + porca + 2 arruelas,jogo,,1.60,referencia-media-big-box,2026-11

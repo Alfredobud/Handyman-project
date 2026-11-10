@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: privacy-screen-from-packet
+expected_outcome: |
+  Orçamento com totais separados de material e mão de obra, lista de compra em tamanhos comerciais, e crítica da lista do cliente (estrutura intermediária para composite, nº de ripas, divergência cedro x composite).
+context:
+  scaffold_script: place-files.sh

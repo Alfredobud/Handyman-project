@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: adirondack-cut-diagram-sedan
+expected_outcome: |
+  Lista de compra apenas com tábuas de até 8', coerente com o diagrama de corte do plano (3 deck boards 5/4x6x8 e 2 2x8x8, aproximadamente), com parafusos/ferragens e orçamento com material e mão de obra separados.
+context:
+  scaffold_script: place-files.sh

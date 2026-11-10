@@ -1,0 +1,64 @@
+{
+  "projeto": "Kitchen Privacy Screen — 265 in x ~8 ft, ripado composite + topo pergolado",
+  "cliente": "",
+  "parametros": {
+    "taxa_hora_usd": 65,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.15,
+    "imposto_material": 0.0,
+    "contingencia": 0.10
+  },
+  "componentes": [
+    {"tipo": "sapata", "nome": "Sapatas 16\" x 42\"", "qtd": 6, "diametro_in": 16, "profundidade_in": 42, "material": "concreto_80lb", "tarefa": "poste_sapata"},
+    {"tipo": "item", "nome": "Bases de poste 6x6", "material": "post_base_6x6", "qtd": 6, "tarefa": "poste_base_metalica"},
+    {"tipo": "pecas", "nome": "Postes 6x6 (cortar em ~96\")", "material": "pt_6x6", "comprimento_in": 100, "qtd": 6, "perda": 0},
+
+    {"tipo": "pecas", "nome": "Travessas 2x6 sup/meio/inf", "material": "pt_2x6", "comprimento_in": 46.4, "qtd": 15, "tarefa": "travessa"},
+    {"tipo": "pecas", "nome": "Montante central 2x4 (apoio das ripas)", "material": "pt_2x4", "comprimento_in": 84, "qtd": 5, "tarefa": "travessa"},
+    {"tipo": "pecas", "nome": "Cleats 2x4 nos postes", "material": "pt_2x4", "comprimento_in": 84, "qtd": 10, "tarefa": "travessa"},
+
+    {"tipo": "ripado", "nome": "Ripas composite 1x6", "material": "composite_1x6", "vao_in": 46.4, "n_vaos": 5, "altura_in": 84, "largura_peca_in": 5.5, "espaco_min_in": 1.5, "espaco_max_in": 2.0, "lados": 1, "tarefa": "ripa_composite"},
+
+    {"tipo": "pecas", "nome": "Vigas duplas do topo 2x8 (emenda sobre poste)", "material": "pt_2x8", "comprimento_in": 144, "qtd": 4, "tarefa": "viga"},
+    {"tipo": "pecas", "nome": "Caibros decorativos 2x4", "material": "pt_2x4", "comprimento_in": 30, "qtd": 14, "tarefa": "caibro_decorativo"},
+
+    {"tipo": "pecas", "nome": "Fascia composite sobre travessas sup/inf (2 faces)", "material": "composite_fascia_1x8", "comprimento_in": 46.4, "qtd": 20, "tarefa": "fascia_wrap", "tarefa_qtd": 77},
+
+    {"tipo": "item", "nome": "Parafusos passantes viga/poste", "material": "parafuso_passante", "qtd": 12},
+    {"tipo": "item", "nome": "Parafusos estruturais", "material": "parafuso_estrutural", "qtd": 2},
+    {"tipo": "item", "nome": "Parafusos composite", "material": "parafuso_composite", "qtd": 2},
+    {"tipo": "item", "nome": "Aluguel auger", "material": "aluguel_auger", "qtd": 1},
+    {"tipo": "item", "nome": "Descarte", "material": "descarte", "qtd": 1},
+
+    {"tipo": "item", "nome": "(opcional) Manta paisagismo", "material": "manta_paisagismo", "qtd": 1, "tarefa": "paisagismo_base", "tarefa_qtd": 22},
+    {"tipo": "item", "nome": "(opcional) Borda", "material": "borda_paisagismo", "qtd": 2},
+    {"tipo": "item", "nome": "(opcional) Pedra de rio 22 ft x 2 ft x 2 in", "material": "pedra_rio", "qtd": 15}
+  ],
+  "tarefas_extra": [
+    {"tarefa": "locacao", "qtd": 1},
+    {"tarefa": "compras_transporte", "qtd": 1},
+    {"tarefa": "limpeza", "qtd": 1}
+  ],
+  "premissas": [
+    "Comprimento total 265\" (declarado). 6 postes 6x6 (5.5\" reais) => 5 vãos livres de (265 - 6 x 5.5) / 5 = 46.4\".",
+    "Altura acabada ~96\" (declarada). Zona de ripas de 84\": de ~4\" acima do chão até ~88\".",
+    "Ripa composite 1x6 (5.5\" real) com espaço mínimo de 1.5\" (packet pede 1.5\"-2\") => 12 fiadas por vão, espaço real ~1.64\".",
+    "Composite não é estrutural: montante 2x4 no meio de cada vão deixa o apoio das ripas a cada ~23\".",
+    "Ripas fixadas em cleats 2x4 verticais presos nas faces internas dos postes.",
+    "Travessas 2x6 em cima, no meio e embaixo de cada vão (15 peças).",
+    "Topo: vigas duplas 2x8, uma de cada lado dos postes, 2 x 12' por linha (288\") = 265\" + balanço de ~11.5\" em cada ponta; emenda sobre o poste do meio.",
+    "Caibros decorativos 2x4 de 30\" (14 peças, ~20\" entre eixos) com corte decorativo nas pontas.",
+    "Fundação: sapata de 16\" x 42\" com base metálica de poste — confirmar se a base metálica é aceita para screen de 8 ft (vento).",
+    "Preços: catálogo de referência da skill (média de big box, 2026-11); confirmar na loja local.",
+    "Paisagismo (manta, borda, pedra) incluído e marcado como opcional."
+  ],
+  "perguntas": [
+    "Material final: a imagem conceito diz '100% Natural Cedar', mas o packet pede PT + Trex/composite. Qual vale?",
+    "Aparência '1x4': composite 1x4 é raro; aceita 1x6 (5.5\")? Com ripa de 3.5\" seriam 16 fiadas (~80 ripas) e custo maior de ripa e mão de obra.",
+    "Os dois lados precisam ficar acabados: aceita ripa de um lado só, com estrutura no plano do meio e fascia nos dois lados?",
+    "A imagem mostra ~10-11 postes; o packet diz 6. Pode ficar com 6 postes + montantes intermediários?",
+    "Linha de congelamento, licença/HOA e posição da divisa.",
+    "Cor/linha do composite (Trex Enhanced Basics, Enhanced Naturals, Select...)."
+  ]
+}

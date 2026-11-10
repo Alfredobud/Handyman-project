@@ -41,9 +41,11 @@ PADRAO = {
     "caibro": {"esp": 1.5, "alt": 5.5, "comprimento": 36, "perfil": "nuvem"},
     "paisagismo": {"canteiro_in": 24, "pedra_in": 14, "lado": "vizinho", "trepadeiras": True},
     "materiais": {"nucleo": "pt", "revest": "cedro", "serrilhado": "cedro", "ripa": "cedro", "viga": "cedro", "caibro": "cedro"},
-    "rotulos": {"nucleo": "PT 4x4 ground contact (UC4B)", "revest": "Cedar 2x6", "serrilhado": "Cedar 5/4 (1\") notched",
-                "lateral_ponta": "Cedar 5/4 (1\") plain", "ripa": "Cedar 2x4 (flat)", "viga": "Cedar 2x8",
-                "caibro": "Cedar 2x6", "parafuso": "coated trim-head deck screws (ACQ-rated), countersunk"},
+    "rotulos": {"nucleo": "PT pine 4x4 S4S, ground contact (UC4B)", "revest": "Cedar 2x6 S4S",
+                "serrilhado": "Cedar 5/4 S4S (1\") notched", "lateral_ponta": "Cedar 5/4 S4S (1\") plain",
+                "ripa": "Cedar 2x4 S4S (flat)", "viga": "Cedar 2x8 S4S", "caibro": "Cedar 2x6 S4S",
+                "parafuso": "coated trim-head deck screws (ACQ-rated), countersunk",
+                "especie": "Cedar = Western Red Cedar, kiln-dried, S4S (planed 4 sides). PT = Southern Yellow Pine #2, ground contact."},
 }
 
 
@@ -231,7 +233,7 @@ def vista_elevacao(G, esc=32):
     v.chamada((xe, G.y_viga0 + 3), (xe + 30, G.y_topo + 20),
               "top-board splices over posts " + ", ".join(str(i + 1) for i in G.emendas), 6)
     v.chamada((G.x_viga1 + 0.7, G.y_viga0 + 5), (G.x_viga1 + 4, G.y_topo + 8), "end cap", 5.5)
-    v.chamada((G.cx[-3], 50), (G.cx[-3] + 26, -16), "composite post (A-3)", 5.5)
+    v.chamada((G.cx[-3], 50), (G.cx[-3] + 26, -16), f"composite post ({G.g.get('_pref', 'A')}-3)", 5.5)
     v.marca_corte((G.bay_centro(0), G.y_topo + 8), (G.bay_centro(0), G.y_base - 2), "A")
     v.marca_corte((G.x_viga0 - 6, 40), (G.bay_ini(1) + 6, 40), "B")
     return v
@@ -508,11 +510,11 @@ def _nota_fib(G):
     k = round(math.log(r, phi))
     fib = {2: "34/13", 3: "55/13", 4: "89/13", 5: "144/13"}.get(k, "")
     erro = (r / phi ** k - 1) * 100
-    prop = f"Bay/post = {r:.2f} ≈ φ^{k} = {phi ** k:.2f}" + (f" (Fibonacci {fib})" if abs(erro) < 3 else f" ({erro:+.0f}% off φ^{k})")
+    prop = f"Bay/post = {r:.2f} ≈ φ^{k}" + (f" (Fibonacci {fib})" if abs(erro) < 3 else f" ({erro:+.0f}% off)")
     if G.vao <= 36:
-        emp = f"; slat span {pes_pol(G.vao)} < 36\" (low warping risk)."
+        emp = f"; span {pes_pol(G.vao)} < 36\" (low warping risk)."
     else:
-        emp = f"; slat span {pes_pol(G.vao)} > 36\" conservative limit (< 48\" max): more risk of bowing."
+        emp = f"; span {pes_pol(G.vao)} > 36\" limit (< 48\" max)."
     return prop + emp
 
 
@@ -526,6 +528,7 @@ def main():
     spec = json.load(open(a.spec, encoding="utf-8"))
     cad.set_idioma(spec.get("idioma_desenho", "en"))
     g = mescla(PADRAO, spec.get("geometria", {}))
+    g["_pref"] = spec.get("prefixo_prancha", "A")
     G = Geo(g)
     base_dir = a.saida or os.path.join(os.path.dirname(os.path.abspath(a.spec)), "..", "desenhos")
     base = os.path.join(base_dir, "privacy-screen")
@@ -541,13 +544,14 @@ def main():
         f"Fasteners: {R['parafuso']}.",
         f"{G.fiadas} slats per bay, {pes_pol(G.espaco)} gap set by the notched side boards.",
         f"All posts {pes_pol(G.W[1])} wide, faces flush. Parts marked YES are pre-cut in the shop.",
+        *[x.strip().rstrip(".") + "." for x in R["especie"].split(". ") if x.strip()],
     ]
-    p1 = Prancha(proj, "Elevation and plan", "A-1", notas=notas, **meta)
+    p1 = Prancha(proj, "Elevation and plan", f"{g['_pref']}-1", notas=notas, **meta)
     p1.add(vista_planta(G), 1.5, 0.95)
     p1.add(vista_elevacao(G), 1.0, 4.4)
     p1.add(vista_lateral(G), 13.4, 5.0)
 
-    p2 = Prancha(proj, "Sections and details", "A-2", **meta)
+    p2 = Prancha(proj, "Sections and details", f"{g['_pref']}-2", **meta)
     p2.add(vista_corte_A(G), 0.9, 1.1)
     p2.add(vista_fundacao(G), 5.0, 1.1)
     p2.add(vista_caibro(G), 5.9, 8.1)
@@ -556,7 +560,7 @@ def main():
     cols, linhas = lista_pecas(G)
     p2.tabela(9.95, 4.3, cols, linhas, [0.4, 1.45, 1.6, 0.33, 1.3, 1.6], "PARTS LIST", 5.8)
 
-    p3 = Prancha(proj, "Composite post and installation", "A-3", **meta)
+    p3 = Prancha(proj, "Composite post and installation", f"{g['_pref']}-3", **meta)
     p3.add(vista_poste(G, 1, "DETAIL 2a — INTERMEDIATE POST, SECTION B-B", esc=3), 1.4, 4.2)
     p3.add(vista_poste(G, 0, f"DETAIL 2b — END POST (1 and {G.n})", esc=3), 9.4, 4.2)
     side = "neighbor" if G.viz else "house"

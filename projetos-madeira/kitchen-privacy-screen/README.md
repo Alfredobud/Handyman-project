@@ -1,14 +1,18 @@
 # Kitchen Privacy Screen
 
-**Status:** rev. 6: duas propostas (7 e 10 postes); desenhos em inglês aguardando aprovação das prévias (a pasta `desenhos/` ainda está na rev. 4)
+**Status:** rev. 7 aprovada: documento final com as duas propostas e as pranchas
 
-| Proposta | Cliente (EN) | Orçamento interno | Total |
+**Documento para o cliente (EN):** [`propostas/Kitchen-Privacy-Screen-Proposals.pdf`](propostas/Kitchen-Privacy-Screen-Proposals.pdf): comparação, materiais e acabamento, opções A e B, sequência, condições + pranchas A-1…A-3 (10 postes) e B-1…B-3 (7 postes)
+
+| Opção | Desenhos (PDF/DXF) | Orçamento interno | Total |
 |---|---|---|---:|
-| **10 postes** (vão/poste = φ³, vão 23 5/16") | [`propostas/proposal-10-posts.md`](propostas/proposal-10-posts.md) | [`orcamento/`](orcamento/orcamento.md) | **~$9,172** |
-| **7 postes** (vão/poste = φ⁴, vão 37 3/4") | [`propostas/proposal-7-posts.md`](propostas/proposal-7-posts.md) | [`orcamento-7-postes/`](orcamento-7-postes/orcamento.md) | **~$7,398** |
-| 10 postes, 100% PT (referência) | — | [`orcamento-pt/`](orcamento-pt/orcamento.md) | ~$8,062 |
+| **A — 10 postes** (vão/poste = φ³, vão 23 5/16") | [`desenhos/10-postes/`](desenhos/10-postes/) | [`orcamento/`](orcamento/orcamento.md) | **$9,172** |
+| **B — 7 postes** (vão/poste = φ⁴, vão 37 3/4") | [`desenhos/7-postes/`](desenhos/7-postes/) | [`orcamento-7-postes/`](orcamento-7-postes/orcamento.md) | **$7,398** |
+| 10 postes, 100% PT (referência interna) | — | [`orcamento-pt/`](orcamento-pt/orcamento.md) | $8,062 |
 
-Specs gerados por [`gerar_propostas.py`](gerar_propostas.py) a partir da mesma geometria dos desenhos. Mão de obra separada em oficina (pré-corte) e obra.
+Materiais: núcleos dos postes (enterrados 24") em **pinus tratado (PT SYP #2, ground contact)**; tudo o que é aparente em **cedro Western Red, seco em estufa, aplainado S4S**. Na Lowe's o cedro 2x6/2x8 costuma ser bruto/green: comprar S4S em madeireira.
+
+Para regerar tudo: `python3 gerar_propostas.py` → `orcamento.py` em cada pasta → `privacy_screen.py` para `desenhos/10-postes` e `desenhos/7-postes` → `python3 gerar_documento_propostas.py`.
 
 Decisões: madeira (sem composite, por receio de deformação); postes PT embutidos 36" (mínimo de 2 ft); $60/h, sem markup, taxa de $150; imposto de Mecklenburg de 8.25%.
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)

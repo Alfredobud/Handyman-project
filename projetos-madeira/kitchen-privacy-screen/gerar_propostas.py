@@ -21,17 +21,18 @@ PARAMETROS = {"taxa_hora_usd": 60, "perda": 0.05, "kerf_in": 0.125, "markup_mate
               "imposto_material": 0.0825, "contingencia": 0.0, "taxa_fixa_usd": 150, "taxa_fixa_descricao": "Taxa"}
 
 VARIANTES = [
-    {"pasta": "orcamento", "n": 10, "mat": "cedro"},
-    {"pasta": "orcamento-7-postes", "n": 7, "mat": "cedro"},
-    {"pasta": "orcamento-pt", "n": 10, "mat": "pt"},
+    {"pasta": "orcamento", "n": 10, "mat": "cedro", "pref": "A"},
+    {"pasta": "orcamento-7-postes", "n": 7, "mat": "cedro", "pref": "B"},
+    {"pasta": "orcamento-pt", "n": 10, "mat": "pt", "pref": "C"},
 ]
 
 MAT = {
     "cedro": {"nome": "cedro", "2x6": "cedro_2x6", "2x4": "cedro_2x4", "2x8": "cedro_2x8", "54": "cedro_5_4x6",
               "rot": {}, "mats": {}},
     "pt": {"nome": "PT", "2x6": "pt_2x6", "2x4": "pt_2x4", "2x8": "pt_2x8", "54": "pt_5_4x6",
-           "rot": {"revest": "PT 2x6", "serrilhado": "PT 5/4 (1\") notched", "lateral_ponta": "PT 5/4 (1\") plain",
-                   "ripa": "PT 2x4 (flat)", "viga": "PT 2x8", "caibro": "PT 2x6"},
+           "rot": {"revest": "PT 2x6 S4S", "serrilhado": "PT 5/4 S4S (1\") notched", "lateral_ponta": "PT 5/4 S4S (1\") plain",
+                   "ripa": "PT 2x4 S4S (flat)", "viga": "PT 2x8 S4S", "caibro": "PT 2x6 S4S",
+                   "especie": "All lumber: Southern Yellow Pine #2, pressure-treated, S4S; posts ground contact (UC4B)."},
            "mats": {"revest": "pt", "serrilhado": "pt", "ripa": "pt", "viga": "pt", "caibro": "pt"}},
 }
 
@@ -130,6 +131,8 @@ def gerar(var):
         f"Topo: tábuas 2x8 dos dois lados dos postes, entalhadas 1 1/2\" para os caibros, {len(G.pecas_viga)} peças por lado ("
         + " + ".join(ps.pes_pol(c) for c in G.pecas_viga) + ") com emendas sobre os postes " + ", ".join(str(i + 1) for i in G.emendas)
         + f"; fechamento de {ps.pes_pol(G.fech_larg)} nas pontas (aparência de viga maciça); {len(G.xc)} caibros 2x6 de 36\" com ponta tipo nuvem.",
+        "Acabamento da madeira: todo cedro aparente Western Red Cedar seco em estufa (KD), APLAINADO S4S (medidas reais 2x4 = 1 1/2 x 3 1/2, 2x6 = 1 1/2 x 5 1/2, 2x8 = 1 1/2 x 7 1/4, 5/4x6 = 1 x 5 1/2). "
+        "Na Lowe's o cedro 2x6/2x8 costuma ser BRUTO/green (~1 11/16 x 5 3/4 e 7 5/8): comprar S4S em madeireira ou aplainar na oficina; os núcleos dos postes são pinus tratado (PT SYP) ground contact.",
         "Fixação: parafusos de deck trim-head (cabeça pequena, fica oculta), revestidos para PT/ACQ (não inox); parafuso passante de 1/2\" nas tábuas de topo.",
         "Mão de obra separada em OFICINA (pré-corte: serrilhados, ripas, faces, laterais, tábuas de topo, fechamentos, caibros, gabaritos, lixa) e OBRA (furos, postes, nivelamento, montagem).",
         "Sequência de instalação (A-3): 1 furos, 2 postes, 3 nivelar topos, 4 serrilhados pelo lado do vizinho, 5 ripas, 6 fechamento frontal, 7 fechamento lateral, 8 tábuas de topo, 9 fechamento das pontas, 10 caibros do pergolado.",
@@ -147,7 +150,7 @@ def gerar(var):
         "projeto": f"Kitchen Privacy Screen — {n} postes, {titulo_mat}, topo pergolado (Cornelius, NC)",
         "projeto_en": f"Kitchen Privacy Screen — {n} posts, " + ("cedar" if var["mat"] == "cedro" else "pressure-treated pine")
                       + " with pergola top (Cornelius, NC)",
-        "cliente": "", "data": "2026-11-10", "revisao": "6", "idioma_desenho": "en",
+        "cliente": "", "data": "2026-11-10", "revisao": "7", "idioma_desenho": "en", "prefixo_prancha": var["pref"],
         "precos": "../orcamento/precos.csv",
         "parametros": PARAMETROS, "geometria": geo, "componentes": C, "tarefas_extra": extras,
         "premissas": prem, "perguntas": perg,

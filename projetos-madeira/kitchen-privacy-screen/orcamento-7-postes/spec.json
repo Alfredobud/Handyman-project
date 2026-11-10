@@ -3,8 +3,9 @@
   "projeto_en": "Kitchen Privacy Screen — 7 posts, cedar with pergola top (Cornelius, NC)",
   "cliente": "",
   "data": "2026-11-10",
-  "revisao": "6",
+  "revisao": "7",
   "idioma_desenho": "en",
+  "prefixo_prancha": "B",
   "precos": "../orcamento/precos.csv",
   "parametros": {
     "taxa_hora_usd": 60,
@@ -244,6 +245,7 @@
     "Poste composto: núcleo PT 4x4 ground contact embutido 24\" em concreto (furo Ø12\" x 30\", 6\" de brita), furos com mini skid steer + auger alugado. Revestimento acima do colar: faces 2x6 e laterais de 1\" (serrilhadas nos vãos, lisas nas pontas); todos os postes com 5 1/2\", faces alinhadas.",
     "Ripas 2x4 deitadas: 16 por vão, espaço 1 11/16\", ripa de 3'-3 1/2\"; instaladas pelo lado do vizinho.",
     "Topo: tábuas 2x8 dos dois lados dos postes, entalhadas 1 1/2\" para os caibros, 3 peças por lado (7'-11 1/4\" + 7'-2 1/2\" + 7'-11 1/4\") com emendas sobre os postes 3, 5; fechamento de 9 1/2\" nas pontas (aparência de viga maciça); 7 caibros 2x6 de 36\" com ponta tipo nuvem.",
+    "Acabamento da madeira: todo cedro aparente Western Red Cedar seco em estufa (KD), APLAINADO S4S (medidas reais 2x4 = 1 1/2 x 3 1/2, 2x6 = 1 1/2 x 5 1/2, 2x8 = 1 1/2 x 7 1/4, 5/4x6 = 1 x 5 1/2). Na Lowe's o cedro 2x6/2x8 costuma ser BRUTO/green (~1 11/16 x 5 3/4 e 7 5/8): comprar S4S em madeireira ou aplainar na oficina; os núcleos dos postes são pinus tratado (PT SYP) ground contact.",
     "Fixação: parafusos de deck trim-head (cabeça pequena, fica oculta), revestidos para PT/ACQ (não inox); parafuso passante de 1/2\" nas tábuas de topo.",
     "Mão de obra separada em OFICINA (pré-corte: serrilhados, ripas, faces, laterais, tábuas de topo, fechamentos, caibros, gabaritos, lixa) e OBRA (furos, postes, nivelamento, montagem).",
     "Sequência de instalação (A-3): 1 furos, 2 postes, 3 nivelar topos, 4 serrilhados pelo lado do vizinho, 5 ripas, 6 fechamento frontal, 7 fechamento lateral, 8 tábuas de topo, 9 fechamento das pontas, 10 caibros do pergolado.",

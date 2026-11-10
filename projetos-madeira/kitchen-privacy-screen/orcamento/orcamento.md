@@ -16,12 +16,12 @@
 
 | Material | Compr. | Qtd | Unit. | Subtotal | Obs. | Fonte do preço |
 |---|---:|---:|---:|---:|---|---|
-| PT 4x4 #2 ground contact | 10' | 10 | $19.00 | $190.00 |  | referencia-media-big-box |
-| Cedro 5/4x6 #1 kiln-dried deck board (1x5.5 real) | 12' | 21 | $33.98 | $713.58 | inclui 1 de sobra (5%) | lowes.com online (nao confirmado loja Cornelius) |
-| Cedro 2x4 S4S | 8' | 51 | $13.18 | $672.18 | inclui 3 de sobra (5%) | homedepot.com online (nao confirmado loja Cornelius) |
-| Cedro 2x6 S4S | 8' | 27 | $33.00 | $891.00 | inclui 2 de sobra (5%) | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
-| Cedro 2x8 green (rough) | 8' | 6 | $47.00 | $282.00 | inclui 1 de sobra (5%) | estimativa proporcional ao 12' da Lowe's (conferir) |
-| Cedro 2x8 green (rough) | 12' | 1 | $70.98 | $70.98 |  | lowes.com online - preco incerto no resultado de busca |
+| Pinus tratado (PT SYP) 4x4 #2 ground contact UC4B | 10' | 10 | $19.00 | $190.00 |  | referencia-media-big-box |
+| Cedro 5/4x6 S4S KD arestas arredondadas (1x5.5 real) | 12' | 21 | $33.98 | $713.58 | inclui 1 de sobra (5%) | lowes.com online (nao confirmado loja Cornelius) |
+| Cedro 2x4 S4S KD (aplainado) | 8' | 51 | $13.18 | $672.18 | inclui 3 de sobra (5%) | homedepot.com online (nao confirmado loja Cornelius) |
+| Cedro 2x6 S4S KD (aplainado) | 8' | 27 | $33.00 | $891.00 | inclui 2 de sobra (5%) | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
+| Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto) | 8' | 6 | $47.00 | $282.00 | inclui 1 de sobra (5%) | estimativa proporcional ao 12' da Lowe's (conferir) |
+| Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto) | 12' | 1 | $70.98 | $70.98 |  | lowes.com online - preco incerto no resultado de busca |
 | Concreto ensacado 80 lb (~0.60 cf) |  | 25 | $6.50 | $162.50 | saco — Furos Ø12" x 30" — concreto em volta do núcleo | referencia-media-big-box |
 | Brita/cascalho ensacado 0.5 cf |  | 8 | $5.50 | $44.00 | saco — Brita 6" no fundo dos furos | referencia-media-big-box |
 | Aluguel mini skid steer (tipo Dingo) com auger 12in — 1 dia |  | 1 | $350.00 | $350.00 | dia — Locação: mini skid steer com auger 12" (1 dia) | estimativa locadora local (conferir) |
@@ -103,6 +103,7 @@
 - Poste composto: núcleo PT 4x4 ground contact embutido 24" em concreto (furo Ø12" x 30", 6" de brita), furos com mini skid steer + auger alugado. Revestimento acima do colar: faces 2x6 e laterais de 1" (serrilhadas nos vãos, lisas nas pontas); todos os postes com 5 1/2", faces alinhadas.
 - Ripas 2x4 deitadas: 16 por vão, espaço 1 11/16", ripa de 2'-1 1/16"; instaladas pelo lado do vizinho.
 - Topo: tábuas 2x8 dos dois lados dos postes, entalhadas 1 1/2" para os caibros, 3 peças por lado (7'-11 1/4" + 7'-2 1/2" + 7'-11 1/4") com emendas sobre os postes 4, 7; fechamento de 9 1/2" nas pontas (aparência de viga maciça); 10 caibros 2x6 de 36" com ponta tipo nuvem.
+- Acabamento da madeira: todo cedro aparente Western Red Cedar seco em estufa (KD), APLAINADO S4S (medidas reais 2x4 = 1 1/2 x 3 1/2, 2x6 = 1 1/2 x 5 1/2, 2x8 = 1 1/2 x 7 1/4, 5/4x6 = 1 x 5 1/2). Na Lowe's o cedro 2x6/2x8 costuma ser BRUTO/green (~1 11/16 x 5 3/4 e 7 5/8): comprar S4S em madeireira ou aplainar na oficina; os núcleos dos postes são pinus tratado (PT SYP) ground contact.
 - Fixação: parafusos de deck trim-head (cabeça pequena, fica oculta), revestidos para PT/ACQ (não inox); parafuso passante de 1/2" nas tábuas de topo.
 - Mão de obra separada em OFICINA (pré-corte: serrilhados, ripas, faces, laterais, tábuas de topo, fechamentos, caibros, gabaritos, lixa) e OBRA (furos, postes, nivelamento, montagem).
 - Sequência de instalação (A-3): 1 furos, 2 postes, 3 nivelar topos, 4 serrilhados pelo lado do vizinho, 5 ripas, 6 fechamento frontal, 7 fechamento lateral, 8 tábuas de topo, 9 fechamento das pontas, 10 caibros do pergolado.

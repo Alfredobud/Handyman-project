@@ -2,7 +2,7 @@
 
 **Pinus autoclavado** nos EUA é o *pressure-treated Southern Yellow Pine* (SYP), tratado hoje com cobre (ACQ, CA ou MCA). O CCA não é mais vendido para uso residencial.
 
-## Comparação de custo (Cornelius, NC — rev. 3: 11 postes compostos, ripas 2x4 encaixadas)
+## Comparação de custo (Cornelius, NC — rev. 3: 11 postes compostos — valores históricos; ver README para a rev. 7, ripas 2x4 encaixadas)
 
 | Cenário | Materiais (c/ 8.25%) | Mão de obra ($60/h) | Taxa | **Total** |
 |---|---:|---:|---:|---:|

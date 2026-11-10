@@ -25,6 +25,10 @@ Objetivo: pranchas que um carpinteiro consiga usar na obra e que o cliente enten
 
 ## Convenções de desenho
 
+- Idioma das pranchas: `idioma_desenho` no spec ("en" para clientes nos EUA; `cad.set_idioma`). Prefixo das pranchas por opção: `prefixo_prancha` (A, B…).
+- Use `--previa` (só PNG) para mostrar ao usuário antes de emitir PDF/DXF; gere o PDF final só depois da aprovação.
+- Especifique espécie, tratamento e **acabamento** (S4S aplainado × bruto) de cada peça: bruto tem medidas reais diferentes e quebra alinhamentos e encaixes.
+
 - Unidades: polegadas no modelo; cotas em `22'-1"` / `46 3/8"` (precisão 1/16"). Madeira com medidas **reais** (2x4 = 1 1/2" x 3 1/2").
 - Escalas usuais em folha 17x11 (ANSI B): conjunto 1:32 ou 1:24; cortes 1:16 ou 1:12; detalhes 1:6 a 1:4.
 - Cores e hachuras por material (`cad.MATERIAIS`): PT esverdeado, cedro laranja, concreto pontilhado, brita, solo hachurado. Peça cortada pelo plano do corte leva um X.

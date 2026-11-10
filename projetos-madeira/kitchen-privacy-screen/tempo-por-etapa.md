@@ -11,15 +11,15 @@ Horas do orçamento atual, a $60/h. Dia = 8 h. Paisagismo é extra e não está 
 | 4 | Serrilhados (lado do vizinho) | 1.4 | $86 | 1.0 | $58 |
 | 5 | Ripas | 3.6 | $216 | 2.4 | $144 |
 | 6 | Fechamento frontal (faces 2x6) | 1.6 | $96 | 1.1 | $67 |
-| 7 | Fechamento lateral (postes de ponta) | 0.4 | $24 | 0.4 | $24 |
+| 7 | Fechamento lateral (postes de ponta) | 2.0 | $120 | 2.0 | $120 |
 | 8 | Tábuas de topo | 3.0 | $180 | 3.0 | $180 |
 | 9 | Fechamento das pontas | 0.5 | $30 | 0.5 | $30 |
 | 10 | Caibros do pergolado | 1.5 | $90 | 1.1 | $63 |
 | Outros | Compras/transporte e limpeza | 5.0 | $300 | 5.0 | $300 |
 | | **Subtotal oficina** | **37.5** | **$2,251** | **27.5** | **$1,648** |
-| | **Subtotal obra** | **26.5** | **$1,592** | **21.7** | **$1,301** |
-| | **TOTAL** | **64.1** | **$3,844** | **49.1** | **$2,949** |
-| | Dias de 8 h (oficina / obra) | 4.7 / 3.3 | | 3.4 / 2.7 | |
+| | **Subtotal obra** | **28.1** | **$1,688** | **23.3** | **$1,397** |
+| | **TOTAL** | **65.7** | **$3,940** | **50.8** | **$3,045** |
+| | Dias de 8 h (oficina / obra) | 4.7 / 3.5 | | 3.4 / 2.9 | |
 
 ## Como cada etapa foi calculada
 
@@ -41,7 +41,7 @@ Horas do orçamento atual, a $60/h. Dia = 8 h. Paisagismo é extra e não está 
 | 4 | Obra: fixar lateral serrilhada pré-cortada no núcleo | peca | 18 | 12 | 0.08 |
 | 5 | Obra: encaixar ripa pré-cortada + 1 parafuso por ponta | peca | 144 | 96 | 0.025 |
 | 6 | Obra: fixar face 2x6 pré-cortada (cola + parafuso trim-head) | peca | 20 | 14 | 0.08 |
-| 7 | Obra: fixar lateral lisa dos postes de ponta | peca | 2 | 2 | 0.2 |
+| 7 | Obra: fechamento lateral dos postes de ponta, incluindo os cortes de ajuste no topo (1 h por ponta) | peca | 2 | 2 | 1 |
 | 8 | Obra: içar tábua de topo entalhada + furar + parafuso passante | peca | 6 | 6 | 0.5 |
 | 9 | Obra: fixar fechamento da ponta das tábuas de topo | peca | 2 | 2 | 0.25 |
 | 10 | Obra: assentar caibro no entalhe + parafuso trim-head oculto | peca | 10 | 7 | 0.15 |

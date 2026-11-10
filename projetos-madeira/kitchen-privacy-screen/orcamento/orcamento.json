@@ -572,11 +572,11 @@
     },
     {
       "tarefa": "obra_instalar_lateral",
-      "descricao": "Obra: fixar lateral lisa dos postes de ponta",
+      "descricao": "Obra: fechamento lateral dos postes de ponta, incluindo os cortes de ajuste no topo (1 h por ponta)",
       "qtd": 2.0,
       "unidade": "peca",
-      "h_unit": 0.2,
-      "horas": 0.4
+      "h_unit": 1.0,
+      "horas": 2.0
     },
     {
       "tarefa": "obra_instalar_tabua_topo",
@@ -617,12 +617,12 @@
     "material_markup": 0.0,
     "material_contingencia": 0.0,
     "material_total": 4121.34,
-    "horas": 64.1,
-    "mao_de_obra_subtotal": 3843.6,
+    "horas": 65.7,
+    "mao_de_obra_subtotal": 3939.6,
     "mao_de_obra_contingencia": 0.0,
-    "mao_de_obra_total": 3843.6,
+    "mao_de_obra_total": 3939.6,
     "taxa_fixa": 150.0,
-    "total_geral": 8114.94
+    "total_geral": 8210.94
   },
   "premissas": [
     "Material: cedro aparente (núcleo PT). Cedro natural, sem stain.",

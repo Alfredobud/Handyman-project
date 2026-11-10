@@ -7,10 +7,10 @@
 | Materiais (subtotal loja) | $2,172.48 |
 | Imposto sobre material (8.25%) | $179.23 |
 | **Total materiais** | **$2,351.71** |
-| Mão de obra (75.1 h × $60.00/h) | $4,503.60 |
-| **Total mão de obra** | **$4,503.60** |
+| Mão de obra (76.7 h × $60.00/h) | $4,599.60 |
+| **Total mão de obra** | **$4,599.60** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$7,005.31** |
+| **TOTAL** | **$7,101.31** |
 
 ## Lista de compra
 
@@ -88,13 +88,13 @@
 | obra_instalar_serrilhado | 18 | peca | 0.08 | 1.4 |
 | obra_instalar_ripa | 144 | peca | 0.025 | 3.6 |
 | obra_instalar_face | 20 | peca | 0.08 | 1.6 |
-| obra_instalar_lateral | 2 | peca | 0.2 | 0.4 |
+| obra_instalar_lateral | 2 | peca | 1 | 2.0 |
 | obra_instalar_tabua_topo | 6 | peca | 0.5 | 3.0 |
 | obra_instalar_fechamento | 2 | peca | 0.25 | 0.5 |
 | obra_instalar_caibro | 10 | peca | 0.15 | 1.5 |
 | limpeza | 1 | verba | 2 | 2.0 |
 | Visita de retorno para stain após secagem da madeira | 2 | h | 1 | 2.0 |
-| **Total** | | | | **75.1** |
+| **Total** | | | | **76.7** |
 
 ## Premissas
 

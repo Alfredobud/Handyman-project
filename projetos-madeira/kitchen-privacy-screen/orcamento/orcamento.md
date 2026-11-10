@@ -7,10 +7,10 @@
 | Materiais (subtotal loja) | $3,807.24 |
 | Imposto sobre material (8.25%) | $314.10 |
 | **Total materiais** | **$4,121.34** |
-| Mão de obra (64.1 h × $60.00/h) | $3,843.60 |
-| **Total mão de obra** | **$3,843.60** |
+| Mão de obra (65.7 h × $60.00/h) | $3,939.60 |
+| **Total mão de obra** | **$3,939.60** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$8,114.94** |
+| **TOTAL** | **$8,210.94** |
 
 ## Lista de compra
 
@@ -85,12 +85,12 @@
 | obra_instalar_serrilhado | 18 | peca | 0.08 | 1.4 |
 | obra_instalar_ripa | 144 | peca | 0.025 | 3.6 |
 | obra_instalar_face | 20 | peca | 0.08 | 1.6 |
-| obra_instalar_lateral | 2 | peca | 0.2 | 0.4 |
+| obra_instalar_lateral | 2 | peca | 1 | 2.0 |
 | obra_instalar_tabua_topo | 6 | peca | 0.5 | 3.0 |
 | obra_instalar_fechamento | 2 | peca | 0.25 | 0.5 |
 | obra_instalar_caibro | 10 | peca | 0.15 | 1.5 |
 | limpeza | 1 | verba | 2 | 2.0 |
-| **Total** | | | | **64.1** |
+| **Total** | | | | **65.7** |
 
 ## Premissas
 

@@ -26,6 +26,8 @@ PARAMS_PADRAO = {
     "imposto_material": 0.0,  # sales tax (ex.: 0.07)
     "contingencia": 0.10,     # aplicada em material e mão de obra
     "comprimento_max_ft": None,  # limita tábuas compradas (ex.: 8 para transporte em carro)
+    "taxa_fixa_usd": 0.0,     # taxa fixa do serviço (ex.: no lugar do markup de material)
+    "taxa_fixa_descricao": "Taxa de serviço",
 }
 
 
@@ -40,7 +42,7 @@ def carregar_precos(caminhos):
         with open(caminho, newline="", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 mid = row["id"].strip()
-                ent = cat.setdefault(mid, {"comprimentos": {}, "preco": None})
+                ent = cat.setdefault(mid, {"comprimentos": {}, "preco": None, "fontes": {}})
                 ent["descricao"] = row.get("descricao", mid)
                 ent["unidade"] = row.get("unidade", "un")
                 ent["fonte"] = row.get("fonte", "")
@@ -49,6 +51,7 @@ def carregar_precos(caminhos):
                 comp = (row.get("comprimento_ft") or "").strip()
                 if comp:
                     ent["comprimentos"][float(comp)] = preco
+                    ent["fontes"][float(comp)] = row.get("fonte", "")
                 else:
                     ent["preco"] = preco
     return cat
@@ -237,7 +240,7 @@ def calcular(spec, base_dir):
             avisos.append(f"Material '{mat}' sem preço por comprimento no catálogo — custo 0, adicione ao precos.csv.")
             total_in = sum(c for c, _ in lista)
             compra.append({"material": mat, "descricao": mat, "comprimento_ft": "", "qtd": 0,
-                           "preco_unit": 0.0, "subtotal": 0.0,
+                           "preco_unit": 0.0, "subtotal": 0.0, "fonte": "",
                            "obs": f"SEM PREÇO — {len(lista)} cortes, {total_in/12:.1f} ft lineares"})
             continue
         maior_in = max(ent["comprimentos"]) * 12
@@ -282,7 +285,7 @@ def calcular(spec, base_dir):
         for ft in sorted(cont):
             preco = ent["comprimentos"][ft]
             compra.append({"material": mat, "descricao": ent["descricao"], "comprimento_ft": ft, "qtd": cont[ft],
-                           "preco_unit": preco, "subtotal": preco * cont[ft],
+                           "preco_unit": preco, "subtotal": preco * cont[ft], "fonte": ent["fontes"].get(ft, ""),
                            "obs": f"inclui {extra} de sobra ({perdas[mat]:.0%})" if extra and ft == mais_usada else ""})
 
     for mat, por_ft in tabuas_diretas.items():
@@ -293,7 +296,8 @@ def calcular(spec, base_dir):
                 avisos.append(f"Material '{mat}' {ft:g}' sem preço no catálogo — custo 0.")
                 preco = 0.0
             compra.append({"material": mat, "descricao": ent["descricao"], "comprimento_ft": ft, "qtd": q,
-                           "preco_unit": preco, "subtotal": preco * q, "obs": "quantidade informada"})
+                           "preco_unit": preco, "subtotal": preco * q, "obs": "quantidade informada",
+                           "fonte": ent.get("fontes", {}).get(ft, "")})
 
     for mat, q in itens.items():
         ent = cat.get(mat)
@@ -302,7 +306,7 @@ def calcular(spec, base_dir):
             ent = {"descricao": mat, "preco": 0.0, "unidade": "un"}
         q_compra = math.ceil(q - 1e-9)
         compra.append({"material": mat, "descricao": ent["descricao"], "comprimento_ft": "", "qtd": q_compra,
-                       "preco_unit": ent["preco"], "subtotal": ent["preco"] * q_compra,
+                       "preco_unit": ent["preco"], "subtotal": ent["preco"] * q_compra, "fonte": ent.get("fonte", ""),
                        "obs": f'{ent.get("unidade", "")} — ' + "; ".join(dict.fromkeys(itens_nomes[mat]))})
 
     # mão de obra
@@ -327,6 +331,7 @@ def calcular(spec, base_dir):
     mo_sub = horas * p["taxa_hora_usd"]
     mo_cont = mo_sub * p["contingencia"]
     mo_total = mo_sub + mo_cont
+    taxa = float(p.get("taxa_fixa_usd") or 0)
 
     return {
         "projeto": spec.get("projeto", ""),
@@ -343,7 +348,8 @@ def calcular(spec, base_dir):
             "material_total": round(mat_total, 2),
             "horas": round(horas, 1), "mao_de_obra_subtotal": round(mo_sub, 2),
             "mao_de_obra_contingencia": round(mo_cont, 2), "mao_de_obra_total": round(mo_total, 2),
-            "total_geral": round(mat_total + mo_total, 2),
+            "taxa_fixa": round(taxa, 2),
+            "total_geral": round(mat_total + mo_total + taxa, 2),
         },
         "premissas": spec.get("premissas", []),
         "perguntas": spec.get("perguntas", []),
@@ -366,22 +372,27 @@ def gerar_md(r):
           "| | Valor |", "|---|---:|",
           f"| Materiais (subtotal loja) | {usd(t['material_subtotal'])} |"]
     if t["material_imposto"]:
-        L.append(f"| Imposto sobre material ({p['imposto_material']:.0%}) | {usd(t['material_imposto'])} |")
-    L += [f"| Markup material ({p['markup_material']:.0%}) | {usd(t['material_markup'])} |",
-          f"| Contingência material ({p['contingencia']:.0%}) | {usd(t['material_contingencia'])} |",
-          f"| **Total materiais** | **{usd(t['material_total'])}** |",
-          f"| Mão de obra ({t['horas']:g} h × {usd(p['taxa_hora_usd'])}/h) | {usd(t['mao_de_obra_subtotal'])} |",
-          f"| Contingência mão de obra ({p['contingencia']:.0%}) | {usd(t['mao_de_obra_contingencia'])} |",
-          f"| **Total mão de obra** | **{usd(t['mao_de_obra_total'])}** |",
-          f"| **TOTAL** | **{usd(t['total_geral'])}** |", ""]
+        L.append(f"| Imposto sobre material ({p['imposto_material']:.2%}) | {usd(t['material_imposto'])} |")
+    if t["material_markup"]:
+        L.append(f"| Markup material ({p['markup_material']:.0%}) | {usd(t['material_markup'])} |")
+    if t["material_contingencia"]:
+        L.append(f"| Contingência material ({p['contingencia']:.0%}) | {usd(t['material_contingencia'])} |")
+    L += [f"| **Total materiais** | **{usd(t['material_total'])}** |",
+          f"| Mão de obra ({t['horas']:g} h × {usd(p['taxa_hora_usd'])}/h) | {usd(t['mao_de_obra_subtotal'])} |"]
+    if t["mao_de_obra_contingencia"]:
+        L.append(f"| Contingência mão de obra ({p['contingencia']:.0%}) | {usd(t['mao_de_obra_contingencia'])} |")
+    L.append(f"| **Total mão de obra** | **{usd(t['mao_de_obra_total'])}** |")
+    if t["taxa_fixa"]:
+        L.append(f"| **{p.get('taxa_fixa_descricao') or 'Taxa'}** | **{usd(t['taxa_fixa'])}** |")
+    L += [f"| **TOTAL** | **{usd(t['total_geral'])}** |", ""]
 
     if r["avisos"]:
         L += ["## ⚠️ Avisos", ""] + [f"- {a}" for a in r["avisos"]] + [""]
 
-    L += ["## Lista de compra", "", "| Material | Compr. | Qtd | Unit. | Subtotal | Obs. |", "|---|---:|---:|---:|---:|---|"]
+    L += ["## Lista de compra", "", "| Material | Compr. | Qtd | Unit. | Subtotal | Obs. | Fonte do preço |", "|---|---:|---:|---:|---:|---|---|"]
     for c in r["compra"]:
         comp = f"{c['comprimento_ft']:g}'" if c["comprimento_ft"] != "" else ""
-        L.append(f"| {c['descricao']} | {comp} | {c['qtd']} | {usd(c['preco_unit'])} | {usd(c['subtotal'])} | {c['obs']} |")
+        L.append(f"| {c['descricao']} | {comp} | {c['qtd']} | {usd(c['preco_unit'])} | {usd(c['subtotal'])} | {c['obs']} | {c.get('fonte', '')} |")
     L.append("")
 
     calc = [c for c in r["componentes"] if c.get("_calc")]
@@ -444,8 +455,8 @@ def gerar_xlsx(r, caminho):
         for col in w.columns:
             w.column_dimensions[col[0].column_letter].width = max(10, min(60, max(len(str(c.value or "")) for c in col) + 2))
 
-    aba("Compra", ["Material", "Descrição", "Compr. (ft)", "Qtd", "Unit. USD", "Subtotal USD", "Obs."],
-        [[c["material"], c["descricao"], c["comprimento_ft"], c["qtd"], c["preco_unit"], c["subtotal"], c["obs"]] for c in r["compra"]])
+    aba("Compra", ["Material", "Descrição", "Compr. (ft)", "Qtd", "Unit. USD", "Subtotal USD", "Obs.", "Fonte"],
+        [[c["material"], c["descricao"], c["comprimento_ft"], c["qtd"], c["preco_unit"], c["subtotal"], c["obs"], c.get("fonte", "")] for c in r["compra"]])
     aba("Cortes", ["Material", "Qtd tábuas", "Compr. (ft)", "Cortes por tábua", "Sobra/tábua (in)"],
         [[p["material"], p["qtd_tabuas"], p["comprimento_ft"], p["cortes"], p["sobra_in"]] for p in r["plano_cortes"]])
     aba("Mão de obra", ["Tarefa", "Qtd", "Unid.", "h/unid.", "Horas"],
@@ -476,7 +487,7 @@ def main():
 
     t = r["totais"]
     print(f"Materiais: {usd(t['material_total'])} | Mão de obra: {usd(t['mao_de_obra_total'])} ({t['horas']:g} h) | "
-          f"Total: {usd(t['total_geral'])}")
+          f"Taxa: {usd(t['taxa_fixa'])} | Total: {usd(t['total_geral'])}")
     print(f"Arquivos em {saida}: orcamento.md, orcamento.json" + (", orcamento.xlsx" if xlsx else " (sem xlsx: instale openpyxl)"))
     for av in r["avisos"]:
         print("AVISO:", av, file=sys.stderr)

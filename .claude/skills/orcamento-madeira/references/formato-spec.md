@@ -14,7 +14,9 @@ Exemplo completo: `assets/exemplo-spec.json` (privacy screen com pergolado). Med
     "markup_material": 0.15,
     "imposto_material": 0.0,
     "contingencia": 0.10,
-    "comprimento_max_ft": 8            // opcional: só compra tábuas até esse tamanho (transporte)
+    "comprimento_max_ft": 8,           // opcional: só compra tábuas até esse tamanho (transporte)
+    "taxa_fixa_usd": 150,              // opcional: taxa fixa somada ao total (ex.: no lugar do markup)
+    "taxa_fixa_descricao": "Taxa de serviço"
   },
   "componentes": [ ... ],
   "tarefas_extra": [

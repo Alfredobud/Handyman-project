@@ -1,6 +1,6 @@
 # Kitchen Privacy Screen
 
-**Status:** orçamento preliminar pronto — [`orcamento/orcamento.md`](orcamento/orcamento.md) (preços de referência, ~$3.7k material + ~$5.0k mão de obra)
+**Status:** orçamento preliminar em madeira (cedro aparente + estrutura PT), preços online da região de Cornelius, NC — [`orcamento/orcamento.md`](orcamento/orcamento.md): ~$3.35k material (com 8.25% de imposto) + ~$4.07k mão de obra ($60/h) + taxa de $150 = **~$7.56k**
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)
 
 ## Resumo do escopo
@@ -36,8 +36,8 @@
 
 ## Próximos passos
 
-- [ ] Definir material final (cedro vs. PT + composite)
+- [x] Definir material final → madeira (sem composite, por receio de deformação)
 - [ ] Definir espaçamento de postes e recalcular lista
-- [ ] Levantar preços (Home Depot / Lowe's / madeireira local)
-- [ ] Estimar horas de mão de obra
+- [x] Levantar preços online (Lowe's / Home Depot) — [ ] confirmar na loja de Cornelius, principalmente o cedro 2x8x12
+- [x] Estimar horas de mão de obra (67.8 h)
 - [ ] Montar proposta (materiais + mão de obra separados)

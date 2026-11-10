@@ -65,7 +65,7 @@ Na resposta ao usuário, entregue:
 
 ## Preços
 
-Os preços em `references/precos.csv` são **referência aproximada** e têm data e fonte em cada linha. Preço de madeira varia muito por região e mês. Quando o usuário informar a região/loja, ou quando o orçamento for virar proposta real, atualize os preços (pesquisa web ou valores que o usuário passar) e grave num `precos.csv` próprio do projeto, apontado pelo campo `precos` do spec — assim o catálogo base não é alterado e o orçamento fica reproduzível. Sempre diga ao usuário quais preços são de referência e quais foram confirmados.
+Os preços em `references/precos.csv` são **referência aproximada** e têm data e fonte em cada linha. Preço de madeira varia muito por região e mês. Quando o usuário informar a região/loja, ou quando o orçamento for virar proposta real, atualize os preços (pesquisa web ou valores que o usuário passar) e grave num `precos.csv` próprio do projeto, apontado pelo campo `precos` do spec — assim o catálogo base não é alterado e o orçamento fica reproduzível. A lista de compra mostra a fonte de cada preço: sempre diga ao usuário quais preços são de referência e quais são locais ou confirmados. Quando o projeto é nos EUA, inclua o sales tax do condado em `imposto_material`. Respeite o modelo de cobrança do usuário (ex.: sem markup e com taxa fixa → `markup_material: 0`, `taxa_fixa_usd`).
 
 ## Idioma
 

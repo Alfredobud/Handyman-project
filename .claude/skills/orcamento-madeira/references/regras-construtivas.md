@@ -20,7 +20,7 @@ Comprimentos comerciais: PT e dimensional 8', 10', 12', 14', 16' (20' em alguns 
 - **Folga do chão**: 2"–4" entre ripas/madeira e o terreno.
 - **Travessas**: no mínimo superior e inferior; acima de ~6' de painel, adicione uma intermediária.
 - **Ripas de composite**: composite flexiona — não use como estrutura. Regra prática: apoio a cada 16"–24" ao longo da ripa (confirme o span do fabricante para uso vertical/cerca). Vãos maiores pedem montante intermediário (2x4/2x6) no meio do vão.
-- **Ripas de madeira** (cedro/PT 1x): apoio a cada ≤ 4'.
+- **Ripas de madeira** (cedro/PT 1x): apoio a cada ≤ 4'. Se o cliente teme empeno ou deformação, prefira **5/4x6** (1" real) a 1x6 (3/4"), porque a ripa mais espessa arqueia e encanoa bem menos. Some um montante no meio do vão (apoio a cada ~2') e use parafuso inox em todo apoio; em cedro, galvanizado mancha (tanino).
 - **Espaço entre ripas**: 1/4"–1/2" para privacidade forte; 1"–2" é decorativo e deixa ver através em ângulo.
 - **Expansão** (composite): folga nas pontas conforme fabricante e temperatura de instalação (tipicamente 1/8"–1/4").
 - **Acabado dos dois lados**: dobra fascia/wrap e pode exigir ripas dos dois lados ou estrutura escondida no meio do painel.

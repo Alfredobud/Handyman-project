@@ -1,5 +1,5 @@
 {
-  "projeto": "Kitchen Privacy Screen — 265 in x ~8 ft, 100% pinus autoclavado (PT) + topo pergolado (Cornelius, NC)",
+  "projeto": "Kitchen Privacy Screen — 10 postes, 100% pinus autoclavado (PT), topo pergolado (Cornelius, NC)",
   "cliente": "",
   "parametros": {
     "taxa_hora_usd": 60,
@@ -15,16 +15,16 @@
   "componentes": [
     {
       "tipo": "sapata",
-      "nome": "Sapatas Ø12\" (concreto em volta do núcleo)",
+      "nome": "Furos Ø12\" x 30\" — concreto em volta do núcleo",
       "qtd": 10,
       "diametro_in": 12,
-      "profundidade_in": 35,
+      "profundidade_in": 23,
       "desconto_poste_in2": 12.25,
       "material": "concreto_80lb",
-      "tarefa": "poste_sapata",
+      "tarefa": "obra_assentar_poste",
       "_calc": {
-        "volume_cf": 22.47,
-        "sacos": 38
+        "volume_cf": 14.77,
+        "sacos": 25
       }
     },
     {
@@ -35,41 +35,40 @@
     },
     {
       "tipo": "item",
+      "nome": "Locação: mini skid steer com auger 12\" (1 dia)",
+      "material": "aluguel_mini_skid_auger",
+      "qtd": 1,
+      "tarefa": "obra_transporte_equipamento",
+      "tarefa_qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Entrega/retirada do equipamento",
+      "material": "frete_equipamento",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
       "nome": "Preservativo nos cortes do PT",
       "material": "preservativo_corte",
       "qtd": 1
     },
     {
       "tipo": "pecas",
-      "nome": "Núcleo PT 4x4 ground contact (embutir 36\")",
+      "nome": "Núcleo PT 4x4 ground contact (embutir 24\", nivelar topo na obra)",
       "material": "pt_4x4",
-      "comprimento_in": 128.0,
+      "comprimento_in": 117.5,
       "qtd": 10,
-      "perda": 0
+      "perda": 0,
+      "tarefa": "obra_nivelar_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Faces do poste PT 2x6 (casa + vizinho)",
-      "material": "pt_2x6",
-      "comprimento_in": 88.0,
-      "qtd": 20,
-      "tarefa": "revestimento_poste",
-      "tarefa_qtd": 10
-    },
-    {
-      "tipo": "pecas",
-      "nome": "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\")",
+      "nome": "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
       "material": "pt_5_4x6",
-      "comprimento_in": 88.0,
+      "comprimento_in": 89.5,
       "qtd": 18,
-      "tarefa": "serrilhado"
-    },
-    {
-      "tipo": "pecas",
-      "nome": "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
-      "material": "pt_5_4x6",
-      "comprimento_in": 88.0,
-      "qtd": 2
+      "tarefa": "oficina_serrilhado"
     },
     {
       "tipo": "pecas",
@@ -77,61 +76,73 @@
       "material": "pt_2x4",
       "comprimento_in": 25.083,
       "qtd": 144,
-      "tarefa": "ripa_encaixe"
+      "tarefa": "oficina_corte"
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas duplas PT 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
+      "nome": "Faces do poste PT 2x6 (casa + vizinho)",
+      "material": "pt_2x6",
+      "comprimento_in": 89.5,
+      "qtd": 20,
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 10",
+      "material": "pt_5_4x6",
+      "comprimento_in": 89.5,
+      "qtd": 2,
+      "tarefa": "oficina_ripar"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Tábuas de topo PT 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 4, 7)",
       "material": "pt_2x8",
       "comprimento_in": 86.5,
       "qtd": 2,
-      "tarefa": "viga"
+      "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Vigas duplas PT 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
+      "nome": "Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 4, 7)",
       "material": "pt_2x8",
       "comprimento_in": 95.25,
       "qtd": 4,
-      "tarefa": "viga"
+      "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros PT 2x6 com ponta tipo nuvem (1 por poste)",
+      "nome": "Fechamento das pontas das tábuas de topo PT 2x8",
+      "material": "pt_2x8",
+      "comprimento_in": 9.5,
+      "qtd": 2,
+      "tarefa": "oficina_fechamento"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste)",
       "material": "pt_2x6",
       "comprimento_in": 36,
       "qtd": 10,
-      "tarefa": "caibro_nuvem"
+      "tarefa": "oficina_caibro_nuvem"
     },
     {
       "tipo": "item",
-      "nome": "Parafusos passantes 1/2x10 viga/poste",
+      "nome": "Parafusos passantes 1/2\"x10\" (tábuas de topo/núcleo)",
       "material": "parafuso_passante",
       "qtd": 10
     },
     {
       "tipo": "item",
-      "nome": "Parafusos estruturais",
-      "material": "parafuso_estrutural",
-      "qtd": 2
+      "nome": "Parafusos de deck trim-head (cabeça pequena, oculta), revestidos p/ PT",
+      "material": "parafuso_deck_trim",
+      "qtd": 4
     },
     {
       "tipo": "item",
-      "nome": "Parafusos inox (revestimento e ripas)",
-      "material": "parafuso_inox_deck",
-      "qtd": 3
-    },
-    {
-      "tipo": "item",
-      "nome": "Cola PU/exterior para o revestimento",
+      "nome": "Cola PU/exterior",
       "material": "cola_externa",
       "qtd": 3
-    },
-    {
-      "tipo": "item",
-      "nome": "Aluguel auger",
-      "material": "aluguel_auger",
-      "qtd": 1
     },
     {
       "tipo": "item",
@@ -170,31 +181,17 @@
   ],
   "detalhes_cortes": [
     [
-      "Núcleo PT 4x4 ground contact (embutir 36\")",
+      "Núcleo PT 4x4 ground contact (embutir 24\", nivelar topo na obra)",
       "pt_4x4",
       10,
-      128.0,
+      117.5,
       ""
     ],
     [
-      "Faces do poste PT 2x6 (casa + vizinho)",
-      "pt_2x6",
-      20,
-      88.0,
-      ""
-    ],
-    [
-      "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\")",
+      "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
       "pt_5_4x6",
       18,
-      88.0,
-      ""
-    ],
-    [
-      "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
-      "pt_5_4x6",
-      2,
-      88.0,
+      89.5,
       ""
     ],
     [
@@ -205,21 +202,42 @@
       ""
     ],
     [
-      "Vigas duplas PT 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
+      "Faces do poste PT 2x6 (casa + vizinho)",
+      "pt_2x6",
+      20,
+      89.5,
+      ""
+    ],
+    [
+      "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 10",
+      "pt_5_4x6",
+      2,
+      89.5,
+      ""
+    ],
+    [
+      "Tábuas de topo PT 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 4, 7)",
       "pt_2x8",
       2,
       86.5,
       ""
     ],
     [
-      "Vigas duplas PT 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
+      "Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 4, 7)",
       "pt_2x8",
       4,
       95.25,
       ""
     ],
     [
-      "Caibros PT 2x6 com ponta tipo nuvem (1 por poste)",
+      "Fechamento das pontas das tábuas de topo PT 2x8",
+      "pt_2x8",
+      2,
+      9.5,
+      ""
+    ],
+    [
+      "Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste)",
       "pt_2x6",
       10,
       36.0,
@@ -230,32 +248,12 @@
     {
       "material": "pt_4x4",
       "descricao": "PT 4x4 #2 ground contact",
-      "comprimento_ft": 12.0,
+      "comprimento_ft": 10.0,
       "qtd": 10,
-      "preco_unit": 24.0,
-      "subtotal": 240.0,
-      "fonte": "estimativa (sem preço online local; conferir)",
-      "obs": ""
-    },
-    {
-      "material": "pt_2x6",
-      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
-      "comprimento_ft": 8.0,
-      "qtd": 10,
-      "preco_unit": 9.5,
-      "subtotal": 95.0,
+      "preco_unit": 19.0,
+      "subtotal": 190.0,
       "fonte": "referencia-media-big-box",
       "obs": ""
-    },
-    {
-      "material": "pt_2x6",
-      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
-      "comprimento_ft": 12.0,
-      "qtd": 11,
-      "preco_unit": 14.18,
-      "subtotal": 155.98,
-      "fonte": "homedepot.com online (nao confirmado loja Cornelius)",
-      "obs": "inclui 1 de sobra (5%)"
     },
     {
       "material": "pt_5_4x6",
@@ -278,24 +276,54 @@
       "obs": "inclui 3 de sobra (5%)"
     },
     {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 8.0,
+      "qtd": 10,
+      "preco_unit": 9.5,
+      "subtotal": 95.0,
+      "fonte": "referencia-media-big-box",
+      "obs": ""
+    },
+    {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 12.0,
+      "qtd": 11,
+      "preco_unit": 14.18,
+      "subtotal": 155.98,
+      "fonte": "homedepot.com online (nao confirmado loja Cornelius)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
       "material": "pt_2x8",
       "descricao": "PT 2x8 #2 Prime ground contact",
       "comprimento_ft": 8.0,
-      "qtd": 7,
+      "qtd": 6,
       "preco_unit": 13.0,
-      "subtotal": 91.0,
+      "subtotal": 78.0,
       "fonte": "referencia-media-big-box",
       "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x8",
+      "descricao": "PT 2x8 #2 Prime ground contact",
+      "comprimento_ft": 10.0,
+      "qtd": 1,
+      "preco_unit": 16.0,
+      "subtotal": 16.0,
+      "fonte": "referencia-media-big-box",
+      "obs": ""
     },
     {
       "material": "concreto_80lb",
       "descricao": "Concreto ensacado 80 lb (~0.60 cf)",
       "comprimento_ft": "",
-      "qtd": 38,
+      "qtd": 25,
       "preco_unit": 6.5,
-      "subtotal": 247.0,
+      "subtotal": 162.5,
       "fonte": "referencia-media-big-box",
-      "obs": "saco — Sapatas Ø12\" (concreto em volta do núcleo)"
+      "obs": "saco — Furos Ø12\" x 30\" — concreto em volta do núcleo"
     },
     {
       "material": "brita_saco",
@@ -306,6 +334,26 @@
       "subtotal": 44.0,
       "fonte": "referencia-media-big-box",
       "obs": "saco — Brita 6\" no fundo dos furos"
+    },
+    {
+      "material": "aluguel_mini_skid_auger",
+      "descricao": "Aluguel mini skid steer (tipo Dingo) com auger 12in — 1 dia",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 350.0,
+      "subtotal": 350.0,
+      "fonte": "estimativa locadora local (conferir)",
+      "obs": "dia — Locação: mini skid steer com auger 12\" (1 dia)"
+    },
+    {
+      "material": "frete_equipamento",
+      "descricao": "Entrega/retirada do equipamento alugado",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 100.0,
+      "subtotal": 100.0,
+      "fonte": "estimativa locadora local (conferir)",
+      "obs": "verba — Entrega/retirada do equipamento"
     },
     {
       "material": "preservativo_corte",
@@ -325,27 +373,17 @@
       "preco_unit": 4.5,
       "subtotal": 45.0,
       "fonte": "referencia-media-big-box",
-      "obs": "jogo — Parafusos passantes 1/2x10 viga/poste"
+      "obs": "jogo — Parafusos passantes 1/2\"x10\" (tábuas de topo/núcleo)"
     },
     {
-      "material": "parafuso_estrutural",
-      "descricao": "Parafuso estrutural 6 in (caixa 50)",
+      "material": "parafuso_deck_trim",
+      "descricao": "Parafuso deck trim-head (cabeça pequena) revestido p/ PT/ACQ 2.5-3in (caixa 5 lb)",
       "comprimento_ft": "",
-      "qtd": 2,
-      "preco_unit": 48.0,
-      "subtotal": 96.0,
+      "qtd": 4,
+      "preco_unit": 42.0,
+      "subtotal": 168.0,
       "fonte": "referencia-media-big-box",
-      "obs": "caixa — Parafusos estruturais"
-    },
-    {
-      "material": "parafuso_inox_deck",
-      "descricao": "Parafuso inox deck 2.5-3 in (caixa 5 lb)",
-      "comprimento_ft": "",
-      "qtd": 3,
-      "preco_unit": 58.0,
-      "subtotal": 174.0,
-      "fonte": "referencia-media-big-box",
-      "obs": "caixa — Parafusos inox (revestimento e ripas)"
+      "obs": "caixa — Parafusos de deck trim-head (cabeça pequena, oculta), revestidos p/ PT"
     },
     {
       "material": "cola_externa",
@@ -355,17 +393,7 @@
       "preco_unit": 7.0,
       "subtotal": 21.0,
       "fonte": "referencia-media-big-box",
-      "obs": "un — Cola PU/exterior para o revestimento"
-    },
-    {
-      "material": "aluguel_auger",
-      "descricao": "Aluguel de perfuratriz (auger) 1 dia",
-      "comprimento_ft": "",
-      "qtd": 1,
-      "preco_unit": 95.0,
-      "subtotal": 95.0,
-      "fonte": "referencia-media-big-box",
-      "obs": "dia — Aluguel auger"
+      "obs": "un — Cola PU/exterior"
     },
     {
       "material": "descarte",
@@ -422,37 +450,23 @@
     {
       "material": "pt_4x4",
       "qtd_tabuas": 10,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 128\" Núcleo PT 4x4 ground contact (embutir 36\")",
-      "sobra_in": 16.0
-    },
-    {
-      "material": "pt_2x6",
-      "qtd_tabuas": 10,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 88\" Faces do poste PT 2x6 (casa + vizinho) + 1x 36\" Caibros PT 2x6 com ponta tipo nuvem (1 por poste)",
-      "sobra_in": 19.88
-    },
-    {
-      "material": "pt_2x6",
-      "qtd_tabuas": 10,
-      "comprimento_ft": 8.0,
-      "cortes": "1x 88\" Faces do poste PT 2x6 (casa + vizinho)",
-      "sobra_in": 8.0
+      "comprimento_ft": 10.0,
+      "cortes": "1x 117.5\" Núcleo PT 4x4 ground contact (embutir 24\", nivelar topo na obra)",
+      "sobra_in": 2.5
     },
     {
       "material": "pt_5_4x6",
       "qtd_tabuas": 9,
       "comprimento_ft": 16.0,
-      "cortes": "2x 88\" Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\")",
-      "sobra_in": 15.88
+      "cortes": "2x 89.5\" Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
+      "sobra_in": 12.88
     },
     {
       "material": "pt_5_4x6",
       "qtd_tabuas": 1,
       "comprimento_ft": 16.0,
-      "cortes": "2x 88\" Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — lado externo dos postes 1 e 10",
-      "sobra_in": 15.88
+      "cortes": "2x 89.5\" Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 10",
+      "sobra_in": 12.88
     },
     {
       "material": "pt_2x4",
@@ -462,68 +476,113 @@
       "sobra_in": 20.5
     },
     {
-      "material": "pt_2x8",
-      "qtd_tabuas": 4,
+      "material": "pt_2x6",
+      "qtd_tabuas": 10,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 89.5\" Faces do poste PT 2x6 (casa + vizinho) + 1x 36\" Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste)",
+      "sobra_in": 18.38
+    },
+    {
+      "material": "pt_2x6",
+      "qtd_tabuas": 10,
       "comprimento_ft": 8.0,
-      "cortes": "1x 95.25\" Vigas duplas PT 2x8 — peça de 7'-11 1/4\" (emendas sobre postes 4, 7)",
+      "cortes": "1x 89.5\" Faces do poste PT 2x6 (casa + vizinho)",
+      "sobra_in": 6.5
+    },
+    {
+      "material": "pt_2x8",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 95.25\" Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 4, 7) + 2x 9.5\" Fechamento das pontas das tábuas de topo PT 2x8",
+      "sobra_in": 5.5
+    },
+    {
+      "material": "pt_2x8",
+      "qtd_tabuas": 3,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 95.25\" Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 4, 7)",
       "sobra_in": 0.75
     },
     {
       "material": "pt_2x8",
       "qtd_tabuas": 2,
       "comprimento_ft": 8.0,
-      "cortes": "1x 86.5\" Vigas duplas PT 2x8 — peça de 7'-2 1/2\" (emendas sobre postes 4, 7)",
+      "cortes": "1x 86.5\" Tábuas de topo PT 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 4, 7)",
       "sobra_in": 9.5
     }
   ],
   "mao_de_obra": [
     {
-      "tarefa": "poste_sapata",
-      "descricao": "Escavação manual ou com auger + concreto + prumo/alinhamento do poste",
+      "tarefa": "obra_assentar_poste",
+      "descricao": "Obra: brita no fundo + prumo/escora + concreto + colar com caimento",
       "qtd": 10.0,
       "unidade": "poste",
-      "h_unit": 2.0,
-      "horas": 20.0
-    },
-    {
-      "tarefa": "revestimento_poste",
-      "descricao": "Poste composto: fixar faces e laterais (2x6) no núcleo 4x4 (cola PU + parafusos)",
-      "qtd": 10.0,
-      "unidade": "poste",
-      "h_unit": 1.5,
-      "horas": 15.0
-    },
-    {
-      "tarefa": "serrilhado",
-      "descricao": "Lateral serrilhada: marcar com gabarito e cortar os encaixes (serra circular + formão ou tupia)",
-      "qtd": 18.0,
-      "unidade": "peca",
-      "h_unit": 0.75,
-      "horas": 13.5
-    },
-    {
-      "tarefa": "ripa_encaixe",
-      "descricao": "Ripa encaixada em serrilhado (corte no comprimento + encaixe + 1 parafuso por ponta)",
-      "qtd": 144.0,
-      "unidade": "peca",
-      "h_unit": 0.12,
-      "horas": 17.28
-    },
-    {
-      "tarefa": "viga",
-      "descricao": "Viga de pergolado: corte das pontas + içamento + fixação passante",
-      "qtd": 6.0,
-      "unidade": "peca",
-      "h_unit": 1.0,
-      "horas": 6.0
-    },
-    {
-      "tarefa": "caibro_nuvem",
-      "descricao": "Caibro com recorte decorativo tipo nuvem nas duas pontas (gabarito + tico-tico + lixa)",
-      "qtd": 10.0,
-      "unidade": "peca",
       "h_unit": 0.75,
       "horas": 7.5
+    },
+    {
+      "tarefa": "obra_transporte_equipamento",
+      "descricao": "Obra: retirar e devolver o equipamento de escavação alugado",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 1.5,
+      "horas": 1.5
+    },
+    {
+      "tarefa": "obra_nivelar_topo",
+      "descricao": "Obra: marcar com laser e cortar o topo do núcleo",
+      "qtd": 10.0,
+      "unidade": "poste",
+      "h_unit": 0.15,
+      "horas": 1.5
+    },
+    {
+      "tarefa": "oficina_serrilhado",
+      "descricao": "Oficina: ripar 5/4 p/ 3 1/2 + marcar com gabarito + cortar os encaixes (dado/tupia ou serra + formão)",
+      "qtd": 18.0,
+      "unidade": "peca",
+      "h_unit": 0.6,
+      "horas": 10.799999999999999
+    },
+    {
+      "tarefa": "oficina_corte",
+      "descricao": "Oficina: corte no comprimento com batente (ripas",
+      "qtd": 164.0,
+      "unidade": "peca",
+      "h_unit": 0.04,
+      "horas": 6.5600000000000005
+    },
+    {
+      "tarefa": "oficina_ripar",
+      "descricao": "Oficina: ripar tábua na largura (serra de bancada)",
+      "qtd": 20.0,
+      "unidade": "peca",
+      "h_unit": 0.1,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "oficina_tabua_topo",
+      "descricao": "Oficina: tábua de topo: corte",
+      "qtd": 6.0,
+      "unidade": "peca",
+      "h_unit": 0.6,
+      "horas": 3.5999999999999996
+    },
+    {
+      "tarefa": "oficina_fechamento",
+      "descricao": "Oficina: fechamento de ponta das tábuas de topo",
+      "qtd": 2.0,
+      "unidade": "peca",
+      "h_unit": 0.25,
+      "horas": 0.5
+    },
+    {
+      "tarefa": "oficina_caibro_nuvem",
+      "descricao": "Oficina: caibro com ponta tipo nuvem (gabarito + tico-tico + lixa)",
+      "qtd": 10.0,
+      "unidade": "peca",
+      "h_unit": 0.6,
+      "horas": 6.0
     },
     {
       "tarefa": "paisagismo_base",
@@ -550,6 +609,14 @@
       "horas": 2.0
     },
     {
+      "tarefa": "obra_escavacao_mecanizada",
+      "descricao": "Obra: furo com mini skid steer/perfuratriz hidráulica alugada (posicionar + furar + limpar)",
+      "qtd": 10.0,
+      "unidade": "furo",
+      "h_unit": 0.25,
+      "horas": 2.5
+    },
+    {
       "tarefa": "compras_transporte",
       "descricao": "Compra e transporte de material (sem frete de loja)",
       "qtd": 1.0,
@@ -558,18 +625,83 @@
       "horas": 3.0
     },
     {
-      "tarefa": "limpeza",
-      "descricao": "Limpeza da obra e descarte de entulho",
+      "tarefa": "oficina_gabaritos",
+      "descricao": "Oficina: gabaritos do serrilhado e do caibro",
       "qtd": 1.0,
       "unidade": "verba",
       "h_unit": 2.0,
       "horas": 2.0
     },
     {
-      "tarefa": "Gabarito do serrilhado (compensado + guias)",
+      "tarefa": "oficina_acabamento_lixa",
+      "descricao": "Oficina: quebrar arestas/lixar peças visíveis antes de levar à obra",
+      "qtd": 202.0,
+      "unidade": "peca",
+      "h_unit": 0.03,
+      "horas": 6.06
+    },
+    {
+      "tarefa": "obra_instalar_serrilhado",
+      "descricao": "Obra: fixar lateral serrilhada pré-cortada no núcleo",
+      "qtd": 18.0,
+      "unidade": "peca",
+      "h_unit": 0.15,
+      "horas": 2.6999999999999997
+    },
+    {
+      "tarefa": "obra_instalar_ripa",
+      "descricao": "Obra: encaixar ripa pré-cortada + 1 parafuso por ponta",
+      "qtd": 144.0,
+      "unidade": "peca",
+      "h_unit": 0.05,
+      "horas": 7.2
+    },
+    {
+      "tarefa": "obra_instalar_face",
+      "descricao": "Obra: fixar face 2x6 pré-cortada (cola + parafuso trim-head)",
+      "qtd": 20.0,
+      "unidade": "peca",
+      "h_unit": 0.15,
+      "horas": 3.0
+    },
+    {
+      "tarefa": "obra_instalar_lateral",
+      "descricao": "Obra: fixar lateral lisa dos postes de ponta",
       "qtd": 2.0,
-      "unidade": "h",
-      "h_unit": 1.0,
+      "unidade": "peca",
+      "h_unit": 0.2,
+      "horas": 0.4
+    },
+    {
+      "tarefa": "obra_instalar_tabua_topo",
+      "descricao": "Obra: içar tábua de topo entalhada + furar + parafuso passante",
+      "qtd": 6.0,
+      "unidade": "peca",
+      "h_unit": 0.5,
+      "horas": 3.0
+    },
+    {
+      "tarefa": "obra_instalar_fechamento",
+      "descricao": "Obra: fixar fechamento da ponta das tábuas de topo",
+      "qtd": 2.0,
+      "unidade": "peca",
+      "h_unit": 0.25,
+      "horas": 0.5
+    },
+    {
+      "tarefa": "obra_instalar_caibro",
+      "descricao": "Obra: assentar caibro no entalhe + parafuso trim-head oculto",
+      "qtd": 10.0,
+      "unidade": "peca",
+      "h_unit": 0.15,
+      "horas": 1.5
+    },
+    {
+      "tarefa": "limpeza",
+      "descricao": "Limpeza da obra e descarte de entulho",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
       "horas": 2.0
     },
     {
@@ -581,39 +713,41 @@
     }
   ],
   "totais": {
-    "material_subtotal": 2192.48,
-    "material_imposto": 180.88,
+    "material_subtotal": 2313.98,
+    "material_imposto": 190.9,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 2373.36,
-    "horas": 102.6,
-    "mao_de_obra_subtotal": 6154.8,
+    "material_total": 2504.88,
+    "horas": 90.1,
+    "mao_de_obra_subtotal": 5407.2,
     "mao_de_obra_contingencia": 0.0,
-    "mao_de_obra_total": 6154.8,
+    "mao_de_obra_total": 5407.2,
     "taxa_fixa": 150.0,
-    "total_geral": 8678.16
+    "total_geral": 8062.08
   },
   "premissas": [
-    "Material: 100% PT (pinus autoclavado SYP). Stain em uma 2ª visita após a secagem (ou comprar KDAT).",
-    "Desenho rev. 5 (A-1, A-2, A-3) seguindo a imagem de referência: 10 postes, ripas estreitas encaixadas entre os postes, 1 caibro por poste com ponta recortada tipo nuvem, colar de concreto aparente, canteiro e borda de pedra.",
-    "Poste composto (croqui do cliente): núcleo PT 4x4 ground contact embutido 36\" em concreto (furo Ø12\", 6\" de brita). Acima do colar: faces 2x6 nas faces da casa e do vizinho e laterais de 1\" (5/4x6 ripado para 3 1/2\"): serrilhadas, com 16 encaixes de 3 9/16\" x 1 1/2\", nos lados voltados para o vão; lisas no lado externo dos postes 1 e 10. Todos os postes ficam com 5 1/2\", com as faces 2x6 alinhadas.",
-    "Espaçamento pela proporção áurea (Fibonacci): 10 postes a 2'-4 13/16\" entre eixos; vão livre 23 5/16\"; vão/poste = 4.242 ≈ φ³ = 4.236 (55/13 de Fibonacci). O vão fica bem abaixo do limite de empeno adotado para ripa de madeira (≤ 36\" conservador; 48\" máx.).",
-    "Ripas 2x4 deitadas (1 1/2\" x 3 1/2\"), 16 por vão, espaço ~1 5/8\" dado pelos dentes do serrilhado; ripa de 2'-1 1/16\" (entra 7/8\" em cada encaixe).",
-    "Montagem: face do vizinho → serrilhados → ripas encaixadas pelo lado da casa → face da casa (trava as ripas). Ver A-3.",
-    "Topo: vigas duplas 2x8 por fora das faces (parafuso passante 1/2\"x10\" por poste), 3 peças por linha (7'-11 1/4\" + 7'-2 1/2\" + 7'-11 1/4\"), com emendas sobre os postes 4, 7; cabe em 2x8 de 8'. 10 caibros 2x6 de 36\".",
-    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6, cedro 2x8 de 8'); confirmar na loja de Cornelius.",
+    "Material: 100% pinus autoclavado (PT). Stain em 2ª visita após a secagem.",
+    "10 postes a 2'-4 13/16\" entre eixos; vão livre 23 5/16\"; vão/poste = 4.24 ≈ φ³ (55/13 de Fibonacci); bem abaixo do limite de empeno (≤ 36\" conservador).",
+    "Poste composto: núcleo PT 4x4 ground contact embutido 24\" em concreto (furo Ø12\" x 30\", 6\" de brita), furos com mini skid steer + auger alugado. Revestimento acima do colar: faces 2x6 e laterais de 1\" (serrilhadas nos vãos, lisas nas pontas); todos os postes com 5 1/2\", faces alinhadas.",
+    "Ripas 2x4 deitadas: 16 por vão, espaço 1 11/16\", ripa de 2'-1 1/16\"; instaladas pelo lado do vizinho.",
+    "Topo: tábuas 2x8 dos dois lados dos postes, entalhadas 1 1/2\" para os caibros, 3 peças por lado (7'-11 1/4\" + 7'-2 1/2\" + 7'-11 1/4\") com emendas sobre os postes 4, 7; fechamento de 9 1/2\" nas pontas (aparência de viga maciça); 10 caibros 2x6 de 36\" com ponta tipo nuvem.",
+    "Fixação: parafusos de deck trim-head (cabeça pequena, fica oculta), revestidos para PT/ACQ (não inox); parafuso passante de 1/2\" nas tábuas de topo.",
+    "Mão de obra separada em OFICINA (pré-corte: serrilhados, ripas, faces, laterais, tábuas de topo, fechamentos, caibros, gabaritos, lixa) e OBRA (furos, postes, nivelamento, montagem).",
+    "Sequência de instalação (A-3): 1 furos, 2 postes, 3 nivelar topos, 4 serrilhados pelo lado do vizinho, 5 ripas, 6 fechamento frontal, 7 fechamento lateral, 8 tábuas de topo, 9 fechamento das pontas, 10 caibros do pergolado.",
+    "Preços: Lowe's/Home Depot online (nov/2026) e estimativas marcadas na coluna de fonte (PT 4x4x12, cedro 2x6/2x8, locação do equipamento, parafuso trim-head); confirmar em Cornelius.",
     "Imposto de Mecklenburg de 8.25% sobre o material; sem markup e sem contingência; taxa fixa de $150.",
-    "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; as trepadeiras não estão incluídas."
+    "Paisagismo (manta, borda e pedra) incluído e marcado como opcional; trepadeiras não incluídas."
   ],
   "perguntas": [
-    "Serrilhado de 1\": usei cedro 5/4x6 ripado para 3 1/2\". Se a loja tiver 5/4x4 (1\" x 3 1/2\"), dá para usar direto, sem ripar.",
-    "Confirmar na loja os preços do cedro 2x6 e 2x8 e do PT 4x4x12.",
+    "Confirmar preço e disponibilidade do mini skid steer com auger (Home Depot Rental / Sunbelt / United Rentals na região).",
+    "Confirmar na loja os preços do cedro 2x6, 2x8 e 5/4x6 e do PT 4x4.",
     "NC811 antes de escavar; licença/HOA de Cornelius; posição da divisa.",
     "Trepadeiras e canteiro: o cliente fornece ou incluímos?"
   ],
   "avisos": [],
   "fontes_preco": [
     "estimativa (sem preço online local; conferir) (2026-11)",
+    "estimativa locadora local (conferir) (2026-11)",
     "estimativa proporcional ao 10' da Lowe's (sem preço online) (2026-11)",
     "estimativa proporcional ao 12' da Lowe's (conferir) (2026-11)",
     "estimativa proporcional ao 2x8x12 da Lowe's (conferir) (2026-11)",

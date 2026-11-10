@@ -1,13 +1,14 @@
 # Kitchen Privacy Screen
 
-**Status:** rev. 3: desenhos seguindo a imagem de referência + poste composto com serrilhado de 1" (croqui do cliente): intermediários 5 1/2" alinhados com a face 2x6, pontas com lateral 2x6
+**Status:** rev. 6: duas propostas (7 e 10 postes); desenhos em inglês aguardando aprovação das prévias (a pasta `desenhos/` ainda está na rev. 4)
 
-| Entregável | Arquivo |
-|---|---|
-| Desenhos (A-1 elevação/planta/lateral, A-2 cortes/fundação, A-3 poste composto + montagem) | [`desenhos/privacy-screen.pdf`](desenhos/privacy-screen.pdf) · DXF: [`desenhos/privacy-screen.dxf`](desenhos/privacy-screen.dxf) |
-| Orçamento A: núcleo PT + tudo visível em cedro | [`orcamento/orcamento.md`](orcamento/orcamento.md): **~$10,237** |
-| Orçamento B: 100% pinus autoclavado (PT) | [`orcamento-pt/orcamento.md`](orcamento-pt/orcamento.md): **~$9,078** · desenhos em [`desenhos/pt/`](desenhos/pt/) |
-| Análise do pinus autoclavado | [`analise-pinus-autoclavado.md`](analise-pinus-autoclavado.md) |
+| Proposta | Cliente (EN) | Orçamento interno | Total |
+|---|---|---|---:|
+| **10 postes** (vão/poste = φ³, vão 23 5/16") | [`propostas/proposal-10-posts.md`](propostas/proposal-10-posts.md) | [`orcamento/`](orcamento/orcamento.md) | **~$9,172** |
+| **7 postes** (vão/poste = φ⁴, vão 37 3/4") | [`propostas/proposal-7-posts.md`](propostas/proposal-7-posts.md) | [`orcamento-7-postes/`](orcamento-7-postes/orcamento.md) | **~$7,398** |
+| 10 postes, 100% PT (referência) | — | [`orcamento-pt/`](orcamento-pt/orcamento.md) | ~$8,062 |
+
+Specs gerados por [`gerar_propostas.py`](gerar_propostas.py) a partir da mesma geometria dos desenhos. Mão de obra separada em oficina (pré-corte) e obra.
 
 Decisões: madeira (sem composite, por receio de deformação); postes PT embutidos 36" (mínimo de 2 ft); $60/h, sem markup, taxa de $150; imposto de Mecklenburg de 8.25%.
 **Referência:** [`referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf`](referencias/Kitchen_Privacy_Screen_Contractor_Packet.pdf) · imagem conceito: [`referencias/conceito-000.jpg`](referencias/conceito-000.jpg)

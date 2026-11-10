@@ -38,6 +38,26 @@ MATERIAIS = {
 HATCH_DXF = {"concreto": ("AR-CONC", 0.05), "brita": ("GRAVEL", 0.5), "solo": ("EARTH", 0.5)}
 
 
+IDIOMA = "pt"   # "pt" ou "en": textos fixos (escala, carimbo, notas)
+_TXT = {
+    "pt": {"escala": "ESCALA", "notas": "NOTAS", "data": "Data", "rev": "Rev.", "por": "Por",
+           "l1": "Medidas em polegadas/pés. Madeira: medidas reais (2x6 = 1 1/2\" x 5 1/2\").",
+           "l2": "Conferir no campo antes de cortar. Não é projeto estrutural."},
+    "en": {"escala": "SCALE", "notas": "NOTES", "data": "Date", "rev": "Rev.", "por": "By",
+           "l1": "Dimensions in feet/inches. Lumber: actual sizes (2x6 = 1 1/2\" x 5 1/2\").",
+           "l2": "Verify all dimensions in the field before cutting. Not a structural design."},
+}
+
+
+def set_idioma(idioma):
+    global IDIOMA
+    IDIOMA = idioma if idioma in _TXT else "pt"
+
+
+def tx(k):
+    return _TXT[IDIOMA][k]
+
+
 def pes_pol(v, frac=16):
     """Formata polegadas como 22'-1 1/2" (>= 24") ou 46 3/8" (< 24")."""
     neg = v < 0
@@ -141,7 +161,7 @@ def escala_texto(den):
     den = float(den)
     nomes = {96: '1/8" = 1\'-0"', 48: '1/4" = 1\'-0"', 32: '3/8" = 1\'-0"', 24: '1/2" = 1\'-0"',
              16: '3/4" = 1\'-0"', 12: '1" = 1\'-0"', 8: '1 1/2" = 1\'-0"', 4: '3" = 1\'-0"', 2: '6" = 1\'-0"', 1: "1:1"}
-    return f"ESCALA 1:{den:g}" + (f"  ({nomes[den]})" if den in nomes else "")
+    return f"{tx('escala')} 1:{den:g}" + (f"  ({nomes[den]})" if den in nomes else "")
 
 
 # ------------------------------------------------------------------ prancha
@@ -347,16 +367,16 @@ def _svg_carimbo(p, W, H, m):
          *[_svg_text(x + 6, y + (0.14 + 0.13 * i) * PX, ln, 7.5, "start", True)
            for i, ln in enumerate(_quebra(p.projeto + (f" — {p.cliente}" if p.cliente else ""), 64, 2))],
          _svg_text(x + 6, y + 0.62 * PX, p.titulo[:60], 10, "start", True),
-         _svg_text(x + 6, y + 0.85 * PX, f"Data: {p.data}   Rev.: {p.revisao}   Por: {p.autor}"[:80], 6.5, "start"),
-         _svg_text(x + 6, y + 1.05 * PX, "Medidas em polegadas/pés. Madeira: medidas reais (6x6 = 5 1/2\").", 6, "start"),
-         _svg_text(x + 6, y + 1.22 * PX, "Conferir no campo antes de cortar. Não é projeto estrutural.", 6, "start"),
+         _svg_text(x + 6, y + 0.85 * PX, f"{tx('data')}: {p.data}   {tx('rev')}: {p.revisao}   {tx('por')}: {p.autor}"[:80], 6.5, "start"),
+         _svg_text(x + 6, y + 1.05 * PX, tx("l1"), 6, "start"),
+         _svg_text(x + 6, y + 1.22 * PX, tx("l2"), 6, "start"),
          _svg_text(x + w - 0.45 * PX, y + 0.95 * PX, p.numero, 20, "middle", True)]
     if p.notas:
         nx, ny = x, y - 0.12 * PX
         lh = 6.5 / 72 * PX * 1.35
         top = ny - lh * (len(p.notas) + 1)
         o.append(f'<rect x="{nx:.1f}" y="{top-6:.1f}" width="{w:.1f}" height="{ny-top+8:.1f}" fill="#fff" stroke="#222" stroke-width="0.8"/>')
-        o.append(_svg_text(nx + 6, top + lh * 0.6, "NOTAS", 7.5, "start", True))
+        o.append(_svg_text(nx + 6, top + lh * 0.6, tx("notas"), 7.5, "start", True))
         for i, n in enumerate(p.notas, 1):
             o.append(_svg_text(nx + 6, top + lh * (i + 0.6), f"{i}. {n}", 6.5, "start"))
     return "\n".join(o)

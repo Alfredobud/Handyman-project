@@ -22,3 +22,22 @@ revestimento_poste,poste,1.5,Poste composto: fixar faces e laterais (2x6) no nú
 serrilhado,peca,0.75,Lateral serrilhada: marcar com gabarito e cortar os encaixes (serra circular + formão ou tupia)
 ripa_encaixe,peca,0.12,Ripa encaixada em serrilhado (corte no comprimento + encaixe + 1 parafuso por ponta)
 caibro_nuvem,peca,0.75,Caibro com recorte decorativo tipo nuvem nas duas pontas (gabarito + tico-tico + lixa)
+obra_escavacao_mecanizada,furo,0.25,Obra: furo com mini skid steer/perfuratriz hidráulica alugada (posicionar + furar + limpar)
+obra_assentar_poste,poste,0.75,Obra: brita no fundo + prumo/escora + concreto + colar com caimento
+obra_transporte_equipamento,verba,1.5,Obra: retirar e devolver o equipamento de escavação alugado
+obra_nivelar_topo,poste,0.15,Obra: marcar com laser e cortar o topo do núcleo
+obra_instalar_serrilhado,peca,0.15,Obra: fixar lateral serrilhada pré-cortada no núcleo
+obra_instalar_ripa,peca,0.05,Obra: encaixar ripa pré-cortada + 1 parafuso por ponta
+obra_instalar_face,peca,0.15,Obra: fixar face 2x6 pré-cortada (cola + parafuso trim-head)
+obra_instalar_lateral,peca,0.2,Obra: fixar lateral lisa dos postes de ponta
+obra_instalar_tabua_topo,peca,0.5,Obra: içar tábua de topo entalhada + furar + parafuso passante
+obra_instalar_fechamento,peca,0.25,Obra: fixar fechamento da ponta das tábuas de topo
+obra_instalar_caibro,peca,0.15,Obra: assentar caibro no entalhe + parafuso trim-head oculto
+oficina_serrilhado,peca,0.6,Oficina: ripar 5/4 p/ 3 1/2 + marcar com gabarito + cortar os encaixes (dado/tupia ou serra + formão)
+oficina_corte,peca,0.04,Oficina: corte no comprimento com batente (ripas, faces)
+oficina_ripar,peca,0.1,Oficina: ripar tábua na largura (serra de bancada)
+oficina_tabua_topo,peca,0.6,Oficina: tábua de topo: corte, entalhes dos caibros e furos dos parafusos
+oficina_fechamento,peca,0.25,Oficina: fechamento de ponta das tábuas de topo
+oficina_caibro_nuvem,peca,0.6,Oficina: caibro com ponta tipo nuvem (gabarito + tico-tico + lixa)
+oficina_gabaritos,verba,2.0,Oficina: gabaritos do serrilhado e do caibro
+oficina_acabamento_lixa,peca,0.03,Oficina: quebrar arestas/lixar peças visíveis antes de levar à obra

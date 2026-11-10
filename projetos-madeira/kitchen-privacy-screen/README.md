@@ -6,8 +6,8 @@
 
 | Opção | Desenhos (PDF/DXF) | Orçamento interno | Total |
 |---|---|---|---:|
-| **A — 10 postes** (vão/poste = φ³, vão 23 5/16") | [`desenhos/10-postes/`](desenhos/10-postes/) | [`orcamento/`](orcamento/orcamento.md) | **$8,211** |
-| **B — 7 postes** (vão/poste = φ⁴, vão 37 3/4") | [`desenhos/7-postes/`](desenhos/7-postes/) | [`orcamento-7-postes/`](orcamento-7-postes/orcamento.md) | **$6,631** |
+| **A — 10 postes, cedro** (vão/poste = φ³, vão 23 5/16") | [`desenhos/10-postes/`](desenhos/10-postes/) | [`orcamento/`](orcamento/orcamento.md) | **$8,211** |
+| **B — 7 postes, 100% pinus tratado S4S** (vão/poste = φ⁴, vão 37 3/4") | [`desenhos/7-postes/`](desenhos/7-postes/) | [`orcamento-7-postes/`](orcamento-7-postes/orcamento.md) | **$5,881** |
 | 10 postes, 100% PT (referência interna) | — | [`orcamento-pt/`](orcamento-pt/orcamento.md) | $7,101 |
 
 Materiais: núcleos dos postes (enterrados 24") em **pinus tratado (PT SYP #2, ground contact)**; tudo o que é aparente em **cedro Western Red, seco em estufa, aplainado S4S**. Na Lowe's o cedro 2x6/2x8 costuma ser bruto/green: comprar S4S em madeireira.

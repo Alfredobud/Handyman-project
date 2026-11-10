@@ -15,11 +15,11 @@ Horas do orçamento atual, a $60/h. Dia = 8 h. Paisagismo é extra e não está 
 | 8 | Tábuas de topo | 3.0 | $180 | 3.0 | $180 |
 | 9 | Fechamento das pontas | 0.5 | $30 | 0.5 | $30 |
 | 10 | Caibros do pergolado | 1.5 | $90 | 1.1 | $63 |
-| Outros | Compras/transporte e limpeza | 5.0 | $300 | 5.0 | $300 |
+| Outros | Compras/transporte e limpeza | 5.0 | $300 | 16.0 | $960 |
 | | **Subtotal oficina** | **37.5** | **$2,251** | **27.5** | **$1,648** |
-| | **Subtotal obra** | **28.1** | **$1,688** | **23.3** | **$1,397** |
-| | **TOTAL** | **65.7** | **$3,940** | **50.8** | **$3,045** |
-| | Dias de 8 h (oficina / obra) | 4.7 / 3.5 | | 3.4 / 2.9 | |
+| | **Subtotal obra** | **28.1** | **$1,688** | **34.3** | **$2,057** |
+| | **TOTAL** | **65.7** | **$3,940** | **61.8** | **$3,705** |
+| | Dias de 8 h (oficina / obra) | 4.7 / 3.5 | | 3.4 / 4.3 | |
 
 ## Como cada etapa foi calculada
 
@@ -47,5 +47,7 @@ Horas do orçamento atual, a $60/h. Dia = 8 h. Paisagismo é extra e não está 
 | 10 | Obra: assentar caibro no entalhe + parafuso trim-head oculto | peca | 10 | 7 | 0.15 |
 | Outros | Compra e transporte de material (sem frete de loja) | verba | 1 | 1 | 3 |
 | Outros | Limpeza da obra e descarte de entulho | verba | 1 | 1 | 2 |
+| Outros | Aplicação de stain/selador por pé quadrado (uma demão) | sqft | 0 | 450 | 0.02 |
+| Outros | Visita de retorno para stain após secagem da madeira | h | 0 | 2 | 1 |
 
 _Etapa 2: cura de 48 h do concreto antes das etapas 3–10 (espera, não cobrada). Taxas em `.claude/skills/orcamento-madeira/references/produtividade.csv`._

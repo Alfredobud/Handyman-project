@@ -22,7 +22,7 @@ PARAMETROS = {"taxa_hora_usd": 60, "perda": 0.05, "kerf_in": 0.125, "markup_mate
 
 VARIANTES = [
     {"pasta": "orcamento", "n": 10, "mat": "cedro", "pref": "A"},
-    {"pasta": "orcamento-7-postes", "n": 7, "mat": "cedro", "pref": "B"},
+    {"pasta": "orcamento-7-postes", "n": 7, "mat": "pt", "pref": "B"},
     {"pasta": "orcamento-pt", "n": 10, "mat": "pt", "pref": "C"},
 ]
 

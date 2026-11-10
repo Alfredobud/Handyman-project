@@ -1,5 +1,5 @@
 {
-  "projeto": "Kitchen Privacy Screen — 7 postes, cedro aparente (núcleo PT), topo pergolado (Cornelius, NC)",
+  "projeto": "Kitchen Privacy Screen — 7 postes, 100% pinus autoclavado (PT), topo pergolado (Cornelius, NC)",
   "cliente": "",
   "parametros": {
     "taxa_hora_usd": 60,
@@ -64,64 +64,64 @@
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais serrilhadas cedro 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
-      "material": "cedro_5_4x6",
+      "nome": "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
+      "material": "pt_5_4x6",
       "comprimento_in": 89.5,
       "qtd": 12,
       "tarefa": "oficina_serrilhado"
     },
     {
       "tipo": "pecas",
-      "nome": "Ripas cedro 2x4 deitado (16/vão x 6 vãos)",
-      "material": "cedro_2x4",
+      "nome": "Ripas PT 2x4 deitado (16/vão x 6 vãos)",
+      "material": "pt_2x4",
       "comprimento_in": 39.5,
       "qtd": 96,
       "tarefa": "oficina_corte"
     },
     {
       "tipo": "pecas",
-      "nome": "Faces do poste cedro 2x6 (casa + vizinho)",
-      "material": "cedro_2x6",
+      "nome": "Faces do poste PT 2x6 (casa + vizinho)",
+      "material": "pt_2x6",
       "comprimento_in": 89.5,
       "qtd": 14,
       "tarefa": "oficina_corte"
     },
     {
       "tipo": "pecas",
-      "nome": "Laterais lisas cedro 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 7",
-      "material": "cedro_5_4x6",
+      "nome": "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 7",
+      "material": "pt_5_4x6",
       "comprimento_in": 89.5,
       "qtd": 2,
       "tarefa": "oficina_ripar"
     },
     {
       "tipo": "pecas",
-      "nome": "Tábuas de topo cedro 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
-      "material": "cedro_2x8",
+      "nome": "Tábuas de topo PT 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
+      "material": "pt_2x8",
       "comprimento_in": 86.5,
       "qtd": 2,
       "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Tábuas de topo cedro 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
-      "material": "cedro_2x8",
+      "nome": "Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
+      "material": "pt_2x8",
       "comprimento_in": 95.25,
       "qtd": 4,
       "tarefa": "oficina_tabua_topo"
     },
     {
       "tipo": "pecas",
-      "nome": "Fechamento das pontas das tábuas de topo cedro 2x8",
-      "material": "cedro_2x8",
+      "nome": "Fechamento das pontas das tábuas de topo PT 2x8",
+      "material": "pt_2x8",
       "comprimento_in": 9.5,
       "qtd": 2,
       "tarefa": "oficina_fechamento"
     },
     {
       "tipo": "pecas",
-      "nome": "Caibros do pergolado cedro 2x6 com ponta tipo nuvem (1 por poste)",
-      "material": "cedro_2x6",
+      "nome": "Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste)",
+      "material": "pt_2x6",
       "comprimento_in": 36,
       "qtd": 7,
       "tarefa": "oficina_caibro_nuvem"
@@ -149,6 +149,14 @@
       "nome": "Descarte",
       "material": "descarte",
       "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Stain semi-transparente (tudo, 1 demão após secagem)",
+      "material": "stain_galao",
+      "qtd": 3,
+      "tarefa": "acabamento_stain",
+      "tarefa_qtd": 450
     }
   ],
   "detalhes_cortes": [
@@ -160,57 +168,57 @@
       ""
     ],
     [
-      "Laterais serrilhadas cedro 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
-      "cedro_5_4x6",
+      "Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
+      "pt_5_4x6",
       12,
       89.5,
       ""
     ],
     [
-      "Ripas cedro 2x4 deitado (16/vão x 6 vãos)",
-      "cedro_2x4",
+      "Ripas PT 2x4 deitado (16/vão x 6 vãos)",
+      "pt_2x4",
       96,
       39.5,
       ""
     ],
     [
-      "Faces do poste cedro 2x6 (casa + vizinho)",
-      "cedro_2x6",
+      "Faces do poste PT 2x6 (casa + vizinho)",
+      "pt_2x6",
       14,
       89.5,
       ""
     ],
     [
-      "Laterais lisas cedro 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 7",
-      "cedro_5_4x6",
+      "Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 7",
+      "pt_5_4x6",
       2,
       89.5,
       ""
     ],
     [
-      "Tábuas de topo cedro 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
-      "cedro_2x8",
+      "Tábuas de topo PT 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
+      "pt_2x8",
       2,
       86.5,
       ""
     ],
     [
-      "Tábuas de topo cedro 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
-      "cedro_2x8",
+      "Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
+      "pt_2x8",
       4,
       95.25,
       ""
     ],
     [
-      "Fechamento das pontas das tábuas de topo cedro 2x8",
-      "cedro_2x8",
+      "Fechamento das pontas das tábuas de topo PT 2x8",
+      "pt_2x8",
       2,
       9.5,
       ""
     ],
     [
-      "Caibros do pergolado cedro 2x6 com ponta tipo nuvem (1 por poste)",
-      "cedro_2x6",
+      "Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste)",
+      "pt_2x6",
       7,
       36.0,
       ""
@@ -228,63 +236,63 @@
       "obs": ""
     },
     {
-      "material": "cedro_5_4x6",
-      "descricao": "Cedro 5/4x6 S4S KD arestas arredondadas (1x5.5 real)",
-      "comprimento_ft": 12.0,
-      "qtd": 15,
-      "preco_unit": 33.98,
-      "subtotal": 509.69999999999993,
-      "fonte": "lowes.com online (nao confirmado loja Cornelius)",
+      "material": "pt_5_4x6",
+      "descricao": "PT 5/4x6 premium SYP deck board",
+      "comprimento_ft": 16.0,
+      "qtd": 8,
+      "preco_unit": 19.0,
+      "subtotal": 152.0,
+      "fonte": "referencia-media-big-box",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
-      "material": "cedro_2x4",
-      "descricao": "Cedro 2x4 S4S KD (aplainado)",
-      "comprimento_ft": 8.0,
-      "qtd": 51,
-      "preco_unit": 13.18,
-      "subtotal": 672.18,
+      "material": "pt_2x4",
+      "descricao": "PT 2x4 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 10.0,
+      "qtd": 34,
+      "preco_unit": 8.88,
+      "subtotal": 301.92,
       "fonte": "homedepot.com online (nao confirmado loja Cornelius)",
-      "obs": "inclui 3 de sobra (5%)"
+      "obs": "inclui 2 de sobra (5%)"
     },
     {
-      "material": "cedro_2x6",
-      "descricao": "Cedro 2x6 S4S KD (aplainado)",
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
       "comprimento_ft": 8.0,
       "qtd": 7,
-      "preco_unit": 33.0,
-      "subtotal": 231.0,
-      "fonte": "estimativa proporcional ao 2x8x12 da Lowe's (conferir)",
+      "preco_unit": 9.5,
+      "subtotal": 66.5,
+      "fonte": "referencia-media-big-box",
       "obs": ""
     },
     {
-      "material": "cedro_2x6",
-      "descricao": "Cedro 2x6 S4S KD (aplainado)",
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
       "comprimento_ft": 12.0,
       "qtd": 8,
-      "preco_unit": 50.0,
-      "subtotal": 400.0,
-      "fonte": "estimativa proporcional ao 2x8x12 da Lowe's (conferir)",
+      "preco_unit": 14.18,
+      "subtotal": 113.44,
+      "fonte": "homedepot.com online (nao confirmado loja Cornelius)",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
-      "material": "cedro_2x8",
-      "descricao": "Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto)",
+      "material": "pt_2x8",
+      "descricao": "PT 2x8 #2 Prime ground contact",
       "comprimento_ft": 8.0,
       "qtd": 6,
-      "preco_unit": 47.0,
-      "subtotal": 282.0,
-      "fonte": "estimativa proporcional ao 12' da Lowe's (conferir)",
+      "preco_unit": 13.0,
+      "subtotal": 78.0,
+      "fonte": "referencia-media-big-box",
       "obs": "inclui 1 de sobra (5%)"
     },
     {
-      "material": "cedro_2x8",
-      "descricao": "Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto)",
-      "comprimento_ft": 12.0,
+      "material": "pt_2x8",
+      "descricao": "PT 2x8 #2 Prime ground contact",
+      "comprimento_ft": 10.0,
       "qtd": 1,
-      "preco_unit": 70.98,
-      "subtotal": 70.98,
-      "fonte": "lowes.com online - preco incerto no resultado de busca",
+      "preco_unit": 16.0,
+      "subtotal": 16.0,
+      "fonte": "referencia-media-big-box",
       "obs": ""
     },
     {
@@ -376,6 +384,16 @@
       "subtotal": 75.0,
       "fonte": "referencia-media-big-box",
       "obs": "verba — Descarte"
+    },
+    {
+      "material": "stain_galao",
+      "descricao": "Stain/selador externo 1 gal (~250 sqft/demão)",
+      "comprimento_ft": "",
+      "qtd": 3,
+      "preco_unit": 45.0,
+      "subtotal": 135.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "galao — Stain semi-transparente (tudo, 1 demão após secagem)"
     }
   ],
   "plano_cortes": [
@@ -387,59 +405,59 @@
       "sobra_in": 2.5
     },
     {
-      "material": "cedro_5_4x6",
-      "qtd_tabuas": 12,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 89.5\" Laterais serrilhadas cedro 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
-      "sobra_in": 54.5
+      "material": "pt_5_4x6",
+      "qtd_tabuas": 6,
+      "comprimento_ft": 16.0,
+      "cortes": "2x 89.5\" Laterais serrilhadas PT 5/4x6 (1\", ripar p/ 3 1/2\", 16 encaixes)",
+      "sobra_in": 12.88
     },
     {
-      "material": "cedro_5_4x6",
-      "qtd_tabuas": 2,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 89.5\" Laterais lisas cedro 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 7",
-      "sobra_in": 54.5
+      "material": "pt_5_4x6",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 16.0,
+      "cortes": "2x 89.5\" Laterais lisas PT 5/4x6 (1\", ripar p/ 3 1/2\") — postes 1 e 7",
+      "sobra_in": 12.88
     },
     {
-      "material": "cedro_2x4",
-      "qtd_tabuas": 48,
-      "comprimento_ft": 8.0,
-      "cortes": "2x 39.5\" Ripas cedro 2x4 deitado (16/vão x 6 vãos)",
-      "sobra_in": 16.88
+      "material": "pt_2x4",
+      "qtd_tabuas": 32,
+      "comprimento_ft": 10.0,
+      "cortes": "3x 39.5\" Ripas PT 2x4 deitado (16/vão x 6 vãos)",
+      "sobra_in": 1.25
     },
     {
-      "material": "cedro_2x6",
+      "material": "pt_2x6",
       "qtd_tabuas": 7,
       "comprimento_ft": 12.0,
-      "cortes": "1x 89.5\" Faces do poste cedro 2x6 (casa + vizinho) + 1x 36\" Caibros do pergolado cedro 2x6 com ponta tipo nuvem (1 por poste)",
+      "cortes": "1x 89.5\" Faces do poste PT 2x6 (casa + vizinho) + 1x 36\" Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste)",
       "sobra_in": 18.38
     },
     {
-      "material": "cedro_2x6",
+      "material": "pt_2x6",
       "qtd_tabuas": 7,
       "comprimento_ft": 8.0,
-      "cortes": "1x 89.5\" Faces do poste cedro 2x6 (casa + vizinho)",
+      "cortes": "1x 89.5\" Faces do poste PT 2x6 (casa + vizinho)",
       "sobra_in": 6.5
     },
     {
-      "material": "cedro_2x8",
+      "material": "pt_2x8",
       "qtd_tabuas": 1,
-      "comprimento_ft": 12.0,
-      "cortes": "1x 95.25\" Tábuas de topo cedro 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5) + 2x 9.5\" Fechamento das pontas das tábuas de topo cedro 2x8",
-      "sobra_in": 29.5
+      "comprimento_ft": 10.0,
+      "cortes": "1x 95.25\" Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5) + 2x 9.5\" Fechamento das pontas das tábuas de topo PT 2x8",
+      "sobra_in": 5.5
     },
     {
-      "material": "cedro_2x8",
+      "material": "pt_2x8",
       "qtd_tabuas": 3,
       "comprimento_ft": 8.0,
-      "cortes": "1x 95.25\" Tábuas de topo cedro 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
+      "cortes": "1x 95.25\" Tábuas de topo PT 2x8 de 7'-11 1/4\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
       "sobra_in": 0.75
     },
     {
-      "material": "cedro_2x8",
+      "material": "pt_2x8",
       "qtd_tabuas": 2,
       "comprimento_ft": 8.0,
-      "cortes": "1x 86.5\" Tábuas de topo cedro 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
+      "cortes": "1x 86.5\" Tábuas de topo PT 2x8 de 7'-2 1/2\", entalhadas p/ caibros (emendas sobre postes 3, 5)",
       "sobra_in": 9.5
     }
   ],
@@ -515,6 +533,14 @@
       "unidade": "peca",
       "h_unit": 0.6,
       "horas": 4.2
+    },
+    {
+      "tarefa": "acabamento_stain",
+      "descricao": "Aplicação de stain/selador por pé quadrado (uma demão)",
+      "qtd": 450.0,
+      "unidade": "sqft",
+      "h_unit": 0.02,
+      "horas": 9.0
     },
     {
       "tarefa": "locacao",
@@ -619,23 +645,30 @@
       "unidade": "verba",
       "h_unit": 2.0,
       "horas": 2.0
+    },
+    {
+      "tarefa": "Visita de retorno para stain após secagem da madeira",
+      "qtd": 2.0,
+      "unidade": "h",
+      "h_unit": 1.0,
+      "horas": 2.0
     }
   ],
   "totais": {
-    "material_subtotal": 3174.36,
-    "material_imposto": 261.88,
+    "material_subtotal": 1871.36,
+    "material_imposto": 154.39,
     "material_markup": 0.0,
     "material_contingencia": 0.0,
-    "material_total": 3436.24,
-    "horas": 50.8,
-    "mao_de_obra_subtotal": 3045.0,
+    "material_total": 2025.75,
+    "horas": 61.8,
+    "mao_de_obra_subtotal": 3705.0,
     "mao_de_obra_contingencia": 0.0,
-    "mao_de_obra_total": 3045.0,
+    "mao_de_obra_total": 3705.0,
     "taxa_fixa": 150.0,
-    "total_geral": 6631.24
+    "total_geral": 5880.75
   },
   "premissas": [
-    "Material: cedro aparente (núcleo PT). Cedro natural, sem stain.",
+    "Material: 100% pinus autoclavado (PT). Stain em 2ª visita após a secagem.",
     "7 postes a 3'-7 1/4\" entre eixos; vão livre 3'-1 3/4\"; vão/poste = 6.86 ≈ φ⁴ (89/13 de Fibonacci); acima do limite conservador de 36\" (ainda abaixo do máximo de 48\"): ripa 2x4 deitada aguenta, mas tem mais chance de arquear do que com 10 postes.",
     "Poste composto: núcleo PT 4x4 ground contact embutido 24\" em concreto (furo Ø12\" x 30\", 6\" de brita), furos com mini skid steer + auger alugado. Revestimento acima do colar: faces 2x6 e laterais de 1\" (serrilhadas nos vãos, lisas nas pontas); todos os postes com 5 1/2\", faces alinhadas.",
     "Ripas 2x4 deitadas: 16 por vão, espaço 1 11/16\", ripa de 3'-3 1/2\"; instaladas pelo lado do vizinho.",

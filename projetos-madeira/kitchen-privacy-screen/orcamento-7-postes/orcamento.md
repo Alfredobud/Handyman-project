@@ -1,28 +1,28 @@
-# Orçamento — Kitchen Privacy Screen — 7 postes, cedro aparente (núcleo PT), topo pergolado (Cornelius, NC)
+# Orçamento — Kitchen Privacy Screen — 7 postes, 100% pinus autoclavado (PT), topo pergolado (Cornelius, NC)
 
 ## Resumo
 
 | | Valor |
 |---|---:|
-| Materiais (subtotal loja) | $3,174.36 |
-| Imposto sobre material (8.25%) | $261.88 |
-| **Total materiais** | **$3,436.24** |
-| Mão de obra (50.8 h × $60.00/h) | $3,045.00 |
-| **Total mão de obra** | **$3,045.00** |
+| Materiais (subtotal loja) | $1,871.36 |
+| Imposto sobre material (8.25%) | $154.39 |
+| **Total materiais** | **$2,025.75** |
+| Mão de obra (61.8 h × $60.00/h) | $3,705.00 |
+| **Total mão de obra** | **$3,705.00** |
 | **Taxa** | **$150.00** |
-| **TOTAL** | **$6,631.24** |
+| **TOTAL** | **$5,880.75** |
 
 ## Lista de compra
 
 | Material | Compr. | Qtd | Unit. | Subtotal | Obs. | Fonte do preço |
 |---|---:|---:|---:|---:|---|---|
 | Pinus tratado (PT SYP) 4x4 #2 ground contact UC4B | 10' | 7 | $19.00 | $133.00 |  | referencia-media-big-box |
-| Cedro 5/4x6 S4S KD arestas arredondadas (1x5.5 real) | 12' | 15 | $33.98 | $509.70 | inclui 1 de sobra (5%) | lowes.com online (nao confirmado loja Cornelius) |
-| Cedro 2x4 S4S KD (aplainado) | 8' | 51 | $13.18 | $672.18 | inclui 3 de sobra (5%) | homedepot.com online (nao confirmado loja Cornelius) |
-| Cedro 2x6 S4S KD (aplainado) | 8' | 7 | $33.00 | $231.00 |  | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
-| Cedro 2x6 S4S KD (aplainado) | 12' | 8 | $50.00 | $400.00 | inclui 1 de sobra (5%) | estimativa proporcional ao 2x8x12 da Lowe's (conferir) |
-| Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto) | 8' | 6 | $47.00 | $282.00 | inclui 1 de sobra (5%) | estimativa proporcional ao 12' da Lowe's (conferir) |
-| Cedro 2x8 S4S KD (aplainado; Lowe's tem bruto) | 12' | 1 | $70.98 | $70.98 |  | lowes.com online - preco incerto no resultado de busca |
+| PT 5/4x6 premium SYP deck board | 16' | 8 | $19.00 | $152.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
+| PT 2x4 #2 Prime ground contact (WeatherShield) | 10' | 34 | $8.88 | $301.92 | inclui 2 de sobra (5%) | homedepot.com online (nao confirmado loja Cornelius) |
+| PT 2x6 #2 Prime ground contact (WeatherShield) | 8' | 7 | $9.50 | $66.50 |  | referencia-media-big-box |
+| PT 2x6 #2 Prime ground contact (WeatherShield) | 12' | 8 | $14.18 | $113.44 | inclui 1 de sobra (5%) | homedepot.com online (nao confirmado loja Cornelius) |
+| PT 2x8 #2 Prime ground contact | 8' | 6 | $13.00 | $78.00 | inclui 1 de sobra (5%) | referencia-media-big-box |
+| PT 2x8 #2 Prime ground contact | 10' | 1 | $16.00 | $16.00 |  | referencia-media-big-box |
 | Concreto ensacado 80 lb (~0.60 cf) |  | 18 | $6.50 | $117.00 | saco — Furos Ø12" x 30" — concreto em volta do núcleo | referencia-media-big-box |
 | Brita/cascalho ensacado 0.5 cf |  | 6 | $5.50 | $33.00 | saco — Brita 6" no fundo dos furos | referencia-media-big-box |
 | Aluguel mini skid steer (tipo Dingo) com auger 12in — 1 dia |  | 1 | $350.00 | $350.00 | dia — Locação: mini skid steer com auger 12" (1 dia) | estimativa locadora local (conferir) |
@@ -32,6 +32,7 @@
 | Parafuso deck trim-head (cabeça pequena) revestido p/ PT/ACQ 2.5-3in (caixa 5 lb) |  | 3 | $42.00 | $126.00 | caixa — Parafusos de deck trim-head (cabeça pequena, oculta), revestidos p/ PT | referencia-media-big-box |
 | Cola PVA à prova d'água (Titebond III 8 oz) |  | 3 | $7.00 | $21.00 | un — Cola PU/exterior | referencia-media-big-box |
 | Descarte de entulho / caçamba pequena |  | 1 | $75.00 | $75.00 | verba — Descarte | referencia-media-big-box |
+| Stain/selador externo 1 gal (~250 sqft/demão) |  | 3 | $45.00 | $135.00 | galao — Stain semi-transparente (tudo, 1 demão após secagem) | referencia-media-big-box |
 
 ## Cálculos derivados
 
@@ -42,28 +43,28 @@
 | Peça | Material | Qtd | Compr. (in) | Obs. |
 |---|---|---:|---:|---|
 | Núcleo PT 4x4 ground contact (embutir 24", nivelar topo na obra) | pt_4x4 | 7 | 117.5 |  |
-| Laterais serrilhadas cedro 5/4x6 (1", ripar p/ 3 1/2", 16 encaixes) | cedro_5_4x6 | 12 | 89.5 |  |
-| Ripas cedro 2x4 deitado (16/vão x 6 vãos) | cedro_2x4 | 96 | 39.5 |  |
-| Faces do poste cedro 2x6 (casa + vizinho) | cedro_2x6 | 14 | 89.5 |  |
-| Laterais lisas cedro 5/4x6 (1", ripar p/ 3 1/2") — postes 1 e 7 | cedro_5_4x6 | 2 | 89.5 |  |
-| Tábuas de topo cedro 2x8 de 7'-2 1/2", entalhadas p/ caibros (emendas sobre postes 3, 5) | cedro_2x8 | 2 | 86.5 |  |
-| Tábuas de topo cedro 2x8 de 7'-11 1/4", entalhadas p/ caibros (emendas sobre postes 3, 5) | cedro_2x8 | 4 | 95.25 |  |
-| Fechamento das pontas das tábuas de topo cedro 2x8 | cedro_2x8 | 2 | 9.5 |  |
-| Caibros do pergolado cedro 2x6 com ponta tipo nuvem (1 por poste) | cedro_2x6 | 7 | 36 |  |
+| Laterais serrilhadas PT 5/4x6 (1", ripar p/ 3 1/2", 16 encaixes) | pt_5_4x6 | 12 | 89.5 |  |
+| Ripas PT 2x4 deitado (16/vão x 6 vãos) | pt_2x4 | 96 | 39.5 |  |
+| Faces do poste PT 2x6 (casa + vizinho) | pt_2x6 | 14 | 89.5 |  |
+| Laterais lisas PT 5/4x6 (1", ripar p/ 3 1/2") — postes 1 e 7 | pt_5_4x6 | 2 | 89.5 |  |
+| Tábuas de topo PT 2x8 de 7'-2 1/2", entalhadas p/ caibros (emendas sobre postes 3, 5) | pt_2x8 | 2 | 86.5 |  |
+| Tábuas de topo PT 2x8 de 7'-11 1/4", entalhadas p/ caibros (emendas sobre postes 3, 5) | pt_2x8 | 4 | 95.25 |  |
+| Fechamento das pontas das tábuas de topo PT 2x8 | pt_2x8 | 2 | 9.5 |  |
+| Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste) | pt_2x6 | 7 | 36 |  |
 
 ## Plano de corte (sem a sobra de perda)
 
 | Material | Tábuas | Compr. | Cortes por tábua | Sobra/tábua (in) |
 |---|---:|---:|---|---:|
 | pt_4x4 | 7 | 10' | 1x 117.5" Núcleo PT 4x4 ground contact (embutir 24", nivelar topo na obra) | 2.5 |
-| cedro_5_4x6 | 12 | 12' | 1x 89.5" Laterais serrilhadas cedro 5/4x6 (1", ripar p/ 3 1/2", 16 encaixes) | 54.5 |
-| cedro_5_4x6 | 2 | 12' | 1x 89.5" Laterais lisas cedro 5/4x6 (1", ripar p/ 3 1/2") — postes 1 e 7 | 54.5 |
-| cedro_2x4 | 48 | 8' | 2x 39.5" Ripas cedro 2x4 deitado (16/vão x 6 vãos) | 16.88 |
-| cedro_2x6 | 7 | 12' | 1x 89.5" Faces do poste cedro 2x6 (casa + vizinho) + 1x 36" Caibros do pergolado cedro 2x6 com ponta tipo nuvem (1 por poste) | 18.38 |
-| cedro_2x6 | 7 | 8' | 1x 89.5" Faces do poste cedro 2x6 (casa + vizinho) | 6.5 |
-| cedro_2x8 | 1 | 12' | 1x 95.25" Tábuas de topo cedro 2x8 de 7'-11 1/4", entalhadas p/ caibros (emendas sobre postes 3, 5) + 2x 9.5" Fechamento das pontas das tábuas de topo cedro 2x8 | 29.5 |
-| cedro_2x8 | 3 | 8' | 1x 95.25" Tábuas de topo cedro 2x8 de 7'-11 1/4", entalhadas p/ caibros (emendas sobre postes 3, 5) | 0.75 |
-| cedro_2x8 | 2 | 8' | 1x 86.5" Tábuas de topo cedro 2x8 de 7'-2 1/2", entalhadas p/ caibros (emendas sobre postes 3, 5) | 9.5 |
+| pt_5_4x6 | 6 | 16' | 2x 89.5" Laterais serrilhadas PT 5/4x6 (1", ripar p/ 3 1/2", 16 encaixes) | 12.88 |
+| pt_5_4x6 | 1 | 16' | 2x 89.5" Laterais lisas PT 5/4x6 (1", ripar p/ 3 1/2") — postes 1 e 7 | 12.88 |
+| pt_2x4 | 32 | 10' | 3x 39.5" Ripas PT 2x4 deitado (16/vão x 6 vãos) | 1.25 |
+| pt_2x6 | 7 | 12' | 1x 89.5" Faces do poste PT 2x6 (casa + vizinho) + 1x 36" Caibros do pergolado PT 2x6 com ponta tipo nuvem (1 por poste) | 18.38 |
+| pt_2x6 | 7 | 8' | 1x 89.5" Faces do poste PT 2x6 (casa + vizinho) | 6.5 |
+| pt_2x8 | 1 | 10' | 1x 95.25" Tábuas de topo PT 2x8 de 7'-11 1/4", entalhadas p/ caibros (emendas sobre postes 3, 5) + 2x 9.5" Fechamento das pontas das tábuas de topo PT 2x8 | 5.5 |
+| pt_2x8 | 3 | 8' | 1x 95.25" Tábuas de topo PT 2x8 de 7'-11 1/4", entalhadas p/ caibros (emendas sobre postes 3, 5) | 0.75 |
+| pt_2x8 | 2 | 8' | 1x 86.5" Tábuas de topo PT 2x8 de 7'-2 1/2", entalhadas p/ caibros (emendas sobre postes 3, 5) | 9.5 |
 
 ## Mão de obra
 
@@ -78,6 +79,7 @@
 | oficina_tabua_topo | 6 | peca | 0.6 | 3.6 |
 | oficina_fechamento | 2 | peca | 0.25 | 0.5 |
 | oficina_caibro_nuvem | 7 | peca | 0.6 | 4.2 |
+| acabamento_stain | 450 | sqft | 0.02 | 9.0 |
 | locacao | 1 | verba | 1 | 1.0 |
 | obra_escavacao_mecanizada | 7 | furo | 0.15 | 1.1 |
 | compras_transporte | 1 | verba | 3 | 3.0 |
@@ -91,11 +93,12 @@
 | obra_instalar_fechamento | 2 | peca | 0.25 | 0.5 |
 | obra_instalar_caibro | 7 | peca | 0.15 | 1.1 |
 | limpeza | 1 | verba | 2 | 2.0 |
-| **Total** | | | | **50.8** |
+| Visita de retorno para stain após secagem da madeira | 2 | h | 1 | 2.0 |
+| **Total** | | | | **61.8** |
 
 ## Premissas
 
-- Material: cedro aparente (núcleo PT). Cedro natural, sem stain.
+- Material: 100% pinus autoclavado (PT). Stain em 2ª visita após a secagem.
 - 7 postes a 3'-7 1/4" entre eixos; vão livre 3'-1 3/4"; vão/poste = 6.86 ≈ φ⁴ (89/13 de Fibonacci); acima do limite conservador de 36" (ainda abaixo do máximo de 48"): ripa 2x4 deitada aguenta, mas tem mais chance de arquear do que com 10 postes.
 - Poste composto: núcleo PT 4x4 ground contact embutido 24" em concreto (furo Ø12" x 30", 6" de brita), furos com mini skid steer + auger alugado. Revestimento acima do colar: faces 2x6 e laterais de 1" (serrilhadas nos vãos, lisas nas pontas); todos os postes com 5 1/2", faces alinhadas.
 - Ripas 2x4 deitadas: 16 por vão, espaço 1 11/16", ripa de 3'-3 1/2"; instaladas pelo lado do vizinho.

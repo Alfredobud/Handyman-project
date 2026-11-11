@@ -72,7 +72,7 @@ td,th{border:1px solid #bbb;padding:3pt 5pt;vertical-align:top} th{background:#f
 .box{background:#f7efe6;border-left:4px solid #b46a2c;padding:5pt 8pt;margin:6pt 0}"""
     WRC, PT = "Western Red Cedar, kiln-dried", "Pressure-treated Southern Yellow Pine #2"
     mat_rows = [
-        ("Post core (buried 36\")", f"{PT} 4x6, ground contact (UC4B)", "S4S", "3 1/2\" x 5 1/2\" x 12' (5 1/2\" across the fence)", n, "No (hidden)"),
+        ("Post core (buried 36\")", f"{PT} 4x6, ground contact (UC4B)", "S4S", f"3 1/2\" x 5 1/2\" x {fmt(G.comp_nucleo + 1.5)} (5 1/2\" across the fence)", n, "No (hidden)"),
         ("Post faces (house + neighbor)", f"{WRC} 2x6", "S4S", f"1 1/2\" x 5 1/2\" x {fmt(G.comp_face)}", 2 * n, "Yes"),
         ("Notched side boards", f"{WRC} 5/4x6", "S4S, eased edges", f"1\" x 5 1/2\" x {fmt(G.comp_rev)}", 2 * nb, "Yes"),
         ("Plain side boards (end posts)", f"{WRC} 5/4x6", "S4S, eased edges", f"1\" x 5 1/2\" x {fmt(G.comp_rev)}", 2, "Yes"),
@@ -80,9 +80,18 @@ td,th{border:1px solid #bbb;padding:3pt 5pt;vertical-align:top} th{background:#f
         ("Beams (both sides, notched)", f"{WRC} 2x8", "S4S", f"1 1/2\" x 7 1/4\" x {fmt(G.pecas_viga[0])}", 2 * len(G.pecas_viga), "Yes"),
         ("Pergola rafters (cloud-lift ends)", f"{WRC} 2x6", "S4S", "1 1/2\" x 5 1/2\" x 36\"", len(G.xc), "Yes"),
     ]
-    mat_html = ("<table class='mat'><tr><th>Part</th><th>Material</th><th>Surface</th><th>Actual size</th><th>Qty</th><th>Stained &amp; sealed</th></tr>"
+    mat_html = ("<table class='mat'><tr><th>Part</th><th>Material</th><th>Surface</th><th>Cut size (thick x wide x long)</th><th>Pieces</th><th>Stained &amp; sealed</th></tr>"
                 + "".join(f"<tr><td>{html.escape(a)}</td><td>{html.escape(b)}</td><td>{c}</td><td>{html.escape(d)}</td><td class='n'>{q}</td><td class='n'>{e}</td></tr>"
                           for a, b, c, d, q, e in mat_rows) + "</table>")
+    EN = {"pt_4x6": ("PT pine 4x6 #2, ground contact (UC4B)", "Post cores"),
+          "cedro_5_4x6": ("Cedar 5/4x6 S4S", "Notched + plain side boards"),
+          "cedro_2x6": ("Cedar 2x6 S4S", "Post faces + pergola rafters"),
+          "cedro_2x2": ("Cedar 2x2 S4S", "Slats (2 per board)"),
+          "cedro_2x8": ("Cedar 2x8 S4S", "Beams")}
+    buy = [c for c in A["r"]["compra"] if c["comprimento_ft"] and c["material"] in EN]
+    buy_html = ("<table class='mat'><tr><th>Lumber</th><th class='n'>Stock length</th><th class='n'>Boards</th><th>Used for</th></tr>"
+                + "".join(f"<tr><td>{EN[c['material']][0]}</td><td class='n'>{int(float(c['comprimento_ft']))}'</td><td class='n'>{c['qtd']}</td>"
+                          f"<td>{EN[c['material']][1]}{' (includes 5% spare)' if 'sobra' in c['obs'] else ''}</td></tr>" for c in buy) + "</table>")
     passos = ["Holes (machine auger), Ø16\" x 42\"", "Posts: treated-pine 4x6 cores, 36\" deep in concrete", "Level post tops",
               "Shop: pre-cut, ease edges and stain/seal all cedar on 4 sides",
               "Notched side boards (pre-cut), from the neighbor side", "Slats (pre-cut)", "Front closure: face boards, ending under the beams",
@@ -120,9 +129,12 @@ td,th{border:1px solid #bbb;padding:3pt 5pt;vertical-align:top} th{background:#f
 <tr><th>Maintenance</th><td>Clean and re-coat every 2–3 years, no stripping or sanding needed (same product and color).</td></tr>
 </table>
 <h2>Materials</h2>
+<h3 style="font-size:10.5pt;margin:6pt 0 3pt">Cut list</h3>
 {mat_html}
+<div style="page-break-inside:avoid"><h3 style="font-size:10.5pt;margin:8pt 0 3pt">Lumber to buy (stock lengths)</h3>
+{buy_html}
 <p class="s">All lumber is S4S (planed on 4 sides) so faces, side boards and notches line up; no rough-sawn lumber and no composite.<br>
-<b>Material prices may vary with supplier stock and availability at the time of purchase</b>; final material cost is confirmed when the order is placed.</p>
+<b>Material prices may vary with supplier stock and availability at the time of purchase</b>; final material cost is confirmed when the order is placed.</p></div>
 <h2>Optional extra (not included)</h2>
 <p><b>Landscaping strip</b> along the neighbor side (22 ft): landscape fabric, edging and river rock border: <b>{usd(extra)}</b> (materials + labor).</p>
 <h2>Installation sequence</h2>

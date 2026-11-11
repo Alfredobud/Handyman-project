@@ -1,0 +1,611 @@
+{
+  "projeto": "Kitchen Privacy Screen — 7 postes, 100% pinus tratado, núcleo 4x6",
+  "cliente": "Bill",
+  "parametros": {
+    "taxa_hora_usd": 60,
+    "perda": 0.05,
+    "kerf_in": 0.125,
+    "markup_material": 0.0,
+    "imposto_material": 0.0825,
+    "contingencia": 0.0,
+    "comprimento_max_ft": null,
+    "taxa_fixa_usd": 150,
+    "taxa_fixa_descricao": "Taxa"
+  },
+  "componentes": [
+    {
+      "tipo": "sapata",
+      "nome": "Furos Ø16\" x 42\" — concreto",
+      "qtd": 7,
+      "diametro_in": 16,
+      "profundidade_in": 35,
+      "desconto_poste_in2": 19.25,
+      "material": "concreto_80lb",
+      "tarefa": "obra_assentar_poste",
+      "_calc": {
+        "volume_cf": 28.36,
+        "sacos": 48
+      }
+    },
+    {
+      "tipo": "item",
+      "nome": "Brita",
+      "material": "brita_saco",
+      "qtd": 10
+    },
+    {
+      "tipo": "item",
+      "nome": "Locação mini skid steer + auger (1 dia)",
+      "material": "aluguel_mini_skid_auger",
+      "qtd": 1,
+      "tarefa": "obra_transporte_equipamento",
+      "tarefa_qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Frete do equipamento",
+      "material": "frete_equipamento",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Preservativo nos cortes do PT",
+      "material": "preservativo_corte",
+      "qtd": 1
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Núcleo 4x6 PT ground contact (embutir 36\")",
+      "material": "pt_4x6",
+      "comprimento_in": 129.5,
+      "qtd": 7,
+      "perda": 0,
+      "tarefa": "obra_nivelar_topo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Laterais serrilhadas pt 5_4x6",
+      "material": "pt_5_4x6",
+      "comprimento_in": 89.5,
+      "qtd": 12,
+      "tarefa": "oficina_serrilhado"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Laterais lisas pt 5_4x6 (pontas)",
+      "material": "pt_5_4x6",
+      "comprimento_in": 89.5,
+      "qtd": 2
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Faces pt 2x6",
+      "material": "pt_2x6",
+      "comprimento_in": 82.25,
+      "qtd": 14,
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Ripas pt 2x2 (24/vão)",
+      "material": "pt_2x2",
+      "comprimento_in": 39.5,
+      "qtd": 144,
+      "tarefa": "oficina_corte"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "material": "pt_2x8",
+      "comprimento_in": 138.5,
+      "qtd": 4,
+      "tarefa": "oficina_tabua_topo"
+    },
+    {
+      "tipo": "pecas",
+      "nome": "Caibros pt 2x6 ponta nuvem (13)",
+      "material": "pt_2x6",
+      "comprimento_in": 36,
+      "qtd": 13,
+      "tarefa": "oficina_caibro_nuvem"
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos passantes 1/2\" (4 por poste)",
+      "material": "parafuso_passante",
+      "qtd": 28
+    },
+    {
+      "tipo": "item",
+      "nome": "Parafusos deck trim-head",
+      "material": "parafuso_deck_trim",
+      "qtd": 4
+    },
+    {
+      "tipo": "item",
+      "nome": "Cola PU/exterior",
+      "material": "cola_externa",
+      "qtd": 3
+    },
+    {
+      "tipo": "item",
+      "nome": "Descarte",
+      "material": "descarte",
+      "qtd": 1
+    },
+    {
+      "tipo": "item",
+      "nome": "Stain (tudo, 1 demão após secagem)",
+      "material": "stain_galao",
+      "qtd": 3,
+      "tarefa": "acabamento_stain",
+      "tarefa_qtd": 450
+    }
+  ],
+  "detalhes_cortes": [
+    [
+      "Núcleo 4x6 PT ground contact (embutir 36\")",
+      "pt_4x6",
+      7,
+      129.5,
+      ""
+    ],
+    [
+      "Laterais serrilhadas pt 5_4x6",
+      "pt_5_4x6",
+      12,
+      89.5,
+      ""
+    ],
+    [
+      "Laterais lisas pt 5_4x6 (pontas)",
+      "pt_5_4x6",
+      2,
+      89.5,
+      ""
+    ],
+    [
+      "Faces pt 2x6",
+      "pt_2x6",
+      14,
+      82.25,
+      ""
+    ],
+    [
+      "Ripas pt 2x2 (24/vão)",
+      "pt_2x2",
+      144,
+      39.5,
+      ""
+    ],
+    [
+      "Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "pt_2x8",
+      4,
+      138.5,
+      ""
+    ],
+    [
+      "Caibros pt 2x6 ponta nuvem (13)",
+      "pt_2x6",
+      13,
+      36.0,
+      ""
+    ]
+  ],
+  "compra": [
+    {
+      "material": "pt_4x6",
+      "descricao": "Pinus tratado (PT SYP) 4x6 #2 ground contact UC4B",
+      "comprimento_ft": 12.0,
+      "qtd": 7,
+      "preco_unit": 34.0,
+      "subtotal": 238.0,
+      "fonte": "estimativa (conferir)",
+      "obs": ""
+    },
+    {
+      "material": "pt_5_4x6",
+      "descricao": "PT 5/4x6 premium SYP deck board",
+      "comprimento_ft": 16.0,
+      "qtd": 8,
+      "preco_unit": 19.0,
+      "subtotal": 152.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 8.0,
+      "qtd": 1,
+      "preco_unit": 9.5,
+      "subtotal": 9.5,
+      "fonte": "referencia-media-big-box",
+      "obs": ""
+    },
+    {
+      "material": "pt_2x6",
+      "descricao": "PT 2x6 #2 Prime ground contact (WeatherShield)",
+      "comprimento_ft": 10.0,
+      "qtd": 14,
+      "preco_unit": 12.5,
+      "subtotal": 175.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x2",
+      "descricao": "Pinus tratado 2x2 S4S",
+      "comprimento_ft": 8.0,
+      "qtd": 76,
+      "preco_unit": 5.0,
+      "subtotal": 380.0,
+      "fonte": "estimativa (conferir)",
+      "obs": "inclui 4 de sobra (5%)"
+    },
+    {
+      "material": "pt_2x8",
+      "descricao": "PT 2x8 #2 Prime ground contact",
+      "comprimento_ft": 12.0,
+      "qtd": 5,
+      "preco_unit": 19.5,
+      "subtotal": 97.5,
+      "fonte": "referencia-media-big-box (sem preço online local)",
+      "obs": "inclui 1 de sobra (5%)"
+    },
+    {
+      "material": "concreto_80lb",
+      "descricao": "Concreto ensacado 80 lb (~0.60 cf)",
+      "comprimento_ft": "",
+      "qtd": 48,
+      "preco_unit": 6.5,
+      "subtotal": 312.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — Furos Ø16\" x 42\" — concreto"
+    },
+    {
+      "material": "brita_saco",
+      "descricao": "Brita/cascalho ensacado 0.5 cf",
+      "comprimento_ft": "",
+      "qtd": 10,
+      "preco_unit": 5.5,
+      "subtotal": 55.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "saco — Brita"
+    },
+    {
+      "material": "aluguel_mini_skid_auger",
+      "descricao": "Aluguel mini skid steer (tipo Dingo) com auger 12in — 1 dia",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 350.0,
+      "subtotal": 350.0,
+      "fonte": "estimativa locadora local (conferir)",
+      "obs": "dia — Locação mini skid steer + auger (1 dia)"
+    },
+    {
+      "material": "frete_equipamento",
+      "descricao": "Entrega/retirada do equipamento alugado",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 100.0,
+      "subtotal": 100.0,
+      "fonte": "estimativa locadora local (conferir)",
+      "obs": "verba — Frete do equipamento"
+    },
+    {
+      "material": "preservativo_corte",
+      "descricao": "Preservativo para corte de PT (copper naphthenate) 1 qt",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 22.0,
+      "subtotal": 22.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "un — Preservativo nos cortes do PT"
+    },
+    {
+      "material": "parafuso_passante",
+      "descricao": "Parafuso passante galv. 1/2x8 + porca + arruelas",
+      "comprimento_ft": "",
+      "qtd": 28,
+      "preco_unit": 4.5,
+      "subtotal": 126.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "jogo — Parafusos passantes 1/2\" (4 por poste)"
+    },
+    {
+      "material": "parafuso_deck_trim",
+      "descricao": "Parafuso deck trim-head (cabeça pequena) revestido p/ PT/ACQ 2.5-3in (caixa 5 lb)",
+      "comprimento_ft": "",
+      "qtd": 4,
+      "preco_unit": 42.0,
+      "subtotal": 168.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "caixa — Parafusos deck trim-head"
+    },
+    {
+      "material": "cola_externa",
+      "descricao": "Cola PVA à prova d'água (Titebond III 8 oz)",
+      "comprimento_ft": "",
+      "qtd": 3,
+      "preco_unit": 7.0,
+      "subtotal": 21.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "un — Cola PU/exterior"
+    },
+    {
+      "material": "descarte",
+      "descricao": "Descarte de entulho / caçamba pequena",
+      "comprimento_ft": "",
+      "qtd": 1,
+      "preco_unit": 75.0,
+      "subtotal": 75.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "verba — Descarte"
+    },
+    {
+      "material": "stain_galao",
+      "descricao": "Stain/selador externo 1 gal (~250 sqft/demão)",
+      "comprimento_ft": "",
+      "qtd": 3,
+      "preco_unit": 45.0,
+      "subtotal": 135.0,
+      "fonte": "referencia-media-big-box",
+      "obs": "galao — Stain (tudo, 1 demão após secagem)"
+    }
+  ],
+  "plano_cortes": [
+    {
+      "material": "pt_4x6",
+      "qtd_tabuas": 7,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 129.5\" Núcleo 4x6 PT ground contact (embutir 36\")",
+      "sobra_in": 14.5
+    },
+    {
+      "material": "pt_5_4x6",
+      "qtd_tabuas": 6,
+      "comprimento_ft": 16.0,
+      "cortes": "2x 89.5\" Laterais serrilhadas pt 5_4x6",
+      "sobra_in": 12.88
+    },
+    {
+      "material": "pt_5_4x6",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 16.0,
+      "cortes": "2x 89.5\" Laterais lisas pt 5_4x6 (pontas)",
+      "sobra_in": 12.88
+    },
+    {
+      "material": "pt_2x6",
+      "qtd_tabuas": 13,
+      "comprimento_ft": 10.0,
+      "cortes": "1x 82.25\" Faces pt 2x6 + 1x 36\" Caibros pt 2x6 ponta nuvem (13)",
+      "sobra_in": 1.62
+    },
+    {
+      "material": "pt_2x6",
+      "qtd_tabuas": 1,
+      "comprimento_ft": 8.0,
+      "cortes": "1x 82.25\" Faces pt 2x6",
+      "sobra_in": 13.75
+    },
+    {
+      "material": "pt_2x2",
+      "qtd_tabuas": 72,
+      "comprimento_ft": 8.0,
+      "cortes": "2x 39.5\" Ripas pt 2x2 (24/vão)",
+      "sobra_in": 16.88
+    },
+    {
+      "material": "pt_2x8",
+      "qtd_tabuas": 4,
+      "comprimento_ft": 12.0,
+      "cortes": "1x 138.5\" Vigas pt 2x8 11'-6 1/2\" (entalhadas, parafusadas no núcleo)",
+      "sobra_in": 5.5
+    }
+  ],
+  "mao_de_obra": [
+    {
+      "tarefa": "obra_assentar_poste",
+      "descricao": "Obra: brita no fundo + prumo/escora + concreto + colar com caimento",
+      "qtd": 7.0,
+      "unidade": "poste",
+      "h_unit": 0.45,
+      "horas": 3.15
+    },
+    {
+      "tarefa": "obra_transporte_equipamento",
+      "descricao": "Obra: retirar e devolver o equipamento de escavação alugado",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 1.0,
+      "horas": 1.0
+    },
+    {
+      "tarefa": "obra_nivelar_topo",
+      "descricao": "Obra: marcar com laser e cortar o topo do núcleo",
+      "qtd": 7.0,
+      "unidade": "poste",
+      "h_unit": 0.15,
+      "horas": 1.05
+    },
+    {
+      "tarefa": "oficina_serrilhado",
+      "descricao": "Oficina: ripar 5/4 p/ 3 1/2 + marcar com gabarito + cortar os encaixes (dado/tupia ou serra + formão)",
+      "qtd": 12.0,
+      "unidade": "peca",
+      "h_unit": 0.6,
+      "horas": 7.199999999999999
+    },
+    {
+      "tarefa": "oficina_corte",
+      "descricao": "Oficina: corte no comprimento com batente (ripas;  faces)",
+      "qtd": 158.0,
+      "unidade": "peca",
+      "h_unit": 0.04,
+      "horas": 6.32
+    },
+    {
+      "tarefa": "oficina_tabua_topo",
+      "descricao": "Oficina: tábua de topo: corte;  entalhes dos caibros e furos dos parafusos",
+      "qtd": 4.0,
+      "unidade": "peca",
+      "h_unit": 0.6,
+      "horas": 2.4
+    },
+    {
+      "tarefa": "oficina_caibro_nuvem",
+      "descricao": "Oficina: caibro com ponta tipo nuvem (gabarito + tico-tico + lixa)",
+      "qtd": 13.0,
+      "unidade": "peca",
+      "h_unit": 0.6,
+      "horas": 7.8
+    },
+    {
+      "tarefa": "acabamento_stain",
+      "descricao": "Aplicação de stain/selador por pé quadrado (uma demão)",
+      "qtd": 450.0,
+      "unidade": "sqft",
+      "h_unit": 0.02,
+      "horas": 9.0
+    },
+    {
+      "tarefa": "locacao",
+      "descricao": "Locação/marcação da linha e conferência de divisa e utilidades",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 1.0,
+      "horas": 1.0
+    },
+    {
+      "tarefa": "obra_escavacao_mecanizada",
+      "descricao": "Obra: furo com mini skid steer/perfuratriz hidráulica alugada (posicionar + furar + limpar)",
+      "qtd": 7.0,
+      "unidade": "furo",
+      "h_unit": 0.15,
+      "horas": 1.05
+    },
+    {
+      "tarefa": "compras_transporte",
+      "descricao": "Compra e transporte de material (sem frete de loja)",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 3.0,
+      "horas": 3.0
+    },
+    {
+      "tarefa": "oficina_gabaritos",
+      "descricao": "Oficina: gabaritos do serrilhado e do caibro",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "oficina_acabamento_lixa",
+      "descricao": "Oficina: quebrar arestas/lixar peças visíveis antes de levar à obra",
+      "qtd": 189.0,
+      "unidade": "peca",
+      "h_unit": 0.03,
+      "horas": 5.67
+    },
+    {
+      "tarefa": "obra_instalar_serrilhado",
+      "descricao": "Obra: fixar lateral serrilhada pré-cortada no núcleo",
+      "qtd": 12.0,
+      "unidade": "peca",
+      "h_unit": 0.08,
+      "horas": 0.96
+    },
+    {
+      "tarefa": "obra_instalar_ripa",
+      "descricao": "Obra: encaixar ripa pré-cortada + 1 parafuso por ponta",
+      "qtd": 144.0,
+      "unidade": "peca",
+      "h_unit": 0.025,
+      "horas": 3.6
+    },
+    {
+      "tarefa": "obra_instalar_face",
+      "descricao": "Obra: fixar face 2x6 pré-cortada (cola + parafuso trim-head)",
+      "qtd": 14.0,
+      "unidade": "peca",
+      "h_unit": 0.08,
+      "horas": 1.12
+    },
+    {
+      "tarefa": "obra_instalar_lateral",
+      "descricao": "Obra: fechamento lateral dos postes de ponta, incluindo os cortes de ajuste no topo (1 h por ponta)",
+      "qtd": 2.0,
+      "unidade": "peca",
+      "h_unit": 1.0,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "obra_instalar_tabua_topo",
+      "descricao": "Obra: içar tábua de topo entalhada + furar + parafuso passante",
+      "qtd": 4.0,
+      "unidade": "peca",
+      "h_unit": 0.5,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "obra_instalar_caibro",
+      "descricao": "Obra: assentar caibro no entalhe + parafuso trim-head oculto",
+      "qtd": 13.0,
+      "unidade": "peca",
+      "h_unit": 0.15,
+      "horas": 1.95
+    },
+    {
+      "tarefa": "limpeza",
+      "descricao": "Limpeza da obra e descarte de entulho",
+      "qtd": 1.0,
+      "unidade": "verba",
+      "h_unit": 2.0,
+      "horas": 2.0
+    },
+    {
+      "tarefa": "Retorno para stain após secagem",
+      "qtd": 2.0,
+      "unidade": "h",
+      "h_unit": 1.0,
+      "horas": 2.0
+    }
+  ],
+  "totais": {
+    "material_subtotal": 2416.0,
+    "material_imposto": 199.32,
+    "material_markup": 0.0,
+    "material_contingencia": 0.0,
+    "material_total": 2615.32,
+    "horas": 66.3,
+    "mao_de_obra_subtotal": 3976.2,
+    "mao_de_obra_contingencia": 0.0,
+    "mao_de_obra_total": 3976.2,
+    "taxa_fixa": 150.0,
+    "total_geral": 6741.52
+  },
+  "premissas": [
+    "Comparativo de núcleo 4x6; vão livre 3'-1 3/4\"; poste 5 1/2\"."
+  ],
+  "perguntas": [],
+  "avisos": [],
+  "fontes_preco": [
+    "estimativa (conferir) (2026-11)",
+    "estimativa (sem preço online local; conferir) (2026-11)",
+    "estimativa locadora local (conferir) (2026-11)",
+    "estimativa proporcional ao 10' da Lowe's (sem preço online) (2026-11)",
+    "estimativa proporcional ao 12' da Lowe's (conferir) (2026-11)",
+    "estimativa proporcional ao 2x8x12 da Lowe's (conferir) (2026-11)",
+    "homedepot.com online $199 (2026-11; conferir loja Cornelius) (2026-11)",
+    "homedepot.com online (S1S2E; nao confirmado) (2026-11)",
+    "homedepot.com online (nao confirmado loja Cornelius) (2026-11)",
+    "lowes.com online (nao confirmado loja Cornelius) (2026-11)",
+    "referencia-media-big-box (2026-11)",
+    "referencia-media-big-box (sem preço online local) (2026-11)",
+    "walmart.com online $42.57-43.99 (2026-11; conferir) (2026-11)"
+  ]
+}

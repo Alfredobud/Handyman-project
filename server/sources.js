@@ -3,6 +3,7 @@
 // Se uma fonte falhar, o último resultado bom continua sendo servido.
 const { locate, flag, jitter } = require('./geo');
 
+const BROWSER = typeof window !== 'undefined';   // este arquivo também roda dentro do HTML ao vivo
 const UA = process.env.HTTP_USER_AGENT || 'atalaia-threat-map/1.0';
 
 async function get(url, { json = true, timeout = 25000, tries = 2 } = {}) {
@@ -10,7 +11,8 @@ async function get(url, { json = true, timeout = 25000, tries = 2 } = {}) {
   for (let i = 0; i < tries; i++) {
     try {
       const r = await fetch(url, {
-        headers: { 'User-Agent': UA, Accept: json ? 'application/json, application/geo+json' : '*/*' },
+        // no navegador não mandamos cabeçalhos extras, para a requisição continuar "simples" (sem preflight de CORS)
+        headers: BROWSER ? {} : { 'User-Agent': UA, Accept: json ? 'application/json, application/geo+json' : '*/*' },
         signal: AbortSignal.timeout(timeout),
       });
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -156,12 +158,15 @@ async function outbreaks() {
 
 // ---------- Notícias (RSS) ----------
 const FEEDS = [
+  // o terceiro campo marca os feeds que liberam leitura direta pelo navegador (CORS)
   ['BBC', 'https://feeds.bbci.co.uk/news/world/rss.xml'],
   ['Al Jazeera', 'https://www.aljazeera.com/xml/rss/all.xml'],
   ['The Guardian', 'https://www.theguardian.com/world/rss'],
-  ['DW', 'https://rss.dw.com/rdf/rss-en-world'],
+  ['DW', 'https://rss.dw.com/rdf/rss-en-world', true],
+  ['DW', 'https://rss.dw.com/rdf/rss-en-all', true],
+  ['The New York Times', 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml', true],
   ['France 24', 'https://www.france24.com/en/rss'],
-].concat((process.env.EXTRA_FEEDS || '').split(',').filter(Boolean).map((u) => [new URL(u).hostname.replace(/^www\./, ''), u]));
+].filter((f) => !BROWSER || f[2]).concat((process.env.EXTRA_FEEDS || '').split(',').filter(Boolean).map((u) => [new URL(u).hostname.replace(/^www\./, ''), u]));
 
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
 const decode = (s) => String(s || '')

@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { collectors } = require('./sources');
+const { buildMap, threatLevel, headlinesOf } = require('./core');
 const { db, save, sha, newCode, checkCode } = require('./store');
 
 const PORT = +(process.env.PORT || 8080);
@@ -41,50 +42,6 @@ for (const name of Object.keys(collectors)) {
 const SAMPLE = { quakes: 8, hazards: 6, events: 12, aircraft: 5, attacks: 3, unrest: 3, outbreaks: 1, cyber: 1, infra: 2, news: 8 };
 const HEADLINES_FREE = 6;
 
-function threatLevel(m, space, weather) {
-  let score = 0;
-  const reasons = [];
-  const add = (pts, why) => { score += pts; reasons.push(why); };
-  const att24 = m.attacks.filter((a) => Date.now() - new Date(a.at) < 864e5).length;
-  if (att24 >= 3) add(Math.min(4, 1 + Math.floor(att24 / 6)), `${att24} relatos de ataques/conflito em 24h`);
-  const red = m.hazards.filter((h) => h.level === 'Red').length;
-  const orange = m.hazards.filter((h) => h.level === 'Orange').length;
-  if (red) add(Math.min(3, red + 1), `${red} desastre(s) em alerta vermelho (GDACS)`);
-  else if (orange >= 3) add(1, `${orange} desastres em alerta laranja (GDACS)`);
-  const big = m.quakes.filter((q) => q.mag >= 6.5);
-  if (big.length) add(big.some((q) => q.mag >= 7.5) ? 2 : 1, `terremoto M${Math.max(...big.map((q) => q.mag)).toFixed(1)} nas últimas 24h`);
-  if (space && space.kp_max_24h >= 7) add(2, `tempestade geomagnética forte (Kp ${space.kp_max_24h})`);
-  else if (space && space.kp_max_24h >= 5) add(1, `tempestade geomagnética (Kp ${space.kp_max_24h})`);
-  if (m.outbreaks.length >= 4) add(1, `${m.outbreaks.length} surtos reportados pela OMS`);
-  if (m.unrest.length >= 6) add(1, `${m.unrest.length} focos de protesto/instabilidade`);
-  const recon = m.aircraft.filter((a) => a.role === 'recon' || a.role === 'bomber').length;
-  if (recon >= 12) add(1, `${recon} aeronaves estratégicas no ar`);
-  if (weather && weather.extreme >= 5) add(1, `${weather.extreme} alertas climáticos extremos nos EUA`);
-  const level = score >= 9 ? 5 : score >= 6 ? 4 : score >= 3 ? 3 : score >= 1 ? 2 : 1;
-  return { level, label: ['', 'BAIXO', 'MODERADO', 'ELEVADO', 'ALTO', 'SEVERO'][level], score, reasons: reasons.length ? reasons : ['Nenhum sinal fora do normal nas fontes monitoradas'] };
-}
-
-function buildMap() {
-  const news = state.news || [];
-  const located = news.filter((n) => n.country);
-  const pick = (cat) => located.filter((n) => n.cat === cat).map((n) => ({
-    id: sha(n.link).slice(0, 12), title: n.title, country: n.country, flag: n.flag, at: n.at, link: n.link, source: n.source, lat: n.lat, lng: n.lng,
-  }));
-  // notícias gerais: um marcador por país, com a lista de manchetes
-  const byCountry = {};
-  for (const n of located) {
-    const g = (byCountry[n.iso] ||= { id: n.iso, country: n.country, flag: n.flag, lat: n.clat, lng: n.clng, n: 0, articles: [] });
-    g.n++;
-    if (g.articles.length < 8) g.articles.push({ title: n.title, link: n.link, source: n.source, at: n.at, cat: n.cat });
-  }
-  return {
-    quakes: state.quakes || [], hazards: state.hazards || [], events: state.events || [], aircraft: state.aircraft || [],
-    attacks: pick('attack'), unrest: pick('unrest'), cyber: pick('cyber'), infra: pick('infra'),
-    outbreaks: state.outbreaks || [],
-    news: Object.values(byCountry).sort((a, b) => b.n - a.n),
-  };
-}
-
 const OFFER = {
   monthly_price: process.env.PRICE_MONTHLY || '', monthly_link: process.env.CHECKOUT_MONTHLY || '',
   yearly_price: process.env.PRICE_YEARLY || '', yearly_link: process.env.CHECKOUT_YEARLY || '',
@@ -95,9 +52,9 @@ const OFFER = {
 let feedCache = {};
 function buildFeed(tier) {
   if (feedCache[tier]) return feedCache[tier];
-  const full = buildMap();
+  const full = buildMap(state);
   const threat = threatLevel(full, state.space, state.weather);
-  const headlines = (state.news || []).map((n) => ({ title: n.title, link: n.link, source: n.source, at: n.at, cat: n.cat, country: n.country || '', flag: n.flag || '' }));
+  const headlines = headlinesOf(state);
   const counts = Object.fromEntries(Object.entries(full).map(([k, v]) => [k, v.length]));
   const base = {
     generated_at: new Date().toISOString(), threat, counts, space: state.space || null,

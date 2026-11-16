@@ -48,6 +48,8 @@ const LAYERS = [
 const LAYER = Object.fromEntries(LAYERS.map((l) => [l.key, l]));
 
 const SNAPSHOT = window.__SNAPSHOT__ || null;   // presente só no arquivo único (dist/atalaia-demo.html)
+const LIVE = window.__LIVE__ || null;           // presente só no arquivo único ao vivo (dist/atalaia-ao-vivo.html)
+const LOCAL = !!(SNAPSHOT || LIVE);             // sem servidor: não há login, chat nem conta
 let feed = null;
 let mode = 'none';           // 'none' | 'near' | 'plan'
 let visible = null;          // Set com as camadas ligadas
@@ -125,7 +127,7 @@ function drawMap() {
 }
 
 function drawChips() {
-  $('#chips').innerHTML = LAYERS.map((l) => {
+  $('#chips').innerHTML = LAYERS.filter((l) => !(feed.sources[l.key] || {}).unavailable).map((l) => {
     const n = (feed.map[l.key] || []).length, locked = feed.locked[l.key] || 0;
     return `<button class="chip ${visible.has(l.key) ? '' : 'off'}" data-k="${l.key}" style="--c:${l.color}" aria-pressed="${visible.has(l.key)}"><i></i>${esc(l.label)} <span>${fmt(n)}</span>${locked ? `<span class="lock" title="Disponível com acesso completo">+${fmt(locked)} 🔒</span>` : ''}</button>`;
   }).join('');
@@ -153,7 +155,7 @@ function drawThreat() {
   $('#lvlNum').textContent = t.level;
   $('#lvlLabel').textContent = t.label;
   $('#lvlReasons').innerHTML = t.reasons.map((r) => `<li>${esc(r)}</li>`).join('');
-  $('#updated').textContent = 'Atualizado ' + new Date(feed.generated_at).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+  $('#updated').textContent = (LIVE ? '● Ao vivo · atualizado ' : 'Atualizado ') + new Date(feed.generated_at).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
 }
 function drawHeadlines() {
   const all = feed.headlines || [], h = showAll ? all : all.slice(0, 15);
@@ -183,7 +185,7 @@ function drawQuakes() {
 }
 function drawSources() {
   const names = { quakes: 'USGS', hazards: 'GDACS', events: 'NASA EONET', aircraft: 'ADS-B', space: 'NOAA SWPC', weather: 'NWS', outbreaks: 'OMS', news: 'Notícias' };
-  $('#sources').innerHTML = Object.entries(feed.sources).map(([k, s]) => `<span class="src ${s.ok ? 'ok' : 'bad'}" title="${s.ok ? 'Atualizado ' + ago(s.at) : 'Falhou ' + ago(s.at) + (s.stale ? ' · mostrando o último dado bom' : '')}">${esc(names[k] || k)}</span>`).join('');
+  $('#sources').innerHTML = Object.entries(feed.sources).map(([k, s]) => `<span class="src ${s.ok ? 'ok' : s.unavailable ? 'na' : 'bad'}" title="${s.ok ? 'Atualizado ' + ago(s.at) : s.unavailable ? esc(s.error) : 'Falhou ' + ago(s.at) + (s.stale ? ' · mostrando o último dado bom' : '')}">${esc(names[k] || k)}</span>`).join('');
 }
 function drawOffer() {
   const o = feed.offer;
@@ -297,7 +299,7 @@ $('#wpClear').addEventListener('click', () => { if (wps.length && confirm('Apaga
 // ------------------------------------------------------------------ chat
 const chat = { last: 0, timer: null, name: null };
 async function post(url, body) {
-  if (SNAPSHOT) return { ok: false, error: 'Indisponível no arquivo de demonstração.' };
+  if (LOCAL) return { ok: false, error: 'Indisponível sem o servidor.' };
   try {
     const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body || {}) });
     return await r.json();
@@ -321,7 +323,7 @@ async function chatPoll() {
   } catch (e) {}
 }
 function chatSync() {
-  const on = feed && feed.unlocked && !SNAPSHOT;
+  const on = feed && feed.unlocked && !LOCAL;
   if (on && !chat.timer) { chatPoll(); chat.timer = setInterval(() => { if (!document.hidden) chatPoll(); }, 5000); }
   if (!on && chat.timer) { clearInterval(chat.timer); chat.timer = null; chat.last = 0; $('#chatLog').innerHTML = ''; }
 }
@@ -362,7 +364,7 @@ $('#logout').addEventListener('click', async () => {
 
 // ------------------------------------------------------------------ ciclo
 async function load() {
-  let j = SNAPSHOT;
+  let j = LIVE ? LIVE.feed() : SNAPSHOT;
   if (!j) { try { j = await (await fetch('/feed', { cache: 'no-store' })).json(); } catch (e) { return; } }
   feed = j;
   document.body.classList.toggle('unlocked', !!j.unlocked);
@@ -375,9 +377,17 @@ async function load() {
   drawThreat(); drawChips(); drawMap(); drawHeadlines(); drawSpace(); drawWeather(); drawQuakes(); drawSources(); drawOffer(); drawTrial(); drawNear(); chatSync();
 }
 load();
-if (SNAPSHOT) {
-  // arquivo único: dados congelados no momento em que foi gerado, sem servidor
+if (LOCAL) {
   $('#chat').hidden = true; $('#logout').hidden = true;
+  document.querySelectorAll('.top nav a[href="#chat"]').forEach((a) => { a.hidden = true; });
+}
+if (LIVE) {
+  // arquivo único ao vivo: os coletores rodam nesta página e redesenham a tela a cada fonte que chega
+  let t = null;
+  LIVE.onUpdate = () => { clearTimeout(t); t = setTimeout(load, 300); };
+  setInterval(load, 30000);   // mantém os "há X min" em dia
+} else if (SNAPSHOT) {
+  // arquivo único de demonstração: dados congelados no momento em que foi gerado
   const bar = $('#trialBar');
   bar.hidden = false;
   bar.textContent = 'Demonstração offline: dados congelados em ' + new Date(SNAPSHOT.generated_at).toLocaleString('pt-BR') + '. A versão ao vivo roda no servidor.';

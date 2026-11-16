@@ -43,7 +43,7 @@ chegam ao navegador de quem não entrou.
 
 USGS (terremotos), GDACS (desastres), NASA EONET (incêndios, vulcões, tempestades), adsb.fi e
 adsb.lol (aeronaves militares), NOAA SWPC (índice Kp), NWS (alertas severos nos EUA), OMS (surtos)
-e RSS de BBC, Al Jazeera, The Guardian, DW e France 24. Adicione feeds com `EXTRA_FEEDS`.
+e RSS de BBC, Al Jazeera, The Guardian, DW, The New York Times e France 24. Adicione feeds com `EXTRA_FEEDS`.
 
 Antes de uso comercial, confira os termos de cada fonte e do mapa base. Os tiles vêm de
 `tile.openstreetmap.org`, cuja política não cobre tráfego alto: troque por um provedor contratado
@@ -66,14 +66,27 @@ Não há integração automática de pagamento. Coloque os links de checkout do 
 `CHECKOUT_*` e os preços em `PRICE_*`; depois de receber, gere o código e envie ao cliente.
 Sem esses valores, a página mostra apenas o campo de código e o contato.
 
-## Arquivo único de demonstração
+## Arquivo único (sem servidor)
 
 ```bash
-node scripts/build-standalone.js http://localhost:8080 SEU-CODIGO
+node scripts/build-html.js live
 ```
 
-Gera `dist/atalaia-demo.html` com CSS, JS e os dados daquele momento embutidos. Abre direto no
-navegador, sem servidor, mas não se atualiza e não tem chat.
+Gera `dist/atalaia-ao-vivo.html`: um único arquivo que você abre com dois cliques e que busca as
+fontes direto do navegador, atualizando sozinho enquanto a aba estiver aberta. Ele reaproveita os
+mesmos módulos do servidor (`geo`, `sources`, `core`).
+
+Só entram as fontes que liberam leitura pelo navegador (CORS): USGS, GDACS, NASA EONET, NOAA SWPC,
+NWS, OMS e os feeds de DW e The New York Times. Ficam de fora as aeronaves militares e os feeds de
+BBC, Al Jazeera, The Guardian e France 24, que só funcionam pela versão com servidor. Também não há
+chat nem controle de acesso.
+
+```bash
+node scripts/build-html.js demo http://localhost:8080 SEU-CODIGO
+```
+
+Gera `dist/atalaia-demo.html`: uma fotografia com os dados completos do servidor naquele momento,
+que não se atualiza.
 
 ## Limites conhecidos
 

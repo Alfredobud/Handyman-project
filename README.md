@@ -45,9 +45,9 @@ USGS (terremotos), GDACS (desastres), NASA EONET (incêndios, vulcões, tempesta
 adsb.lol (aeronaves militares), NOAA SWPC (índice Kp), NWS (alertas severos nos EUA), OMS (surtos)
 e RSS de BBC, Al Jazeera, The Guardian, DW, The New York Times e France 24. Adicione feeds com `EXTRA_FEEDS`.
 
-Antes de uso comercial, confira os termos de cada fonte e do mapa base. Os tiles vêm de
-`tile.openstreetmap.org`, cuja política não cobre tráfego alto: troque por um provedor contratado
-quando o site crescer (a URL fica em `public/app.js`).
+O mapa base é escolhido na própria página: tiles da Esri (escuro, satélite, ruas, relevo), imagens da
+NASA GIBS ou só o contorno dos países embutido (`public/world.json`, Natural Earth), que funciona sem
+internet. Antes de uso comercial, confira os termos de cada fonte de dados e dos tiles da Esri.
 
 ## Administração
 

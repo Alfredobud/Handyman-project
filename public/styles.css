@@ -44,7 +44,8 @@ main{max-width:1280px;margin:0 auto;padding:14px 16px 30px;display:grid;gap:14px
 
 .mapwrap{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#05080a}
 .maptools{display:flex;gap:10px;justify-content:space-between;align-items:flex-start;padding:10px;background:var(--panel);border-bottom:1px solid var(--line)}
-.maptools-r{display:flex;gap:6px;flex:none}
+.maptools-r{display:flex;gap:6px;flex:none;flex-wrap:wrap;justify-content:flex-end}
+.maptools-r select{padding:7px 9px;font-size:14px}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:600 13px inherit;font-family:inherit;cursor:pointer}
 .chip i{width:9px;height:9px;border-radius:50%;background:var(--c)}

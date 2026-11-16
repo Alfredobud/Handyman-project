@@ -90,7 +90,7 @@ return api;
     .replace(/href="\/icon\.svg"|src="\/icon\.svg"/g, (m) => m.replace('/icon.svg', icon))
     .replace('<a class="brand" href="/">', '<a class="brand" href="#">')
     .replace('<link rel="stylesheet" href="/styles.css">', () => `<style>\n${read('public', 'styles.css')}</style>`)
-    .replace('<script src="/app.js"></script>', () => `<script>\n${inline(data)}\n</script>\n<script>\n${inline(read('public', 'app.js'))}</script>`);
+    .replace('<script src="/app.js"></script>', () => `<script>\nwindow.__WORLD__ = ${read('public', 'world.json')};\n${inline(data)}\n</script>\n<script>\n${inline(read('public', 'app.js'))}</script>`);
   fs.mkdirSync(path.join(root, 'dist'), { recursive: true });
   const out = path.join(root, 'dist', name);
   fs.writeFileSync(out, html);

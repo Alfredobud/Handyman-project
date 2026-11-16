@@ -57,16 +57,43 @@ let mapReady = false;
 
 // ------------------------------------------------------------------ mapa
 const hasGl = (() => { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) { return false; } })();
+// Mapas base sem chave de API. Todos funcionam com a página aberta direto do disco.
+const ESRI = (svc) => [`https://server.arcgisonline.com/ArcGIS/rest/services/${svc}/MapServer/tile/{z}/{y}/{x}`];
+const GIBS = (layer, date, ext) => [`https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/${layer}/default/${date}/GoogleMapsCompatible_Level8/{z}/{y}/{x}.${ext}`];
+const ESRI_ATTR = 'Tiles © Esri e colaboradores', NASA_ATTR = 'Imagens NASA GIBS / EOSDIS';
+const BASEMAPS = {
+  dark: { label: 'Escuro', layers: [{ tiles: ESRI('Canvas/World_Dark_Gray_Base'), maxzoom: 16 }, { tiles: ESRI('Canvas/World_Dark_Gray_Reference'), maxzoom: 16 }], attribution: ESRI_ATTR },
+  satellite: { label: 'Satélite', layers: [{ tiles: ESRI('World_Imagery'), maxzoom: 18, paint: { 'raster-brightness-max': 0.8 } }], attribution: ESRI_ATTR },
+  streets: { label: 'Ruas', layers: [{ tiles: ESRI('World_Street_Map'), maxzoom: 18 }], attribution: ESRI_ATTR },
+  topo: { label: 'Relevo', layers: [{ tiles: ESRI('World_Topo_Map'), maxzoom: 18 }], attribution: ESRI_ATTR },
+  night: { label: 'Luzes noturnas (NASA)', layers: [{ tiles: GIBS('VIIRS_Black_Marble', '2016-01-01', 'png'), maxzoom: 8 }], attribution: NASA_ATTR },
+  bluemarble: { label: 'Blue Marble (NASA)', layers: [{ tiles: GIBS('BlueMarble_ShadedRelief_Bathymetry', '2004-08-01', 'jpeg'), maxzoom: 8, paint: { 'raster-brightness-max': 0.75 } }], attribution: NASA_ATTR },
+  simple: { label: 'Simples (sem internet)', layers: [] },
+};
+function setBasemap(id) {
+  if (!BASEMAPS[id]) id = 'dark';
+  for (let i = 0; i < 2; i++) { if (map.getLayer('base' + i)) map.removeLayer('base' + i); if (map.getSource('base' + i)) map.removeSource('base' + i); }
+  BASEMAPS[id].layers.forEach((l, i) => {
+    map.addSource('base' + i, { type: 'raster', tileSize: 256, maxzoom: l.maxzoom, tiles: l.tiles, attribution: BASEMAPS[id].attribution });
+    map.addLayer({ id: 'base' + i, type: 'raster', source: 'base' + i, paint: l.paint || {} }, 'near-fill');   // abaixo dos marcadores
+  });
+  ls.set('atl_base', id);
+}
+$('#basemap').innerHTML = Object.entries(BASEMAPS).map(([k, b]) => `<option value="${k}">${b.label}</option>`).join('');
+$('#basemap').value = BASEMAPS[ls.get('atl_base')] ? ls.get('atl_base') : 'dark';
+$('#basemap').addEventListener('change', (e) => { if (mapReady) setBasemap(e.target.value); });
+
 let map = null;
 if (hasGl && window.maplibregl) {
   map = new maplibregl.Map({
     container: 'map', center: [20, 22], zoom: 2.1, attributionControl: { compact: true },
     style: {
       version: 8, projection: { type: ls.get('atl_proj') || 'globe' },
-      // Mapa base: tiles do OpenStreetMap escurecidos pelo próprio MapLibre (sem chave de API).
-      sources: { base: { type: 'raster', tileSize: 256, maxzoom: 19, tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'], attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' } },
-      layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#05080a' } },
-        { id: 'base', type: 'raster', source: 'base', paint: { 'raster-saturation': -0.85, 'raster-brightness-max': 0.5, 'raster-contrast': 0.45 } }],
+      // O contorno dos países vem embutido (world.json), então o globo aparece mesmo se os tiles falharem.
+      sources: { world: { type: 'geojson', data: window.__WORLD__ || '/world.json' } },
+      layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#070b0f' } },
+        { id: 'land', type: 'fill', source: 'world', paint: { 'fill-color': '#18222b' } },
+        { id: 'borders', type: 'line', source: 'world', paint: { 'line-color': '#34434f', 'line-width': 0.7 } }],
     },
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
@@ -93,6 +120,7 @@ if (hasGl && window.maplibregl) {
     map.addSource('plan-pts', { type: 'geojson', data: empty });
     map.addLayer({ id: 'plan-line', type: 'line', source: 'plan-line', paint: { 'line-color': '#ffb020', 'line-width': 2.5, 'line-dasharray': [2, 1.5] } });
     map.addLayer({ id: 'plan-pts', type: 'circle', source: 'plan-pts', paint: { 'circle-radius': 8, 'circle-color': '#ffb020', 'circle-stroke-width': 2, 'circle-stroke-color': '#fff' } });
+    setBasemap($('#basemap').value);
     mapReady = true;
     if (feed) drawMap();
     drawPlan(); drawNear();

@@ -1,7 +1,8 @@
 # Agente de voz para negociação com brokers (EUA): persona "Megan"
 
-> **Status:** definição de persona concluída (v1, 16/11/2026). Próximo passo: preencher as decisões pendentes e escolher a plataforma de voz.
-> **Escopo:** agente de IA por voz que liga para freight brokers nos EUA, em nome de uma transportadora, e negocia o valor das cargas.
+> **Status:** v1.1 (16/11/2026). Ajustada para o modelo **dispatch service**: os motoristas são owner-operators com MC próprio e são nossos clientes.
+> **Escopo:** agente de IA por voz que liga para freight brokers nos EUA, **em nome da transportadora do motorista cliente**, e negocia o valor das cargas.
+> **Agente irmão:** o dispatcher que fala com os motoristas (Laura/Daniel), em [`../agente-voz-motoristas/`](../agente-voz-motoristas/README.md).
 
 ## Resumo executivo
 
@@ -10,9 +11,12 @@
    - Faz de 25 a 100 ligações por dia e ganha comissão sobre a **margem**: cada dólar que conseguimos sai do bolso dele.
    - Tem um teto ("max buy") e pouca autonomia acima dele.
 2. **O broker quer certeza:** caminhão confiável, sem "fall-off", com tracking. **Paga um pouco mais por isso.** Vender confiabilidade é tão importante quanto negociar preço.
-3. **O broker tem medo de fraude.** O agente precisa ligar do **telefone oficial no FMCSA** (com nome e STIR/SHAKEN), usar e-mail do domínio da empresa e **ser transparente sobre ser IA**.
+3. **O broker tem medo de fraude.** O agente precisa:
+   - ligar de um número **verificável**: o telefone do dispatch, com nome e STIR/SHAKEN, **cadastrado como contato autorizado** de cada transportadora cliente;
+   - usar e-mail do domínio da empresa;
+   - **ser transparente sobre ser IA e sobre ser dispatch service**.
 4. **IA já é rotina no frete.** Brokers grandes usam IA de voz (HappyRobot, Parade etc.). O diferencial não é ser IA: é ser **rápida, competente e honesta**.
-5. **Persona:** **Megan**, "AI dispatch assistant" da transportadora.
+5. **Persona:** **Megan**, "AI dispatcher" do nosso dispatch service, ligando **em nome do motorista** (MC dele).
    - Voz feminina de 30–40 anos, General American, calma, confiante e firme sem ser agressiva.
    - Fala curta, domina o jargão e os números.
 6. **Voz feminina: concordo**, com três cuidados que vêm da pesquisa:
@@ -23,7 +27,7 @@
 7. **Mercado agora (nov/2026):** apertado, favorável ao carrier.
    - Spot rates nos maiores níveis desde 2010; Thanksgiving em 26/11.
    - Preços sempre vêm de API em tempo real, nunca fixos no prompt.
-8. **Negociação:** quem calcula piso, alvo, âncora e escada de concessões é o **sistema**, não a IA. A IA conduz a conversa:
+8. **Negociação:** quem calcula piso, alvo, âncora e escada de concessões é o **sistema**, não a IA. **O piso é o mínimo definido pelo motorista**, e a autoridade para fechar segue o **nível de autonomia** que ele escolheu (1–2: pede o "sim" dele; 3: fecha dentro das regras dele). A IA conduz a conversa:
    - âncora justificada, concessões decrescentes e sempre trocadas por algo;
    - read-back obrigatório;
    - saída elegante quando não fecha.
@@ -48,18 +52,24 @@
 
 | # | Decisão | Recomendação | Impacto |
 |---|---|---|---|
-| 1 | A empresa é **carrier** (tem caminhões/MC próprio) ou **dispatch service** (atende carriers de terceiros)? | — | Muda a resposta a "in-house or dispatch service?" e exige contrato com o carrier |
+| 1 | ~~Carrier ou dispatch service?~~ **Decidido:** dispatch service; motoristas com MC próprio | — | Aplicado na v1.1 |
 | 2 | Equipamentos: dry van, reefer, flatbed, box truck, hotshot, power only? | — | Jargão, accessorials (tarp, temperatura) e lanes |
 | 3 | Divulgação de IA proativa ou só se perguntado | **Proativa** ([`04`](04-guardrails-compliance.md) §2) | Compliance e confiança |
-| 4 | Autonomia: a IA fecha sozinha ou com aprovação humana? | Começar **com aprovação** (fase 2) | Risco operacional |
-| 5 | CPM (custo por milha), margem mínima e regras de piso/alvo | Definir com dados reais da operação | Base de todo o preço |
+| 4 | Autonomia: a IA fecha sozinha ou com aprovação? | **Decidido:** cada motorista escolhe o nível (padrão: nível 2, pede o "sim" dele) | Aplicado na v1.1 |
+| 5 | Piso e alvo | **Decidido:** piso = mínimo do motorista; alvo = max(piso × 1,10; média do mercado) | Aplicado na v1.1 |
 | 6 | Valores de accessorials (detention, layover, TONU, stop, tarp) | Padrão de mercado: detention após 2 h | Read-back e rate con |
 | 7 | Nome final da persona | **Megan** (alternativas: Lauren, Rachel) | Marca |
 | 8 | Quem é o humano de escalonamento e em que horários | — | Transferências |
 | 9 | Load boards e sistemas a integrar (DAT, Truckstop, 123Loadboard; TMS; ELD) | — | Escolha da plataforma |
+| 10 | Regra para quando a mesma carga serve a mais de um cliente | **Validar com advogado** ([`04`](04-guardrails-compliance.md) §4.1) | Risco de precisar de autoridade de broker |
+| 11 | Cadastro do nosso telefone e e-mail como contatos autorizados de dispatch em cada transportadora cliente | Fazer no onboarding de cada motorista | Confiança dos brokers |
 
 ## Premissas usadas
 
-- O agente atua **do lado da transportadora** (carrier/dispatch), ligando para brokers sobre cargas publicadas em load boards e recebendo ligações de retorno.
+- Somos um **dispatch service**. Os motoristas são owner-operators com **MC próprio** e são nossos clientes. O agente liga para brokers **em nome da transportadora de um motorista por vez**, sobre cargas publicadas em load boards, e recebe ligações de retorno.
 - Todas as ligações são em inglês (espanhol como opcional futuro).
-- Dados de caminhão, preço e broker chegam via integrações. A IA não inventa nem calcula números.
+- Dados de caminhão, preço, regras do motorista e broker chegam via integrações. A IA não inventa nem calcula números.
+
+## Histórico
+- **v1.1 (16/11/2026):** modelo dispatch service. Carrier/MC viram variáveis por ligação; resposta "dispatch service"; piso do motorista; autoridade pelo nível de autonomia (`request_driver_approval`); caller ID com contato autorizado; guia FMCSA 2023 no checklist jurídico.
+- **v1 (16/11/2026):** persona Megan, pesquisa, playbook, guardrails, system prompt, especificação técnica.

@@ -1,6 +1,6 @@
 # Dispatcher de voz para motoristas: persona "Laura / Daniel"
 
-> **Status:** v1, 16/11/2026.
+> **Status:** v1.1, 16/11/2026. Modelo confirmado: motoristas com **MC próprio**, clientes do nosso dispatch service.
 > **Escopo:** o agente de IA que **fala com os nossos motoristas**, que são **clientes** (owner-operators). Complementa a Megan ([`../agente-voz-brokers/`](../agente-voz-brokers/README.md)), que fala com os brokers.
 
 ## Resumo executivo
@@ -48,7 +48,7 @@
 
 | # | Decisão | Recomendação |
 |---|---|---|
-| 1 | Confirmar o modelo: motoristas com **MC próprio** contratando nosso dispatch (premissa deste documento) ou **leased-on** no nosso MC? | Se for leased-on, a relação muda (nós somos o carrier) e parte da matriz de decisões precisa ser revista |
+| 1 | ~~Modelo: MC próprio ou leased-on?~~ | **Decidido:** motoristas com MC próprio |
 | 2 | Idiomas no lançamento | EN + PT + ES |
 | 3 | Nomes | **Laura** e **Daniel** (alternativas: Julia/Ana, Lucas/Marcos) |
 | 4 | Nível de autonomia padrão | **Nível 2** (negocia, pergunta antes de fechar) |
@@ -58,13 +58,14 @@
 | 8 | Humano de retaguarda: quem é e em que horários | 24/7 para emergências, mesmo que por plantão |
 | 9 | Regra para quando a mesma carga serve a mais de um motorista | **Validar com advogado** (risco de "alocação de tráfego", ver [`04`](04-guardrails-seguranca.md) §5) |
 
-## Impacto nos documentos da Megan (broker desk)
+## Impacto nos documentos da Megan (broker desk): **aplicado na v1.1**
 
-Como os motoristas são clientes com MC próprio, a Megan negocia **em nome de transportadoras diferentes** a cada ligação. Ajustes necessários em `agente-voz-brokers/`:
+Como os motoristas são clientes com MC próprio, a Megan negocia **em nome de transportadoras diferentes** a cada ligação. Ajustes **já feitos** em `agente-voz-brokers/`:
 
 1. **`[CARRIER_NAME]`, `[MC_NUMBER]` e `[DOT_NUMBER]` viram variáveis por ligação** (`{{carrier_name}}`, `{{mc_number}}`, `{{dot_number}}`) no system prompt e no YAML.
 2. **Resposta a "in-house or dispatch service?":** "We're [DISPATCH_CO], dispatching for {{carrier_name}}." (verdade)
 3. **Piso de preço** = regras do motorista (rate mínimo dele), não um custo por milha da empresa.
 4. **Autoridade para fechar** = nível de autonomia que o motorista escolheu.
 5. **Verificação pelo broker:** cadastrar o telefone e o e-mail do nosso dispatch como **contatos autorizados** no cadastro de cada transportadora (Highway, MyCarrierPackets etc.). O broker vai checar o contato contra o FMCSA da transportadora.
-6. **Guia da FMCSA sobre dispatch services** (jun/2023): incluir no checklist jurídico da Megan.
+6. **Guia da FMCSA sobre dispatch services** (jun/2023): incluído no checklist jurídico da Megan ([`04`](../agente-voz-brokers/04-guardrails-compliance.md) §4.1 e §9).
+7. **Ponte entre os agentes:** a Megan pede o "sim" do motorista com `request_driver_approval`, e a Laura/Daniel faz a pergunta ao motorista (mensagem + ligação curta, respeitando o ELD).

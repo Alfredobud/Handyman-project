@@ -17,7 +17,7 @@
 | 7 | **TTS feminina natural** | Expressiva, ajuste de velocidade e estabilidade, dicionário de pronúncia (SSML ou equivalente) | Persona (ver [`02`](02-persona.md)) |
 | 8 | **Function calling** em tempo real | Chamadas às ferramentas do [`05`](05-system-prompt.md) durante a ligação, sem silêncio longo (usar frase de transição: "one sec, pulling that up") | Dados verificados, nada inventado |
 | 9 | **Variáveis dinâmicas por ligação** | Injeção de `{{variáveis}}` no prompt | Preço e caminhão mudam a cada ligação |
-| 10 | **Telefonia própria / BYO number** | Usar o **número oficial da transportadora** como caller ID; suporte a STIR/SHAKEN (atestação A) e CNAM | Anti-fraude e anti-"Spam Likely" |
+| 10 | **Telefonia própria / BYO number** | Usar o **número do [DISPATCH_CO]** como caller ID (cadastrado como contato autorizado de dispatch de cada transportadora cliente); suporte a STIR/SHAKEN (atestação A) e CNAM | Anti-fraude e anti-"Spam Likely" |
 | 11 | **Transferência quente para humano** | Com sussurro/resumo para o humano | Escalonamento |
 | 12 | **Detecção de caixa postal** | Detectar e deixar o recado do script | Muitas ligações caem em voicemail |
 | 13 | **Gravação + transcrição + resumo** | Armazenamento, exportação e webhooks pós-ligação | CRM, auditoria, treinamento |
@@ -95,4 +95,4 @@ Mínimo de ~200–300 ligações por variante antes de decidir. Mudar uma variá
 | **0. Simulação** | Agente negocia contra "brokers sintéticos" (outra IA com os arquétipos A–F de [`01`](01-perfil-brokers-e-dispatchers.md)) e contra humanos da equipe fazendo papel de broker | 50+ simulações sem violar hard rules; read-back 100% correto |
 | **1. Sombra** | Humano liga; a IA escuta e sugere em tempo real | Sugestões da IA ≥ decisões humanas na maioria dos casos |
 | **2. IA com aprovação** | IA liga e negocia; **humano aprova antes de confirmar o booking** | 2 semanas sem incidentes; uplift ≥ humano |
-| **3. Autônoma com guardrails** | IA fecha sozinha acima do alvo; escala o resto | Monitoramento contínuo dos KPIs |
+| **3. Autônoma com guardrails** | IA fecha sozinha para motoristas no nível 3 de autonomia (dentro das regras deles); nos níveis 1–2 pede o "sim" do motorista | Monitoramento contínuo dos KPIs |

@@ -102,7 +102,7 @@ A fraude no frete virou "corporativa" (FreightWaves). Há double brokering, roub
 - **SAFER Transport Act** apresentado em fevereiro/2026.
 
 **Implicações diretas:**
-- O **caller ID** do agente deve ser o **telefone oficial da empresa registrado no FMCSA/SAFER**, com nome (CNAM) e atestação STIR/SHAKEN. Um número aleatório é sinal vermelho imediato.
+- O **caller ID** do agente deve ser um número **verificável**: o telefone do nosso dispatch, com nome (CNAM) e atestação STIR/SHAKEN, **cadastrado como contato autorizado** no perfil de cada transportadora cliente (Highway, MyCarrierPackets etc.). Um número aleatório que não aparece em cadastro nenhum é sinal vermelho imediato.
 - O e-mail para a rate con deve ser do **domínio da empresa** (dispatch@empresa.com) e coincidir com o cadastro.
 - O agente **nunca** pede nada "estranho": códigos de verificação, logins, troca de dados bancários.
 - **Transparência sobre ser IA** reduz o risco de o broker achar, ao descobrir, que era golpe com voz clonada (ver [`04-guardrails-compliance.md`](04-guardrails-compliance.md)).
@@ -121,7 +121,7 @@ O agente **é** o dispatcher da transportadora ao telefone. Portanto o modelo de
 - **Quem é:** ~43% mulheres (Zippia), média de ~40–45 anos. Há dois tipos:
   - **In-house:** funcionário da transportadora.
   - **Independente:** "dispatch service", cobra ~5–10% do bruto por carga.
-- **Reputação dos dispatch services entre brokers:** mista. Alguns brokers recusam ou desconfiam de dispatcher terceirizado (associam a fraude e a táticas agressivas). Perguntam "are you in-house or a dispatch service?". **A resposta precisa ser verdadeira.** Se a empresa do usuário for um dispatch service, a persona diz que está "dispatching for [carrier]".
+- **Reputação dos dispatch services entre brokers:** mista. Alguns brokers recusam ou desconfiam de dispatcher terceirizado (associam a fraude e a táticas agressivas). Perguntam "are you in-house or a dispatch service?". **A resposta precisa ser verdadeira.** **Nosso caso:** somos um dispatch service e os motoristas são owner-operators com MC próprio. A Megan diz sempre "We're a dispatch service, [DISPATCH_CO], dispatching for [carrier]". Se o broker não trabalha com dispatch services, ela oferece que o próprio dono ligue.
 - **O que faz um dispatcher top:**
   - Conhece as lanes e os mercados de recarga.
   - Sabe o HOS (horas de direção) do motorista.
@@ -146,7 +146,7 @@ O agente **é** o dispatcher da transportadora ao telefone. Portanto o modelo de
 |---|---|
 | Pressa, 75+ ligações/dia | Falas curtas, abertura em menos de 10 s, ligação de 2–4 min |
 | Ganha sobre a margem | Justificar cada número (custo, mercado, deadhead); a resistência dele é normal |
-| Medo de fraude | Caller ID oficial, transparência, dados do MC prontos, nada de pedidos estranhos |
+| Medo de fraude | Caller ID verificável (contato autorizado no cadastro do carrier), transparência sobre ser IA e dispatch service, dados do MC do motorista prontos, nada de pedidos estranhos |
 | Medo de "fall-off" | Vender **certeza**: "truck's empty at 7, driver's got hours, we'll take tracking" |
 | Maioria masculina e jovem, cultura competitiva | Voz feminina segura, calma e "warm-firm"; humor leve; nunca submissa nem agressiva |
 | Respeita competência | Domínio total do jargão e dos números; nunca perguntar o que está no post |

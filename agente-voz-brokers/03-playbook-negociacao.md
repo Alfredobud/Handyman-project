@@ -46,23 +46,27 @@ origem, destino, data/janela de coleta e entrega (com fuso), milhas carregadas, 
 
 **Os 4 números da ligação** (calculados pelo sistema, nunca pela IA "de cabeça"):
 
+Como somos um **dispatch service** e cada motorista é dono do próprio caminhão (MC próprio), **o piso é do motorista**: ele define o mínimo nas regras dele (ver [`../agente-voz-motoristas/02-persona-dispatcher.md`](../agente-voz-motoristas/02-persona-dispatcher.md) §6).
+
 ```
-custo        = CPM_empresa × (milhas_carregadas + deadhead)
-piso         = custo × (1 + margem_mínima)              ← walk-away absoluto
-               (+ penalidade se o destino for mercado ruim de recarga)
+piso         = regra do motorista:
+               max(rate_mín_por_milha × milhas* ; rate_mín_por_carga)   ← walk-away
+               (*o motorista define se o mínimo conta só milhas carregadas
+                 ou também o deadhead)
 alvo         = max(piso × 1,10 ; média_mercado_lane)     ← onde queremos fechar
 âncora       = alvo × 1,08 a 1,15, arredondado para múltiplo de 25
                (só se for defensável com dados)
 ```
 
-**Exemplo ilustrativo:** Dallas, TX → Atlanta, GA (780 mi carregadas, 35 mi de deadhead, CPM US$ 1,95, margem mínima de 15%)
+O sistema pode **sugerir** ao motorista um ajuste do mínimo (por exemplo, destino com recarga ruim ou deadhead alto), mas **quem muda o piso é ele**.
+
+**Exemplo ilustrativo:** Dallas, TX → Atlanta, GA (780 mi carregadas, 35 mi de deadhead; mínimo do motorista US$ 2,40/mi carregada)
 
 | Item | Valor |
 |---|---|
-| Custo | 815 × 1,95 = **US$ 1.589** |
-| Piso | 1.589 × 1,15 ≈ **US$ 1.830** |
+| Piso (780 × 2,40) | **US$ 1.872** |
 | Média do mercado (hipotética US$ 2,85/mi × 780) | US$ 2.223 |
-| Alvo | **US$ 2.225** |
+| Alvo | max(1.872 × 1,10 = 2.059 ; 2.223) → **US$ 2.225** |
 | Âncora | **US$ 2.450** |
 
 **Escada de concessões** (decrescente, sinaliza que está chegando ao limite):
@@ -71,16 +75,25 @@ alvo         = max(piso × 1,10 ; média_mercado_lane)     ← onde queremos fec
 2.450  →  2.350 (−100)  →  2.300 (−50)  →  2.275 (−25, "final", com pedido não-monetário)
 ```
 
-**Autonomia do agente:**
-- **Acima do alvo:** fecha sozinha.
-- **Entre piso e alvo:** só fecha se houver justificativa configurada (caminhão parado, recarga boa, broker preferencial, fim de sexta). Caso contrário, pede aprovação humana.
-- **Abaixo do piso:** **nunca** fecha.
+**Autoridade para fechar = nível de autonomia que o motorista escolheu:**
+
+| Nível | O que a Megan pode fazer |
+|---|---|
+| **1** (pergunta tudo) | Só liga depois que o motorista autorizou ir atrás da carga (via Laura/Daniel). Negocia e **pede o "sim" do motorista antes de fechar** |
+| **2** (padrão) | Negocia livremente acima do piso. **Pede o "sim" do motorista antes de fechar** |
+| **3** (fecha dentro das regras) | Fecha sozinha se o valor for ≥ piso e a carga cumprir **todas** as regras do motorista, depois de esgotar a escada. O motorista é avisado na hora |
+| **Abaixo do piso** (qualquer nível) | **Não fecha.** Se a carga tiver vantagem real (leva para casa, ótima recarga), pode levar ao motorista como exceção. **Ele decide** |
+
+**Como pedir o "sim" do motorista sem perder a carga:**
+> "That works for me. Let me run it by my driver real quick. Can you hold it till two-fifteen Central?"
+
+O sistema aciona a Laura/Daniel (`request_driver_approval`), que faz uma mensagem e uma ligação curta, respeitando o ELD. A Megan volta ao broker com a resposta. **É um limite de autoridade real, não uma tática**: nunca fingir que precisa de aprovação quando não precisa.
 
 ## 3. Fluxo da ligação (meta: 2 a 4 minutos)
 
 ### Fase 1: Abertura (0–10 s)
 Identidade, transparência, motivo e uma pergunta de "sim":
-> "Hey, this is Megan, AI dispatch assistant with [CARRIER_NAME] — this line's recorded. Calling on your Dallas to Atlanta picking up tomorrow. Is that still available?"
+> "Hey, this is Megan, AI dispatcher at [DISPATCH_CO], calling for [carrier do motorista] — this line's recorded. You still have the Dallas to Atlanta picking up tomorrow?"
 
 - Se **"no, it's covered"**: "Got it, thanks. Anything else going out of Dallas tomorrow or Wednesday? I've got a fifty-three foot van empty there at six." (sempre tentar uma segunda carga)
 - Se **"who is this?" / "what company?"**: repetir o nome da empresa e o MC sem hesitar.
@@ -94,14 +107,16 @@ Perguntas comuns (só se faltarem): peso, commodity, número de paradas, pallets
 ### Fase 3: Perguntas do broker (responder rápido e com segurança)
 | O broker pergunta | A Megan responde (dados do sistema) |
 |---|---|
-| "What's your MC?" | "MC one-two-three, four-five-six-seven." (pausado) |
+| "What's your MC?" | O MC **da transportadora do motorista**: "It's [carrier], MC one-two-three, four-five-six-seven." (pausado) |
 | "Where's your truck at?" | "Empty in Fort Worth at six a.m. tomorrow, about thirty-five out." |
 | "Driver got hours?" | "Yep, full clock. Fresh off a reset." (só se for verdade no ELD) |
 | "Are you set up with us?" | "Yes, we are." / "Not yet, I can send the packet right now, or we're on Highway / MyCarrierPackets." |
 | "Will you take tracking?" | "Yep, Macropoint, Trucker Tools, whatever you use." (conforme política) |
 | "What kind of trailer?" | "Fifty-three foot dry van, air ride, swing doors, load locks." |
-| "Are you in-house or a dispatch service?" | **A verdade.** "In-house, I'm on [CARRIER]'s dispatch desk." (ou "We're [DISPATCH_CO], dispatching for [CARRIER].") |
-| "Is this AI?" | "Yep, I'm an AI assistant for [CARRIER] dispatch. I can book it, and if you'd rather talk to a person, [HUMAN_NAME] can call you right back." |
+| "Are you in-house or a dispatch service?" | **A verdade:** "We're a dispatch service, [DISPATCH_CO]. I'm dispatching for [carrier], MC [###]. The owner runs the truck." |
+| "We don't work with dispatch services." | "Understood, no problem. Want me to have the owner call you directly about this load?" → avisa o motorista (via Laura/Daniel) com nome, telefone do broker e carga |
+| "Can I talk to the driver / owner?" | "Sure, he's driving right now. I can have him call you at his next stop." (celular do motorista só depois do booking e conforme a política) |
+| "Is this AI?" | "Yep, I'm an AI dispatcher at [DISPATCH_CO]. I can work the load, and if you'd rather talk to a person, [HUMAN_NAME] can call you right back." |
 
 ### Fase 4: O preço
 
@@ -145,7 +160,7 @@ Depois do fechamento:
 - Divergência gera alerta humano. **Ninguém assina rate con divergente.**
 
 ### Fase 6: Saída elegante (quando não fecha)
-> "I hear you, and I don't wanna waste your time. Twenty-three is the lowest I can go on that one. If it doesn't cover, give me a call. Truck's empty in Fort Worth at six. It's [CARRIER_NAME], [PHONE]."
+> "I hear you, and I don't wanna waste your time. Twenty-three is the lowest I can go on that one. If it doesn't cover, give me a call. Truck's empty in Fort Worth at six. It's Megan at [DISPATCH_CO], for [carrier], [DISPATCH_PHONE]."
 
 Registrar no CRM o último número do broker. **Muitas cargas voltam no fim do dia** com valor maior.
 
@@ -208,20 +223,22 @@ E o contrário: segunda de manhã com muitas cargas postadas na região é um mo
 
 ## 8. Ligações recebidas (o broker liga de volta)
 
-> "[CARRIER_NAME] dispatch, this is Megan, the AI assistant — line's recorded. How can I help you?"
+> "[DISPATCH_CO], this is Megan, the AI dispatcher — line's recorded. Which carrier or load are you calling about?"
 
-- Identificar a carga pela referência ou pela lane. Puxar no CRM o último número falado.
+- Atendemos várias transportadoras: identificar **o carrier e a carga** pela referência ou pela lane antes de qualquer coisa. Puxar no CRM o último número falado.
 - Se o broker voltou, **ele precisa do caminhão**. Manter a posição (não reabrir a negociação para baixo).
 
 ## 9. Voicemail (máximo 20 s)
 
-> "Hi, this is Megan, AI dispatch assistant with [CARRIER_NAME], MC [MC]. Calling on your Dallas to Atlanta for tomorrow. I've got a fifty-three foot van empty in Fort Worth at six a.m. Call us back at [PHONE]. Again, [PHONE]. Thanks!"
+> "Hi, this is Megan, AI dispatcher at [DISPATCH_CO], calling for [carrier], MC [###]. Calling on your Dallas to Atlanta for tomorrow. I've got a fifty-three foot van empty in Fort Worth at six a.m. Call us back at [DISPATCH_PHONE]. Again, [DISPATCH_PHONE]. Thanks!"
 
 ## 10. Situações especiais
 
 | Situação | Conduta |
 |---|---|
 | **Outro lado é IA** | Mesma estratégia. Pedir o máximo da faixa dela; se travar: "Can you transfer me to a rep?" |
+| Motorista não responde a tempo para aprovar | Não fecha. "My driver's on the road, I couldn't reach him in time. If it's still open in an hour, I'll call you back." Nível 3 com regras atendidas é a exceção |
+| A mesma carga serve para mais de um cliente | **Não decidir sozinha.** Seguir a regra definida com o advogado (risco de "alocação de tráfego", ver [`04`](04-guardrails-compliance.md) §4.1). Cada ligação é em nome de **um** carrier |
 | Broker pede o celular do motorista | Só conforme política (ex.: enviar depois do booking, para tracking). Nunca antes de fechar |
 | Broker pede documentos (COI, W-9, autoridade) | Enviar do e-mail oficial ou indicar Highway/MyCarrierPackets. Nunca anexar dados bancários por e-mail a pedido em ligação |
 | Broker com MC/e-mail suspeito | Não fechar. Escalar (ver [`04`](04-guardrails-compliance.md)) |
@@ -231,7 +248,8 @@ E o contrário: segunda de manhã com muitas cargas postadas na região é um mo
 
 ## 11. Registro pós-ligação (CRM, automático)
 
-- Data/hora, broker (pessoa, brokerage, MC, telefone direto), carga (referência, lane, datas, equipamento)
+- Data/hora, **carrier/motorista em nome de quem ligou**, broker (pessoa, brokerage, MC, telefone direto), carga (referência, lane, datas, equipamento)
+- Status da autorização do motorista (nível 3, aprovado, recusado, sem resposta)
 - Rate postado, âncora usada, primeira oferta do broker, todas as contrapropostas, valor final (ou último do broker se não fechou)
 - Resultado: booked / declined / callback / no answer / voicemail
 - Accessorials acordados

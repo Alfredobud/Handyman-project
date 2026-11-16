@@ -1,0 +1,12 @@
+{
+  "name": "atalaia",
+  "version": "1.0.0",
+  "description": "Mapa de ameaças ao vivo montado a partir de fontes públicas",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server/index.js",
+    "new-code": "node server/cli.js"
+  }
+}

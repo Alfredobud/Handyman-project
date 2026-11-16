@@ -1,0 +1,12 @@
+{
+  "id": "/",
+  "name": "Atalaia · Mapa de Ameaças",
+  "short_name": "Atalaia",
+  "description": "Painel ao vivo com conflitos, desastres, surtos, aeronaves militares e clima espacial.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0d10",
+  "theme_color": "#0a0d10",
+  "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

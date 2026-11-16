@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atalaia · Mapa de Ameaças</title>
+<meta name="description" content="Um painel único e ao vivo com conflitos, desastres, surtos, aeronaves militares e clima espacial, montado a partir de fontes públicas.">
+<meta name="theme-color" content="#0a0d10">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.min.css">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><img src="/icon.svg" alt="" width="26" height="26"><span>ATALAIA</span></a>
+  <nav>
+    <a href="#perto">📍 Perto de mim</a>
+    <a href="#noticias">📰 Notícias</a>
+    <a href="#chat">💬 Chat</a>
+    <a href="#acesso" class="btn btn-cta locked-only">Liberar acesso</a>
+    <button class="btn btn-ghost unlocked-only" id="logout">Sair</button>
+  </nav>
+</header>
+
+<div class="trialbar" id="trialBar" hidden></div>
+
+<main>
+  <section class="threat" id="threat" aria-live="polite">
+    <div class="lvl" id="lvlNum">–</div>
+    <div class="lvl-txt">
+      <div class="lvl-label">Nível de ameaça: <b id="lvlLabel">carregando…</b></div>
+      <ul id="lvlReasons"></ul>
+    </div>
+    <div class="updated" id="updated"></div>
+  </section>
+
+  <section class="mapwrap">
+    <div class="maptools">
+      <div class="chips" id="chips"></div>
+      <div class="maptools-r">
+        <button class="btn btn-ghost" id="proj">🗺 Mapa plano</button>
+        <button class="btn btn-ghost" id="planBtn">🧭 Modo plano</button>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div class="maphint" id="mapHint" hidden></div>
+  </section>
+
+  <section class="panel plan" id="plan" hidden>
+    <h2>🧭 Modo plano</h2>
+    <p class="dim">Marque base, esconderijos e pontos de encontro, veja as distâncias e exporte para o GPS. Seus pontos ficam salvos apenas neste navegador e nunca são enviados ao servidor.</p>
+    <div class="row">
+      <select id="wpType" aria-label="Tipo de ponto">
+        <option value="base">🏠 Base</option><option value="cache">📦 Esconderijo</option>
+        <option value="meet">🤝 Ponto de encontro</option><option value="water">💧 Água</option><option value="exit">🚗 Rota de saída</option>
+      </select>
+      <span class="dim">Clique no mapa para adicionar um ponto.</span>
+    </div>
+    <ol id="wpList"></ol>
+    <div class="row">
+      <button class="btn btn-ghost" id="gpx">⬇ Exportar GPX</button>
+      <button class="btn btn-ghost" id="backup">⬇ Backup</button>
+      <label class="btn btn-ghost">⬆ Restaurar<input type="file" id="restore" accept="application/json" hidden></label>
+      <button class="btn btn-ghost" id="wpClear">Limpar tudo</button>
+    </div>
+  </section>
+
+  <section class="panel" id="perto">
+    <h2>📍 Perto de mim</h2>
+    <p class="dim">Veja tudo o que está no mapa dentro de um raio ao redor de um ponto. A posição é usada só no seu navegador.</p>
+    <div class="row">
+      <button class="btn btn-primary" id="nearGeo">Usar minha localização</button>
+      <button class="btn btn-ghost" id="nearPick">Escolher no mapa</button>
+      <select id="nearKm" aria-label="Raio">
+        <option value="100">100 km</option><option value="250">250 km</option><option value="500" selected>500 km</option><option value="1000">1.000 km</option><option value="2000">2.000 km</option>
+      </select>
+      <button class="btn btn-ghost" id="nearClear" hidden>Limpar</button>
+    </div>
+    <div id="nearOut"></div>
+  </section>
+
+  <div class="grid">
+    <section class="panel" id="noticias">
+      <h2>📰 Últimas manchetes</h2>
+      <div id="headlines" class="feed"></div>
+    </section>
+    <div class="col">
+      <section class="panel"><h2>☀️ Clima espacial</h2><div id="space"></div></section>
+      <section class="panel"><h2>🌪 Alertas severos (EUA)</h2><div id="weather"></div></section>
+      <section class="panel"><h2>🌋 Maiores terremotos (24h)</h2><div id="quakeList"></div></section>
+    </div>
+  </div>
+
+  <section class="panel" id="chat">
+    <h2>💬 Chat dos membros</h2>
+    <div class="locked-only lockbox">🔒 O chat é exclusivo para quem tem acesso. <a href="#acesso">Liberar acesso</a></div>
+    <div class="unlocked-only">
+      <form id="nameForm" class="row" hidden>
+        <input id="chatName" maxlength="20" placeholder="Escolha seu nome no chat (não dá para mudar depois)" autocomplete="off">
+        <button class="btn btn-primary">Salvar nome</button>
+      </form>
+      <div id="chatLog" class="chatlog" aria-live="polite"></div>
+      <form id="chatForm" class="row">
+        <input id="chatText" maxlength="500" placeholder="Escreva uma mensagem" autocomplete="off">
+        <button class="btn btn-primary">Enviar</button>
+      </form>
+      <div class="msg" id="chatMsg"></div>
+    </div>
+  </section>
+
+  <section class="panel locked-only" id="acesso">
+    <h2>🔓 Liberar acesso completo</h2>
+    <p class="dim">Sem acesso você vê uma amostra de cada camada. Com acesso: todas as camadas completas, todas as manchetes, Modo plano e chat.</p>
+    <div class="plans" id="plans"></div>
+    <div class="unlock">
+      <div>
+        <h3>Já tem um código?</h3>
+        <form id="unlockForm" class="row">
+          <input id="code" placeholder="ATL-XXXX-XXXX" autocomplete="off" autocapitalize="characters">
+          <button class="btn btn-primary">Entrar</button>
+        </form>
+        <div class="msg" id="unlockMsg"></div>
+      </div>
+      <div id="trialBox">
+        <h3>Experimente grátis</h3>
+        <p class="dim" id="trialTxt"></p>
+        <button class="btn btn-cta" id="trialBtn">Começar teste grátis</button>
+        <div class="msg" id="trialMsg"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div id="sources"></div>
+  <p>Dados de fontes públicas: USGS, GDACS, NASA EONET, NOAA SWPC, NWS, OMS, ADS-B aberto e feeds de notícias (BBC, Al Jazeera, The Guardian, DW, France 24). As manchetes são classificadas e localizadas automaticamente por palavras-chave e podem conter erros. Isto não é um serviço oficial de alerta: em emergências, siga as autoridades locais.</p>
+  <p>Mapa base © colaboradores do <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.min.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

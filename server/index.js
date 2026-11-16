@@ -16,6 +16,10 @@ const MEMBER_DAYS = 30; // duração do cookie de sessão
 if (!db.admin_token) { db.admin_token = process.env.ADMIN_TOKEN || crypto.randomBytes(18).toString('base64url'); save(); }
 if (process.env.ADMIN_TOKEN && process.env.ADMIN_TOKEN !== db.admin_token) { db.admin_token = process.env.ADMIN_TOKEN; save(); }
 
+// Um erro solto em uma fonte ou conexão não pode derrubar o painel inteiro: registra e segue.
+process.on('uncaughtException', (e) => console.error('[erro não tratado]', e && e.stack || e));
+process.on('unhandledRejection', (e) => console.error('[promessa rejeitada]', e && e.stack || e));
+
 // ------------------------------------------------------------------ coleta
 const state = {};   // nome → dados
 const status = {};  // nome → {ok, at, error, count}
